@@ -5,7 +5,7 @@ import { ELECTORAL_DIVISIONS } from '@/data/electoral-division';
 import { PARTY_COLORS } from '@/data/parties';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useRef } from 'react';
-import Map, { Layer, Source, type MapRef } from 'react-map-gl/maplibre';
+import Map, { Layer, Source, type MapLayerMouseEvent, type MapRef } from 'react-map-gl/maplibre';
 
 const SOURCE_ID = 'boundaries';
 const LAYER_ID_FILL = 'fill';
@@ -13,6 +13,7 @@ const LAYER_ID_LINE = 'line';
 
 const IndexPage = () => {
   const mapRef = useRef<MapRef>(null);
+  const hoveredRef = useRef<number>(-1);
 
   const handleMapLoad = () => {
     const map = mapRef.current;
@@ -37,6 +38,39 @@ const IndexPage = () => {
     }
   };
 
+  const handleMouseEnter = (ev: MapLayerMouseEvent) => {
+    const map = mapRef.current;
+    const { features } = ev;
+
+    if (!map || !features || features.length < 1) return;
+
+    const feature = features[0];
+
+    if (hoveredRef.current === feature.id) return;
+
+    if (hoveredRef.current !== -1) {
+      map.setFeatureState(
+        {
+          source: SOURCE_ID,
+          id: hoveredRef.current,
+        },
+        {
+          hovered: false,
+        },
+      );
+    }
+    map.setFeatureState(
+      {
+        source: SOURCE_ID,
+        id: feature.id,
+      },
+      {
+        hovered: true,
+      },
+    );
+    hoveredRef.current = feature.id as number;
+  };
+
   return (
     <div id="c-index-page" className="w-full h-full">
       <Map
@@ -48,6 +82,8 @@ const IndexPage = () => {
         mapStyle="https://www.onemap.gov.sg/maps/json/raster/mbstyle/Grey.json"
         ref={mapRef}
         onLoad={handleMapLoad}
+        onMouseMove={handleMouseEnter}
+        interactiveLayerIds={[LAYER_ID_FILL]}
       >
         <Source id={SOURCE_ID} type="geojson" data={BOUNDARIES_2020}>
           <Layer
