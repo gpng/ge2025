@@ -1,19 +1,19 @@
-import { type Party } from '@/models';
+import { PartyId, type Party } from '@/models';
 
-export enum PartyId {
-  PAP = 'PAP',
-  WP = 'WP',
-  PSP = 'PSP',
-  RP = 'RP',
-  NSP = 'NSP',
-  PV = 'PV',
-  SDP = 'SDP',
-  SDA = 'SDA',
-  PPP = 'PPP',
-  RDU = 'RDU',
-  SPP = 'SPP',
-  INDIE = 'INDIE',
-}
+export const PARTY_COLORS: Record<PartyId, string> = {
+  [PartyId.PAP]: '#D8C99B',
+  [PartyId.WP]: '#273E47',
+  [PartyId.PSP]: '#A4243B',
+  [PartyId.RP]: '#D8973C',
+  [PartyId.NSP]: '#BD632F',
+  [PartyId.PV]: '#91268e',
+  [PartyId.SDP]: '#fe0000',
+  [PartyId.SDA]: '#2e379c',
+  [PartyId.PPP]: '#2fa61f',
+  [PartyId.RDU]: '#d30e0d',
+  [PartyId.SPP]: '#2e3a90',
+  [PartyId.INDIE]: '#222222',
+};
 
 export const PARTIES: Record<PartyId, Party> = {
   PAP: {

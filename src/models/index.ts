@@ -1,3 +1,18 @@
+export enum PartyId {
+  PAP = 'PAP',
+  WP = 'WP',
+  PSP = 'PSP',
+  RP = 'RP',
+  NSP = 'NSP',
+  PV = 'PV',
+  SDP = 'SDP',
+  SDA = 'SDA',
+  PPP = 'PPP',
+  RDU = 'RDU',
+  SPP = 'SPP',
+  INDIE = 'INDIE',
+}
+
 export interface Party {
   id: string;
   name: string;
@@ -25,7 +40,7 @@ export interface Result {
 }
 
 export interface Lineup {
-  party: string;
+  party: PartyId;
   members: Profile[];
 }
 

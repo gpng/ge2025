@@ -1,6 +1,5 @@
-import { PARTIES } from '@/data/parties';
 import { PROFILES } from '@/data/profiles';
-import { WALKOVER, type ElectoralDivision } from '@/models';
+import { PartyId, WALKOVER, type ElectoralDivision } from '@/models';
 
 export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
   {
@@ -23,7 +22,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.CHAN_CHUN_SING,
         PROFILES.PAP.INDRANEE_RAJAH,
@@ -33,7 +32,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.CHAN_CHUN_SING,
         PROFILES.PAP.INDRANEE_RAJAH,
@@ -47,7 +46,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PSP.id,
+        party: PartyId.PSP,
         members: [
           PROFILES.PSP.MICHAEL_CHUA,
           PROFILES.PSP.HARISH_PILLAY,
@@ -77,7 +76,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.YAACOB_IBRAHIM,
         PROFILES.PAP.HENG_CHEE_HOW,
@@ -86,7 +85,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.JOSEPHINE_TEO,
         PROFILES.PAP.HENG_CHEE_HOW,
@@ -99,7 +98,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PV.id,
+        party: PartyId.PV,
         members: [
           PROFILES.PV.LIM_TEAN,
           PROFILES.PV.LEONG_SZE_HIAN,
@@ -135,11 +134,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.CEDRIC_FOO],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.PATRICK_TAY],
       confirmed: true,
       sample: 66,
@@ -147,14 +146,14 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PSP.id,
+        party: PartyId.PSP,
         members: [PROFILES.PSP.LIM_CHER_HONG],
         confirmed: true,
         sample: 32,
         actual: 35.24,
       },
       {
-        party: PARTIES.INDIE.id,
+        party: PartyId.INDIE,
         members: [PROFILES.INDIE.CHEANG_PENG_WAH],
         confirmed: true,
         sample: 2,
@@ -185,11 +184,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.GRACE_FU],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.GRACE_FU],
       confirmed: true,
       sample: 69,
@@ -197,7 +196,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.SDP.id,
+        party: PartyId.SDP,
         members: [PROFILES.SDP.ROBIN_LOW],
         confirmed: true,
         sample: 31,
@@ -213,11 +212,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     electorsVoted: 23431,
     history: {},
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.JOSEPHINE_TEO],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.GAN_SIOW_HUANG],
       confirmed: true,
       sample: 54,
@@ -225,7 +224,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PSP.id,
+        party: PartyId.PSP,
         members: [PROFILES.PSP.ANG_YONG_GUAN],
         confirmed: true,
         sample: 46,
@@ -256,11 +255,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.WP.id,
+      party: PartyId.WP,
       members: [PROFILES.WP.PNG_ENG_HUAT],
     },
     incumbent: {
-      party: PARTIES.WP.id,
+      party: PartyId.WP,
       members: [PROFILES.WP.DENNIS_TAN],
       confirmed: true,
       sample: 58,
@@ -268,7 +267,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PAP.id,
+        party: PartyId.PAP,
         members: [PROFILES.PAP.LEE_HONG_CHUANG],
         confirmed: true,
         sample: 42,
@@ -299,7 +298,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.TAN_CHUAN_JIN,
         PROFILES.PAP.GOH_CHOK_TONG,
@@ -309,7 +308,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.TAN_CHUAN_JIN,
         PROFILES.PAP.TAN_SEE_LENG,
@@ -323,7 +322,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.WP.id,
+        party: PartyId.WP,
         members: [
           PROFILES.WP.YEE_JENN_JONG,
           PROFILES.WP.RON_TAN,
@@ -360,7 +359,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.S_ISWARAN,
         PROFILES.PAP.LIM_HNG_KIANG,
@@ -369,7 +368,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.S_ISWARAN,
         PROFILES.PAP.DESMOND_LEE,
@@ -383,7 +382,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PSP.id,
+        party: PartyId.PSP,
         members: [
           PROFILES.PSP.TAN_CHENG_BOCK,
           PROFILES.PSP.JEFFREY_KHOO,
@@ -420,11 +419,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.TEO_HO_PIN],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.LIANG_ENG_HWA],
       confirmed: true,
       sample: 59,
@@ -432,7 +431,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.SDP.id,
+        party: PartyId.SDP,
         members: [PROFILES.SDP.PAUL_TAMBYAH],
         confirmed: true,
         sample: 41,
@@ -448,11 +447,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     electorsVoted: 25962,
     history: {},
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.KOH_POH_KOON],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.YIP_HON_WENG],
       confirmed: true,
       sample: 61,
@@ -460,7 +459,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PSP.id,
+        party: PartyId.PSP,
         members: [PROFILES.PSP.KAYLA_LOW],
         confirmed: true,
         sample: 39,
@@ -491,7 +490,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.VIVIAN_BALAKRISHNAN,
         PROFILES.PAP.SIM_ANN,
@@ -500,7 +499,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.VIVIAN_BALAKRISHNAN,
         PROFILES.PAP.SIM_ANN,
@@ -513,7 +512,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.SDP.id,
+        party: PartyId.SDP,
         members: [
           PROFILES.SDP.TAN_JEE_SAY,
           PROFILES.SDP.JAMES_GOMEZ,
@@ -549,7 +548,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.TEO_CHEE_HEAN,
         PROFILES.PAP.JANIL_PUTHUCHEARY,
@@ -560,7 +559,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.TEO_CHEE_HEAN,
         PROFILES.PAP.JANIL_PUTHUCHEARY,
@@ -574,7 +573,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PV.id,
+        party: PartyId.PV,
         members: [
           PROFILES.PV.JIREH_LIM,
           PROFILES.PV.PRABU_RAMACHANDRAN,
@@ -587,7 +586,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
         actual: 12.18,
       },
       {
-        party: PARTIES.SDA.id,
+        party: PartyId.SDA,
         members: [
           PROFILES.SDA.DESMOND_LIM,
           PROFILES.SDA.HARMINDER_PAL_SINGH,
@@ -624,7 +623,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.LIM_SWEE_SAY,
         PROFILES.PAP.MOHAMAD_MALIKI,
@@ -633,7 +632,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.HENG_SWEE_KEAT,
         PROFILES.PAP.MOHAMAD_MALIKI,
@@ -647,7 +646,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.WP.id,
+        party: PartyId.WP,
         members: [
           PROFILES.WP.DYLAN_NG,
           PROFILES.WP.KENNETH_FOO,
@@ -684,7 +683,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.LEE_HSIEN_LOONG,
         PROFILES.PAP.ANG_HIN_KEE,
@@ -695,7 +694,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.LEE_HSIEN_LOONG,
         PROFILES.PAP.NG_LING_LING,
@@ -709,7 +708,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.RP.id,
+        party: PartyId.RP,
         members: [
           PROFILES.RP.KENNETH_JEYARETNAM,
           PROFILES.RP.ANDY_ZHU,
@@ -731,11 +730,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     electorsVoted: 26587,
     history: {},
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.SUN_XUELING],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.SUN_XUELING],
       confirmed: true,
       sample: 65,
@@ -743,7 +742,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.WP.id,
+        party: PartyId.WP,
         members: [PROFILES.WP.TAN_CHEN_CHEN],
         confirmed: true,
         sample: 35,
@@ -774,7 +773,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.GAN_KIM_YONG,
         PROFILES.PAP.ZAQY_MOHAMAD,
@@ -783,7 +782,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.GAN_KIM_YONG,
         PROFILES.PAP.LOW_YEN_LING,
@@ -796,7 +795,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PSP.id,
+        party: PartyId.PSP,
         members: [
           PROFILES.PSP.FRANCIS_YUEN,
           PROFILES.PSP.TAN_MENG_WAH,
@@ -832,7 +831,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.K_SHANMUGAM,
         PROFILES.PAP.MUHAMMAD_FAISHAL_IBRAHIM,
@@ -842,7 +841,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.K_SHANMUGAM,
         PROFILES.PAP.MUHAMMAD_FAISHAL_IBRAHIM,
@@ -856,7 +855,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PSP.id,
+        party: PartyId.PSP,
         members: [
           PROFILES.PSP.DAMIEN_TAY,
           PROFILES.PSP.MUHAMMAD_TAUFIK,
@@ -887,11 +886,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.TIN_PEI_LING],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.TIN_PEI_LING],
       confirmed: true,
       sample: 73,
@@ -899,7 +898,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PPP.id,
+        party: PartyId.PPP,
         members: [PROFILES.PPP.GOH_MENG_SENG],
         confirmed: true,
         sample: 27,
@@ -931,11 +930,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.SAM_TAN],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.MELVIN_YONG],
       confirmed: true,
       sample: 76,
@@ -943,7 +942,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.RP.id,
+        party: PartyId.RP,
         members: [PROFILES.RP.KUMAR_APPAVOO],
         confirmed: true,
         sample: 24,
@@ -974,11 +973,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.LIM_BIOW_CHUAN],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.LIM_BIOW_CHUAN],
       confirmed: true,
       sample: 75,
@@ -986,7 +985,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PV.id,
+        party: PartyId.PV,
         members: [PROFILES.PV.SIVAKUMARAN_CHELLAPPA],
         confirmed: true,
         sample: 25,
@@ -1017,11 +1016,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.SITOH_YIH_PIN],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.SITOH_YIH_PIN],
       confirmed: true,
       sample: 61,
@@ -1029,7 +1028,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.SPP.id,
+        party: PartyId.SPP,
         members: [PROFILES.SPP.JOSE_RAYMOND],
         confirmed: true,
         sample: 39,
@@ -1062,11 +1061,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.MURALI_PILLAI],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.MURALI_PILLAI],
       confirmed: true,
       sample: 57,
@@ -1074,7 +1073,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.SDP.id,
+        party: PartyId.SDP,
         members: [PROFILES.SDP.CHEE_SOON_JUAN],
         confirmed: true,
         sample: 43,
@@ -1105,11 +1104,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.AMY_KHOR],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.AMY_KHOR],
       confirmed: true,
       sample: 63,
@@ -1117,7 +1116,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PSP.id,
+        party: PartyId.PSP,
         members: [PROFILES.PSP.GIGENE_WONG],
         confirmed: true,
         sample: 37,
@@ -1148,7 +1147,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.THARMAN,
         PROFILES.PAP.DESMOND_LEE,
@@ -1158,7 +1157,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.THARMAN,
         PROFILES.PAP.RAHAYU_MAHZAM,
@@ -1172,7 +1171,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.RDU.id,
+        party: PartyId.RDU,
         members: [
           PROFILES.RDU.RAVI_PHILEMON,
           PROFILES.RDU.MICHELLE_LEE,
@@ -1209,7 +1208,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.NG_ENG_HEN,
         PROFILES.PAP.JOSEPHINE_TEO,
@@ -1219,7 +1218,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.NG_ENG_HEN,
         PROFILES.PAP.CHONG_KEE_HIONG,
@@ -1232,7 +1231,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.SPP.id,
+        party: PartyId.SPP,
         members: [
           PROFILES.SPP.STEVE_CHIA,
           PROFILES.SPP.WILLIAMSON_LEE,
@@ -1268,7 +1267,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.HENG_SWEE_KEAT,
         PROFILES.PAP.MASAGOS_ZUKLIFI,
@@ -1278,7 +1277,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.MASAGOS_ZUKLIFI,
         PROFILES.PAP.BAEY_YAM_KENG,
@@ -1292,7 +1291,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.NSP.id,
+        party: PartyId.NSP,
         members: [
           PROFILES.NSP.RENO_FONG,
           PROFILES.NSP.MOHAMAD_RIDZWAN,
@@ -1314,11 +1313,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     electorsVoted: 120100,
     history: {},
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.NG_CHEE_MENG,
         PROFILES.PAP.AMRIN_AMIN,
@@ -1331,7 +1330,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.WP.id,
+        party: PartyId.WP,
         members: [
           PROFILES.WP.HE_TING_RU,
           PROFILES.WP.LOUIS_CHUA,
@@ -1367,7 +1366,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.WP.id,
+      party: PartyId.WP,
       members: [
         PROFILES.WP.LOW_THIA_KHIANG,
         PROFILES.WP.PRITAM_SINGH,
@@ -1377,7 +1376,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.WP.id,
+      party: PartyId.WP,
       members: [
         PROFILES.WP.PRITAM_SINGH,
         PROFILES.WP.SYLVIA_LIM,
@@ -1391,7 +1390,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PAP.id,
+        party: PartyId.PAP,
         members: [
           PROFILES.PAP.VICTOR_LYE,
           PROFILES.PAP.SHAMSUL_KAMAR,
@@ -1413,11 +1412,11 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     electorsVoted: 22623,
     history: {},
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.HENRY_KWEK],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [PROFILES.PAP.HENRY_KWEK],
       confirmed: true,
       sample: 68,
@@ -1425,7 +1424,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.PSP.id,
+        party: PartyId.PSP,
         members: [PROFILES.PSP.KUMARAN_PILLAI],
         confirmed: true,
         sample: 32,
@@ -1449,7 +1448,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.LAWRENCE_WONG,
         PROFILES.PAP.ALEX_YAM,
@@ -1458,7 +1457,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.LAWRENCE_WONG,
         PROFILES.PAP.ALEX_YAM,
@@ -1471,7 +1470,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.SDP.id,
+        party: PartyId.SDP,
         members: [
           PROFILES.SDP.BRYAN_LIM,
           PROFILES.SDP.DAMANHURI_ABAS,
@@ -1507,7 +1506,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       },
     },
     current: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.KHAW_BOON_WAN,
         PROFILES.PAP.ONG_YE_KUNG,
@@ -1517,7 +1516,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
       ],
     },
     incumbent: {
-      party: PARTIES.PAP.id,
+      party: PartyId.PAP,
       members: [
         PROFILES.PAP.ONG_YE_KUNG,
         PROFILES.PAP.VIKRAM_NAIR,
@@ -1531,7 +1530,7 @@ export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
     },
     opposition: [
       {
-        party: PARTIES.NSP.id,
+        party: PartyId.NSP,
         members: [
           PROFILES.NSP.SPENCER_NG,
           PROFILES.NSP.IVAN_YEO,

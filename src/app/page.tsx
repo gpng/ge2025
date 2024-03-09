@@ -1,10 +1,42 @@
 'use client';
 
 import { BOUNDARIES_2020 } from '@/data/boundaries-2020';
+import { ELECTORAL_DIVISIONS } from '@/data/electoral-division';
+import { PARTY_COLORS } from '@/data/parties';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import Map, { Layer, Source } from 'react-map-gl/maplibre';
+import { useRef } from 'react';
+import Map, { Layer, Source, type MapRef } from 'react-map-gl/maplibre';
+
+const SOURCE_ID = 'boundaries';
+const LAYER_ID_FILL = 'fill';
+const LAYER_ID_LINE = 'line';
 
 const IndexPage = () => {
+  const mapRef = useRef<MapRef>(null);
+
+  const handleMapLoad = () => {
+    const map = mapRef.current;
+    if (!map) return;
+
+    for (let i = 0; i < ELECTORAL_DIVISIONS.length; i++) {
+      const division = ELECTORAL_DIVISIONS[i];
+
+      map.setFeatureState(
+        {
+          source: SOURCE_ID,
+          id: division.featureId,
+        },
+        {
+          fillColor: PARTY_COLORS[division.current.party],
+          outlineColor:
+            division.opposition?.length > 0 ? PARTY_COLORS[division.opposition[0].party] : 'null',
+          visible: true,
+          hovered: false,
+        },
+      );
+    }
+  };
+
   return (
     <div id="c-index-page" className="w-full h-full">
       <Map
@@ -14,10 +46,12 @@ const IndexPage = () => {
           zoom: 11,
         }}
         mapStyle="https://www.onemap.gov.sg/maps/json/raster/mbstyle/Grey.json"
+        ref={mapRef}
+        onLoad={handleMapLoad}
       >
-        <Source id="boundaries" type="geojson" data={BOUNDARIES_2020}>
+        <Source id={SOURCE_ID} type="geojson" data={BOUNDARIES_2020}>
           <Layer
-            id="fill"
+            id={LAYER_ID_FILL}
             type="fill"
             paint={{
               'fill-color': [
@@ -31,7 +65,7 @@ const IndexPage = () => {
             }}
           />
           <Layer
-            id="line"
+            id={LAYER_ID_LINE}
             type="line"
             paint={{
               'line-color': [
