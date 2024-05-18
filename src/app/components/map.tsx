@@ -12,7 +12,8 @@ import ReactMapGL, {
   type MapRef,
 } from 'react-map-gl/maplibre';
 
-const SOURCE_ID = 'boundaries';
+export const MAP_ID = 'main-map';
+export const SOURCE_ID = 'boundaries';
 const LAYER_ID_FILL = 'fill';
 const LAYER_ID_LINE = 'line';
 
@@ -84,6 +85,7 @@ const Map = ({ children, onElectoralDivisionHovered }: Props) => {
 
   return (
     <ReactMapGL
+      id={MAP_ID}
       initialViewState={{
         longitude: 103.808375,
         latitude: 1.360365,
@@ -106,7 +108,7 @@ const Map = ({ children, onElectoralDivisionHovered }: Props) => {
               ['feature-state', 'fillColor'],
               'rgba(0, 0, 0, 0.1)',
             ],
-            'fill-outline-color': 'rgba(0, 0, 0, 1)',
+            // 'fill-outline-color': 'rgba(0, 0, 0, 1)',
             'fill-opacity': ['case', ['boolean', ['feature-state', 'hovered'], true], 0.8, 0.4],
           }}
         />

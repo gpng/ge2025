@@ -1,6 +1,7 @@
 'use client';
 
 import Map from '@/app/components/map';
+import Panel from '@/app/components/panel';
 import Tooltip from '@/app/components/tooltip';
 import { BOUNDARIES_2020 } from '@/data/boundaries-2020';
 import { ELECTORAL_DIVISIONS } from '@/data/electoral-division';
@@ -54,6 +55,7 @@ const Main = () => {
           />
         )}
       </Map>
+      <Panel />
     </div>
   );
 };
