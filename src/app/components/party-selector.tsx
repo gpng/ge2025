@@ -9,6 +9,7 @@ import {
 import { ELECTORAL_DIVISIONS } from '@/data/electoral-division';
 import { PARTIES, PARTY_COLORS } from '@/data/parties';
 import { PartyId } from '@/models';
+import React from 'react';
 import { useMap } from 'react-map-gl/maplibre';
 
 const partyIds = Object.values(PartyId);
@@ -48,7 +49,7 @@ const PartySelector = () => {
 
   return (
     <Select onValueChange={handlePartyChange}>
-      <SelectTrigger>
+      <SelectTrigger className="relative bg-white z-10">
         <SelectValue placeholder="Select party" />
       </SelectTrigger>
       <SelectContent>
@@ -69,4 +70,4 @@ const PartySelector = () => {
   );
 };
 
-export default PartySelector;
+export default React.memo(PartySelector);

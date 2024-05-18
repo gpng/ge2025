@@ -19,6 +19,9 @@ const Main = () => {
       }
     | undefined
   >();
+  const [electoralDivisionSelected, setElectoralDivisionSelected] = useState<
+    ElectoralDivision | undefined
+  >();
 
   const handleElectoralDivisionHovered = (electoralDivisionId: number) => {
     const electoralDivision = ELECTORAL_DIVISIONS.find(
@@ -44,9 +47,22 @@ const Main = () => {
     });
   };
 
+  const handleElectoralDivisionSelected = (electoralDivisionId: number) => {
+    const electoralDivision = ELECTORAL_DIVISIONS.find(
+      (division) => division.featureId === electoralDivisionId,
+    );
+
+    if (!electoralDivision) return;
+
+    setElectoralDivisionSelected(electoralDivision);
+  };
+
   return (
     <div id="c-main" className="w-full h-full">
-      <Map onElectoralDivisionHovered={handleElectoralDivisionHovered}>
+      <Map
+        onElectoralDivisionHovered={handleElectoralDivisionHovered}
+        onElectoralDivisionSelected={handleElectoralDivisionSelected}
+      >
         {electoralDivisionHovered && (
           <Tooltip
             electoralDivision={electoralDivisionHovered.electoralDivision}
@@ -55,7 +71,10 @@ const Main = () => {
           />
         )}
       </Map>
-      <Panel />
+      <Panel
+        electoralDivision={electoralDivisionSelected}
+        onClose={() => setElectoralDivisionSelected(undefined)}
+      />
     </div>
   );
 };

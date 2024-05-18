@@ -8,8 +8,6 @@ interface Props {
 }
 
 const Tooltip = ({ electoralDivision, longitude, latitude }: Props) => {
-  console.log('electoralDivision, x, y: ', electoralDivision, longitude, latitude);
-
   return (
     <Marker longitude={longitude} latitude={latitude} anchor="center">
       <div id="tooltip" className="p-4 bg-white rounded-lg shadow-md">

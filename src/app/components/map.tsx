@@ -20,9 +20,10 @@ const LAYER_ID_LINE = 'line';
 interface Props {
   children?: React.ReactNode;
   onElectoralDivisionHovered: (electoralDivisionId: number) => void;
+  onElectoralDivisionSelected: (electoralDivisionId: number) => void;
 }
 
-const Map = ({ children, onElectoralDivisionHovered }: Props) => {
+const Map = ({ children, onElectoralDivisionHovered, onElectoralDivisionSelected }: Props) => {
   const mapRef = useRef<MapRef>(null);
   const hoveredRef = useRef<number>(-1);
 
@@ -56,8 +57,9 @@ const Map = ({ children, onElectoralDivisionHovered }: Props) => {
     if (!map || !features || features.length < 1) return;
 
     const feature = features[0];
+    const featureId = feature.id as number;
 
-    if (hoveredRef.current === feature.id) return;
+    if (hoveredRef.current === featureId) return;
 
     if (hoveredRef.current !== -1) {
       map.setFeatureState(
@@ -79,8 +81,16 @@ const Map = ({ children, onElectoralDivisionHovered }: Props) => {
         hovered: true,
       },
     );
-    hoveredRef.current = feature.id as number;
-    onElectoralDivisionHovered(feature.id as number);
+
+    hoveredRef.current = featureId;
+    onElectoralDivisionHovered(featureId as number);
+  };
+
+  const handleClick = (ev: MapLayerMouseEvent) => {
+    const feature = ev.features?.[0];
+    if (!feature) return;
+
+    onElectoralDivisionSelected(feature.id as number);
   };
 
   return (
@@ -96,6 +106,7 @@ const Map = ({ children, onElectoralDivisionHovered }: Props) => {
       onLoad={handleMapLoad}
       onMouseMove={handleMouseEnter}
       interactiveLayerIds={[LAYER_ID_FILL]}
+      onClick={handleClick}
     >
       <Source id={SOURCE_ID} type="geojson" data={BOUNDARIES_2020}>
         <Layer
