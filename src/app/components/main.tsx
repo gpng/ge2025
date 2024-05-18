@@ -19,7 +19,6 @@ const Main = () => {
     | undefined
   >();
 
-  console.log('electoralDivisionHovered: ', electoralDivisionHovered);
   const handleElectoralDivisionHovered = (electoralDivisionId: number) => {
     const electoralDivision = ELECTORAL_DIVISIONS.find(
       (division) => division.featureId === electoralDivisionId,

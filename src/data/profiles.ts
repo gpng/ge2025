@@ -1,5 +1,4 @@
-import { type PartyId } from '@/data/parties';
-import { type Profile } from '@/models';
+import { type PartyId, type Profile } from '@/models';
 
 export const PROFILES: Record<PartyId, Record<string, Profile>> = {
   PAP: {
