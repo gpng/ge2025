@@ -21,8 +21,8 @@ const MainLayout: FC<Props> = ({ children }) => {
 };
 
 export const metadata: Metadata = {
-  title: 'Next.js Kysely Starter Kit',
-  description: 'Next.js Kysely Starter Kit',
+  title: 'GE2025',
+  description: `Status of all lineups that will be contesting in each electoral district in Singapore's General Election 2025`,
 };
 
 export default MainLayout;
