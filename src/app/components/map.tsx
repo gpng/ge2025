@@ -59,7 +59,7 @@ const Map = ({ children, onElectoralDivisionHovered, onElectoralDivisionSelected
     const feature = features[0];
     const featureId = feature.id as number;
 
-    if (hoveredRef.current === featureId) return;
+    if (!feature.state.visible || hoveredRef.current === featureId) return;
 
     if (hoveredRef.current !== -1) {
       map.setFeatureState(
@@ -88,7 +88,7 @@ const Map = ({ children, onElectoralDivisionHovered, onElectoralDivisionSelected
 
   const handleClick = (ev: MapLayerMouseEvent) => {
     const feature = ev.features?.[0];
-    if (!feature) return;
+    if (!feature || !feature.state.visible) return;
 
     onElectoralDivisionSelected(feature.id as number);
   };
