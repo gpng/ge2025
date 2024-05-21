@@ -20,7 +20,7 @@ const PartyDrawer = ({ electoralDivision, onClose }: Props) => {
           animate={{ x: 0 }}
           exit={{ x: -350 }}
           transition={{ duration: 0.1 }}
-          className="absolute left-0 top-0 w-[350px] h-full bg-white shadow-lg z-0 pt-16 px-2 pb-2 flex flex-col"
+          className="absolute left-0 top-0 w-[350px] h-full bg-white shadow-lg z-0 pt-24 px-2 pb-2 flex flex-col"
         >
           <div className="relative flex-grow-0 flex-shrink-0">
             <Button size="icon" variant="outline" className="float-right" onClick={onClose}>

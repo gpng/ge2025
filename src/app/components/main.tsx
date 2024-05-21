@@ -6,7 +6,7 @@ import Tooltip from '@/app/components/tooltip';
 import { BOUNDARIES_2020 } from '@/data/boundaries-2020';
 import { ELECTORAL_DIVISIONS } from '@/data/electoral-division';
 import { type ElectoralDivision } from '@/models';
-import center from '@turf/center';
+import { center } from '@turf/turf';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useState } from 'react';
 
@@ -74,6 +74,7 @@ const Main = () => {
       <Panel
         electoralDivision={electoralDivisionSelected}
         onClose={() => setElectoralDivisionSelected(undefined)}
+        onElectoralDivisionSelected={handleElectoralDivisionSelected}
       />
     </div>
   );
