@@ -8,10 +8,12 @@ import {
   CardTitle,
 } from '@/app/components/ui/card';
 import { Textarea } from '@/app/components/ui/textarea';
+import { cn } from '@/lib/utils';
 import { ChatBubbleIcon, Cross1Icon, ThickArrowRightIcon } from '@radix-ui/react-icons';
 import { useAssistant, type Message } from 'ai/react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+import styles from './qna-widget.module.css';
 
 const QnaWidget = () => {
   const messagesRef = useRef<Message[]>([]);
@@ -53,9 +55,9 @@ const QnaWidget = () => {
       {isOpen && (
         <AnimatePresence>
           <motion.div
-            className="fixed bottom-12 right-4 z-50"
+            className={cn(styles.qnaWidget, 'fixed bottom-0 sm:bottom-12 right:0 sm:right-4 z-50')}
             initial={{ height: 0, width: 0, opacity: 0 }}
-            animate={{ height: 600, width: 450, opacity: 1 }}
+            animate={{ height: 'var(--widget-height)', width: 'var(--widget-width)', opacity: 1 }}
           >
             <Card className="w-full h-full flex flex-col bg-gray-50">
               <CardHeader className="relative">

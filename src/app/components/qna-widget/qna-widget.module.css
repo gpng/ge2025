@@ -1,0 +1,9 @@
+.qnaWidget {
+  --widget-height: 600px;
+  --widget-width: 400px;
+
+  @media (max-width: 640px) {
+    --widget-height: 100vh;
+    --widget-width: 100vw;
+  }
+}
