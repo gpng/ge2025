@@ -2,6 +2,7 @@
 
 import Map from '@/app/components/map';
 import Panel from '@/app/components/panel';
+import QnaWidget from '@/app/components/qna-widget/qna-widget';
 import Tooltip from '@/app/components/tooltip';
 import { BOUNDARIES_2020 } from '@/data/boundaries-2020';
 import { ELECTORAL_DIVISIONS } from '@/data/electoral-division';
@@ -58,25 +59,28 @@ const Main = () => {
   };
 
   return (
-    <div id="c-main" className="w-full h-full">
-      <Map
-        onElectoralDivisionHovered={handleElectoralDivisionHovered}
-        onElectoralDivisionSelected={handleElectoralDivisionSelected}
-      >
-        {electoralDivisionHovered && (
-          <Tooltip
-            electoralDivision={electoralDivisionHovered.electoralDivision}
-            longitude={electoralDivisionHovered.longitude}
-            latitude={electoralDivisionHovered.latitude}
-          />
-        )}
-      </Map>
-      <Panel
-        electoralDivision={electoralDivisionSelected}
-        onClose={() => setElectoralDivisionSelected(undefined)}
-        onElectoralDivisionSelected={handleElectoralDivisionSelected}
-      />
-    </div>
+    <>
+      <div id="c-main" className="w-full h-full">
+        <Map
+          onElectoralDivisionHovered={handleElectoralDivisionHovered}
+          onElectoralDivisionSelected={handleElectoralDivisionSelected}
+        >
+          {electoralDivisionHovered && (
+            <Tooltip
+              electoralDivision={electoralDivisionHovered.electoralDivision}
+              longitude={electoralDivisionHovered.longitude}
+              latitude={electoralDivisionHovered.latitude}
+            />
+          )}
+        </Map>
+        <Panel
+          electoralDivision={electoralDivisionSelected}
+          onClose={() => setElectoralDivisionSelected(undefined)}
+          onElectoralDivisionSelected={handleElectoralDivisionSelected}
+        />
+      </div>
+      <QnaWidget />
+    </>
   );
 };
 
