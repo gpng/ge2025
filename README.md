@@ -2,9 +2,35 @@
 
 # Table of Contents
 
+1. [Contribution Guide](#contribution-guide)
+1. [Indidual Profiles](#individual-profiles)
 1. [Setup](#setup)
 1. [Databse](#database)
 1. [Component Library](#component-library)
+
+# Contribution Guide
+
+Create a GitHub issue.
+
+To create a PR and update the data, follow the guide below.
+
+## Updating Data
+
+Refer to the [setup guide](#setup) below to configure your dev environment.
+All data are in TypeScript files to ensure typing and shape.
+
+### Individual Candidates
+
+1. Add or modify candidate details in [src/data/profiles.ts](src/data/profiles.ts)
+1. Profile images should be added to [public/images/profiles](public/images/profiles/).
+
+### Parties
+
+1. Add or modify party details in [src/data/parties.ts](src/data/parties.ts)
+
+### Electoral Divisions
+
+1. Add or modify electoral division details in [src/data/electoral-divisions.ts](src/data/electoral-division.ts)
 
 # Setup
 
