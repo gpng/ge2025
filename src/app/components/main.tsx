@@ -5,7 +5,7 @@ import Panel from '@/app/components/panel';
 import QnaWidget from '@/app/components/qna-widget/qna-widget';
 import Tooltip from '@/app/components/tooltip';
 import { BOUNDARIES_2020 } from '@/data/boundaries-2020';
-import { ELECTORAL_DIVISIONS } from '@/data/electoral-division';
+import { ELECTORAL_DIVISIONS } from '@/data/electoral-divisions';
 import { type ElectoralDivision } from '@/models';
 import { center } from '@turf/turf';
 import 'maplibre-gl/dist/maplibre-gl.css';

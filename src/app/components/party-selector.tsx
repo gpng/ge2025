@@ -6,7 +6,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/app/components/ui/select';
-import { ELECTORAL_DIVISIONS } from '@/data/electoral-division';
+import { ELECTORAL_DIVISIONS } from '@/data/electoral-divisions';
 import { PARTIES, PARTY_COLORS } from '@/data/parties';
 import { PartyId } from '@/models';
 import React from 'react';

@@ -1,7 +1,7 @@
 'use client';
 
 import { BOUNDARIES_2020 } from '@/data/boundaries-2020';
-import { ELECTORAL_DIVISIONS } from '@/data/electoral-division';
+import { ELECTORAL_DIVISIONS } from '@/data/electoral-divisions';
 import { PARTY_COLORS } from '@/data/parties';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import React, { useRef } from 'react';

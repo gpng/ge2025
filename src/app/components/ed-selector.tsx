@@ -7,7 +7,7 @@ import {
   SelectValue,
 } from '@/app/components/ui/select';
 import { BOUNDARIES_2020 } from '@/data/boundaries-2020';
-import { ELECTORAL_DIVISIONS } from '@/data/electoral-division';
+import { ELECTORAL_DIVISIONS } from '@/data/electoral-divisions';
 import { flattenDepth } from 'lodash';
 import React from 'react';
 import { useMap } from 'react-map-gl/maplibre';
