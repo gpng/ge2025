@@ -14,7 +14,7 @@ const Panel = ({ electoralDivision, onClose, onElectoralDivisionSelected }: Prop
   return (
     <div className="h-full absolute left-0 top-0 w-[350px] p-2 pointer-events-none">
       <PartyDrawer electoralDivision={electoralDivision} onClose={onClose} />
-      <div className="space-y-1">
+      <div className="space-y-1 pointer-events-auto">
         <PartySelector />
         <EdSelector onElectoralDivisionSelected={onElectoralDivisionSelected} />
       </div>
