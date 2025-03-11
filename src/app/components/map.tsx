@@ -1,8 +1,8 @@
 'use client';
 
-import { BOUNDARIES_2020 } from '@/data/boundaries-2020';
 import { ELECTORAL_DIVISIONS } from '@/data/electoral-divisions';
 import { PARTY_COLORS } from '@/data/parties';
+import type { PartyId } from '@/models';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import React, { useRef } from 'react';
 import ReactMapGL, {
@@ -23,7 +23,11 @@ interface Props {
   onElectoralDivisionSelected: (electoralDivisionId: number) => void;
 }
 
-const Map = ({ children, onElectoralDivisionHovered, onElectoralDivisionSelected }: Props) => {
+const GEMap = ({
+  children,
+  onElectoralDivisionHovered,
+  onElectoralDivisionSelected,
+}: Props) => {
   const mapRef = useRef<MapRef>(null);
   const hoveredRef = useRef<number>(-1);
 
@@ -40,9 +44,11 @@ const Map = ({ children, onElectoralDivisionHovered, onElectoralDivisionSelected
           id: division.featureId,
         },
         {
-          fillColor: PARTY_COLORS[division.current.party],
+          fillColor: PARTY_COLORS[division.current.party as PartyId],
           outlineColor:
-            division.opposition?.length > 0 ? PARTY_COLORS[division.opposition[0].party] : 'null',
+            division.opposition?.length > 0
+              ? PARTY_COLORS[division.opposition[0].party as PartyId]
+              : 'null',
           visible: true,
           hovered: false,
         },
@@ -108,7 +114,7 @@ const Map = ({ children, onElectoralDivisionHovered, onElectoralDivisionSelected
       interactiveLayerIds={[LAYER_ID_FILL]}
       onClick={handleClick}
     >
-      <Source id={SOURCE_ID} type="geojson" data={BOUNDARIES_2020}>
+      {/* <Source id={SOURCE_ID} type="geojson" data={BOUNDARIES_2020}>
         <Layer
           id={LAYER_ID_FILL}
           type="fill"
@@ -120,7 +126,12 @@ const Map = ({ children, onElectoralDivisionHovered, onElectoralDivisionSelected
               'rgba(0, 0, 0, 0.1)',
             ],
             // 'fill-outline-color': 'rgba(0, 0, 0, 1)',
-            'fill-opacity': ['case', ['boolean', ['feature-state', 'hovered'], true], 0.8, 0.4],
+            'fill-opacity': [
+              'case',
+              ['boolean', ['feature-state', 'hovered'], true],
+              0.8,
+              0.4,
+            ],
           }}
         />
         <Layer
@@ -134,7 +145,25 @@ const Map = ({ children, onElectoralDivisionHovered, onElectoralDivisionSelected
               'rgba(0, 0, 0, 0)',
             ],
             'line-width': 4,
-            'line-opacity': ['case', ['boolean', ['feature-state', 'hovered'], true], 1, 0.6],
+            'line-opacity': [
+              'case',
+              ['boolean', ['feature-state', 'hovered'], true],
+              1,
+              0.6,
+            ],
+          }}
+        />
+      </Source> */}
+      <Source
+        id="onemap-eld"
+        type="raster"
+        tiles={['https://www.onemap.gov.sg/maps/tiles/ELD/{z}/{x}/{y}.png']}
+      >
+        <Layer
+          id="onemap-eld-layer"
+          type="raster"
+          paint={{
+            'raster-opacity': 0.5,
           }}
         />
       </Source>
@@ -143,4 +172,4 @@ const Map = ({ children, onElectoralDivisionHovered, onElectoralDivisionSelected
   );
 };
 
-export default React.memo(Map);
+export default React.memo(GEMap);

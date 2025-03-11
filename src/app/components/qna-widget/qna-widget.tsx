@@ -9,8 +9,12 @@ import {
 } from '@/app/components/ui/card';
 import { Textarea } from '@/app/components/ui/textarea';
 import { cn } from '@/lib/utils';
-import { ChatBubbleIcon, Cross1Icon, ThickArrowRightIcon } from '@radix-ui/react-icons';
-import { useAssistant, type Message } from 'ai/react';
+import {
+  ChatBubbleIcon,
+  Cross1Icon,
+  ThickArrowRightIcon,
+} from '@radix-ui/react-icons';
+import { type Message, useAssistant } from 'ai/react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import styles from './qna-widget.module.css';
@@ -55,14 +59,23 @@ const QnaWidget = () => {
       {isOpen && (
         <AnimatePresence>
           <motion.div
-            className={cn(styles.qnaWidget, 'fixed bottom-0 sm:bottom-12 right:0 sm:right-4 z-50')}
+            className={cn(
+              styles.qnaWidget,
+              'fixed bottom-0 sm:bottom-12 right:0 sm:right-4 z-50',
+            )}
             initial={{ height: 0, width: 0, opacity: 0 }}
-            animate={{ height: 'var(--widget-height)', width: 'var(--widget-width)', opacity: 1 }}
+            animate={{
+              height: 'var(--widget-height)',
+              width: 'var(--widget-width)',
+              opacity: 1,
+            }}
           >
             <Card className="w-full h-full flex flex-col bg-gray-50">
               <CardHeader className="relative">
                 <CardTitle>Manifesto Q&A</CardTitle>
-                <CardDescription>Ask anything about any party&apos;s manifesto</CardDescription>
+                <CardDescription>
+                  Ask anything about any party&apos;s manifesto
+                </CardDescription>
                 <Button
                   variant="ghost"
                   size="icon"
@@ -108,7 +121,10 @@ const QnaWidget = () => {
                         if (ev.key === 'Enter' && !ev.shiftKey) {
                           ev.preventDefault();
                           formRef.current?.dispatchEvent(
-                            new Event('submit', { bubbles: true, cancelable: true }),
+                            new Event('submit', {
+                              bubbles: true,
+                              cancelable: true,
+                            }),
                           );
                         }
                       }}

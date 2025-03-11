@@ -1,5 +1,5 @@
 import { PROFILES } from '@/data/profiles';
-import { PartyId, WALKOVER, type ElectoralDivision } from '@/models';
+import { type ElectoralDivision, PartyId, WALKOVER } from '@/models';
 
 export const ELECTORAL_DIVISIONS: ElectoralDivision[] = [
   {

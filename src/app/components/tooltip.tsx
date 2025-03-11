@@ -1,4 +1,4 @@
-import { type ElectoralDivision } from '@/models';
+import type { ElectoralDivision } from '@/models';
 import { Marker } from 'react-map-gl/maplibre';
 
 interface Props {

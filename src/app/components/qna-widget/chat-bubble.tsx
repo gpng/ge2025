@@ -1,5 +1,5 @@
 import { Typography } from '@/app/components/ui/typography';
-import { type Message } from 'ai/react';
+import type { Message } from 'ai/react';
 import { useMemo } from 'react';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';

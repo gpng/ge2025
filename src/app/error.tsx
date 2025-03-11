@@ -8,7 +8,7 @@ import { Button } from '@/app/components/ui/button';
 import { Typography } from '@/app/components/ui/typography';
 import { useEffect } from 'react';
 
-export default function Error({
+export default function ErrorPage({
   error,
   reset,
 }: {

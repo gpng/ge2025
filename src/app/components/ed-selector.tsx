@@ -16,13 +16,17 @@ interface Props {
   onElectoralDivisionSelected: (electoralDivisionId: number) => void;
 }
 
-const sortedElectoralDivisions = ELECTORAL_DIVISIONS.sort((a, b) => a.name.localeCompare(b.name));
+const sortedElectoralDivisions = ELECTORAL_DIVISIONS.sort((a, b) =>
+  a.name.localeCompare(b.name),
+);
 
 const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
   const { [MAP_ID]: map } = useMap();
 
   const handleElectoralDivisionSelected = (electoralDivisionId: string) => {
-    const electoralDivision = ELECTORAL_DIVISIONS.find((ed) => ed.id === electoralDivisionId);
+    const electoralDivision = ELECTORAL_DIVISIONS.find(
+      (ed) => ed.id === electoralDivisionId,
+    );
 
     if (!electoralDivision) return;
 
@@ -36,14 +40,18 @@ const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
 
     if (!feature) return;
 
-    const points = flattenDepth(feature.geometry.coordinates, 2) as unknown as number[][];
+    const points = flattenDepth(
+      feature.geometry.coordinates,
+      2,
+    ) as unknown as number[][];
 
     const lons: number[] = [];
     const lats: number[] = [];
-    points.forEach((point) => {
+
+    for (const point of points) {
       lons.push(point[0]);
       lats.push(point[1]);
-    });
+    }
 
     map.fitBounds(
       [
@@ -60,7 +68,9 @@ const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
         <SelectValue placeholder="Select party" />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="placeholder">Select an electoral division</SelectItem>
+        <SelectItem value="placeholder">
+          Select an electoral division
+        </SelectItem>
         {sortedElectoralDivisions.map((ed) => (
           <SelectItem key={ed.featureId} value={ed.id}>
             {ed.name}

@@ -1,4 +1,4 @@
-import { PartyId, type Party } from '@/models';
+import { type Party, PartyId } from '@/models';
 
 export const PARTY_COLORS: Record<PartyId, string> = {
   [PartyId.PAP]: '#D8C99B',
@@ -32,7 +32,8 @@ export const PARTIES: Record<PartyId, Party> = {
     id: 'PSP',
     name: 'Progress Singapore Party',
     logo: 'PSP.png',
-    manifesto: 'https://drive.google.com/drive/folders/1735kX0p-UVMysOdKWXh-LyUhesaGHYzM',
+    manifesto:
+      'https://drive.google.com/drive/folders/1735kX0p-UVMysOdKWXh-LyUhesaGHYzM',
   },
   RP: {
     id: 'RP',
@@ -45,7 +46,8 @@ export const PARTIES: Record<PartyId, Party> = {
     id: 'NSP',
     name: 'National Solidarity Party',
     logo: 'NSP.svg',
-    manifesto: 'https://drive.google.com/file/d/11T6lyeY0Xf4I_eB1LcuJJgs6RhKQMsWJ/view',
+    manifesto:
+      'https://drive.google.com/file/d/11T6lyeY0Xf4I_eB1LcuJJgs6RhKQMsWJ/view',
   },
   PV: {
     id: 'PV',
@@ -69,7 +71,8 @@ export const PARTIES: Record<PartyId, Party> = {
     id: 'PPP',
     name: `People's Power Party`,
     logo: 'PPP.png',
-    manifesto: 'https://www.facebook.com/peoplespowerpartysg/posts/3997120926995772?__tn__=-R',
+    manifesto:
+      'https://www.facebook.com/peoplespowerpartysg/posts/3997120926995772?__tn__=-R',
   },
   RDU: {
     id: 'RDU',

@@ -1,7 +1,7 @@
+import fs from 'node:fs';
 import { PARTIES } from '@/data/parties';
-import { PartyId, type Party } from '@/models';
+import { type Party, PartyId } from '@/models';
 import { PDFLoader } from '@langchain/community/document_loaders/fs/pdf';
-import fs from 'fs';
 
 const parsePAP = async () => {
   return parsePDF(
@@ -66,13 +66,20 @@ const parseSPP = async () => {
   );
 };
 
-const parsePDF = async (pdfInPath: string, txtOutPath: string, party: Party, year: number) => {
+const parsePDF = async (
+  pdfInPath: string,
+  txtOutPath: string,
+  party: Party,
+  year: number,
+) => {
   const loader = new PDFLoader(pdfInPath);
   const docs = await loader.load();
 
   const header = `Party: ${party.name} (${party.id})\nYear: ${year}\n\n`;
 
-  const textContent = docs.map((doc: { pageContent: string }) => doc.pageContent).join('\n');
+  const textContent = docs
+    .map((doc: { pageContent: string }) => doc.pageContent)
+    .join('\n');
 
   const fullText = header + textContent;
 

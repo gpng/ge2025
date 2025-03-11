@@ -1,7 +1,7 @@
 import Competition from '@/app/components/party-drawer/competition';
 import { Button } from '@/app/components/ui/button';
 import { Typography } from '@/app/components/ui/typography';
-import { type ElectoralDivision } from '@/models';
+import type { ElectoralDivision } from '@/models';
 import { Cross1Icon } from '@radix-ui/react-icons';
 import { AnimatePresence, motion } from 'framer-motion';
 import React from 'react';
@@ -20,10 +20,15 @@ const PartyDrawer = ({ electoralDivision, onClose }: Props) => {
           animate={{ x: 0 }}
           exit={{ x: -350 }}
           transition={{ duration: 0.1 }}
-          className="absolute left-0 top-0 w-[350px] h-full bg-white shadow-lg z-0 pt-24 px-2 pb-2 flex flex-col pointer-events-auto"
+          className="absolute left-0 top-0 w-full h-full bg-white shadow-lg z-0 pt-24 px-2 pb-2 flex flex-col pointer-events-auto"
         >
           <div className="relative flex-grow-0 flex-shrink-0">
-            <Button size="icon" variant="outline" className="float-right" onClick={onClose}>
+            <Button
+              size="icon"
+              variant="outline"
+              className="float-right"
+              onClick={onClose}
+            >
               <Cross1Icon className="h-4 w-4" />
             </Button>
             <Typography as="h1" variant="h3">

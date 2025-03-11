@@ -1,7 +1,7 @@
 import { Typography } from '@/app/components/ui/typography';
 import { PARTIES, PARTY_COLORS } from '@/data/parties';
 import { cn } from '@/lib/utils';
-import { type Lineup } from '@/models';
+import type { Lineup } from '@/models';
 
 interface Props {
   lineup: Lineup;
@@ -9,7 +9,7 @@ interface Props {
   showStatus: boolean;
 }
 
-const Lineup = ({ lineup, isConfirmed, showStatus }: Props) => {
+const DrawerLineup = ({ lineup, isConfirmed, showStatus }: Props) => {
   const party = PARTIES[lineup.party];
 
   if (!party) return <Typography>Party not found</Typography>;
@@ -19,7 +19,11 @@ const Lineup = ({ lineup, isConfirmed, showStatus }: Props) => {
       <div className="w-24 flex-grow-0 flex-shrink-0">
         <div className="flex items-center gap-1">
           <Typography>{lineup.party}</Typography>
-          <img src={`/images/logos/${party.logo}`} alt={party.name} className="h-6 w-auto" />
+          <img
+            src={`/images/logos/${party.logo}`}
+            alt={party.name}
+            className="h-6 w-auto"
+          />
         </div>
         {showStatus && (
           <>
@@ -47,7 +51,10 @@ const Lineup = ({ lineup, isConfirmed, showStatus }: Props) => {
       </div>
       <div className="flex flex-grow-1 min-w-1 flex-wrap gap-2">
         {lineup.members.map((member) => (
-          <div key={member.name} className="w-16 flex flex-col items-center gap-1">
+          <div
+            key={member.name}
+            className="w-16 flex flex-col items-center gap-1"
+          >
             <div
               className="w-10 h-10 rounded-full border overflow-hidden"
               style={{
@@ -56,11 +63,14 @@ const Lineup = ({ lineup, isConfirmed, showStatus }: Props) => {
             >
               <img
                 src={`/images/profiles/${member.image || 'person.svg'}`}
-                alt={`profile image of ${member.name}`}
+                alt={`${member.name} profile`}
                 className="h-auto w-full"
               />
             </div>
-            <Typography variant="mutedText" className="text-xs text-black text-center">
+            <Typography
+              variant="mutedText"
+              className="text-xs text-black text-center"
+            >
               {member.name}
             </Typography>
           </div>
@@ -70,4 +80,4 @@ const Lineup = ({ lineup, isConfirmed, showStatus }: Props) => {
   );
 };
 
-export default Lineup;
+export default DrawerLineup;

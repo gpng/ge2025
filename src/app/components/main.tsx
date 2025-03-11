@@ -1,12 +1,12 @@
 'use client';
 
-import Map from '@/app/components/map';
+import GEMap from '@/app/components/map';
 import Panel from '@/app/components/panel';
 import QnaWidget from '@/app/components/qna-widget/qna-widget';
 import Tooltip from '@/app/components/tooltip';
 import { BOUNDARIES_2020 } from '@/data/boundaries-2020';
 import { ELECTORAL_DIVISIONS } from '@/data/electoral-divisions';
-import { type ElectoralDivision } from '@/models';
+import type { ElectoralDivision } from '@/models';
 import { center } from '@turf/turf';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useState } from 'react';
@@ -61,7 +61,7 @@ const Main = () => {
   return (
     <>
       <div id="c-main" className="w-full h-full">
-        <Map
+        <GEMap
           onElectoralDivisionHovered={handleElectoralDivisionHovered}
           onElectoralDivisionSelected={handleElectoralDivisionSelected}
         >
@@ -72,7 +72,7 @@ const Main = () => {
               latitude={electoralDivisionHovered.latitude}
             />
           )}
-        </Map>
+        </GEMap>
         <Panel
           electoralDivision={electoralDivisionSelected}
           onClose={() => setElectoralDivisionSelected(undefined)}

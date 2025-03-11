@@ -24,7 +24,7 @@ const PartySelector = () => {
 
     const showAll = partyId === ALL_PARTIES;
 
-    ELECTORAL_DIVISIONS.forEach((ed) => {
+    for (const ed of ELECTORAL_DIVISIONS) {
       const isOpposition = ed.opposition?.some((p) => p.party === partyId);
       const isVisible = showAll || ed.current.party === partyId || isOpposition;
       const incumbentPartyColor = PARTY_COLORS[ed.current.party];
@@ -44,7 +44,7 @@ const PartySelector = () => {
           visible: isVisible,
         },
       );
-    });
+    }
   };
 
   return (
@@ -60,7 +60,11 @@ const PartySelector = () => {
           if (!party) return null;
 
           return (
-            <SelectItem key={partyId} value={partyId} style={{ color: `${PARTY_COLORS[partyId]}` }}>
+            <SelectItem
+              key={partyId}
+              value={partyId}
+              style={{ color: `${PARTY_COLORS[partyId]}` }}
+            >
               {party.name}
             </SelectItem>
           );
