@@ -1,9 +1,10 @@
 'use client';
 
-import { BOUNDARIES_2025 } from '@/data/boundaries-2025';
+import { useElectoral } from '@/contexts/ElectoralContext';
 import { ELECTORAL_DIVISIONS } from '@/data/electoral-divisions';
 import { PARTY_COLORS } from '@/data/parties';
 import type { PartyId } from '@/models';
+import boundaries from '@data/boundaries.json';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import React, { useRef } from 'react';
 import ReactMapGL, {
@@ -29,6 +30,9 @@ const GEMap = ({
   onElectoralDivisionHovered,
   onElectoralDivisionSelected,
 }: Props) => {
+  const { parties } = useElectoral();
+  console.log('parties: ', parties);
+
   const mapRef = useRef<MapRef>(null);
   const hoveredRef = useRef<number>(-1);
 
@@ -115,7 +119,11 @@ const GEMap = ({
       interactiveLayerIds={[LAYER_ID_FILL]}
       onClick={handleClick}
     >
-      <Source id={SOURCE_ID} type="geojson" data={BOUNDARIES_2025}>
+      <Source
+        id={SOURCE_ID}
+        type="geojson"
+        data={boundaries as GeoJSON.FeatureCollection}
+      >
         <Layer
           id={LAYER_ID_FILL}
           type="fill"

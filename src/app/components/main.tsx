@@ -1,24 +1,15 @@
 'use client';
 
 import GEMap from '@/app/components/map';
-import Panel from '@/app/components/panel';
 import QnaWidget from '@/app/components/qna-widget/qna-widget';
-import Tooltip from '@/app/components/tooltip';
 import { BOUNDARIES_2025 } from '@/data/boundaries-2025';
 import { ELECTORAL_DIVISIONS } from '@/data/electoral-divisions';
-import type {
-  ElectoralDivision,
-  ElectoralDivisions,
-} from '@/models/electoral-division';
+import type { ElectoralDivision } from '@/models/electoral-division';
 import { center } from '@turf/turf';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useState } from 'react';
 
-interface Props {
-  electoralDivisions: ElectoralDivisions;
-}
-
-const Main = ({ electoralDivisions }: Props) => {
+const Main = () => {
   const [electoralDivisionHovered, setElectoralDivisionHovered] = useState<
     | {
         electoralDivision: ElectoralDivision;
@@ -72,19 +63,19 @@ const Main = ({ electoralDivisions }: Props) => {
           onElectoralDivisionHovered={handleElectoralDivisionHovered}
           onElectoralDivisionSelected={handleElectoralDivisionSelected}
         >
-          {electoralDivisionHovered && (
+          {/* {electoralDivisionHovered && (
             <Tooltip
               electoralDivision={electoralDivisionHovered.electoralDivision}
               longitude={electoralDivisionHovered.longitude}
               latitude={electoralDivisionHovered.latitude}
             />
-          )}
+          )} */}
         </GEMap>
-        <Panel
+        {/* <Panel
           electoralDivision={electoralDivisionSelected}
           onClose={() => setElectoralDivisionSelected(undefined)}
           onElectoralDivisionSelected={handleElectoralDivisionSelected}
-        />
+        /> */}
       </div>
       <QnaWidget />
     </>
