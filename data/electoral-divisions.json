@@ -1,0 +1,200 @@
+[
+  {
+    "id": "JE",
+    "featureId": 0,
+    "name": "JURONG EAST-BUKIT BATOK GRC",
+    "electors": 142510
+  },
+  {
+    "id": "WJ",
+    "featureId": 1,
+    "name": "WEST COAST-JURONG WEST GRC",
+    "electors": 158581
+  },
+  {
+    "id": "KR",
+    "featureId": 2,
+    "name": "KEBUN BARU SMC",
+    "electors": 22223
+  },
+  {
+    "id": "YK",
+    "featureId": 3,
+    "name": "YIO CHU KANG SMC",
+    "electors": 25368
+  },
+  {
+    "id": "QT",
+    "featureId": 4,
+    "name": "QUEENSTOWN SMC",
+    "electors": 28857
+  },
+  {
+    "id": "TP",
+    "featureId": 5,
+    "name": "TANJONG PAGAR GRC",
+    "electors": 139688
+  },
+  {
+    "id": "RM",
+    "featureId": 6,
+    "name": "RADIN MAS SMC",
+    "electors": 25497
+  },
+  {
+    "id": "PS",
+    "featureId": 7,
+    "name": "POTONG PASIR SMC",
+    "electors": 30897
+  },
+  {
+    "id": "PG",
+    "featureId": 8,
+    "name": "PUNGGOL GRC",
+    "electors": 123557
+  },
+  {
+    "id": "JK",
+    "featureId": 9,
+    "name": "JALAN KAYU SMC",
+    "electors": 29565
+  },
+  {
+    "id": "AJ",
+    "featureId": 10,
+    "name": "ALJUNIED GRC",
+    "electors": 0
+  },
+  {
+    "id": "AM",
+    "featureId": 11,
+    "name": "ANG MO KIO GRC",
+    "electors": 161235
+  },
+  {
+    "id": "BG",
+    "featureId": 12,
+    "name": "BUKIT GOMBAK SMC",
+    "electors": 26364
+  },
+  {
+    "id": "CK",
+    "featureId": 13,
+    "name": "CHUA CHU KANG GRC",
+    "electors": 93368
+  },
+  {
+    "id": "HT",
+    "featureId": 14,
+    "name": "HOLLAND-BUKIT TIMAH GRC",
+    "electors": 122891
+  },
+  {
+    "id": "JU",
+    "featureId": 15,
+    "name": "JURONG CENTRAL SMC",
+    "electors": 29620
+  },
+  {
+    "id": "JB",
+    "featureId": 16,
+    "name": "JALAN BESAR GRC",
+    "electors": 106102
+  },
+  {
+    "id": "PI",
+    "featureId": 17,
+    "name": "PIONEER SMC",
+    "electors": 25166
+  },
+  {
+    "id": "MR",
+    "featureId": 18,
+    "name": "MARYMOUNT SMC",
+    "electors": 23219
+  },
+  {
+    "id": "BS",
+    "featureId": 19,
+    "name": "BISHAN-TOA PAYOH GRC",
+    "electors": 98505
+  },
+  {
+    "id": "HG",
+    "featureId": 20,
+    "name": "HOUGANG SMC",
+    "electors": 29433
+  },
+  {
+    "id": "BP",
+    "featureId": 21,
+    "name": "BUKIT PANJANG SMC",
+    "electors": 33566
+  },
+  {
+    "id": "SK",
+    "featureId": 22,
+    "name": "SENGKANG GRC",
+    "electors": 126641
+  },
+  {
+    "id": "MY",
+    "featureId": 23,
+    "name": "MARSILING-YEW TEE GRC",
+    "electors": 119352
+  },
+  {
+    "id": "NS",
+    "featureId": 24,
+    "name": "NEE SOON GRC",
+    "electors": 151634
+  },
+  {
+    "id": "SE",
+    "featureId": 25,
+    "name": "SEMBAWANG WEST SMC",
+    "electors": 24153
+  },
+  {
+    "id": "TC",
+    "featureId": 26,
+    "name": "TAMPINES CHANGKAT SMC",
+    "electors": 23802
+  },
+  {
+    "id": "MB",
+    "featureId": 27,
+    "name": "MOUNTBATTEN SMC",
+    "electors": 22754
+  },
+  {
+    "id": "SB",
+    "featureId": 28,
+    "name": "SEMBAWANG GRC",
+    "electors": 133919
+  },
+  {
+    "id": "EC",
+    "featureId": 29,
+    "name": "EAST COAST GRC",
+    "electors": 150691
+  },
+  {
+    "id": "MH",
+    "featureId": 30,
+    "name": "MARINE PARADE-BRADDELL HEIGHTS GRC",
+    "electors": 131493
+  },
+  {
+    "id": "TM",
+    "featureId": 31,
+    "name": "TAMPINES GRC",
+    "electors": 147904
+  },
+  {
+    "id": "PC",
+    "featureId": 32,
+    "name": "PASIR RIS-CHANGI GRC",
+    "electors": 100639
+  }
+]

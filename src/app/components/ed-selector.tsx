@@ -6,7 +6,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/app/components/ui/select';
-import { BOUNDARIES_2020 } from '@/data/boundaries-2020';
+import { BOUNDARIES_2025 } from '@/data/boundaries-2025';
 import { ELECTORAL_DIVISIONS } from '@/data/electoral-divisions';
 import { flattenDepth } from 'lodash';
 import React from 'react';
@@ -34,7 +34,7 @@ const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
 
     if (!map) return;
 
-    const feature = BOUNDARIES_2020.features.find(
+    const feature = BOUNDARIES_2025.features.find(
       (f) => f.id === electoralDivision.featureId,
     ) as GeoJSON.Feature<GeoJSON.MultiPolygon>;
 

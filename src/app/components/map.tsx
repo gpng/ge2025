@@ -1,5 +1,6 @@
 'use client';
 
+import { BOUNDARIES_2025 } from '@/data/boundaries-2025';
 import { ELECTORAL_DIVISIONS } from '@/data/electoral-divisions';
 import { PARTY_COLORS } from '@/data/parties';
 import type { PartyId } from '@/models';
@@ -114,7 +115,7 @@ const GEMap = ({
       interactiveLayerIds={[LAYER_ID_FILL]}
       onClick={handleClick}
     >
-      {/* <Source id={SOURCE_ID} type="geojson" data={BOUNDARIES_2020}>
+      <Source id={SOURCE_ID} type="geojson" data={BOUNDARIES_2025}>
         <Layer
           id={LAYER_ID_FILL}
           type="fill"
@@ -151,19 +152,6 @@ const GEMap = ({
               1,
               0.6,
             ],
-          }}
-        />
-      </Source> */}
-      <Source
-        id="onemap-eld"
-        type="raster"
-        tiles={['https://www.onemap.gov.sg/maps/tiles/ELD/{z}/{x}/{y}.png']}
-      >
-        <Layer
-          id="onemap-eld-layer"
-          type="raster"
-          paint={{
-            'raster-opacity': 0.5,
           }}
         />
       </Source>
