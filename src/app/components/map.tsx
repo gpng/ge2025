@@ -1,9 +1,6 @@
 'use client';
 
-import { useElectoral } from '@/contexts/ElectoralContext';
-import { ELECTORAL_DIVISIONS } from '@/data/electoral-divisions';
-import { PARTY_COLORS } from '@/data/parties';
-import type { PartyId } from '@/models';
+import { useData } from '@/contexts/data-context';
 import boundaries from '@data/boundaries.json';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import React, { useRef } from 'react';
@@ -30,8 +27,7 @@ const GEMap = ({
   onElectoralDivisionHovered,
   onElectoralDivisionSelected,
 }: Props) => {
-  const { parties } = useElectoral();
-  console.log('parties: ', parties);
+  const { parties, electoralDivisions, candidates } = useData();
 
   const mapRef = useRef<MapRef>(null);
   const hoveredRef = useRef<number>(-1);
@@ -40,8 +36,9 @@ const GEMap = ({
     const map = mapRef.current;
     if (!map) return;
 
-    for (let i = 0; i < ELECTORAL_DIVISIONS.length; i++) {
-      const division = ELECTORAL_DIVISIONS[i];
+    for (const division of electoralDivisions) {
+      const cdd = candidates[division.id];
+      const incumbent = cdd?.find((c) => c.isIncumbent);
 
       map.setFeatureState(
         {
@@ -49,11 +46,12 @@ const GEMap = ({
           id: division.featureId,
         },
         {
-          fillColor: PARTY_COLORS[division.current.party as PartyId],
-          outlineColor:
-            division.opposition?.length > 0
-              ? PARTY_COLORS[division.opposition[0].party as PartyId]
-              : 'null',
+          fillColor: incumbent ? parties[incumbent.partyId].color : '#000000',
+          outlineColor: '#000000',
+          //       outlineColor:
+          //         division.opposition?.length > 0
+          //           ? PARTY_COLORS[division.opposition[0].party as PartyId]
+          //           : 'null',
           visible: true,
           hovered: false,
         },
@@ -99,6 +97,7 @@ const GEMap = ({
 
   const handleClick = (ev: MapLayerMouseEvent) => {
     const feature = ev.features?.[0];
+    console.log('feature: ', feature);
     if (!feature || !feature.state.visible) return;
 
     onElectoralDivisionSelected(feature.id as number);

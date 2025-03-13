@@ -1,0 +1,208 @@
+{
+  "JE": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "WJ": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "KR": [
+    {
+      "partyId": "PAP",
+      "isIncumbent": true,
+      "profiles": ["PAP.HENRY_KWEK"]
+    }
+  ],
+  "YK": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "QT": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "TP": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "RM": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "PS": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "PG": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "JK": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "AJ": [
+    {
+      "partyId": "WP",
+      "isIncumbent": true,
+      "profiles": [
+        "WP.PRITAM_SINGH",
+        "WP.SYLVIA_LIM",
+        "WP.MUHAMMAD_FAISAL",
+        "WP.GERALD_GIAM",
+        "WP.LEON_PERERA"
+      ]
+    }
+  ],
+  "AM": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "BG": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "CK": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "HT": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "JU": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "JB": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "PI": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "MR": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "BS": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "HG": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "BP": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "SK": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "MY": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "NS": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "SE": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "TC": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "MB": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "SB": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "EC": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "MH": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "TM": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ],
+  "PC": [
+    {
+      "partyId": "PAP",
+      "profiles": []
+    }
+  ]
+}
