@@ -5,6 +5,7 @@ import GEMap from '@/app/components/map';
 import Panel from '@/app/components/panel';
 import QnaWidget from '@/app/components/qna-widget/qna-widget';
 import Tooltip from '@/app/components/tooltip';
+import { FEAT_MANIFESTOS_CHAT } from '@/lib/env';
 import type { ElectoralDivision } from '@/models/electoral-division';
 import { center } from '@turf/turf';
 import 'maplibre-gl/dist/maplibre-gl.css';
@@ -80,7 +81,7 @@ const Main = () => {
           onElectoralDivisionSelected={handleElectoralDivisionSelected}
         />
       </div>
-      <QnaWidget />
+      {FEAT_MANIFESTOS_CHAT && <QnaWidget />}
     </>
   );
 };

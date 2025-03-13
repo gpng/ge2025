@@ -1,8 +1,9 @@
+import { OPENAI_API_KEY, OPENAI_ASSISTANT_ID } from '@/lib/env';
 import { AssistantResponse } from 'ai';
 import OpenAI from 'openai';
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: OPENAI_API_KEY,
 });
 
 export async function POST(req: Request) {
@@ -26,7 +27,7 @@ export async function POST(req: Request) {
     async ({ forwardStream }) => {
       // Run the assistant on the thread
       const runStream = openai.beta.threads.runs.stream(threadId, {
-        assistant_id: process.env.OPENAI_ASSISTANT_ID || '',
+        assistant_id: OPENAI_ASSISTANT_ID || '',
       });
 
       // forward run status would stream message deltas
