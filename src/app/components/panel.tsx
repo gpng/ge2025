@@ -1,11 +1,11 @@
 import EdSelector from '@/app/components/ed-selector';
 import PartyDrawer from '@/app/components/party-drawer/party-drawer';
 import PartySelector from '@/app/components/party-selector';
-import type { ElectoralDivision } from '@/models';
+import type { ElectoralDivision } from '@/models/electoral-division';
 import React from 'react';
 
 interface Props {
-  electoralDivision: ElectoralDivision | undefined;
+  electoralDivision?: ElectoralDivision;
   onClose: () => void;
   onElectoralDivisionSelected: (electoralDivisionId: number) => void;
 }

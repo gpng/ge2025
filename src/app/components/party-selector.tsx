@@ -1,3 +1,4 @@
+import { useData } from '@/app/components/contexts/data-context';
 import { MAP_ID, SOURCE_ID } from '@/app/components/map';
 import {
   Select,
@@ -6,28 +7,43 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/app/components/ui/select';
-import { ELECTORAL_DIVISIONS } from '@/data/electoral-divisions';
-import { PARTIES, PARTY_COLORS } from '@/data/parties';
-import { PartyId } from '@/models';
 import React from 'react';
 import { useMap } from 'react-map-gl/maplibre';
-
-const partyIds = Object.values(PartyId);
 
 const ALL_PARTIES = 'all';
 
 const PartySelector = () => {
   const { [MAP_ID]: map } = useMap();
+  const { electoralDivisions, candidates, parties } = useData();
 
   const handlePartyChange = (partyId: string) => {
     if (!map) return;
 
     const showAll = partyId === ALL_PARTIES;
 
-    for (const ed of ELECTORAL_DIVISIONS) {
-      const isOpposition = ed.opposition?.some((p) => p.party === partyId);
-      const isVisible = showAll || ed.current.party === partyId || isOpposition;
-      const incumbentPartyColor = PARTY_COLORS[ed.current.party];
+    for (const ed of electoralDivisions) {
+      const edCandidates = candidates[ed.id];
+      const candidate = edCandidates.find((c) => c.partyId === partyId);
+      const incumbent = edCandidates.find((c) => c.isIncumbent);
+      const isVisible = showAll || !!candidate;
+
+      let fillColor = '#000000';
+      let outlineColor = '#000000';
+
+      if (!isVisible) {
+        fillColor = 'rgba(0, 0, 0, 0)';
+        outlineColor = 'rgba(0, 0, 0, 0)';
+      } else {
+        if (incumbent) {
+          fillColor = parties[incumbent.partyId].color;
+        } else {
+          fillColor = '#000000';
+        }
+
+        if (candidate) {
+          outlineColor = parties[candidate.partyId].color;
+        }
+      }
 
       map.setFeatureState(
         {
@@ -35,12 +51,8 @@ const PartySelector = () => {
           id: ed.featureId,
         },
         {
-          fillColor: isVisible ? incumbentPartyColor : 'rgba(0, 0, 0, 0)',
-          // TODO: if opposition was selected, should use their color as outline
-          outlineColor:
-            isVisible && ed.opposition?.length > 0
-              ? PARTY_COLORS[ed.opposition[0].party]
-              : 'rgba(0, 0, 0, 0)',
+          fillColor,
+          outlineColor,
           visible: isVisible,
         },
       );
@@ -54,18 +66,10 @@ const PartySelector = () => {
       </SelectTrigger>
       <SelectContent>
         <SelectItem value={ALL_PARTIES}>Show all parties</SelectItem>
-        {partyIds.map((partyId) => {
-          const party = PARTIES[partyId];
-
-          if (!party) return null;
-
+        {Object.values(parties).map((p) => {
           return (
-            <SelectItem
-              key={partyId}
-              value={partyId}
-              style={{ color: `${PARTY_COLORS[partyId]}` }}
-            >
-              {party.name}
+            <SelectItem key={p.id} value={p.id} style={{ color: p.color }}>
+              {p.name}
             </SelectItem>
           );
         })}

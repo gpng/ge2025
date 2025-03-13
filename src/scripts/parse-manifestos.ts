@@ -5,8 +5,8 @@ import { PDFLoader } from '@langchain/community/document_loaders/fs/pdf';
 
 const parsePAP = async () => {
   return parsePDF(
-    'src/data/manifestos/pap-manifesto-2020.pdf',
-    'src/data/manifestos/pap-manifesto-2020.txt',
+    'data/manifestos/pap-manifesto-2020.pdf',
+    'data/manifestos/pap-manifesto-2020.txt',
     PARTIES[PartyId.PAP],
     2020,
   );
@@ -14,8 +14,8 @@ const parsePAP = async () => {
 
 const parseWP = async () => {
   return parsePDF(
-    'src/data/manifestos/wp-manifesto-2020.pdf',
-    'src/data/manifestos/wp-manifesto-2020.txt',
+    'data/manifestos/wp-manifesto-2020.pdf',
+    'data/manifestos/wp-manifesto-2020.txt',
     PARTIES[PartyId.WP],
     2020,
   );
@@ -23,8 +23,8 @@ const parseWP = async () => {
 
 const parsePSP = async () => {
   return parsePDF(
-    'src/data/manifestos/psp-manifesto-2020.pdf',
-    'src/data/manifestos/rdr-manifesto-2020.txt',
+    'data/manifestos/psp-manifesto-2020.pdf',
+    'data/manifestos/rdr-manifesto-2020.txt',
     PARTIES[PartyId.PSP],
     2020,
   );
@@ -32,8 +32,8 @@ const parsePSP = async () => {
 
 const parseRP = async () => {
   return parsePDF(
-    'src/data/manifestos/rp-manifesto-2020.pdf',
-    'src/data/manifestos/rp-manifesto-2020.txt',
+    'data/manifestos/rp-manifesto-2020.pdf',
+    'data/manifestos/rp-manifesto-2020.txt',
     PARTIES[PartyId.RP],
     2020,
   );
@@ -41,8 +41,8 @@ const parseRP = async () => {
 
 const parseNSP = async () => {
   return parsePDF(
-    'src/data/manifestos/nsp-manifesto-2020.pdf',
-    'src/data/manifestos/nsp-manifesto-2020.txt',
+    'data/manifestos/nsp-manifesto-2020.pdf',
+    'data/manifestos/nsp-manifesto-2020.txt',
     PARTIES[PartyId.NSP],
     2020,
   );
@@ -50,8 +50,8 @@ const parseNSP = async () => {
 
 const parseRDU = async () => {
   return parsePDF(
-    'src/data/manifestos/rdu-manifesto-2020.pdf',
-    'src/data/manifestos/rdu-manifesto-2020.txt',
+    'data/manifestos/rdu-manifesto-2020.pdf',
+    'data/manifestos/rdu-manifesto-2020.txt',
     PARTIES[PartyId.RDU],
     2020,
   );
@@ -59,8 +59,8 @@ const parseRDU = async () => {
 
 const parseSPP = async () => {
   return parsePDF(
-    'src/data/manifestos/spp-manifesto-2020.pdf',
-    'src/data/manifestos/spp-manifesto-2020.txt',
+    'data/manifestos/spp-manifesto-2020.pdf',
+    'data/manifestos/spp-manifesto-2020.txt',
     PARTIES[PartyId.SPP],
     2020,
   );

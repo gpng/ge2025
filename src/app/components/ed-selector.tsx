@@ -1,30 +1,49 @@
+import { useData } from '@/app/components/contexts/data-context';
 import { MAP_ID } from '@/app/components/map';
 import {
   Select,
   SelectContent,
+  SelectGroup,
   SelectItem,
+  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from '@/app/components/ui/select';
-import { BOUNDARIES_2020 } from '@/data/boundaries-2020';
-import { ELECTORAL_DIVISIONS } from '@/data/electoral-divisions';
 import { flattenDepth } from 'lodash';
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useMap } from 'react-map-gl/maplibre';
 
 interface Props {
   onElectoralDivisionSelected: (electoralDivisionId: number) => void;
 }
 
-const sortedElectoralDivisions = ELECTORAL_DIVISIONS.sort((a, b) =>
-  a.name.localeCompare(b.name),
-);
-
 const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
+  const { electoralDivisions, boundaries, candidates } = useData();
   const { [MAP_ID]: map } = useMap();
 
+  const groupedDivisions = useMemo(() => {
+    const groups: Record<string, typeof electoralDivisions> = {
+      'Single Member': [],
+      'Group Representation': [],
+    };
+
+    for (const ed of electoralDivisions) {
+      const edCandidates = candidates[ed.id] || [];
+      const type =
+        edCandidates.length > 1 ? 'Group Representation' : 'Single Member';
+      groups[type].push(ed);
+    }
+
+    // Sort within each group
+    for (const group of Object.values(groups)) {
+      group.sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    return groups;
+  }, [electoralDivisions, candidates]);
+
   const handleElectoralDivisionSelected = (electoralDivisionId: string) => {
-    const electoralDivision = ELECTORAL_DIVISIONS.find(
+    const electoralDivision = electoralDivisions.find(
       (ed) => ed.id === electoralDivisionId,
     );
 
@@ -34,24 +53,28 @@ const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
 
     if (!map) return;
 
-    const feature = BOUNDARIES_2020.features.find(
+    const feature = boundaries.features.find(
       (f) => f.id === electoralDivision.featureId,
     ) as GeoJSON.Feature<GeoJSON.MultiPolygon>;
 
     if (!feature) return;
 
-    const points = flattenDepth(
-      feature.geometry.coordinates,
-      2,
-    ) as unknown as number[][];
+    let points: number[][] = [];
 
-    const lons: number[] = [];
-    const lats: number[] = [];
-
-    for (const point of points) {
-      lons.push(point[0]);
-      lats.push(point[1]);
+    if (feature.geometry.type === 'MultiPolygon') {
+      points = flattenDepth(
+        feature.geometry.coordinates,
+        2,
+      ) as unknown as number[][];
+    } else if (feature.geometry.type === 'Polygon') {
+      points = flattenDepth(
+        feature.geometry.coordinates,
+        1,
+      ) as unknown as number[][];
     }
+
+    const lons = points.map((p) => p[0]);
+    const lats = points.map((p) => p[1]);
 
     map.fitBounds(
       [
@@ -65,16 +88,21 @@ const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
   return (
     <Select value="placeholder" onValueChange={handleElectoralDivisionSelected}>
       <SelectTrigger className="relative bg-white z-10">
-        <SelectValue placeholder="Select party" />
+        <SelectValue placeholder="Select electoral division" />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="placeholder">
+        <SelectItem value="placeholder" disabled>
           Select an electoral division
         </SelectItem>
-        {sortedElectoralDivisions.map((ed) => (
-          <SelectItem key={ed.featureId} value={ed.id}>
-            {ed.name}
-          </SelectItem>
+        {Object.entries(groupedDivisions).map(([groupName, divisions]) => (
+          <SelectGroup key={groupName}>
+            <SelectLabel>{groupName} Constituencies</SelectLabel>
+            {divisions.map((ed) => (
+              <SelectItem key={ed.featureId} value={ed.id}>
+                {ed.name}
+              </SelectItem>
+            ))}
+          </SelectGroup>
         ))}
       </SelectContent>
     </Select>

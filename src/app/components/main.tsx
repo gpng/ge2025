@@ -1,17 +1,18 @@
 'use client';
 
+import { useData } from '@/app/components/contexts/data-context';
 import GEMap from '@/app/components/map';
 import Panel from '@/app/components/panel';
 import QnaWidget from '@/app/components/qna-widget/qna-widget';
 import Tooltip from '@/app/components/tooltip';
-import { BOUNDARIES_2020 } from '@/data/boundaries-2020';
-import { ELECTORAL_DIVISIONS } from '@/data/electoral-divisions';
-import type { ElectoralDivision } from '@/models';
+import type { ElectoralDivision } from '@/models/electoral-division';
 import { center } from '@turf/turf';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useState } from 'react';
 
 const Main = () => {
+  const { boundaries, electoralDivisions } = useData();
+
   const [electoralDivisionHovered, setElectoralDivisionHovered] = useState<
     | {
         electoralDivision: ElectoralDivision;
@@ -25,19 +26,19 @@ const Main = () => {
   >();
 
   const handleElectoralDivisionHovered = (electoralDivisionId: number) => {
-    const electoralDivision = ELECTORAL_DIVISIONS.find(
+    const electoralDivision = electoralDivisions.find(
       (division) => division.featureId === electoralDivisionId,
     );
 
     if (!electoralDivision) return;
 
-    const boundaries = BOUNDARIES_2020.features.find(
+    const boundary = boundaries.features.find(
       (feature) => feature.id === electoralDivisionId,
     );
 
-    if (!boundaries) return;
+    if (!boundary) return;
 
-    const boundaryCenter = center(boundaries);
+    const boundaryCenter = center(boundary);
 
     if (!boundaryCenter.geometry.coordinates.length) return;
 
@@ -49,7 +50,7 @@ const Main = () => {
   };
 
   const handleElectoralDivisionSelected = (electoralDivisionId: number) => {
-    const electoralDivision = ELECTORAL_DIVISIONS.find(
+    const electoralDivision = electoralDivisions.find(
       (division) => division.featureId === electoralDivisionId,
     );
 

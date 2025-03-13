@@ -1,0 +1,50 @@
+{
+  "PAP": {
+    "id": "PAP",
+    "name": "People's Action Party",
+    "logo": "PAP.png",
+    "manifesto": "https://www.pap.org.sg/manifesto/",
+    "color": "#D8C99B"
+  },
+  "WP": {
+    "id": "WP",
+    "name": "Workers' Party",
+    "logo": "WP.png",
+    "manifesto": "https://www.wp.sg/manifesto/",
+    "color": "#273E47"
+  },
+  "NSP": {
+    "id": "NSP",
+    "name": "National Solidarity Party",
+    "logo": "NSP.svg",
+    "manifesto": "https://drive.google.com/file/d/11T6lyeY0Xf4I_eB1LcuJJgs6RhKQMsWJ/view",
+    "color": "#BD632F"
+  },
+  "PPP": {
+    "id": "PPP",
+    "name": "People's Power Party",
+    "logo": "PPP.png",
+    "manifesto": "https://www.facebook.com/peoplespowerpartysg/posts/3997120926995772?__tn__=-R",
+    "color": "#2fa61f"
+  },
+  "RDU": {
+    "id": "RDU",
+    "name": "Red Dot United",
+    "logo": "RDU.jpg",
+    "manifesto": "https://reddotunited.sg/latest/f/a-charter-for-our-future---captains-of-our-own-lives",
+    "color": "#d30e0d"
+  },
+  "SPP": {
+    "id": "SPP",
+    "name": "Singapore People's Party",
+    "logo": "SPP.png",
+    "manifesto": "https://singaporepeoplesparty.org/manifesto/",
+    "color": "#2e3a90"
+  },
+  "PAR": {
+    "id": "PAR",
+    "name": "People's Alliance for Reform",
+    "logo": "PAR.png",
+    "color": "#000000"
+  }
+}

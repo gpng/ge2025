@@ -1,19 +1,4 @@
-import { type Party, PartyId } from '@/models';
-
-export const PARTY_COLORS: Record<PartyId, string> = {
-  [PartyId.PAP]: '#D8C99B',
-  [PartyId.WP]: '#273E47',
-  [PartyId.PSP]: '#A4243B',
-  [PartyId.RP]: '#D8973C',
-  [PartyId.NSP]: '#BD632F',
-  [PartyId.PV]: '#91268e',
-  [PartyId.SDP]: '#fe0000',
-  [PartyId.SDA]: '#2e379c',
-  [PartyId.PPP]: '#2fa61f',
-  [PartyId.RDU]: '#d30e0d',
-  [PartyId.SPP]: '#2e3a90',
-  [PartyId.INDIE]: '#222222',
-};
+import type { Party, PartyId } from '@/models';
 
 export const PARTIES: Record<PartyId, Party> = {
   PAP: {

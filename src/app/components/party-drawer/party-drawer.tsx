@@ -1,13 +1,13 @@
 import Competition from '@/app/components/party-drawer/competition';
 import { Button } from '@/app/components/ui/button';
 import { Typography } from '@/app/components/ui/typography';
-import type { ElectoralDivision } from '@/models';
+import type { ElectoralDivision } from '@/models/electoral-division';
 import { Cross1Icon } from '@radix-ui/react-icons';
 import { AnimatePresence, motion } from 'framer-motion';
 import React from 'react';
 
 interface Props {
-  electoralDivision: ElectoralDivision | undefined;
+  electoralDivision?: ElectoralDivision;
   onClose: () => void;
 }
 
