@@ -185,7 +185,11 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
-        "profiles": ["PAP.SUN_XUELING", "JANIL_PUTHUCHEARY", "YEO_WAN_LING"]
+        "profiles": [
+          "PAP.SUN_XUELING",
+          "PAP.JANIL_PUTHUCHEARY",
+          "PAP.YEO_WAN_LING"
+        ]
       }
     ]
   },

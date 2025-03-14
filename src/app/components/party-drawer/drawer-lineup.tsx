@@ -111,7 +111,7 @@ const DrawerLineup = ({ candidate, isConfirmed, showStatus }: Props) => {
       <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
         {candidate.profiles.map((profileId) => {
           const [profileParty, profileName] = profileId.split('.');
-          const profile = profiles[profileParty][profileName];
+          const profile = profiles[profileParty]?.[profileName];
           return (
             <div
               key={profileId}
