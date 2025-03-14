@@ -7,7 +7,15 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "profiles": [
+          "PAP.MURALI_PILLAI",
+          "PAP.AMY_KHOR",
+          "PAP.GRACE_FU",
+          "PAP.RAHAYU_MAHZAM",
+          "PAP.TAN_WU_MENG",
+          "PAP.SHAWN_HUANG"
+        ],
+        "isIncumbent": true
       },
       {
         "partyId": "RDU",
@@ -25,7 +33,8 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": ["PAP.DESMOND_LEE", "PAP.ANG_WEI_NENG", "PAP.FOO_MEE_HAR"]
       }
     ]
   },
@@ -56,7 +65,8 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": ["PAP.YIP_HON_WENG"]
       },
       {
         "partyId": "PAR",
@@ -74,7 +84,8 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": ["PAP.ERIC_CHUA"]
       },
       {
         "partyId": "PAR",
@@ -92,7 +103,14 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": [
+          "PAP.CHAN_CHUN_SING",
+          "PAP.INDRANEE_RAJAH",
+          "PAP.JOAN_PEREIRA",
+          "PAP.ALVIN_TAN",
+          "PAP.RACHEL_ONG"
+        ]
       },
       {
         "partyId": "PAR",
@@ -116,7 +134,8 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": ["PAP.MELVIN_YONG"]
       },
       {
         "partyId": "PAR",
@@ -140,7 +159,8 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": ["PAP.SITOH_YIH_PIN"]
       },
       {
         "partyId": "PAR",
@@ -164,7 +184,8 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": ["PAP.SUN_XUELING", "JANIL_PUTHUCHEARY", "YEO_WAN_LING"]
       }
     ]
   },
@@ -176,7 +197,8 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": ["PAP.NG_LING_LING"]
       },
       {
         "partyId": "PAR",
@@ -211,8 +233,7 @@
           "WP.PRITAM_SINGH",
           "WP.SYLVIA_LIM",
           "WP.MUHAMMAD_FAISAL",
-          "WP.GERALD_GIAM",
-          "WP.LEON_PERERA"
+          "WP.GERALD_GIAM"
         ]
       },
       {
@@ -230,7 +251,13 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": [
+          "PAP.LEE_HSIEN_LOONG",
+          "PAP.GAN_THIAM_PO",
+          "PAP.DARRYL_DAVID",
+          "PAP.NADIA_AHMAD"
+        ]
       },
       {
         "partyId": "PPP",
@@ -248,7 +275,8 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": ["PAP.LOW_YEN_LING"]
       }
     ]
   },
@@ -260,7 +288,12 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": [
+          "PAP.GAN_KIM_YONG",
+          "PAP.DON_WEE",
+          "PAP.ZHULKARNAIN_ABDUL_RAHIM"
+        ]
       }
     ]
   },
@@ -272,7 +305,13 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": [
+          "PAP.VIVIAN_BALAKRISHNAN",
+          "PAP.SIM_ANN",
+          "PAP.CHRISTOPHER_DE_SOUZA",
+          "PAP.EDWARD_CHIA"
+        ]
       }
     ]
   },
@@ -284,7 +323,8 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": ["PAP.XIE_YAO_QUAN"]
       },
       {
         "partyId": "RDU",
@@ -487,7 +527,8 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": ["PAP.POH_LI_SAN"]
       },
       {
         "partyId": "NSP",
@@ -505,7 +546,8 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": ["PAP.DESMOND_CHOO"]
       },
       {
         "partyId": "NSP",
@@ -529,7 +571,8 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": ["PAP.LIM_BIOW_CHUAN"]
       },
       {
         "partyId": "PAR",
@@ -547,7 +590,13 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": [
+          "PAP.ONG_YE_KUNG",
+          "PAP.VIKRAM_NAIR",
+          "PAP.LIM_WEE_KIAK",
+          "PAP.MARIAM_JAFAAR"
+        ]
       },
       {
         "partyId": "NSP",
@@ -565,7 +614,14 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": [
+          "PAP.HENG_SWEE_KEAT",
+          "PAP.MALIKI_OSMAN",
+          "PAP.CHERYL_CHAN",
+          "PAP.TAN_KIAT_HOW",
+          "PAP.EDWIN_TONG"
+        ]
       }
     ]
   },
@@ -577,7 +633,13 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": [
+          "PAP.TAN_SEE_LENG",
+          "PAP.SEAH_KIAN_PENG",
+          "PAP.MOHD_FAHMI_ALIMAN",
+          "PAP.TIN_PEI_LING"
+        ]
       },
       {
         "partyId": "NSP",
@@ -595,7 +657,12 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": [
+          "PAP.MASAGOS_ZULKIFLI",
+          "PAP.BAEY_YAM_KENG",
+          "PAP.KOH_POH_KOON"
+        ]
       },
       {
         "partyId": "NSP",
@@ -619,7 +686,13 @@
     "candidates": [
       {
         "partyId": "PAP",
-        "profiles": []
+        "isIncumbent": true,
+        "profiles": [
+          "PAP.TEO_CHEE_HEAN",
+          "PAP.DESMOND_TAN",
+          "PAP.SHARAEL_TAHA",
+          "PAP.JESSICA_TAN"
+        ]
       }
     ]
   }
