@@ -1,6 +1,7 @@
 'use client';
 
 import { useData } from '@/app/components/contexts/data-context';
+import { useFilters } from '@/app/components/contexts/filter-context';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import React, { useRef } from 'react';
 import ReactMapGL, {
@@ -26,7 +27,8 @@ const GEMap = ({
   onElectoralDivisionHovered,
   onElectoralDivisionSelected,
 }: Props) => {
-  const { parties, electoralDivisions, boundaries } = useData();
+  const { boundaries } = useData();
+  const { setFeatureStates } = useFilters();
 
   const mapRef = useRef<MapRef>(null);
   const hoveredRef = useRef<number>(-1);
@@ -34,28 +36,7 @@ const GEMap = ({
   const handleMapLoad = () => {
     const map = mapRef.current;
     if (!map) return;
-
-    for (const ed of electoralDivisions) {
-      const cdd = ed.candidates;
-      const incumbent = cdd?.find((c) => c.isIncumbent);
-
-      map.setFeatureState(
-        {
-          source: SOURCE_ID,
-          id: ed.featureId,
-        },
-        {
-          fillColor: incumbent ? parties[incumbent.partyId].color : '#000000',
-          outlineColor: '#000000',
-          //       outlineColor:
-          //         division.opposition?.length > 0
-          //           ? PARTY_COLORS[division.opposition[0].party as PartyId]
-          //           : 'null',
-          visible: true,
-          hovered: false,
-        },
-      );
-    }
+    setFeatureStates();
   };
 
   const handleMouseEnter = (ev: MapLayerMouseEvent) => {
@@ -69,29 +50,9 @@ const GEMap = ({
 
     if (!feature.state.visible || hoveredRef.current === featureId) return;
 
-    if (hoveredRef.current !== -1) {
-      map.setFeatureState(
-        {
-          source: SOURCE_ID,
-          id: hoveredRef.current,
-        },
-        {
-          hovered: false,
-        },
-      );
-    }
-    map.setFeatureState(
-      {
-        source: SOURCE_ID,
-        id: feature.id,
-      },
-      {
-        hovered: true,
-      },
-    );
-
     hoveredRef.current = featureId;
-    onElectoralDivisionHovered(featureId as number);
+    setFeatureStates(featureId);
+    onElectoralDivisionHovered(featureId);
   };
 
   const handleClick = (ev: MapLayerMouseEvent) => {

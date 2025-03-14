@@ -18,15 +18,17 @@ type FilterContextType = {
   filters: FilterState;
   setPartyFilter: (party: string) => void;
   setCompetitionFilter: (competition: string) => void;
+  setFeatureStates: (hoveredId?: number) => void;
 };
 
 const FilterContext = createContext<FilterContextType | undefined>(undefined);
 
-const updateMapState = (
+export const setFeatureStates = (
   map: MapRef,
   filters: FilterState,
   electoralDivisions: ElectoralDivisions,
   parties: Parties,
+  hoveredId = -1,
 ) => {
   for (const ed of electoralDivisions) {
     const edCandidates = ed.candidates;
@@ -66,6 +68,7 @@ const updateMapState = (
           ? parties[partyCandidate.partyId].color
           : '#000000',
         visible: isVisible,
+        hovered: ed.featureId === hoveredId,
       },
     );
   }
@@ -82,18 +85,28 @@ export const FilterProvider = ({ children }: { children: React.ReactNode }) => {
   const setPartyFilter = (party: string) => {
     const newFilters = { ...filters, party };
     setFilters(newFilters);
-    if (map) updateMapState(map, newFilters, electoralDivisions, parties);
+    if (map) setFeatureStates(map, newFilters, electoralDivisions, parties);
   };
 
   const setCompetitionFilter = (competition: string) => {
     const newFilters = { ...filters, competition };
     setFilters(newFilters);
-    if (map) updateMapState(map, newFilters, electoralDivisions, parties);
+    if (map) setFeatureStates(map, newFilters, electoralDivisions, parties);
+  };
+
+  const updateFeatureStates = (hoveredId?: number) => {
+    if (map)
+      setFeatureStates(map, filters, electoralDivisions, parties, hoveredId);
   };
 
   return (
     <FilterContext.Provider
-      value={{ filters, setPartyFilter, setCompetitionFilter }}
+      value={{
+        filters,
+        setPartyFilter,
+        setCompetitionFilter,
+        setFeatureStates: updateFeatureStates,
+      }}
     >
       {children}
     </FilterContext.Provider>
