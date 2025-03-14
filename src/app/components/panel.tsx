@@ -19,7 +19,7 @@ const Panel = ({
   return (
     <div
       id="panel"
-      className="h-full absolute left-0 top-0 w-screen sm:w-[350px] pointer-events-none"
+      className="h-full absolute left-0 top-0 w-screen sm:w-[350px] pointer-events-none z-[99999]"
     >
       <PartyDrawer electoralDivision={electoralDivision} onClose={onClose} />
       <div className="flex flex-col sm:flex-row gap-2 pointer-events-auto p-2">

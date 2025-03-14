@@ -1,6 +1,7 @@
 'use client';
 
 import { useData } from '@/app/components/contexts/data-context';
+import { useFilters } from '@/app/components/contexts/filter-context';
 import GEMap from '@/app/components/map';
 import Panel from '@/app/components/panel';
 import QnaWidget from '@/app/components/qna-widget/qna-widget';
@@ -9,10 +10,11 @@ import { FEAT_MANIFESTOS_CHAT } from '@/lib/env';
 import type { ElectoralDivision } from '@/models/electoral-division';
 import { center } from '@turf/turf';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Main = () => {
   const { boundaries, electoralDivisions } = useData();
+  const { filters } = useFilters();
 
   const [electoralDivisionHovered, setElectoralDivisionHovered] = useState<
     | {
@@ -26,7 +28,18 @@ const Main = () => {
     ElectoralDivision | undefined
   >();
 
+  // Reset hover state when filters change
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+  useEffect(() => {
+    setElectoralDivisionHovered(undefined);
+  }, [filters]);
+
   const handleElectoralDivisionHovered = (electoralDivisionId: number) => {
+    if (electoralDivisionId === -1) {
+      setElectoralDivisionHovered(undefined);
+      return;
+    }
+
     const electoralDivision = electoralDivisions.find(
       (division) => division.featureId === electoralDivisionId,
     );

@@ -434,6 +434,11 @@
         "partyId": "WP",
         "isIncumbent": true,
         "profiles": ["WP.DENNIS_TAN"]
+      },
+      {
+        "partyId": "PAP",
+        "isConfirmed": false,
+        "profiles": []
       }
     ]
   },
