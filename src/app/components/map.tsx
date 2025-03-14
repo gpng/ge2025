@@ -26,7 +26,7 @@ const GEMap = ({
   onElectoralDivisionHovered,
   onElectoralDivisionSelected,
 }: Props) => {
-  const { parties, electoralDivisions, candidates, boundaries } = useData();
+  const { parties, electoralDivisions, boundaries } = useData();
 
   const mapRef = useRef<MapRef>(null);
   const hoveredRef = useRef<number>(-1);
@@ -35,14 +35,14 @@ const GEMap = ({
     const map = mapRef.current;
     if (!map) return;
 
-    for (const division of electoralDivisions) {
-      const cdd = candidates[division.id];
+    for (const ed of electoralDivisions) {
+      const cdd = ed.candidates;
       const incumbent = cdd?.find((c) => c.isIncumbent);
 
       map.setFeatureState(
         {
           source: SOURCE_ID,
-          id: division.featureId,
+          id: ed.featureId,
         },
         {
           fillColor: incumbent ? parties[incumbent.partyId].color : '#000000',

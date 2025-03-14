@@ -18,7 +18,7 @@ interface Props {
 }
 
 const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
-  const { electoralDivisions, boundaries, candidates } = useData();
+  const { electoralDivisions, boundaries } = useData();
   const { [MAP_ID]: map } = useMap();
 
   const groupedDivisions = useMemo(() => {
@@ -28,7 +28,7 @@ const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
     };
 
     for (const ed of electoralDivisions) {
-      const edCandidates = candidates[ed.id] || [];
+      const edCandidates = ed.candidates;
       const type =
         edCandidates.length > 1 ? 'Group Representation' : 'Single Member';
       groups[type].push(ed);
@@ -40,7 +40,7 @@ const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
     }
 
     return groups;
-  }, [electoralDivisions, candidates]);
+  }, [electoralDivisions]);
 
   const handleElectoralDivisionSelected = (electoralDivisionId: string) => {
     const electoralDivision = electoralDivisions.find(

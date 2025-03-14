@@ -13,7 +13,7 @@ const ALL_COMPETITION = 'all';
 
 const CompetitionSelector = () => {
   const { [MAP_ID]: map } = useMap();
-  const { electoralDivisions, candidates } = useData();
+  const { electoralDivisions } = useData();
 
   const handleCompetitionChange = (type: string) => {
     if (!map) return;
@@ -21,7 +21,7 @@ const CompetitionSelector = () => {
     const showAll = type === ALL_COMPETITION;
 
     for (const ed of electoralDivisions) {
-      const edCandidates = candidates[ed.id] || [];
+      const edCandidates = ed.candidates;
       const numCandidates = edCandidates.length;
       let isVisible = showAll;
 

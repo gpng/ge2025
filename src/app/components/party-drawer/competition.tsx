@@ -1,4 +1,3 @@
-import { useData } from '@/app/components/contexts/data-context';
 import DrawerLineup from '@/app/components/party-drawer/drawer-lineup';
 import { Typography } from '@/app/components/ui/typography';
 import type { ElectoralDivision } from '@/models/electoral-division';
@@ -8,9 +7,7 @@ interface Props {
 }
 
 const Competition = ({ electoralDivision }: Props) => {
-  const { candidates, parties } = useData();
-
-  const edCandidates = candidates[electoralDivision.id] || [];
+  const edCandidates = electoralDivision.candidates;
   const incumbent = edCandidates.find((c) => c.isIncumbent);
   const challengers = edCandidates.filter((c) => !c.isIncumbent);
 

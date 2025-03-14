@@ -14,7 +14,7 @@ const ALL_PARTIES = 'all';
 
 const PartySelector = () => {
   const { [MAP_ID]: map } = useMap();
-  const { electoralDivisions, candidates, parties } = useData();
+  const { electoralDivisions, parties } = useData();
 
   const handlePartyChange = (partyId: string) => {
     if (!map) return;
@@ -22,7 +22,7 @@ const PartySelector = () => {
     const showAll = partyId === ALL_PARTIES;
 
     for (const ed of electoralDivisions) {
-      const edCandidates = candidates[ed.id];
+      const edCandidates = ed.candidates;
       const candidate = edCandidates.find((c) => c.partyId === partyId);
       const incumbent = edCandidates.find((c) => c.isIncumbent);
 

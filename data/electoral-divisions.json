@@ -3,198 +3,624 @@
     "id": "JE",
     "featureId": 0,
     "name": "JURONG EAST-BUKIT BATOK GRC",
-    "electors": 142510
+    "electors": 142510,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "RDU",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "WJ",
     "featureId": 1,
     "name": "WEST COAST-JURONG WEST GRC",
-    "electors": 158581
+    "electors": 158581,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "KR",
     "featureId": 2,
     "name": "KEBUN BARU SMC",
-    "electors": 22223
+    "electors": 22223,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "isIncumbent": true,
+        "profiles": ["PAP.HENRY_KWEK"]
+      },
+      {
+        "partyId": "PAR",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "YK",
     "featureId": 3,
     "name": "YIO CHU KANG SMC",
-    "electors": 25368
+    "electors": 25368,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "PAR",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "QT",
     "featureId": 4,
     "name": "QUEENSTOWN SMC",
-    "electors": 28857
+    "electors": 28857,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "PAR",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "TP",
     "featureId": 5,
     "name": "TANJONG PAGAR GRC",
-    "electors": 139688
+    "electors": 139688,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "PAR",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "profiles": []
+      },
+      {
+        "partyId": "RDU",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "RM",
     "featureId": 6,
     "name": "RADIN MAS SMC",
-    "electors": 25497
+    "electors": 25497,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "PAR",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "profiles": []
+      },
+      {
+        "partyId": "RDU",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "PS",
     "featureId": 7,
     "name": "POTONG PASIR SMC",
-    "electors": 30897
+    "electors": 30897,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "PAR",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "profiles": []
+      },
+      {
+        "partyId": "SPP",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/SingaporePeoplesParty/posts/pfbid0EAoAu8duDZwoFjfcvVmqtCuLnQAHLiBGHx3yPxmMM6s24pjpWowuT2xHf9a5bxBMl",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "PG",
     "featureId": 8,
     "name": "PUNGGOL GRC",
-    "electors": 123557
+    "electors": 123557,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "JK",
     "featureId": 9,
     "name": "JALAN KAYU SMC",
-    "electors": 29565
+    "electors": 29565,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "PAR",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "profiles": []
+      },
+      {
+        "partyId": "PPP",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+        "profiles": []
+      },
+      {
+        "partyId": "RDU",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "AJ",
     "featureId": 10,
     "name": "ALJUNIED GRC",
-    "electors": 144032
+    "electors": 144032,
+    "candidates": [
+      {
+        "partyId": "WP",
+        "isIncumbent": true,
+        "profiles": [
+          "WP.PRITAM_SINGH",
+          "WP.SYLVIA_LIM",
+          "WP.MUHAMMAD_FAISAL",
+          "WP.GERALD_GIAM",
+          "WP.LEON_PERERA"
+        ]
+      },
+      {
+        "partyId": "PAP",
+        "isConfirmed": false,
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "AM",
     "featureId": 11,
     "name": "ANG MO KIO GRC",
-    "electors": 161235
+    "electors": 161235,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "PPP",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "BG",
     "featureId": 12,
     "name": "BUKIT GOMBAK SMC",
-    "electors": 26364
+    "electors": 26364,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "CK",
     "featureId": 13,
     "name": "CHUA CHU KANG GRC",
-    "electors": 93368
+    "electors": 93368,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "HT",
     "featureId": 14,
     "name": "HOLLAND-BUKIT TIMAH GRC",
-    "electors": 122891
+    "electors": 122891,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "JU",
     "featureId": 15,
     "name": "JURONG CENTRAL SMC",
-    "electors": 29620
+    "electors": 29620,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "RDU",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "JB",
     "featureId": 16,
     "name": "JALAN BESAR GRC",
-    "electors": 106102
+    "electors": 106102,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "isIncumbent": true,
+        "profiles": [
+          "PAP.DENISE_PHUA",
+          "PAP.WAN_RIZAL",
+          "PAP.JOSEPHINE_TEO",
+          "PAP.HENG_CHEE_HOW"
+        ]
+      },
+      {
+        "partyId": "NSP",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+        "profiles": []
+      },
+      {
+        "partyId": "PAR",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "PI",
     "featureId": 17,
     "name": "PIONEER SMC",
-    "electors": 25166
+    "electors": 25166,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "isIncumbent": true,
+        "profiles": ["PAP.PATRICK_TAY"]
+      }
+    ]
   },
   {
     "id": "MR",
     "featureId": 18,
     "name": "MARYMOUNT SMC",
-    "electors": 23219
+    "electors": 23219,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "isIncumbent": true,
+        "profiles": ["PAP.GAN_SIOW_HUANG"]
+      },
+      {
+        "partyId": "PAR",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "BS",
     "featureId": 19,
     "name": "BISHAN-TOA PAYOH GRC",
-    "electors": 98505
+    "electors": 98505,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "isIncumbent": true,
+        "profiles": [
+          "PAP.CHONG_KEE_HIONG",
+          "PAP.CHEE_HONG_TAT",
+          "PAP.NG_ENG_HEN",
+          "PAP.SAKTIANDI_SUPAAT"
+        ]
+      },
+      {
+        "partyId": "SPP",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/SingaporePeoplesParty/posts/pfbid0EAoAu8duDZwoFjfcvVmqtCuLnQAHLiBGHx3yPxmMM6s24pjpWowuT2xHf9a5bxBMl",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "HG",
     "featureId": 20,
     "name": "HOUGANG SMC",
-    "electors": 29433
+    "electors": 29433,
+    "candidates": [
+      {
+        "partyId": "WP",
+        "isIncumbent": true,
+        "profiles": ["WP.DENNIS_TAN"]
+      }
+    ]
   },
   {
     "id": "BP",
     "featureId": 21,
     "name": "BUKIT PANJANG SMC",
-    "electors": 33566
+    "electors": 33566,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "isIncumbent": true,
+        "profiles": ["PAP.LIANG_ENG_HWA"]
+      }
+    ]
   },
   {
     "id": "SK",
     "featureId": 22,
     "name": "SENGKANG GRC",
-    "electors": 126641
+    "electors": 126641,
+    "candidates": [
+      {
+        "partyId": "WP",
+        "isIncumbent": true,
+        "profiles": ["WP.HE_TING_RU", "WP.JAMUS_LIM", "WP.LOUIS_CHUA"]
+      },
+      {
+        "partyId": "PAP",
+        "isConfirmed": false,
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "MY",
     "featureId": 23,
     "name": "MARSILING-YEW TEE GRC",
-    "electors": 119352
+    "electors": 119352,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "isIncumbent": true,
+        "profiles": [
+          "PAP.ALEX_YAM",
+          "PAP.HANY_SOH",
+          "PAP.ZAQY_MOHAMAD",
+          "PAP.LAWRENCE_WONG"
+        ]
+      },
+      {
+        "partyId": "NSP",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "NS",
     "featureId": 24,
     "name": "NEE SOON GRC",
-    "electors": 151634
+    "electors": 151634,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "isIncumbent": true,
+        "profiles": [
+          "PAP.K_SHANMUGAM",
+          "PAP.DERRICK_GOH",
+          "PAP.CARRIE_TAN",
+          "PAP.LOUIS_NG",
+          "PAP.MUHAMMAD_FAISHAL_IBRAHIM"
+        ]
+      },
+      {
+        "partyId": "PPP",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+        "profiles": []
+      },
+      {
+        "partyId": "RDU",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "SE",
     "featureId": 25,
     "name": "SEMBAWANG WEST SMC",
-    "electors": 24153
+    "electors": 24153,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "NSP",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "TC",
     "featureId": 26,
     "name": "TAMPINES CHANGKAT SMC",
-    "electors": 23802
+    "electors": 23802,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "NSP",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+        "profiles": []
+      },
+      {
+        "partyId": "PPP",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "MB",
     "featureId": 27,
     "name": "MOUNTBATTEN SMC",
-    "electors": 22754
+    "electors": 22754,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "PAR",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "SB",
     "featureId": 28,
     "name": "SEMBAWANG GRC",
-    "electors": 133919
+    "electors": 133919,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "NSP",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "EC",
     "featureId": 29,
     "name": "EAST COAST GRC",
-    "electors": 150691
+    "electors": 150691,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "MH",
     "featureId": 30,
     "name": "MARINE PARADE-BRADDELL HEIGHTS GRC",
-    "electors": 131493
+    "electors": 131493,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "NSP",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "TM",
     "featureId": 31,
     "name": "TAMPINES GRC",
-    "electors": 147904
+    "electors": 147904,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      },
+      {
+        "partyId": "NSP",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+        "profiles": []
+      },
+      {
+        "partyId": "PPP",
+        "isConfirmed": false,
+        "announcementUrl": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+        "profiles": []
+      }
+    ]
   },
   {
     "id": "PC",
     "featureId": 32,
     "name": "PASIR RIS-CHANGI GRC",
-    "electors": 100639
+    "electors": 100639,
+    "candidates": [
+      {
+        "partyId": "PAP",
+        "profiles": []
+      }
+    ]
   }
 ]

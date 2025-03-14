@@ -1,3 +1,4 @@
+import { candidateSchema } from '@/models/candidate';
 import { z } from 'zod';
 
 export const electoralDivisionSchema = z.object({
@@ -5,6 +6,7 @@ export const electoralDivisionSchema = z.object({
   featureId: z.number(),
   name: z.string(),
   electors: z.number(),
+  candidates: z.array(candidateSchema),
 });
 
 export const electoralDivisionsSchema = z.array(electoralDivisionSchema);

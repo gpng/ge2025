@@ -81,7 +81,7 @@ const Main = () => {
           onElectoralDivisionSelected={handleElectoralDivisionSelected}
         />
       </div>
-      {FEAT_MANIFESTOS_CHAT && <QnaWidget />}
+      {FEAT_MANIFESTOS_CHAT === 'true' && <QnaWidget />}
     </>
   );
 };
