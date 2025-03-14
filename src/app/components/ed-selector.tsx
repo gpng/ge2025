@@ -10,7 +10,7 @@ import {
   SelectValue,
 } from '@/app/components/ui/select';
 import { flattenDepth } from 'lodash';
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import { useMap } from 'react-map-gl/maplibre';
 
 interface Props {
@@ -88,11 +88,11 @@ const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
   return (
     <Select value="placeholder" onValueChange={handleElectoralDivisionSelected}>
       <SelectTrigger className="relative bg-white z-10">
-        <SelectValue placeholder="Select electoral division" />
+        <SelectValue placeholder="Search constituency..." />
       </SelectTrigger>
       <SelectContent>
         <SelectItem value="placeholder" disabled>
-          Select an electoral division
+          Choose a constituency to view details
         </SelectItem>
         {Object.entries(groupedDivisions).map(([groupName, divisions]) => (
           <SelectGroup key={groupName}>
@@ -109,4 +109,4 @@ const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
   );
 };
 
-export default React.memo(EDSelector);
+export default EDSelector;

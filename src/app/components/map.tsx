@@ -96,7 +96,7 @@ const GEMap = ({
 
   const handleClick = (ev: MapLayerMouseEvent) => {
     const feature = ev.features?.[0];
-    console.log('feature: ', feature);
+
     if (!feature || !feature.state.visible) return;
 
     onElectoralDivisionSelected(feature.id as number);
@@ -124,11 +124,15 @@ const GEMap = ({
           paint={{
             'fill-color': [
               'case',
-              ['!=', ['feature-state', 'fillColor'], 'null'],
-              ['feature-state', 'fillColor'],
-              'rgba(0, 0, 0, 0.1)',
+              ['boolean', ['feature-state', 'visible'], true],
+              [
+                'case',
+                ['!=', ['feature-state', 'fillColor'], 'null'],
+                ['feature-state', 'fillColor'],
+                'rgba(0, 0, 0, 0.1)',
+              ],
+              'rgba(0, 0, 0, 0)',
             ],
-            // 'fill-outline-color': 'rgba(0, 0, 0, 1)',
             'fill-opacity': [
               'case',
               ['boolean', ['feature-state', 'hovered'], true],
@@ -143,8 +147,13 @@ const GEMap = ({
           paint={{
             'line-color': [
               'case',
-              ['!=', ['feature-state', 'outlineColor'], 'null'],
-              ['feature-state', 'outlineColor'],
+              ['boolean', ['feature-state', 'visible'], true],
+              [
+                'case',
+                ['!=', ['feature-state', 'outlineColor'], 'null'],
+                ['feature-state', 'outlineColor'],
+                'rgba(0, 0, 0, 0)',
+              ],
               'rgba(0, 0, 0, 0)',
             ],
             'line-width': 2,

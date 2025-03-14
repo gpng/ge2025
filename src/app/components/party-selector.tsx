@@ -25,25 +25,6 @@ const PartySelector = () => {
       const edCandidates = candidates[ed.id];
       const candidate = edCandidates.find((c) => c.partyId === partyId);
       const incumbent = edCandidates.find((c) => c.isIncumbent);
-      const isVisible = showAll || !!candidate;
-
-      let fillColor = '#000000';
-      let outlineColor = '#000000';
-
-      if (!isVisible) {
-        fillColor = 'rgba(0, 0, 0, 0)';
-        outlineColor = 'rgba(0, 0, 0, 0)';
-      } else {
-        if (incumbent) {
-          fillColor = parties[incumbent.partyId].color;
-        } else {
-          fillColor = '#000000';
-        }
-
-        if (candidate) {
-          outlineColor = parties[candidate.partyId].color;
-        }
-      }
 
       map.setFeatureState(
         {
@@ -51,9 +32,11 @@ const PartySelector = () => {
           id: ed.featureId,
         },
         {
-          fillColor,
-          outlineColor,
-          visible: isVisible,
+          fillColor: incumbent ? parties[incumbent.partyId].color : '#000000',
+          outlineColor: candidate
+            ? parties[candidate.partyId].color
+            : '#000000',
+          visible: showAll || !!candidate,
         },
       );
     }
@@ -62,7 +45,7 @@ const PartySelector = () => {
   return (
     <Select onValueChange={handlePartyChange}>
       <SelectTrigger className="relative bg-white z-10">
-        <SelectValue placeholder="Select party" />
+        <SelectValue placeholder="Filter by party" />
       </SelectTrigger>
       <SelectContent>
         <SelectItem value={ALL_PARTIES}>Show all parties</SelectItem>

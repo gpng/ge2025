@@ -20,11 +20,13 @@ const DrawerLineup = ({ candidate, isConfirmed, showStatus }: Props) => {
     <div className="rounded-lg border p-4 mb-4 hover:shadow-md transition-shadow">
       <div className="flex items-start justify-between mb-3">
         <div className="flex items-center gap-2">
-          <img
-            src={`/images/logos/${party.logo}`}
-            alt={party.name}
-            className="h-8 w-auto"
-          />
+          <div className="h-8 w-8 flex-shrink-0 overflow-hidden">
+            <img
+              src={`/images/logos/${party.logo}`}
+              alt={party.name}
+              className="h-full w-full object-contain"
+            />
+          </div>
           <div>
             <Typography variant="h5" className="leading-tight">
               {party.name}
