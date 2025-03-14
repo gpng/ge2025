@@ -7,6 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/app/components/ui/select';
+import { useMemo } from 'react';
 import { useMap } from 'react-map-gl/maplibre';
 
 const ALL_COMPETITION = 'all';
@@ -14,6 +15,19 @@ const ALL_COMPETITION = 'all';
 const CompetitionSelector = () => {
   const { [MAP_ID]: map } = useMap();
   const { electoralDivisions } = useData();
+
+  const competitionOptions = useMemo(() => {
+    const uniqueCandidateCounts = new Set(
+      electoralDivisions.map((ed) => ed.candidates.length),
+    );
+
+    return Array.from(uniqueCandidateCounts)
+      .sort((a, b) => a - b)
+      .map((count) => ({
+        value: count === 1 ? 'walkover' : `${count}way`,
+        label: count === 1 ? 'Walkovers only' : `${count}-way fights only`,
+      }));
+  }, [electoralDivisions]);
 
   const handleCompetitionChange = (type: string) => {
     if (!map) return;
@@ -26,16 +40,11 @@ const CompetitionSelector = () => {
       let isVisible = showAll;
 
       if (!showAll) {
-        switch (type) {
-          case 'walkover':
-            isVisible = numCandidates === 1;
-            break;
-          case '2way':
-            isVisible = numCandidates === 2;
-            break;
-          case '3way':
-            isVisible = numCandidates === 3;
-            break;
+        if (type === 'walkover') {
+          isVisible = numCandidates === 1;
+        } else {
+          const wayCount = Number.parseInt(type);
+          isVisible = numCandidates === wayCount;
         }
       }
 
@@ -58,9 +67,11 @@ const CompetitionSelector = () => {
       </SelectTrigger>
       <SelectContent>
         <SelectItem value={ALL_COMPETITION}>Show all constituencies</SelectItem>
-        <SelectItem value="walkover">Show walkovers only</SelectItem>
-        <SelectItem value="2way">Show 2-way fights only</SelectItem>
-        <SelectItem value="3way">Show 3-way fights only</SelectItem>
+        {competitionOptions.map(({ value, label }) => (
+          <SelectItem key={value} value={value}>
+            {label}
+          </SelectItem>
+        ))}
       </SelectContent>
     </Select>
   );
