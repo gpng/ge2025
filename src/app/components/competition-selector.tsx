@@ -1,5 +1,8 @@
 import { useData } from '@/app/components/contexts/data-context';
-import { MAP_ID, SOURCE_ID } from '@/app/components/map';
+import {
+  ALL_COMPETITION,
+  useFilters,
+} from '@/app/components/contexts/filter-context';
 import {
   Select,
   SelectContent,
@@ -8,13 +11,10 @@ import {
   SelectValue,
 } from '@/app/components/ui/select';
 import { useMemo } from 'react';
-import { useMap } from 'react-map-gl/maplibre';
-
-const ALL_COMPETITION = 'all';
 
 const CompetitionSelector = () => {
-  const { [MAP_ID]: map } = useMap();
   const { electoralDivisions } = useData();
+  const { filters, setCompetitionFilter } = useFilters();
 
   const competitionOptions = useMemo(() => {
     const uniqueCandidateCounts = new Set(
@@ -29,39 +29,8 @@ const CompetitionSelector = () => {
       }));
   }, [electoralDivisions]);
 
-  const handleCompetitionChange = (type: string) => {
-    if (!map) return;
-
-    const showAll = type === ALL_COMPETITION;
-
-    for (const ed of electoralDivisions) {
-      const edCandidates = ed.candidates;
-      const numCandidates = edCandidates.length;
-      let isVisible = showAll;
-
-      if (!showAll) {
-        if (type === 'walkover') {
-          isVisible = numCandidates === 1;
-        } else {
-          const wayCount = Number.parseInt(type);
-          isVisible = numCandidates === wayCount;
-        }
-      }
-
-      map.setFeatureState(
-        {
-          source: SOURCE_ID,
-          id: ed.featureId,
-        },
-        {
-          visible: isVisible,
-        },
-      );
-    }
-  };
-
   return (
-    <Select onValueChange={handleCompetitionChange}>
+    <Select onValueChange={setCompetitionFilter} value={filters.competition}>
       <SelectTrigger className="relative bg-white z-10">
         <SelectValue placeholder="Filter by competition" />
       </SelectTrigger>

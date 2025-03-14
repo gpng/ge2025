@@ -1,6 +1,7 @@
 'use client';
 
 import { DataProvider } from '@/app/components/contexts/data-context';
+import { FilterProvider } from '@/app/components/contexts/filter-context';
 import type { ElectoralDivision } from '@/models/electoral-division';
 import type { Parties } from '@/models/party';
 import type { PartyProfile } from '@/models/profile';
@@ -26,7 +27,9 @@ const Providers = ({
       parties={parties}
       profiles={profiles}
     >
-      <MapProvider>{children}</MapProvider>
+      <MapProvider>
+        <FilterProvider>{children}</FilterProvider>
+      </MapProvider>
     </DataProvider>
   );
 };
