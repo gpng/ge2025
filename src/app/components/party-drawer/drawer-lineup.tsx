@@ -124,13 +124,13 @@ const DrawerLineup = ({ candidate, isConfirmed, showStatus }: Props) => {
                 }}
               >
                 <img
-                  src={`/images/profiles/${profile.image || 'person.svg'}`}
-                  alt={`${profile.name} profile`}
+                  src={`/images/profiles/${profile?.image || 'person.svg'}`}
+                  alt={`${profile?.name || profileName} profile`}
                   className="h-full w-full object-cover"
                 />
               </div>
               <Typography variant="lead" className="text-xs font-medium">
-                {profile.name}
+                {profile?.name || profileName}
               </Typography>
             </div>
           );
