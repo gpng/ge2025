@@ -1,12 +1,12 @@
-import { useData } from '@/app/components/contexts/data-context';
-import { MAP_ID } from '@/app/components/map';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/app/components/ui/select';
+} from '@/app/_components/ui/select';
+import { useData } from '@/app/map/_components/contexts/data-context';
+import { MAP_ID } from '@/app/map/_components/map';
 import { flattenDepth } from 'lodash';
 import { useMemo } from 'react';
 import { useMap } from 'react-map-gl/maplibre';

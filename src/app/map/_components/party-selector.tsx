@@ -1,12 +1,12 @@
-import { useData } from '@/app/components/contexts/data-context';
-import { useFilters } from '@/app/components/contexts/filter-context';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/app/components/ui/select';
+} from '@/app/_components/ui/select';
+import { useData } from '@/app/map/_components/contexts/data-context';
+import { useFilters } from '@/app/map/_components/contexts/filter-context';
 import React from 'react';
 
 const ALL_PARTIES = 'all';

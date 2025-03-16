@@ -1,5 +1,5 @@
-import DrawerLineup from '@/app/components/party-drawer/drawer-lineup';
-import { Typography } from '@/app/components/ui/typography';
+import { Typography } from '@/app/_components/ui/typography';
+import DrawerLineup from '@/app/map/_components/party-drawer/drawer-lineup';
 import type { ElectoralDivision } from '@/models/electoral-division';
 
 interface Props {

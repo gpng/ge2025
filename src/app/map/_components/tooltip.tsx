@@ -1,6 +1,6 @@
 'use client';
 
-import { useData } from '@/app/components/contexts/data-context';
+import { useData } from '@/app/map/_components/contexts/data-context';
 import type { ElectoralDivision } from '@/models/electoral-division';
 import React from 'react';
 import { Marker } from 'react-map-gl/maplibre';

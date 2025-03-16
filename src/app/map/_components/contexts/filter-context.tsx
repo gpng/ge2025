@@ -1,5 +1,5 @@
-import { useData } from '@/app/components/contexts/data-context';
-import { MAP_ID, SOURCE_ID } from '@/app/components/map';
+import { useData } from '@/app/map/_components/contexts/data-context';
+import { MAP_ID, SOURCE_ID } from '@/app/map/_components/map';
 import type { ElectoralDivisions } from '@/models/electoral-division';
 import type { Parties } from '@/models/party';
 import { createContext, useContext, useState } from 'react';

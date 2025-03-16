@@ -1,15 +1,15 @@
-import { useData } from '@/app/components/contexts/data-context';
-import {
-  ALL_COMPETITION,
-  useFilters,
-} from '@/app/components/contexts/filter-context';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/app/components/ui/select';
+} from '@/app/_components/ui/select';
+import { useData } from '@/app/map/_components/contexts/data-context';
+import {
+  ALL_COMPETITION,
+  useFilters,
+} from '@/app/map/_components/contexts/filter-context';
 import { useMemo } from 'react';
 
 const CompetitionSelector = () => {

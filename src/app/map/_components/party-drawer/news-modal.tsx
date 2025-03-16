@@ -3,8 +3,8 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from '@/app/components/ui/dialog';
-import { Typography } from '@/app/components/ui/typography';
+} from '@/app/_components/ui/dialog';
+import { Typography } from '@/app/_components/ui/typography';
 import { cn } from '@/lib/utils';
 import type { News } from '@/models/candidate';
 

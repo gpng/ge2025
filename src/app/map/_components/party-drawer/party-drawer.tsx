@@ -1,6 +1,6 @@
-import Competition from '@/app/components/party-drawer/competition';
-import { Button } from '@/app/components/ui/button';
-import { Typography } from '@/app/components/ui/typography';
+import { Button } from '@/app/_components/ui/button';
+import { Typography } from '@/app/_components/ui/typography';
+import Competition from '@/app/map/_components/party-drawer/competition';
 import type { ElectoralDivision } from '@/models/electoral-division';
 import { Cross1Icon } from '@radix-ui/react-icons';
 import { AnimatePresence, motion } from 'framer-motion';

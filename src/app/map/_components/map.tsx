@@ -1,7 +1,7 @@
 'use client';
 
-import { useData } from '@/app/components/contexts/data-context';
-import { useFilters } from '@/app/components/contexts/filter-context';
+import { useData } from '@/app/map/_components/contexts/data-context';
+import { useFilters } from '@/app/map/_components/contexts/filter-context';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { center } from '@turf/turf';
 import React, { useRef, useState } from 'react';

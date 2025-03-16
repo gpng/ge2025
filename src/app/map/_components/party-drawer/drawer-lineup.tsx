@@ -1,6 +1,6 @@
-import { useData } from '@/app/components/contexts/data-context';
-import NewsModal from '@/app/components/party-drawer/news-modal';
-import { Typography } from '@/app/components/ui/typography';
+import { Typography } from '@/app/_components/ui/typography';
+import { useData } from '@/app/map/_components/contexts/data-context';
+import NewsModal from '@/app/map/_components/party-drawer/news-modal';
 import { cn } from '@/lib/utils';
 import type { Candidate } from '@/models/candidate';
 import { useState } from 'react';

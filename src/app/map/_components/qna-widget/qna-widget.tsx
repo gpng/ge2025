@@ -1,13 +1,13 @@
-import ChatBubble from '@/app/components/qna-widget/chat-bubble';
-import { Button } from '@/app/components/ui/button';
+import { Button } from '@/app/_components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/app/components/ui/card';
-import { Textarea } from '@/app/components/ui/textarea';
+} from '@/app/_components/ui/card';
+import { Textarea } from '@/app/_components/ui/textarea';
+import ChatBubble from '@/app/map/_components/qna-widget/chat-bubble';
 import { cn } from '@/lib/utils';
 import {
   ChatBubbleIcon,

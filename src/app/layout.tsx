@@ -1,3 +1,5 @@
+import SiteHeader from '@/app/_components/header';
+import { ThemeProvider } from '@/app/_components/theme-provider';
 import '@/app/globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -5,7 +7,6 @@ import type { FC } from 'react';
 
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-inter',
 });
 
 interface Props {
@@ -14,8 +15,20 @@ interface Props {
 
 const MainLayout: FC<Props> = ({ children }) => {
   return (
-    <html lang="en">
-      <body className={`${inter.variable}`}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="flex min-h-screen flex-col">
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
+          </div>
+        </ThemeProvider>
+      </body>
     </html>
   );
 };

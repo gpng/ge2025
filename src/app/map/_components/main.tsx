@@ -1,11 +1,11 @@
 'use client';
 
-import { useData } from '@/app/components/contexts/data-context';
-import { useFilters } from '@/app/components/contexts/filter-context';
-import GEMap from '@/app/components/map';
-import Panel from '@/app/components/panel';
-import QnaWidget from '@/app/components/qna-widget/qna-widget';
-import Tooltip from '@/app/components/tooltip';
+import { useData } from '@/app/map/_components/contexts/data-context';
+import { useFilters } from '@/app/map/_components/contexts/filter-context';
+import GEMap from '@/app/map/_components/map';
+import Panel from '@/app/map/_components/panel';
+import QnaWidget from '@/app/map/_components/qna-widget/qna-widget';
+import Tooltip from '@/app/map/_components/tooltip';
 import { FEAT_MANIFESTOS_CHAT } from '@/lib/env';
 import type { ElectoralDivision } from '@/models/electoral-division';
 import { center } from '@turf/turf';
@@ -75,7 +75,7 @@ const Main = () => {
 
   return (
     <>
-      <div id="c-main" className="w-full h-full">
+      <div id="c-main" className="w-full min-h-screen h-screen">
         <GEMap
           onElectoralDivisionHovered={handleElectoralDivisionHovered}
           onElectoralDivisionSelected={handleElectoralDivisionSelected}

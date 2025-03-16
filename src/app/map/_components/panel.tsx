@@ -1,7 +1,7 @@
-import CompetitionSelector from '@/app/components/competition-selector';
-import EdSelector from '@/app/components/ed-selector';
-import PartyDrawer from '@/app/components/party-drawer/party-drawer';
-import PartySelector from '@/app/components/party-selector';
+import CompetitionSelector from '@/app/map/_components/competition-selector';
+import EdSelector from '@/app/map/_components/ed-selector';
+import PartyDrawer from '@/app/map/_components/party-drawer/party-drawer';
+import PartySelector from '@/app/map/_components/party-selector';
 import type { ElectoralDivision } from '@/models/electoral-division';
 import React from 'react';
 

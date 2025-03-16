@@ -1,4 +1,4 @@
-import { Typography } from '@/app/components/ui/typography';
+import { Typography } from '@/app/_components/ui/typography';
 import type { Message } from 'ai/react';
 import { useMemo } from 'react';
 import Markdown from 'react-markdown';
