@@ -57,20 +57,22 @@ export const setFeatureStates = (
         ? edCandidates.find((c) => c.partyId === filters.party)
         : null;
 
-    map.setFeatureState(
-      {
-        source: SOURCE_ID,
-        id: ed.featureId,
-      },
-      {
-        fillColor: incumbent ? parties[incumbent.partyId].color : '#000000',
-        outlineColor: partyCandidate
-          ? parties[partyCandidate.partyId].color
-          : '#000000',
-        visible: isVisible,
-        hovered: ed.featureId === hoveredId,
-      },
-    );
+    if (map.isStyleLoaded()) {
+      map.setFeatureState(
+        {
+          source: SOURCE_ID,
+          id: ed.featureId,
+        },
+        {
+          fillColor: incumbent ? parties[incumbent.partyId].color : '#000000',
+          outlineColor: partyCandidate
+            ? parties[partyCandidate.partyId].color
+            : '#000000',
+          visible: isVisible,
+          hovered: ed.featureId === hoveredId,
+        },
+      );
+    }
   }
 };
 

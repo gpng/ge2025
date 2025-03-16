@@ -1,16 +1,25 @@
 import { useData } from '@/app/components/contexts/data-context';
+import NewsModal from '@/app/components/party-drawer/news-modal';
 import { Typography } from '@/app/components/ui/typography';
 import { cn } from '@/lib/utils';
 import type { Candidate } from '@/models/candidate';
+import { useState } from 'react';
 
 interface Props {
   candidate: Candidate;
   isConfirmed: boolean;
   showStatus: boolean;
+  electoralDivision: string;
 }
 
-const DrawerLineup = ({ candidate, isConfirmed, showStatus }: Props) => {
+const DrawerLineup = ({
+  candidate,
+  isConfirmed,
+  showStatus,
+  electoralDivision,
+}: Props) => {
   const { parties, profiles } = useData();
+  const [isNewsModalOpen, setIsNewsModalOpen] = useState(false);
 
   const party = parties[candidate.partyId];
 
@@ -48,11 +57,10 @@ const DrawerLineup = ({ candidate, isConfirmed, showStatus }: Props) => {
                 >
                   {isConfirmed ? 'Confirmed' : 'Unconfirmed'}
                 </Typography>
-                {candidate.announcementUrl && (
-                  <a
-                    href={candidate.announcementUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                {(candidate.news?.length || 0) > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => setIsNewsModalOpen(true)}
                     className="text-xs text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1"
                   >
                     <svg
@@ -61,22 +69,16 @@ const DrawerLineup = ({ candidate, isConfirmed, showStatus }: Props) => {
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <title>Announcement megaphone icon</title>
+                      <title>News and announcements icon</title>
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M3 11l18-5v12L3 14v-3z"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M11.59 15.51V20l-2.3-1.26"
+                        d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2 2 0 00-2-2h-2"
                       />
                     </svg>
-                    Announcement
-                  </a>
+                    News
+                  </button>
                 )}
               </div>
             )}
@@ -136,6 +138,16 @@ const DrawerLineup = ({ candidate, isConfirmed, showStatus }: Props) => {
           );
         })}
       </div>
+
+      {candidate.news && (
+        <NewsModal
+          news={candidate.news}
+          isOpen={isNewsModalOpen}
+          onClose={() => setIsNewsModalOpen(false)}
+          partyName={party.name}
+          electoralDivision={electoralDivision}
+        />
+      )}
     </div>
   );
 };

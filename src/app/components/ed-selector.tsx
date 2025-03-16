@@ -3,9 +3,7 @@ import { MAP_ID } from '@/app/components/map';
 import {
   Select,
   SelectContent,
-  SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from '@/app/components/ui/select';
@@ -21,25 +19,10 @@ const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
   const { electoralDivisions, boundaries } = useData();
   const { [MAP_ID]: map } = useMap();
 
-  const groupedDivisions = useMemo(() => {
-    const groups: Record<string, typeof electoralDivisions> = {
-      'Single Member': [],
-      'Group Representation': [],
-    };
-
-    for (const ed of electoralDivisions) {
-      const edCandidates = ed.candidates;
-      const type =
-        edCandidates.length > 1 ? 'Group Representation' : 'Single Member';
-      groups[type].push(ed);
-    }
-
-    // Sort within each group
-    for (const group of Object.values(groups)) {
-      group.sort((a, b) => a.name.localeCompare(b.name));
-    }
-
-    return groups;
+  const sortedDivisions = useMemo(() => {
+    return Object.values(electoralDivisions).sort((a, b) =>
+      a.name.localeCompare(b.name),
+    );
   }, [electoralDivisions]);
 
   const handleElectoralDivisionSelected = (electoralDivisionId: string) => {
@@ -94,15 +77,10 @@ const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
         <SelectItem value="placeholder" disabled>
           Choose a constituency to view details
         </SelectItem>
-        {Object.entries(groupedDivisions).map(([groupName, divisions]) => (
-          <SelectGroup key={groupName}>
-            <SelectLabel>{groupName} Constituencies</SelectLabel>
-            {divisions.map((ed) => (
-              <SelectItem key={ed.featureId} value={ed.id}>
-                {ed.name}
-              </SelectItem>
-            ))}
-          </SelectGroup>
+        {sortedDivisions.map((ed) => (
+          <SelectItem key={ed.featureId} value={ed.id}>
+            {ed.name}
+          </SelectItem>
         ))}
       </SelectContent>
     </Select>

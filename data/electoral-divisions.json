@@ -20,7 +20,12 @@
       {
         "partyId": "RDU",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+        "news": [
+          {
+            "url": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -52,7 +57,12 @@
       {
         "partyId": "PAR",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "news": [
+          {
+            "url": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -71,7 +81,12 @@
       {
         "partyId": "PAR",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "news": [
+          {
+            "url": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -90,7 +105,12 @@
       {
         "partyId": "PAR",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "news": [
+          {
+            "url": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -115,13 +135,23 @@
       {
         "partyId": "PAR",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "news": [
+          {
+            "url": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       },
       {
         "partyId": "RDU",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+        "news": [
+          {
+            "url": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -140,13 +170,23 @@
       {
         "partyId": "PAR",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "news": [
+          {
+            "url": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       },
       {
         "partyId": "RDU",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+        "news": [
+          {
+            "url": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -165,13 +205,23 @@
       {
         "partyId": "PAR",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "news": [
+          {
+            "url": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       },
       {
         "partyId": "SPP",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/SingaporePeoplesParty/posts/pfbid0EAoAu8duDZwoFjfcvVmqtCuLnQAHLiBGHx3yPxmMM6s24pjpWowuT2xHf9a5bxBMl",
+        "news": [
+          {
+            "url": "https://www.facebook.com/SingaporePeoplesParty/posts/pfbid0EAoAu8duDZwoFjfcvVmqtCuLnQAHLiBGHx3yPxmMM6s24pjpWowuT2xHf9a5bxBMl",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -207,19 +257,34 @@
       {
         "partyId": "PAR",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "news": [
+          {
+            "url": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       },
       {
         "partyId": "PPP",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+        "news": [
+          {
+            "url": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       },
       {
         "partyId": "RDU",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+        "news": [
+          {
+            "url": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -266,7 +331,12 @@
       {
         "partyId": "PPP",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+        "news": [
+          {
+            "url": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -296,7 +366,14 @@
         "profiles": [
           "PAP.GAN_KIM_YONG",
           "PAP.DON_WEE",
-          "PAP.ZHULKARNAIN_ABDUL_RAHIM"
+          "PAP.ZHULKARNAIN_ABDUL_RAHIM",
+          "PAP.CHUA_WEI_SHAN"
+        ],
+        "news": [
+          {
+            "url": "https://www.straitstimes.com/singapore/politics/ge2025-three-pap-new-faces-redeployed-to-different-constituencies-ahead-of-election",
+            "isOfficial": false
+          }
         ]
       }
     ]
@@ -333,7 +410,12 @@
       {
         "partyId": "RDU",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+        "news": [
+          {
+            "url": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -357,13 +439,23 @@
       {
         "partyId": "NSP",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+        "news": [
+          {
+            "url": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       },
       {
         "partyId": "PAR",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "news": [
+          {
+            "url": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -395,7 +487,12 @@
       {
         "partyId": "PAR",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "news": [
+          {
+            "url": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -419,7 +516,12 @@
       {
         "partyId": "SPP",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/SingaporePeoplesParty/posts/pfbid0EAoAu8duDZwoFjfcvVmqtCuLnQAHLiBGHx3yPxmMM6s24pjpWowuT2xHf9a5bxBMl",
+        "news": [
+          {
+            "url": "https://www.facebook.com/SingaporePeoplesParty/posts/pfbid0EAoAu8duDZwoFjfcvVmqtCuLnQAHLiBGHx3yPxmMM6s24pjpWowuT2xHf9a5bxBMl",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -492,7 +594,12 @@
       {
         "partyId": "NSP",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+        "news": [
+          {
+            "url": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -517,13 +624,23 @@
       {
         "partyId": "PPP",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+        "news": [
+          {
+            "url": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       },
       {
         "partyId": "RDU",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+        "news": [
+          {
+            "url": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -542,7 +659,12 @@
       {
         "partyId": "NSP",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+        "news": [
+          {
+            "url": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -561,13 +683,23 @@
       {
         "partyId": "NSP",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+        "news": [
+          {
+            "url": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       },
       {
         "partyId": "PPP",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+        "news": [
+          {
+            "url": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -586,7 +718,12 @@
       {
         "partyId": "PAR",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+        "news": [
+          {
+            "url": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -610,7 +747,12 @@
       {
         "partyId": "NSP",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+        "news": [
+          {
+            "url": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -653,7 +795,12 @@
       {
         "partyId": "NSP",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+        "news": [
+          {
+            "url": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]
@@ -670,19 +817,36 @@
         "profiles": [
           "PAP.MASAGOS_ZULKIFLI",
           "PAP.BAEY_YAM_KENG",
-          "PAP.KOH_POH_KOON"
+          "PAP.KOH_POH_KOON",
+          "PAP.DAVID_HOE"
+        ],
+        "news": [
+          {
+            "url": "https://www.straitstimes.com/singapore/politics/ge2025-three-pap-new-faces-redeployed-to-different-constituencies-ahead-of-election",
+            "isOfficial": false
+          }
         ]
       },
       {
         "partyId": "NSP",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+        "news": [
+          {
+            "url": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       },
       {
         "partyId": "PPP",
         "isConfirmed": false,
-        "announcementUrl": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+        "news": [
+          {
+            "url": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+            "isOfficial": true
+          }
+        ],
         "profiles": []
       }
     ]

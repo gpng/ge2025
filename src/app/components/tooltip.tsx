@@ -19,7 +19,7 @@ const Tooltip = ({ electoralDivision, longitude, latitude }: Props) => {
       longitude={longitude}
       latitude={latitude}
       anchor="center"
-      style={{ zIndex: 9999 }}
+      style={{ zIndex: 10 }}
     >
       <div className="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-full">
         <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg p-2 min-w-[220px] border border-gray-100">

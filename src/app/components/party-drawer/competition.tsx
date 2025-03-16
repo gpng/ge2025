@@ -22,6 +22,7 @@ const Competition = ({ electoralDivision }: Props) => {
             candidate={incumbent}
             isConfirmed={incumbent.isConfirmed}
             showStatus
+            electoralDivision={electoralDivision.name}
           />
         )}
         {challengers.map((challenger) => (
@@ -30,6 +31,7 @@ const Competition = ({ electoralDivision }: Props) => {
             candidate={challenger}
             isConfirmed={challenger.isConfirmed}
             showStatus
+            electoralDivision={electoralDivision.name}
           />
         ))}
       </div>

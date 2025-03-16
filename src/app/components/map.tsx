@@ -187,7 +187,7 @@ const GEMap = ({
               longitude={longitude + offsetLon}
               latitude={latitude}
               anchor="center"
-              style={{ zIndex: 1 }}
+              style={{ zIndex: 0 }}
             >
               <div
                 className="w-6 h-6 rounded-full overflow-hidden bg-white shadow-sm border"
