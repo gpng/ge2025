@@ -18,5 +18,6 @@
     "src/app/**/{opengraph,twitter}-image.{js,jsx,ts,tsx}",
     "src/pages/**/*.{js,jsx,ts,tsx}"
   ],
-  "ignore": ["src/app/components/ui/*.{ts,tsx}", "data/*"]
+  "ignore": ["src/app/_components/ui/*.{ts,tsx}", "src/lib/utils.ts", "data/*"],
+  "ignoreDependencies": ["postcss"]
 }

@@ -1,7 +1,7 @@
 import { candidateSchema } from '@/models/candidate';
 import { z } from 'zod';
 
-export const electoralDivisionSchema = z.object({
+const electoralDivisionSchema = z.object({
   id: z.string(),
   featureId: z.number(),
   name: z.string(),

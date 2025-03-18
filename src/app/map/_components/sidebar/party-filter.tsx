@@ -6,10 +6,11 @@ import {
   SelectValue,
 } from '@/app/_components/ui/select';
 import { useData } from '@/app/map/_components/contexts/data-context';
-import { useFilters } from '@/app/map/_components/contexts/filter-context';
+import {
+  ALL_PARTIES,
+  useFilters,
+} from '@/app/map/_components/contexts/filter-context';
 import React from 'react';
-
-const ALL_PARTIES = 'all';
 
 const PartyFilter = () => {
   const { parties } = useData();

@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const partySchema = z.object({
+const partySchema = z.object({
   id: z.string(),
   name: z.string(),
   logo: z.string().optional(),
@@ -10,5 +10,4 @@ export const partySchema = z.object({
 
 export const partiesSchema = z.record(z.string(), partySchema);
 
-export type Party = z.infer<typeof partySchema>;
 export type Parties = z.infer<typeof partiesSchema>;

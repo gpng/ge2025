@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const newsSchema = z.object({
+const newsSchema = z.object({
   url: z.string().url(),
   isOfficial: z.boolean(),
 });
@@ -13,8 +13,7 @@ export const candidateSchema = z.object({
   isIncumbent: z.boolean().default(false),
 });
 
-export const candidatesSchema = z.record(z.string(), z.array(candidateSchema));
+const candidatesSchema = z.record(z.string(), z.array(candidateSchema));
 
-export type News = z.infer<typeof newsSchema>;
 export type Candidate = z.infer<typeof candidateSchema>;
-export type Candidates = z.infer<typeof candidatesSchema>;
+export type News = z.infer<typeof newsSchema>;

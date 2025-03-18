@@ -23,7 +23,7 @@ type FilterContextType = {
 
 const FilterContext = createContext<FilterContextType | undefined>(undefined);
 
-export const setFeatureStates = (
+const setFeatureStates = (
   map: MapRef,
   filters: FilterState,
   electoralDivisions: ElectoralDivisions,
