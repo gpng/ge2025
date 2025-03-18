@@ -97,7 +97,9 @@ const Main = () => {
   return (
     <div className="flex h-full overflow-hidden">
       {/* Desktop Sidebar */}
-      <MapSidebar />
+      <MapSidebar
+        onElectoralDivisionSelected={handleElectoralDivisionSelected}
+      />
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col">
