@@ -7,6 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
+    '*.{js,ts,jsx,tsx,mdx}',
   ],
   prefix: '',
   theme: {
@@ -25,12 +26,12 @@ const config = {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+          DEFAULT: 'hsl(230, 85%, 60%)',
+          foreground: 'hsl(0, 0%, 100%)',
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
+          DEFAULT: 'hsl(280, 85%, 60%)',
+          foreground: 'hsl(0, 0%, 100%)',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
@@ -52,20 +53,6 @@ const config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
-        // party colors
-        // this should match with @/data/parties.ts
-        pap: '#D8C99B',
-        wp: '#273E47',
-        psp: '#A4243B',
-        rp: '#D8973C',
-        nsp: '#BD632F',
-        pv: '#91268e',
-        sdp: '#fe0000',
-        sda: '#2e379c',
-        ppp: '#2fa61f',
-        rdu: '#d30e0d',
-        spp: '#2e3a90',
-        indie: '#222222',
       },
       borderRadius: {
         lg: 'var(--radius)',
