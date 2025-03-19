@@ -22,3 +22,6 @@ If I ask for adjustments to code I have provided you, do not repeat all of my co
 for coding and file conventions
  - Always use kebab cases for file and directory names
  - Always use const for function declarations
+ - Always use pnpm to manage dependencies
+ - Always use tailwindcss for styling
+ - Always use shadcn/ui for components. Components should always be installed by running `pnpm dlx shadcn@latest add <component>`.

@@ -10,6 +10,7 @@ import type { ElectoralDivision } from '@/models/electoral-division';
 import type { Parties } from '@/models/party';
 import type { PartyProfile } from '@/models/profile';
 import { useMemo } from 'react';
+import CandidateFilter from './candidate-filter';
 
 interface Props {
   parties: Parties;
@@ -34,37 +35,6 @@ const NewsFilters = ({
   onFilterChange,
   currentFilters,
 }: Props) => {
-  // Get all unique profile IDs across all parties
-  const allProfileIds = useMemo(() => {
-    const ids = new Set<string>();
-    for (const partyProfiles of Object.values(profiles)) {
-      for (const id of Object.keys(partyProfiles)) {
-        ids.add(id);
-      }
-    }
-    return Array.from(ids);
-  }, [profiles]);
-
-  // Group profiles by party and sort alphabetically
-  const groupedProfiles = useMemo(() => {
-    const groups: Record<string, { id: string; name: string }[]> = {};
-
-    // First, collect all profiles by party
-    for (const [partyId, partyProfiles] of Object.entries(profiles)) {
-      groups[partyId] = [];
-      for (const [profileId, profile] of Object.entries(partyProfiles)) {
-        groups[partyId].push({ id: profileId, name: profile.name });
-      }
-    }
-
-    // Sort profiles within each party by name
-    for (const partyId of Object.keys(groups)) {
-      groups[partyId].sort((a, b) => a.name.localeCompare(b.name));
-    }
-
-    return groups;
-  }, [profiles]);
-
   // Sort parties alphabetically
   const sortedParties = useMemo(() => {
     return Object.entries(parties).sort(([, a], [, b]) =>
@@ -117,31 +87,14 @@ const NewsFilters = ({
         </SelectContent>
       </Select>
 
-      <Select
+      <CandidateFilter
+        parties={parties}
+        profiles={profiles}
         value={currentFilters.profile}
         onValueChange={(value) =>
           onFilterChange({ ...currentFilters, profile: value })
         }
-      >
-        <SelectTrigger className="w-full md:w-[200px]">
-          <SelectValue placeholder="Filter by profile" />
-        </SelectTrigger>
-        <SelectContent className="max-h-[300px]">
-          <SelectItem value="all">All Candidates</SelectItem>
-          {Object.entries(groupedProfiles).map(([partyId, partyProfiles]) => (
-            <div key={partyId}>
-              <div className="px-2 py-1.5 text-sm font-semibold text-muted-foreground">
-                {parties[partyId]?.name}
-              </div>
-              {partyProfiles.map((profile) => (
-                <SelectItem key={profile.id} value={profile.id}>
-                  {profile.name}
-                </SelectItem>
-              ))}
-            </div>
-          ))}
-        </SelectContent>
-      </Select>
+      />
     </div>
   );
 };
