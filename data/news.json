@@ -1,0 +1,60 @@
+[
+  {
+    "url": "https://www.facebook.com/share/r/12LvwwVEiQk/",
+    "title": "RDU Facebook Announcement",
+    "isOfficial": true,
+    "partyIds": ["RDU"],
+    "electoralDivisionIds": ["JE", "TP", "RM", "JK", "JU", "NS"],
+    "profileIds": []
+  },
+  {
+    "url": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
+    "title": "PAR Facebook Announcement",
+    "isOfficial": true,
+    "partyIds": ["PAR"],
+    "electoralDivisionIds": [
+      "KR",
+      "YK",
+      "QT",
+      "PS",
+      "JK",
+      "JB",
+      "MR",
+      "BS",
+      "MB"
+    ],
+    "profileIds": []
+  },
+  {
+    "url": "https://www.facebook.com/SingaporePeoplesParty/posts/pfbid0EAoAu8duDZwoFjfcvVmqtCuLnQAHLiBGHx3yPxmMM6s24pjpWowuT2xHf9a5bxBMl",
+    "title": "SPP Facebook Announcement",
+    "isOfficial": true,
+    "partyIds": ["SPP"],
+    "electoralDivisionIds": ["PS", "BS"],
+    "profileIds": []
+  },
+  {
+    "url": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
+    "title": "PPP Facebook Announcement",
+    "isOfficial": true,
+    "partyIds": ["PPP"],
+    "electoralDivisionIds": ["JK", "AM", "NS", "TC", "TM"],
+    "profileIds": []
+  },
+  {
+    "url": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
+    "title": "NSP Facebook Announcement",
+    "isOfficial": true,
+    "partyIds": ["NSP"],
+    "electoralDivisionIds": ["JB", "MY", "SE", "TC", "SB", "MH", "TM"],
+    "profileIds": []
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-three-pap-new-faces-redeployed-to-different-constituencies-ahead-of-election",
+    "title": "PAP New Faces Redeployment",
+    "isOfficial": false,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["CK", "TM"],
+    "profileIds": []
+  }
+]

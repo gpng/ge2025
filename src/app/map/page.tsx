@@ -3,9 +3,11 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import Content from '@/app/map/_components/content';
 import Providers from '@/app/map/_components/contexts/providers';
 import { electoralDivisionsSchema } from '@/models/electoral-division';
+import { newsSchema } from '@/models/news';
 import { partiesSchema } from '@/models/party';
 import { partyProfileSchema } from '@/models/profile';
 import edJson from '@data/electoral-divisions.json';
+import newsJson from '@data/news.json';
 import partiesJson from '@data/parties.json';
 import profilesJson from '@data/profiles.json';
 
@@ -14,6 +16,12 @@ const IndexPage = () => {
 
   if (!ed.success) {
     console.error(ed.error);
+  }
+
+  const news = newsSchema.array().safeParse(newsJson);
+
+  if (!news.success) {
+    console.error(news.error);
   }
 
   const parties = partiesSchema.safeParse(partiesJson);
@@ -31,6 +39,7 @@ const IndexPage = () => {
   return (
     <Providers
       electoralDivisions={ed.data || []}
+      news={news.data || []}
       parties={parties.data || {}}
       profiles={profiles.data || {}}
     >
