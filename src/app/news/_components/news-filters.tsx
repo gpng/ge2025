@@ -1,11 +1,5 @@
 'use client';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/app/_components/ui/select';
+import Combobox from '@/app/_components/ui/combobox';
 import type { ElectoralDivision } from '@/models/electoral-division';
 import type { Parties } from '@/models/party';
 import type { PartyProfile } from '@/models/profile';
@@ -36,56 +30,44 @@ const NewsFilters = ({
   currentFilters,
 }: Props) => {
   // Sort parties alphabetically
-  const sortedParties = useMemo(() => {
-    return Object.entries(parties).sort(([, a], [, b]) =>
-      a.name.localeCompare(b.name),
-    );
+  const partyOptions = useMemo(() => {
+    return [
+      { id: 'all', name: 'All Parties' },
+      ...Object.entries(parties)
+        .map(([id, party]) => ({ id, name: party.name }))
+        .sort((a, b) => a.name.localeCompare(b.name)),
+    ];
   }, [parties]);
 
   // Sort constituencies alphabetically
-  const sortedConstituencies = useMemo(() => {
-    return [...constituencies].sort((a, b) => a.name.localeCompare(b.name));
+  const constituencyOptions = useMemo(() => {
+    return [
+      { id: 'all', name: 'All Constituencies' },
+      ...constituencies
+        .map((ed) => ({ id: ed.id, name: ed.name }))
+        .sort((a, b) => a.name.localeCompare(b.name)),
+    ];
   }, [constituencies]);
 
   return (
     <div className="flex flex-col md:flex-row gap-4">
-      <Select
+      <Combobox
+        options={partyOptions}
         value={currentFilters.party}
         onValueChange={(value) =>
           onFilterChange({ ...currentFilters, party: value })
         }
-      >
-        <SelectTrigger className="w-full md:w-[200px]">
-          <SelectValue placeholder="Filter by party" />
-        </SelectTrigger>
-        <SelectContent className="max-h-[300px]">
-          <SelectItem value="all">All Parties</SelectItem>
-          {sortedParties.map(([id, party]) => (
-            <SelectItem key={id} value={id}>
-              {party.name}
-            </SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
+        placeholder="Filter by party"
+      />
 
-      <Select
+      <Combobox
+        options={constituencyOptions}
         value={currentFilters.constituency}
         onValueChange={(value) =>
           onFilterChange({ ...currentFilters, constituency: value })
         }
-      >
-        <SelectTrigger className="w-full md:w-[200px]">
-          <SelectValue placeholder="Filter by constituency" />
-        </SelectTrigger>
-        <SelectContent className="max-h-[300px]">
-          <SelectItem value="all">All Constituencies</SelectItem>
-          {sortedConstituencies.map((ed) => (
-            <SelectItem key={ed.id} value={ed.id}>
-              {ed.name}
-            </SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
+        placeholder="Filter by constituency"
+      />
 
       <CandidateFilter
         parties={parties}
