@@ -55,6 +55,21 @@
     "isOfficial": false,
     "partyIds": ["PAP"],
     "electoralDivisionIds": ["CK", "TM"],
-    "profileIds": []
+    "profileIds": ["PAP.CHUA_WEI_SHAN", "PAP.VALERIE_LEE", "PAP.DAVID_HOE"]
+  },
+
+  {
+    "url": "https://www.straitstimes.com/singapore/ge2025-potential-nsp-candidates-for-tampines-spotted-during-walkabout-with-coalition",
+    "title": "Potential NSP Candidates Spotted",
+    "isOfficial": false,
+    "partyIds": ["NSP"],
+    "electoralDivisionIds": ["TM"],
+    "profileIds": [
+      "NSP.RENO_FONG",
+      "NSP.MOHAMAD_RIDZWAN",
+      "NSP.LIM_RUI_XIAN",
+      "NSP.NUR_FARAHIYAH_MAHFOOT",
+      "NSP.THAMILSELVAN_KARUPPAYA"
+    ]
   }
 ]

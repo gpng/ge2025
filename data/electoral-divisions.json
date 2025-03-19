@@ -834,9 +834,19 @@
           {
             "url": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
             "isOfficial": true
+          },
+          {
+            "url": "https://www.straitstimes.com/singapore/ge2025-potential-nsp-candidates-for-tampines-spotted-during-walkabout-with-coalition",
+            "isOfficial": false
           }
         ],
-        "profiles": []
+        "profiles": [
+          "NSP.RENO_FONG",
+          "NSP.MOHAMAD_RIDZWAN",
+          "NSP.LIM_RUI_XIAN",
+          "NSP.NUR_FARAHIYAH_MAHFOOT",
+          "NSP.THAMILSELVAN_KARUPPAYA"
+        ]
       },
       {
         "partyId": "PPP",

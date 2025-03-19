@@ -33,7 +33,7 @@ const NewsModal = ({
           </Typography>
         </DialogHeader>
         <div className="space-y-4">
-          {news.map((item) => (
+          {news.toReversed().map((item) => (
             <div
               key={item.url}
               className="flex items-start gap-3 p-3 rounded-lg border hover:bg-gray-50"
@@ -54,7 +54,7 @@ const NewsModal = ({
                   {item.url}
                 </a>
                 <Typography variant="mutedText" className="text-xs mt-1">
-                  {item.isOfficial ? 'Official Announcement' : 'News Article'}
+                  {item.isOfficial ? 'Official Announcement' : 'Rumours'}
                 </Typography>
               </div>
             </div>
