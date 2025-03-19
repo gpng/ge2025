@@ -65,6 +65,18 @@ const NewsFilters = ({
     return groups;
   }, [profiles]);
 
+  // Sort parties alphabetically
+  const sortedParties = useMemo(() => {
+    return Object.entries(parties).sort(([, a], [, b]) =>
+      a.name.localeCompare(b.name),
+    );
+  }, [parties]);
+
+  // Sort constituencies alphabetically
+  const sortedConstituencies = useMemo(() => {
+    return [...constituencies].sort((a, b) => a.name.localeCompare(b.name));
+  }, [constituencies]);
+
   return (
     <div className="flex flex-col md:flex-row gap-4">
       <Select
@@ -78,7 +90,7 @@ const NewsFilters = ({
         </SelectTrigger>
         <SelectContent className="max-h-[300px]">
           <SelectItem value="all">All Parties</SelectItem>
-          {Object.entries(parties).map(([id, party]) => (
+          {sortedParties.map(([id, party]) => (
             <SelectItem key={id} value={id}>
               {party.name}
             </SelectItem>
@@ -97,7 +109,7 @@ const NewsFilters = ({
         </SelectTrigger>
         <SelectContent className="max-h-[300px]">
           <SelectItem value="all">All Constituencies</SelectItem>
-          {constituencies.map((ed) => (
+          {sortedConstituencies.map((ed) => (
             <SelectItem key={ed.id} value={ed.id}>
               {ed.name}
             </SelectItem>
