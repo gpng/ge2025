@@ -1,7 +1,7 @@
-import 'maplibre-gl/dist/maplibre-gl.css';
+'use client';
 
-import Content from '@/app/map/_components/content';
-import Providers from '@/app/map/_components/contexts/providers';
+import { DataProvider } from '@/app/map/_components/contexts/data-context';
+import { NewsContent } from '@/app/news/_components/content';
 import type { ElectoralDivision } from '@/models/electoral-division';
 import { electoralDivisionsSchema } from '@/models/electoral-division';
 import type { News } from '@/models/news';
@@ -34,17 +34,15 @@ const parties = partiesResult.data as Parties;
 const electoralDivisions = electoralDivisionsResult.data as ElectoralDivision[];
 const profiles = profilesResult.data as PartyProfile;
 
-export default function MapPage() {
+export default function NewsPage() {
   return (
-    <Providers
-      electoralDivisions={electoralDivisions}
+    <DataProvider
       news={news}
       parties={parties}
+      electoralDivisions={electoralDivisions}
       profiles={profiles}
     >
-      <div className="h-[calc(100vh-3.5rem)]">
-        <Content />
-      </div>
-    </Providers>
+      <NewsContent />
+    </DataProvider>
   );
 }

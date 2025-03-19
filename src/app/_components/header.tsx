@@ -28,6 +28,7 @@ const SiteHeader = () => {
     { href: '/candidates', label: 'Candidates' },
     { href: '/education', label: 'Voting 101' },
     { href: '/timeline', label: 'Key Dates' },
+    { href: '/news', label: 'News' },
   ];
 
   return (
