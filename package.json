@@ -10,6 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check .",
+    "lint:ci": "biome ci .",
     "lint:fix": "biome check --fix .",
     "check:updates": "pnpm dlx npm-check-updates --interactive --format group",
     "check:knip": "knip",
