@@ -1,12 +1,12 @@
 import { cn } from '@/lib/utils';
 import type { News } from '@/models/news';
 
-interface NewsCardProps {
+interface Props {
   item: News;
   compact?: boolean;
 }
 
-export function NewsCard({ item, compact = false }: NewsCardProps) {
+const NewsCard = ({ item, compact = false }: Props) => {
   return (
     <div className="group flex flex-col rounded-lg border p-4 hover:shadow-md transition-all">
       <div className="flex items-center gap-2 mb-2">
@@ -42,4 +42,6 @@ export function NewsCard({ item, compact = false }: NewsCardProps) {
       </div>
     </div>
   );
-}
+};
+
+export default NewsCard;

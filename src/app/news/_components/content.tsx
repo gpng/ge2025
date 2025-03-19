@@ -1,12 +1,12 @@
 'use client';
 
 import { useData } from '@/app/map/_components/contexts/data-context';
-import { NewsCard } from '@/app/news/_components/news-card';
-import { NewsFilters } from '@/app/news/_components/news-filters';
+import NewsCard from '@/app/news/_components/news-card';
+import NewsFilters from '@/app/news/_components/news-filters';
 import { Newspaper } from 'lucide-react';
 import { useMemo, useState } from 'react';
 
-export function NewsContent() {
+const NewsContent = () => {
   const { news, parties, electoralDivisions, profiles } = useData();
   const [filters, setFilters] = useState({
     party: 'all',
@@ -84,4 +84,6 @@ export function NewsContent() {
       )}
     </div>
   );
-}
+};
+
+export default NewsContent;

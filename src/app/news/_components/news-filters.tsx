@@ -11,7 +11,7 @@ import type { Parties } from '@/models/party';
 import type { PartyProfile } from '@/models/profile';
 import { useMemo } from 'react';
 
-interface NewsFiltersProps {
+interface Props {
   parties: Parties;
   constituencies: ElectoralDivision[];
   profiles: PartyProfile;
@@ -27,13 +27,13 @@ interface NewsFiltersProps {
   };
 }
 
-export function NewsFilters({
+const NewsFilters = ({
   parties,
   constituencies,
   profiles,
   onFilterChange,
   currentFilters,
-}: NewsFiltersProps) {
+}: Props) => {
   // Get all unique profile IDs across all parties
   const allProfileIds = useMemo(() => {
     const ids = new Set<string>();
@@ -115,7 +115,7 @@ export function NewsFilters({
           <SelectValue placeholder="Filter by profile" />
         </SelectTrigger>
         <SelectContent className="max-h-[300px]">
-          <SelectItem value="all">All Profiles</SelectItem>
+          <SelectItem value="all">All Candidates</SelectItem>
           {Object.entries(groupedProfiles).map(([partyId, partyProfiles]) => (
             <div key={partyId}>
               <div className="px-2 py-1.5 text-sm font-semibold text-muted-foreground">
@@ -132,4 +132,6 @@ export function NewsFilters({
       </Select>
     </div>
   );
-}
+};
+
+export default NewsFilters;

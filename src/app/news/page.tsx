@@ -1,7 +1,7 @@
 'use client';
 
 import { DataProvider } from '@/app/map/_components/contexts/data-context';
-import { NewsContent } from '@/app/news/_components/content';
+import NewsContent from '@/app/news/_components/content';
 import type { ElectoralDivision } from '@/models/electoral-division';
 import { electoralDivisionsSchema } from '@/models/electoral-division';
 import type { News } from '@/models/news';
@@ -34,7 +34,7 @@ const parties = partiesResult.data as Parties;
 const electoralDivisions = electoralDivisionsResult.data as ElectoralDivision[];
 const profiles = profilesResult.data as PartyProfile;
 
-export default function NewsPage() {
+const NewsPage = () => {
   return (
     <DataProvider
       news={news}
@@ -45,4 +45,6 @@ export default function NewsPage() {
       <NewsContent />
     </DataProvider>
   );
-}
+};
+
+export default NewsPage;
