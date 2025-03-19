@@ -7,11 +7,11 @@ import { Newspaper } from 'lucide-react';
 import { useMemo, useState } from 'react';
 
 export function NewsContent() {
-  const { news, parties, electoralDivisions } = useData();
+  const { news, parties, electoralDivisions, profiles } = useData();
   const [filters, setFilters] = useState({
     party: 'all',
     constituency: 'all',
-    search: '',
+    profile: 'all',
   });
 
   const filteredNews = useMemo(() => {
@@ -29,10 +29,10 @@ export function NewsContent() {
         return false;
       }
 
-      // Filter by search term
+      // Filter by profile
       if (
-        filters.search &&
-        !item.title.toLowerCase().includes(filters.search.toLowerCase())
+        filters.profile !== 'all' &&
+        !item.profileIds.includes(filters.profile)
       ) {
         return false;
       }
@@ -60,7 +60,9 @@ export function NewsContent() {
         <NewsFilters
           parties={parties}
           constituencies={electoralDivisions}
+          profiles={profiles}
           onFilterChange={setFilters}
+          currentFilters={filters}
         />
       </div>
 

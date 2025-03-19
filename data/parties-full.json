@@ -4,14 +4,14 @@
     "name": "People's Action Party",
     "logo": "PAP.png",
     "manifesto": "https://www.pap.org.sg/manifesto/",
-    "color": "#D8C99B"
+    "color": "#08579f"
   },
   "WP": {
     "id": "WP",
     "name": "Workers' Party",
     "logo": "WP.png",
     "manifesto": "https://www.wp.sg/manifesto/",
-    "color": "#273E47"
+    "color": "#da282e"
   },
   "PSP": {
     "id": "PSP",
