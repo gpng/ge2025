@@ -1,10 +1,4 @@
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/app/_components/ui/select';
+import Combobox from '@/app/_components/ui/combobox';
 import { useData } from '@/app/map/_components/contexts/data-context';
 import {
   ALL_COMPETITION,
@@ -21,28 +15,24 @@ const CompetitionFilter = () => {
       electoralDivisions.map((ed) => ed.candidates.length),
     );
 
-    return Array.from(uniqueCandidateCounts)
-      .sort((a, b) => a - b)
-      .map((count) => ({
-        value: count === 1 ? 'walkover' : `${count}way`,
-        label: count === 1 ? 'Walkovers only' : `${count}-way fights only`,
-      }));
+    return [
+      { id: ALL_COMPETITION, name: 'Show all constituencies' },
+      ...Array.from(uniqueCandidateCounts)
+        .sort((a, b) => a - b)
+        .map((count) => ({
+          id: count === 1 ? 'walkover' : `${count}way`,
+          name: count === 1 ? 'Walkovers only' : `${count}-way fights only`,
+        })),
+    ];
   }, [electoralDivisions]);
 
   return (
-    <Select onValueChange={setCompetitionFilter} value={filters.competition}>
-      <SelectTrigger className="relative bg-white z-[10]">
-        <SelectValue placeholder="Filter by competition" />
-      </SelectTrigger>
-      <SelectContent>
-        <SelectItem value={ALL_COMPETITION}>Show all constituencies</SelectItem>
-        {competitionOptions.map(({ value, label }) => (
-          <SelectItem key={value} value={value}>
-            {label}
-          </SelectItem>
-        ))}
-      </SelectContent>
-    </Select>
+    <Combobox
+      options={competitionOptions}
+      value={filters.competition}
+      onValueChange={setCompetitionFilter}
+      placeholder="Filter by competition"
+    />
   );
 };
 

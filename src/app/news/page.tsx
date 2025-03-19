@@ -29,7 +29,7 @@ if (
   throw new Error('Failed to parse data');
 }
 
-const news = newsResult.data as News[];
+const news = newsResult.data.toReversed() as News[];
 const parties = partiesResult.data as Parties;
 const electoralDivisions = electoralDivisionsResult.data as ElectoralDivision[];
 const profiles = profilesResult.data as PartyProfile;

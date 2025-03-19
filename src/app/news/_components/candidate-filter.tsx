@@ -27,7 +27,7 @@ const CandidateFilter = ({
       for (const [profileId, profile] of Object.entries(partyProfiles)) {
         allProfiles.push({
           id: profileId,
-          name: `${profile.name} (${party.name})`,
+          name: `${profile.name} (${party.id})`,
         });
       }
     }

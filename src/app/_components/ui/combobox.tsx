@@ -21,6 +21,7 @@ import { useState } from 'react';
 interface Option {
   id: string;
   name: string;
+  searchText?: string;
 }
 
 interface Props {
@@ -29,6 +30,7 @@ interface Props {
   onValueChange: (value: string) => void;
   placeholder?: string;
   className?: string;
+  filterFn?: (value: string, search: string) => number;
 }
 
 const Combobox = ({
@@ -37,6 +39,7 @@ const Combobox = ({
   onValueChange,
   placeholder = 'Select an option',
   className,
+  filterFn,
 }: Props) => {
   const [open, setOpen] = useState(false);
 
@@ -47,16 +50,17 @@ const Combobox = ({
       <PopoverTrigger asChild>
         <Button
           variant="outline"
+          // biome-ignore lint/a11y/useSemanticElements: <explanation>
           role="combobox"
           aria-expanded={open}
-          className={cn('w-full md:w-[200px] justify-between', className)}
+          className={cn('w-full justify-between', className)}
         >
           {selectedOption ? selectedOption.name : placeholder}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-full md:w-[200px] p-0">
-        <Command>
+      <PopoverContent className="w-full p-0">
+        <Command filter={filterFn}>
           <CommandInput placeholder={placeholder} />
           <CommandList className="max-h-[300px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-transparent hover:scrollbar-thumb-gray-300">
             <CommandEmpty>No results found.</CommandEmpty>
@@ -64,19 +68,19 @@ const Combobox = ({
               {options.map((option) => (
                 <CommandItem
                   key={option.id}
-                  value={option.id}
+                  value={option.searchText || option.name}
                   onSelect={() => {
                     onValueChange(option.id);
                     setOpen(false);
                   }}
                 >
+                  {option.name}
                   <Check
                     className={cn(
-                      'mr-2 h-4 w-4',
+                      'ml-auto h-4 w-4',
                       value === option.id ? 'opacity-100' : 'opacity-0',
                     )}
                   />
-                  {option.name}
                 </CommandItem>
               ))}
             </CommandGroup>

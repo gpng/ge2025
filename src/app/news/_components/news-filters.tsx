@@ -51,32 +51,38 @@ const NewsFilters = ({
 
   return (
     <div className="flex flex-col md:flex-row gap-4">
-      <Combobox
-        options={partyOptions}
-        value={currentFilters.party}
-        onValueChange={(value) =>
-          onFilterChange({ ...currentFilters, party: value })
-        }
-        placeholder="Filter by party"
-      />
+      <div className="w-full md:w-[300px]">
+        <Combobox
+          options={partyOptions}
+          value={currentFilters.party}
+          onValueChange={(value) =>
+            onFilterChange({ ...currentFilters, party: value })
+          }
+          placeholder="Filter by party"
+        />
+      </div>
 
-      <Combobox
-        options={constituencyOptions}
-        value={currentFilters.constituency}
-        onValueChange={(value) =>
-          onFilterChange({ ...currentFilters, constituency: value })
-        }
-        placeholder="Filter by constituency"
-      />
+      <div className="w-full md:w-[300px]">
+        <Combobox
+          options={constituencyOptions}
+          value={currentFilters.constituency}
+          onValueChange={(value) =>
+            onFilterChange({ ...currentFilters, constituency: value })
+          }
+          placeholder="Filter by constituency"
+        />
+      </div>
 
-      <CandidateFilter
-        parties={parties}
-        profiles={profiles}
-        value={currentFilters.profile}
-        onValueChange={(value) =>
-          onFilterChange({ ...currentFilters, profile: value })
-        }
-      />
+      <div className="w-full md:w-[300px]">
+        <CandidateFilter
+          parties={parties}
+          profiles={profiles}
+          value={currentFilters.profile}
+          onValueChange={(value) =>
+            onFilterChange({ ...currentFilters, profile: value })
+          }
+        />
+      </div>
     </div>
   );
 };
