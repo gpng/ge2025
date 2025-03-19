@@ -10,4 +10,5 @@ const partySchema = z.object({
 
 export const partiesSchema = z.record(z.string(), partySchema);
 
+export type Party = z.infer<typeof partySchema>;
 export type Parties = z.infer<typeof partiesSchema>;

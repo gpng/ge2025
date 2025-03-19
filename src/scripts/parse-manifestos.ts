@@ -1,70 +1,7 @@
 import fs from 'node:fs';
-import { PARTIES } from '@/data/parties';
-import { type Party, PartyId } from '@/models';
+import type { Party } from '@/models/party';
+import { partiesSchema } from '@/models/party';
 import { PDFLoader } from '@langchain/community/document_loaders/fs/pdf';
-
-const parsePAP = async () => {
-  return parsePDF(
-    'data/manifestos/pap-manifesto-2020.pdf',
-    'data/manifestos/pap-manifesto-2020.txt',
-    PARTIES[PartyId.PAP],
-    2020,
-  );
-};
-
-const parseWP = async () => {
-  return parsePDF(
-    'data/manifestos/wp-manifesto-2020.pdf',
-    'data/manifestos/wp-manifesto-2020.txt',
-    PARTIES[PartyId.WP],
-    2020,
-  );
-};
-
-const parsePSP = async () => {
-  return parsePDF(
-    'data/manifestos/psp-manifesto-2020.pdf',
-    'data/manifestos/rdr-manifesto-2020.txt',
-    PARTIES[PartyId.PSP],
-    2020,
-  );
-};
-
-const parseRP = async () => {
-  return parsePDF(
-    'data/manifestos/rp-manifesto-2020.pdf',
-    'data/manifestos/rp-manifesto-2020.txt',
-    PARTIES[PartyId.RP],
-    2020,
-  );
-};
-
-const parseNSP = async () => {
-  return parsePDF(
-    'data/manifestos/nsp-manifesto-2020.pdf',
-    'data/manifestos/nsp-manifesto-2020.txt',
-    PARTIES[PartyId.NSP],
-    2020,
-  );
-};
-
-const parseRDU = async () => {
-  return parsePDF(
-    'data/manifestos/rdu-manifesto-2020.pdf',
-    'data/manifestos/rdu-manifesto-2020.txt',
-    PARTIES[PartyId.RDU],
-    2020,
-  );
-};
-
-const parseSPP = async () => {
-  return parsePDF(
-    'data/manifestos/spp-manifesto-2020.pdf',
-    'data/manifestos/spp-manifesto-2020.txt',
-    PARTIES[PartyId.SPP],
-    2020,
-  );
-};
 
 const parsePDF = async (
   pdfInPath: string,
@@ -89,13 +26,36 @@ const parsePDF = async (
 };
 
 const main = async () => {
-  await parsePAP();
-  await parseWP();
-  await parsePSP();
-  await parseRP();
-  await parseNSP();
-  await parseRDU();
-  await parseSPP();
+  const partiesData = JSON.parse(
+    fs.readFileSync('data/parties-full.json', 'utf-8'),
+  );
+  const parties = partiesSchema.parse(partiesData);
+
+  const year = 2020;
+  const partiesToParse = [
+    { id: 'PAP', pdf: 'pap-manifesto-2020.pdf', txt: 'pap-manifesto-2020.txt' },
+    { id: 'WP', pdf: 'wp-manifesto-2020.pdf', txt: 'wp-manifesto-2020.txt' },
+    { id: 'PSP', pdf: 'psp-manifesto-2020.pdf', txt: 'psp-manifesto-2020.txt' },
+    { id: 'RP', pdf: 'rp-manifesto-2020.pdf', txt: 'rp-manifesto-2020.txt' },
+    { id: 'NSP', pdf: 'nsp-manifesto-2020.pdf', txt: 'nsp-manifesto-2020.txt' },
+    { id: 'RDU', pdf: 'rdu-manifesto-2020.pdf', txt: 'rdu-manifesto-2020.txt' },
+    { id: 'SPP', pdf: 'spp-manifesto-2020.pdf', txt: 'spp-manifesto-2020.txt' },
+  ];
+
+  for (const party of partiesToParse) {
+    const partyData = parties[party.id];
+    if (!partyData) {
+      console.warn(`Party ${party.id} not found in parties data`);
+      continue;
+    }
+
+    await parsePDF(
+      `data/manifestos/${party.pdf}`,
+      `data/manifestos/${party.txt}`,
+      partyData,
+      year,
+    );
+  }
 };
 
 main();
