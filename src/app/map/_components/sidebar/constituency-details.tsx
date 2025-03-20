@@ -23,6 +23,7 @@ const ConstituencyDetails = ({ electoralDivision }: Props) => {
               candidate={candidate}
               showStatus
               electoralDivisionName={electoralDivision?.name}
+              electoralDivisionId={electoralDivision.id}
             />
           ))}
         </div>

@@ -814,6 +814,15 @@
     },
     "SATHIN_RAVINDRAN": {
       "name": "Sathin Ravindran"
+    },
+    "LIM_RUI_XIAN": {
+      "name": "Lim Rui Xian"
+    },
+    "NUR_FARAHIYAH_MAHFOOT": {
+      "name": "Nur Farahiyah Mahfoot"
+    },
+    "THAMILSELVAN_KARUPPAYA": {
+      "name": "Thamilselvan Karuppaya"
     }
   },
   "SDA": {
@@ -903,19 +912,6 @@
     },
     "KUMAR_APPAVOO": {
       "name": "Kumar Appavoo"
-    }
-  },
-  "INDIE": {
-    "RONNIE_LAI": {
-      "name": "Victor Ronnie Lai",
-      "image": "ronnie_lai.jpg"
-    },
-    "OOI_BOON_EWE": {
-      "name": "Ooi Boon Ewe",
-      "image": "ooi_boon_ewe.jpg"
-    },
-    "CHEANG_PENG_WAH": {
-      "name": "Cheang Peng Wah"
     }
   }
 }

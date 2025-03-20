@@ -3,21 +3,21 @@ import { useData } from '@/app/map/_components/contexts/data-context';
 import NewsModal from '@/app/map/_components/party-drawer/news-modal';
 import { cn } from '@/lib/utils';
 import type { Candidate } from '@/models/candidate';
-import { useState } from 'react';
 
 interface Props {
   candidate: Candidate;
   showStatus: boolean;
   electoralDivisionName: string;
+  electoralDivisionId: string;
 }
 
 const ConstituencyCandidate = ({
   candidate,
   showStatus,
   electoralDivisionName,
+  electoralDivisionId,
 }: Props) => {
   const { parties, profiles } = useData();
-  const [isNewsModalOpen, setIsNewsModalOpen] = useState(false);
 
   const party = parties[candidate.partyId];
 
@@ -55,29 +55,10 @@ const ConstituencyCandidate = ({
                 >
                   {candidate.isConfirmed ? 'Confirmed' : 'Unconfirmed'}
                 </Typography>
-                {(candidate.news?.length || 0) > 0 && (
-                  <button
-                    type="button"
-                    onClick={() => setIsNewsModalOpen(true)}
-                    className="text-xs text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1"
-                  >
-                    <svg
-                      className="w-3 h-3"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <title>News and announcements icon</title>
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2 2 0 00-2-2h-2"
-                      />
-                    </svg>
-                    News
-                  </button>
-                )}
+                <NewsModal
+                  partyId={candidate.partyId}
+                  electoralDivisionId={electoralDivisionId}
+                />
               </div>
             )}
           </div>
@@ -136,16 +117,6 @@ const ConstituencyCandidate = ({
           );
         })}
       </div>
-
-      {candidate.news && (
-        <NewsModal
-          news={candidate.news}
-          isOpen={isNewsModalOpen}
-          onClose={() => setIsNewsModalOpen(false)}
-          partyName={party.name}
-          electoralDivisionName={electoralDivisionName}
-        />
-      )}
     </div>
   );
 };

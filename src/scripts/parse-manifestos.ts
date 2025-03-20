@@ -26,9 +26,7 @@ const parsePDF = async (
 };
 
 const main = async () => {
-  const partiesData = JSON.parse(
-    fs.readFileSync('data/parties-full.json', 'utf-8'),
-  );
+  const partiesData = JSON.parse(fs.readFileSync('data/parties.json', 'utf-8'));
   const parties = partiesSchema.parse(partiesData);
 
   const year = 2020;

@@ -1,10 +1,4 @@
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/app/_components/ui/select';
+import Combobox from '@/app/_components/ui/combobox';
 import { useData } from '@/app/map/_components/contexts/data-context';
 import { MAP_ID } from '@/app/map/_components/map';
 import { flattenDepth } from 'lodash';
@@ -19,13 +13,21 @@ const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
   const { electoralDivisions, boundaries } = useData();
   const { [MAP_ID]: map } = useMap();
 
-  const sortedDivisions = useMemo(() => {
-    return Object.values(electoralDivisions).sort((a, b) =>
-      a.name.localeCompare(b.name),
-    );
+  const edOptions = useMemo(() => {
+    return [
+      { id: 'placeholder', name: 'Choose a constituency to view details' },
+      ...Object.values(electoralDivisions)
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map((ed) => ({
+          id: ed.id,
+          name: ed.name,
+        })),
+    ];
   }, [electoralDivisions]);
 
   const handleElectoralDivisionSelected = (electoralDivisionId: string) => {
+    if (electoralDivisionId === 'placeholder') return;
+
     const electoralDivision = electoralDivisions.find(
       (ed) => ed.id === electoralDivisionId,
     );
@@ -69,21 +71,12 @@ const EDSelector = ({ onElectoralDivisionSelected }: Props) => {
   };
 
   return (
-    <Select value="placeholder" onValueChange={handleElectoralDivisionSelected}>
-      <SelectTrigger className="relative bg-white z-[10]">
-        <SelectValue placeholder="Search constituency..." />
-      </SelectTrigger>
-      <SelectContent className="max-h-[300px] overflow-y-auto">
-        <SelectItem value="placeholder" disabled>
-          Choose a constituency to view details
-        </SelectItem>
-        {sortedDivisions.map((ed) => (
-          <SelectItem key={ed.featureId} value={ed.id}>
-            {ed.name}
-          </SelectItem>
-        ))}
-      </SelectContent>
-    </Select>
+    <Combobox
+      options={edOptions}
+      value="placeholder"
+      onValueChange={handleElectoralDivisionSelected}
+      placeholder="Search constituency..."
+    />
   );
 };
 

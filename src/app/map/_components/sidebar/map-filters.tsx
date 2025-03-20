@@ -10,7 +10,7 @@ interface MapFiltersProps {
 
 const MapFilters = ({ onElectoralDivisionSelected }: MapFiltersProps) => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 w-full">
       <PartyFilter />
       <CompetitionFilter />
       <EDSelector onElectoralDivisionSelected={onElectoralDivisionSelected} />
