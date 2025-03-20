@@ -77,7 +77,7 @@ const Content = () => {
   };
 
   return (
-    <div className="flex overflow-hidden h-[calc(100vh-3.5rem)]">
+    <div className="flex overflow-hidden h-[calc(100vh-3.5rem-1px)]">
       {/* Desktop Sidebar */}
       <MapSidebar
         onElectoralDivisionSelected={handleElectoralDivisionSelected}
