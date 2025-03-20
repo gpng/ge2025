@@ -1,5 +1,7 @@
+import { Typography } from '@/app/_components/ui/typography';
 import { cn } from '@/lib/utils';
 import type { News } from '@/models/news';
+import { format } from 'date-fns';
 
 interface Props {
   item: News;
@@ -25,11 +27,17 @@ const NewsCard = ({ item, compact = false }: Props) => {
           <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-muted">
             {item.isOfficial ? 'Official announcement' : 'Rumour'}
           </span>
+          <span className="text-xs text-muted-foreground ml-auto">
+            {format(new Date(item.date), "d MMM ''yy")}
+          </span>
         </div>
 
-        <span className="font-medium hover:text-primary hover:underline">
+        <span className="font-medium hover:text-primary hover:underline truncate">
           {item.title}
         </span>
+        <Typography variant="mutedText" className="mt-2 line-clamp-2">
+          {item.summary}
+        </Typography>
       </div>
     </a>
   );
