@@ -9,6 +9,7 @@ import {
 import ConstituencyDetails from '@/app/map/_components/sidebar/constituency-details';
 import MapFilters from '@/app/map/_components/sidebar/map-filters';
 import type { ElectoralDivision } from '@/models/electoral-division';
+import { useEffect, useState } from 'react';
 
 interface MobileSheetProps {
   isOpen: boolean;
@@ -23,6 +24,23 @@ const MobileSheet = ({
   onElectoralDivisionSelected,
   selectedElectoralDivision,
 }: MobileSheetProps) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      const mdBreakpoint = getComputedStyle(document.documentElement)
+        .getPropertyValue('--screen-md')
+        .trim();
+      setIsMobile(window.matchMedia(`(max-width: ${mdBreakpoint})`).matches);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  if (!isMobile) return null;
+
   return (
     <Sheet open={isOpen} onOpenChange={onOpenChange}>
       <SheetContent side="left" className="w-[350px] p-0">

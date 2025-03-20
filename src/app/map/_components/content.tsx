@@ -73,6 +73,7 @@ const Content = () => {
     if (!electoralDivision) return;
 
     setElectoralDivisionSelected(electoralDivision);
+    setIsFilterOpen(true);
   };
 
   return (
