@@ -5,9 +5,9 @@ import {
   DialogTitle,
 } from '@/app/_components/ui/dialog';
 import { Typography } from '@/app/_components/ui/typography';
-import { cn } from '@/lib/utils';
+import { useData } from '@/app/map/_components/contexts/data-context';
+import NewsCard from '@/app/news/_components/news-card';
 import { useState } from 'react';
-import { useData } from '../../_components/contexts/data-context';
 
 interface Props {
   partyId: string;
@@ -68,31 +68,8 @@ const NewsModal = ({ partyId, electoralDivisionId }: Props) => {
             </Typography>
           </DialogHeader>
           <div className="space-y-4">
-            {filteredNews.toReversed().map((item) => (
-              <div
-                key={item.url}
-                className="flex items-start gap-3 p-3 rounded-lg border hover:bg-gray-50"
-              >
-                <div
-                  className={cn('mt-1 w-2 h-2 rounded-full flex-shrink-0', {
-                    'bg-green-500': item.isOfficial,
-                    'bg-yellow-500': !item.isOfficial,
-                  })}
-                />
-                <div className="min-w-0">
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 hover:underline block break-all"
-                  >
-                    {item.title}
-                  </a>
-                  <Typography variant="mutedText" className="text-xs mt-1">
-                    {item.isOfficial ? 'Official Announcement' : 'Rumours'}
-                  </Typography>
-                </div>
-              </div>
+            {filteredNews.map((item) => (
+              <NewsCard key={item.url} item={item} compact />
             ))}
           </div>
         </DialogContent>

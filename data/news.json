@@ -5,7 +5,9 @@
     "isOfficial": true,
     "partyIds": ["RDU"],
     "electoralDivisionIds": ["JE", "TP", "RM", "JK", "JU", "NS"],
-    "profileIds": []
+    "profileIds": [],
+    "date": "2024-03-11",
+    "summary": "RDU announces plans to contest in Jurong East, Tampines, Radin Mas, Jurong-Kranji, Jurong, and Nee Soon constituencies"
   },
   {
     "url": "https://www.facebook.com/PeoplesVoiceSingapore/posts/1192472985581270?ref=embed_post",
@@ -23,7 +25,9 @@
       "BS",
       "MB"
     ],
-    "profileIds": []
+    "profileIds": [],
+    "date": "2024-03-11",
+    "summary": "PAR announces plans to contest in Kebun Baru, Yio Chu Kang, Queenstown, Pasir Ris, Jurong-Kranji, Jurong Barat, Marine Parade, Bukit Sembawang, and MacPherson-Braddell constituencies"
   },
   {
     "url": "https://www.facebook.com/SingaporePeoplesParty/posts/pfbid0EAoAu8duDZwoFjfcvVmqtCuLnQAHLiBGHx3yPxmMM6s24pjpWowuT2xHf9a5bxBMl",
@@ -31,7 +35,9 @@
     "isOfficial": true,
     "partyIds": ["SPP"],
     "electoralDivisionIds": ["PS", "BS"],
-    "profileIds": []
+    "profileIds": [],
+    "date": "2024-03-12",
+    "summary": "SPP announces plans to contest in Pasir Ris and Bukit Sembawang constituencies"
   },
   {
     "url": "https://www.facebook.com/peoplespowerpartysg/posts/pfbid0JSV76nNkkstt9GjFKxcBFzCjuNS9RySwrsR3pesMMptUqr5Z6W1rJk8SHKqqNps8l",
@@ -39,7 +45,9 @@
     "isOfficial": true,
     "partyIds": ["PPP"],
     "electoralDivisionIds": ["JK", "AM", "NS", "TC", "TM"],
-    "profileIds": []
+    "profileIds": [],
+    "date": "2024-03-11",
+    "summary": "PPP announces plans to contest in Jurong-Kranji, Ang Mo Kio, Nee Soon, Toa Payoh-Choa Chu Kang, and Tampines constituencies"
   },
   {
     "url": "https://www.facebook.com/nspsg/posts/pfbid02CezQDjHqY1S6eYTWVJzhc6ykfXHygT2svi8HoXZFStmhrr8Abj26iawBmNsfSJ1ul",
@@ -47,7 +55,9 @@
     "isOfficial": true,
     "partyIds": ["NSP"],
     "electoralDivisionIds": ["JB", "MY", "SE", "TC", "SB", "MH", "TM"],
-    "profileIds": []
+    "profileIds": [],
+    "date": "2024-03-11",
+    "summary": "NSP announces plans to contest in Jurong Barat, Marine Yishun, Sengkang, Toa Payoh-Choa Chu Kang, Sembawang, Mountbatten-Hougang, and Tampines constituencies"
   },
   {
     "url": "https://www.straitstimes.com/singapore/politics/ge2025-three-pap-new-faces-redeployed-to-different-constituencies-ahead-of-election",
@@ -55,9 +65,10 @@
     "isOfficial": false,
     "partyIds": ["PAP"],
     "electoralDivisionIds": ["CK", "TM"],
-    "profileIds": ["PAP.CHUA_WEI_SHAN", "PAP.VALERIE_LEE", "PAP.DAVID_HOE"]
+    "profileIds": ["PAP.CHUA_WEI_SHAN", "PAP.VALERIE_LEE", "PAP.DAVID_HOE"],
+    "date": "2024-05-15",
+    "summary": "Three PAP new faces - Chua Wei Shan, Valerie Lee, and David Hoe - redeployed as part of cabinet reshuffle and preparations for GE2025"
   },
-
   {
     "url": "https://www.straitstimes.com/singapore/ge2025-potential-nsp-candidates-for-tampines-spotted-during-walkabout-with-coalition",
     "title": "Potential NSP Candidates for Tampines Spotted",
@@ -70,6 +81,8 @@
       "NSP.LIM_RUI_XIAN",
       "NSP.NUR_FARAHIYAH_MAHFOOT",
       "NSP.THAMILSELVAN_KARUPPAYA"
-    ]
+    ],
+    "date": "2024-03-17",
+    "summary": "Five potential NSP candidates - Reno Fong, Mohamad Ridzwan, Lim Rui Xian, Nur Farahiyah Mahfoot, and Thamilselvan Karuppaya - spotted during walkabout in Tampines"
   }
 ]

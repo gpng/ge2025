@@ -1,3 +1,4 @@
+'use client';
 import { useData } from '@/app/map/_components/contexts/data-context';
 import { MAP_ID, SOURCE_ID } from '@/app/map/_components/map';
 import type { ElectoralDivisions } from '@/models/electoral-division';
