@@ -1,6 +1,7 @@
 import SiteHeader from '@/app/_components/header';
 import { ThemeProvider } from '@/app/_components/theme-provider';
 import '@/app/globals.css';
+import { GoogleTagManager } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import type { FC } from 'react';
@@ -24,6 +25,7 @@ const MainLayout: FC<Props> = ({ children }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </head>
+      <GoogleTagManager gtmId="GTM-KJG65G4X" />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
