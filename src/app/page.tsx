@@ -249,7 +249,7 @@ const HomePage = () => {
               <CardFooter className="bg-primary/5 p-4">
                 <Button variant="link" className="text-primary w-full" asChild>
                   <Link
-                    href="https://www.eld.gov.sg/pdf/White%20Paper%20on%20the%20Report%20of%20the%20Electoral%20Boundaries%20Review%20Committee%202025.pdf"
+                    href="https://www.eld.gov.sg/pdf/White_Paper_on_the_Report_of_the_Electoral_Boundaries_Review_Committee_2025.pdf"
                     target="_blank"
                   >
                     Read the full EBRC Report →
@@ -389,8 +389,8 @@ const HomePage = () => {
               </CardHeader>
               <CardContent className="pt-6">
                 <p className="text-muted-foreground">
-                  First-time voter? Here's everything you need to know about the
-                  process
+                  From election basics to rules & regulations, learn everything
+                  about Singapore's electoral process
                 </p>
               </CardContent>
               <CardFooter className="pt-2 pb-4">
@@ -399,8 +399,8 @@ const HomePage = () => {
                   className="w-full justify-between group-hover:text-primary"
                   asChild
                 >
-                  <Link href="/education">
-                    Voting Guide
+                  <Link href="/resources">
+                    Explore Resources
                     <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
