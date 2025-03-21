@@ -12,7 +12,6 @@ import {
   ChevronRight,
   FileText,
   Scale,
-  Video,
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -45,13 +44,13 @@ const resourceCategories = [
     icon: <Building className="h-6 w-6 text-primary" />,
     href: '/resources/education#government-agencies',
   },
-  {
-    title: 'Multimedia Resources',
-    description:
-      'Videos, infographics, and interactive guides for visual learners',
-    icon: <Video className="h-6 w-6 text-primary" />,
-    href: '/resources/education#multimedia-resources',
-  },
+  // {
+  //   title: 'Multimedia Resources',
+  //   description:
+  //     'Videos, infographics, and interactive guides for visual learners',
+  //   icon: <Video className="h-6 w-6 text-primary" />,
+  //   href: '/resources/education#multimedia-resources',
+  // },
 ];
 
 const ResourcesPage = () => {

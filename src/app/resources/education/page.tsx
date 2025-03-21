@@ -11,7 +11,7 @@ import {
   TabsList,
   TabsTrigger,
 } from '@/app/_components/ui/tabs';
-import { ArrowUp, ExternalLink } from 'lucide-react';
+import { AlertTriangle, ArrowUp, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 
 export default function EducationPage() {
@@ -24,6 +24,29 @@ export default function EducationPage() {
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           A comprehensive guide to understanding Singapore's electoral process
         </p>
+      </div>
+
+      {/* Disclaimer */}
+      <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-12 flex items-start">
+        <AlertTriangle className="h-5 w-5 text-amber-500 mt-0.5 mr-3 flex-shrink-0" />
+        <div>
+          <p className="font-medium text-amber-800">Disclaimer</p>
+          <p className="text-amber-700">
+            This page is not an official source of information on Singapore's
+            electoral process. For authoritative information, please refer to
+            the Elections Department Singapore (ELD). Visit the{' '}
+            <a
+              href="https://www.eld.gov.sg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-medium"
+            >
+              ELD website
+            </a>{' '}
+            or contact them directly for the most accurate and up-to-date
+            guidance.
+          </p>
+        </div>
       </div>
 
       {/* Table of Contents */}
@@ -1039,23 +1062,40 @@ export default function EducationPage() {
                 </p>
                 <p className="mb-4">Key responsibilities include:</p>
                 <ul className="list-disc pl-6 space-y-2 mb-4">
-                  <li>Maintaining the Registers of Electors</li>
-                  <li>Setting up polling stations and counting centres</li>
-                  <li>Training election officials</li>
-                  <li>Providing information to voters and candidates</li>
+                  <li>Training of election officials</li>
+                  <li>Maintaining and updating the Registers of Electors</li>
                   <li>
-                    Ensuring elections are conducted fairly and transparently
+                    Planning for election manpower, premises, logistical and
+                    other related requirements for the conduct of elections
+                  </li>
+                  <li>
+                    Informing the public about the electoral system and voting
+                    processes
+                  </li>
+                  <li>
+                    Ensuring all electors have access to the electoral system
+                    and voting processes
+                  </li>
+                  <li>
+                    Administering the Political Donations Act and campaign
+                    spending rules
+                  </li>
+                  <li>
+                    Providing secretariat support to any appointed committee
+                    responsible for recommending changes to electoral boundaries
+                    and election committees such as the Presidential Elections
+                    Committee and Community Committee
                   </li>
                 </ul>
                 <div className="flex items-center mt-4 text-sm">
                   <span className="text-muted-foreground">Resource:</span>
                   <a
-                    href="https://www.eld.gov.sg"
+                    href="https://www.eld.gov.sg/our_role.html"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="ml-2 text-primary flex items-center hover:underline"
                   >
-                    Official ELD Website
+                    ELD – Our Role
                     <ExternalLink className="h-3 w-3 ml-1" />
                   </a>
                 </div>
@@ -1087,6 +1127,10 @@ export default function EducationPage() {
                   <li>Supervising the counting of votes</li>
                   <li>Announcing election results</li>
                   <li>Ensuring the election is conducted according to law</li>
+                  <li>
+                    Instructing the removal of online election advertisements
+                    that violate regulations
+                  </li>
                 </ul>
                 <p className="mb-4">
                   The Returning Officer is assisted by various election
@@ -1096,12 +1140,12 @@ export default function EducationPage() {
                 <div className="flex items-center mt-4 text-sm">
                   <span className="text-muted-foreground">Resource:</span>
                   <a
-                    href="https://www.eld.gov.sg/elections_officials.html"
+                    href="https://www.eld.gov.sg/candidate_parliamentary_polling.html"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="ml-2 text-primary flex items-center hover:underline"
                   >
-                    ELD – Election Officials
+                    ELD – Polling & Counting
                     <ExternalLink className="h-3 w-3 ml-1" />
                   </a>
                 </div>
@@ -1121,30 +1165,65 @@ export default function EducationPage() {
               <CardContent>
                 <p className="mb-4">
                   The Electoral Boundaries Review Committee (EBRC) is appointed
-                  by the Prime Minister before each general election to review
-                  and recommend changes to electoral boundaries.
+                  by the Prime Minister before each general election to
+                  determine the electoral boundaries for use at future
+                  elections.
                 </p>
-                <p className="mb-4">The committee considers factors such as:</p>
+                <p className="mb-4">
+                  The EBRC's role is strictly technical and non-partisan. When
+                  making recommendations, the committee takes into account:
+                </p>
                 <ul className="list-disc pl-6 space-y-2 mb-4">
-                  <li>Population changes and shifts</li>
-                  <li>Housing developments</li>
-                  <li>Transportation links</li>
-                  <li>Community ties</li>
+                  <li>Population shifts since the last boundary review</li>
+                  <li>New housing developments</li>
+                  <li>Changes in population density across different areas</li>
                 </ul>
                 <p className="mb-4">
-                  The EBRC's recommendations determine the number and boundaries
-                  of Group Representation Constituencies (GRCs) and Single
-                  Member Constituencies (SMCs) for the upcoming election.
+                  Importantly, the EBRC does not examine past election results
+                  or voter profiles when delineating the new boundaries.
+                </p>
+                <p className="mb-4">
+                  The committee comprises senior civil servants who are experts
+                  in these technical areas:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 mb-4">
+                  <li>Secretary to Prime Minister (Chairperson)</li>
+                  <li>
+                    Chief Executive Officer, Housing & Development Board
+                    (Member)
+                  </li>
+                  <li>Chief Executive, Singapore Land Authority (Member)</li>
+                  <li>Chief Statistician, Department of Statistics (Member)</li>
+                  <li>Head, Elections Department (Secretary)</li>
+                </ul>
+                <p className="mb-4">
+                  After the EBRC submits its report, it is presented to
+                  Parliament as a White Paper. The report includes details on
+                  the number of electoral divisions, their boundaries, and which
+                  are designated as Group Representation Constituencies (GRCs)
+                  or Single Member Constituencies (SMCs).
                 </p>
                 <div className="flex items-center mt-4 text-sm">
-                  <span className="text-muted-foreground">Resource:</span>
+                  <span className="text-muted-foreground">Resources:</span>
                   <a
-                    href="https://www.eld.gov.sg/boundaries.html"
+                    href="https://www.gov.sg/explainers/what-is-the-role-and-composition-of-the-electoral-boundaries-review-committee"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="ml-2 text-primary flex items-center hover:underline"
                   >
-                    Electoral Boundaries Review
+                    Gov.sg Explainer – Role and Composition of EBRC
+                    <ExternalLink className="h-3 w-3 ml-1" />
+                  </a>
+                </div>
+                <div className="flex items-center mt-2 text-sm">
+                  <span className="text-muted-foreground ml-[72px]" />
+                  <a
+                    href="https://www.eld.gov.sg/ebrc.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-2 text-primary flex items-center hover:underline"
+                  >
+                    ELD – EBRC Reports
                     <ExternalLink className="h-3 w-3 ml-1" />
                   </a>
                 </div>
@@ -1342,7 +1421,7 @@ export default function EducationPage() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button asChild>
             <a
-              href="https://www.eld.gov.sg/contact_us.html"
+              href="https://www.eld.gov.sg/contact.html"
               target="_blank"
               rel="noopener noreferrer"
             >

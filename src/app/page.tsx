@@ -249,7 +249,7 @@ const HomePage = () => {
               <CardFooter className="bg-primary/5 p-4">
                 <Button variant="link" className="text-primary w-full" asChild>
                   <Link
-                    href="https://www.eld.gov.sg/pdf/White%20Paper%20on%20the%20Report%20of%20the%20Electoral%20Boundaries%20Review%20Committee%202025.pdf"
+                    href="https://www.eld.gov.sg/pdf/White_Paper_on_the_Report_of_the_Electoral_Boundaries_Review_Committee_2025.pdf"
                     target="_blank"
                   >
                     Read the full EBRC Report →
