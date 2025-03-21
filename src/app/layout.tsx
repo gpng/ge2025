@@ -1,10 +1,10 @@
 import SiteHeader from '@/app/_components/header';
 import { ThemeProvider } from '@/app/_components/theme-provider';
 import '@/app/globals.css';
+import { GOOGLE_TAG_MANAGER_ID } from '@/lib/env';
 import { GoogleTagManager } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import type { FC } from 'react';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -14,7 +14,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-const MainLayout: FC<Props> = ({ children }) => {
+const MainLayout = ({ children }: Props) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -25,7 +25,7 @@ const MainLayout: FC<Props> = ({ children }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <GoogleTagManager gtmId="GTM-KJG65G4X" />
+      <GoogleTagManager gtmId={GOOGLE_TAG_MANAGER_ID || ''} />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
