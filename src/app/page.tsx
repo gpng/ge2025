@@ -389,8 +389,8 @@ const HomePage = () => {
               </CardHeader>
               <CardContent className="pt-6">
                 <p className="text-muted-foreground">
-                  First-time voter? Here's everything you need to know about the
-                  process
+                  From election basics to rules & regulations, learn everything
+                  about Singapore's electoral process
                 </p>
               </CardContent>
               <CardFooter className="pt-2 pb-4">
@@ -399,8 +399,8 @@ const HomePage = () => {
                   className="w-full justify-between group-hover:text-primary"
                   asChild
                 >
-                  <Link href="/education">
-                    Voting Guide
+                  <Link href="/resources">
+                    Explore Resources
                     <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>

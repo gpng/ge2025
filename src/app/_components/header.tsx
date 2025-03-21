@@ -34,7 +34,7 @@ const SiteHeader = () => {
     { href: '/map', label: 'Electoral Map' },
     { href: '/parties', label: 'Parties' },
     { href: '/candidates', label: 'Candidates' },
-    { href: '/education', label: 'Voting 101' },
+    { href: '/resources', label: 'Voting 101' },
     { href: '/timeline', label: 'Key Dates' },
     { href: '/news', label: 'News' },
   ];
