@@ -16,6 +16,14 @@ interface Props {
 const MainLayout: FC<Props> = ({ children }) => {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="google-site-verification"
+          content="jsd0GI10_crUzHY9gmrab0HEDvvnqPZB3YktFd5IrVI"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
