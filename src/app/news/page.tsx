@@ -1,12 +1,13 @@
-import NewsContent from '@/app/news/_components/content';
-import Providers from '@/app/news/_components/providers';
+import { fetchData } from '@/app/actions/fetch-data';
+import Content from './_components/content';
+import Providers from './_components/providers';
 
-const NewsPage = () => {
+export default async function NewsPage() {
+  const data = await fetchData();
+
   return (
-    <Providers>
-      <NewsContent />
+    <Providers initialData={data}>
+      <Content />
     </Providers>
   );
-};
-
-export default NewsPage;
+}
