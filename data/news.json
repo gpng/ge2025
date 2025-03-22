@@ -66,7 +66,7 @@
     "partyIds": ["PAP"],
     "electoralDivisionIds": ["CK", "TM"],
     "profileIds": ["PAP.CHUA_WEI_SHAN", "PAP.VALERIE_LEE", "PAP.DAVID_HOE"],
-    "date": "2025-05-15",
+    "date": "2025-03-15",
     "summary": "Three PAP new faces - Chua Wei Shan, Valerie Lee, and David Hoe - redeployed as part of cabinet reshuffle and preparations for GE2025"
   },
   {
@@ -84,5 +84,15 @@
     ],
     "date": "2025-03-17",
     "summary": "Five potential NSP candidates - Reno Fong, Mohamad Ridzwan, Lim Rui Xian, Nur Farahiyah Mahfoot, and Thamilselvan Karuppaya - spotted during walkabout in Tampines"
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-peoples-action-party-ppp-pulls-out-nee-soon-red-dot-united-rdu-5017561",
+    "title": "PPP withdraws from Nee Soon GRC",
+    "isOfficial": true,
+    "partyIds": ["PPP", "RDU"],
+    "electoralDivisionIds": ["NS"],
+    "profileIds": [],
+    "date": "2025-03-22",
+    "summary": "PPP withdraws from Nee Soon GRC to allow RDU to contest the constituency"
   }
 ]
