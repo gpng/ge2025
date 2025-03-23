@@ -1,7 +1,17 @@
 import fs from 'node:fs';
+import path from 'node:path';
 import type { Party } from '@/models/party';
 import { partiesSchema } from '@/models/party';
+import partiesData from '@data/parties.json';
 import { PDFLoader } from '@langchain/community/document_loaders/fs/pdf';
+
+/**
+ * Helper function to resolve paths relative to the project root
+ * This is needed because Node.js doesn't understand tsconfig paths directly
+ */
+const resolveDataPath = (relativePath: string): string => {
+  return path.resolve(process.cwd(), 'data', relativePath);
+};
 
 const parsePDF = async (
   pdfInPath: string,
@@ -26,7 +36,7 @@ const parsePDF = async (
 };
 
 const main = async () => {
-  const partiesData = JSON.parse(fs.readFileSync('data/parties.json', 'utf-8'));
+  // Validate the imported data with Zod schema
   const parties = partiesSchema.parse(partiesData);
 
   const year = 2020;
@@ -48,8 +58,8 @@ const main = async () => {
     }
 
     await parsePDF(
-      `data/manifestos/${party.pdf}`,
-      `data/manifestos/${party.txt}`,
+      resolveDataPath(`manifestos/${party.pdf}`),
+      resolveDataPath(`manifestos/${party.txt}`),
       partyData,
       year,
     );

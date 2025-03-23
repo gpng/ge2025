@@ -1,6 +1,6 @@
 import { fetchData } from '@/app/actions/fetch-data';
-import Content from './_components/content';
-import Providers from './_components/providers';
+import Content from '@/app/news/_components/content';
+import Providers from '@/app/news/_components/providers';
 
 export default async function NewsPage() {
   const data = await fetchData();

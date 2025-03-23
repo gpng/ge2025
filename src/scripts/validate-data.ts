@@ -10,10 +10,10 @@ import { type PartyProfile, partyProfileSchema } from '@/models/profile';
 import { z } from 'zod';
 
 // Import data files directly
-import electoralDivisionsData from '../../data/electoral-divisions.json';
-import newsData from '../../data/news.json';
-import partiesData from '../../data/parties.json';
-import profilesData from '../../data/profiles.json';
+import electoralDivisionsData from '@data/electoral-divisions.json';
+import newsData from '@data/news.json';
+import partiesData from '@data/parties.json';
+import profilesData from '@data/profiles.json';
 
 // Validation results
 const errors: string[] = [];

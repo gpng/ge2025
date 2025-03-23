@@ -1,10 +1,10 @@
 'use client';
 import Combobox from '@/app/_components/ui/combobox';
+import CandidateFilter from '@/app/news/_components/candidate-filter';
 import type { ElectoralDivision } from '@/models/electoral-division';
 import type { Parties } from '@/models/party';
 import type { PartyProfile } from '@/models/profile';
 import { useMemo } from 'react';
-import CandidateFilter from './candidate-filter';
 
 interface Props {
   parties: Parties;
