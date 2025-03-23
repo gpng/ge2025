@@ -15,6 +15,7 @@
     "check:updates": "pnpm dlx npm-check-updates --interactive --format group",
     "check:knip": "knip",
     "parse-manifestos": "tsx ./src/scripts/parse-manifestos.ts",
+    "validate-data": "tsx ./src/scripts/validate-data.ts",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -80,6 +81,7 @@
     "onlyBuiltDependencies": ["@biomejs/biome", "esbuild", "sharp"]
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["pnpm lint:fix"]
+    "*.{js,jsx,ts,tsx}": ["pnpm lint:fix"],
+    "data/*.json": ["pnpm validate-data"]
   }
 }
