@@ -434,6 +434,11 @@
         "partyId": "PAP",
         "isIncumbent": true,
         "profiles": ["PAP.LIANG_ENG_HWA"]
+      },
+      {
+        "partyId": "SDP",
+        "isConfirmed": true,
+        "profiles": ["SDP.PAUL_TAMBYAH"]
       }
     ]
   },
@@ -517,6 +522,11 @@
         "partyId": "NSP",
         "isConfirmed": false,
         "profiles": []
+      },
+      {
+        "partyId": "SDP",
+        "isConfirmed": true,
+        "profiles": ["SDP.CHEE_SOON_JUAN"]
       }
     ]
   },
@@ -579,6 +589,11 @@
       },
       {
         "partyId": "NSP",
+        "isConfirmed": false,
+        "profiles": []
+      },
+      {
+        "partyId": "SDP",
         "isConfirmed": false,
         "profiles": []
       }

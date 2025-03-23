@@ -94,5 +94,15 @@
     "profileIds": [],
     "date": "2025-03-22",
     "summary": "PPP withdraws from Nee Soon GRC to allow RDU to contest the constituency"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-sdp-chief-chee-soon-juan-to-run-in-sembawang-west-smc",
+    "title": "SDP announces candidates for Sembawang West SMC and Bukit Panjang SMC",
+    "isOfficial": true,
+    "partyIds": ["SDP"],
+    "electoralDivisionIds": ["SE", "BP", "SB"],
+    "profileIds": ["SDP.CHEE_SOON_JUAN", "SDP.PAUL_TAMBYAH"],
+    "date": "2025-03-23",
+    "summary": "SDP announces Chee Soon Juan to contest Sembawang West SMC and Paul Tambyah to run in Bukit Panjang SMC; party also plans to field a team in Sembawang GRC"
   }
 ]

@@ -26,3 +26,4 @@ for coding and file conventions
  - Always use pnpm to manage dependencies
  - Always use tailwindcss for styling
  - Always use shadcn/ui for components. Components should always be installed by running `pnpm dlx shadcn@latest add <component>`.
+ - Git commits should always take the form of "<conventional commit type (feat, fix, chore, ci)>: <descriptive message of change>"
