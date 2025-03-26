@@ -1,15 +1,5 @@
 [
   {
-    "url": "https://www.straitstimes.com/singapore/politics/progress-singapore-party-re-elects-leong-mun-wai-as-party-chief",
-    "title": "PSP re-elects Leong Mun Wai as party chief",
-    "isOfficial": false,
-    "partyIds": ["PSP"],
-    "electoralDivisionIds": [],
-    "profileIds": ["PSP.LEON_MUN_WAI", "PSP.HAZEL_POA", "PSP.TAN_CHENG_BOCK", "PSP.ABAS_BIN_KASMANI", "PSP.WENDY_LOW", "PSP.SRI_NALLAKARUPPAN"],
-    "date": "2025-03-26",
-    "summary": "Leong Mun Wai has been re-elected as PSP secretary-general, taking over from Hazel Poa who becomes vice-chair. A'bas Bin Kasmani appointed as second vice-chairman and S. Nallakaruppan as treasurer."
-  },
-  {
     "url": "https://www.facebook.com/share/r/12LvwwVEiQk/",
     "title": "RDU Facebook Announcement",
     "isOfficial": true,
@@ -114,5 +104,22 @@
     "profileIds": ["SDP.CHEE_SOON_JUAN", "SDP.PAUL_TAMBYAH"],
     "date": "2025-03-23",
     "summary": "SDP announces Chee Soon Juan to contest Sembawang West SMC and Paul Tambyah to run in Bukit Panjang SMC; party also plans to field a team in Sembawang GRC"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/progress-singapore-party-re-elects-leong-mun-wai-as-party-chief",
+    "title": "PSP re-elects Leong Mun Wai as party chief",
+    "isOfficial": false,
+    "partyIds": ["PSP"],
+    "electoralDivisionIds": [],
+    "profileIds": [
+      "PSP.LEONG_MUN_WAI",
+      "PSP.HAZEL_POA",
+      "PSP.TAN_CHENG_BOCK",
+      "PSP.ABAS_BIN_KASMANI",
+      "PSP.WENDY_LOW",
+      "PSP.SRI_NALLAKARUPPAN"
+    ],
+    "date": "2025-03-26",
+    "summary": "Leong Mun Wai has been re-elected as PSP secretary-general, taking over from Hazel Poa who becomes vice-chair. A'bas Bin Kasmani appointed as second vice-chairman and S. Nallakaruppan as treasurer."
   }
 ]
