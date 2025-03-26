@@ -82,6 +82,6 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": ["pnpm lint:fix"],
-    "data/*.json": ["pnpm validate-data"]
+    "data/*.json": ["pnpm validate-data", "pnpm lint:fix"]
   }
 }
