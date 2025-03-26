@@ -44,7 +44,7 @@ const MainLayout = ({ children }: Props) => {
 };
 
 export const metadata: Metadata = {
-  title: "GE2025: Everything You Need to Know About Singapore's Next Election",
+  title: 'GE2025: Singapore General Election 2025 Guide',
   description:
     "Your go-to guide for Singapore's General Election 2025! Get the latest updates on who's running, what they're promising, and all the election buzz. No complicated jargon, just straight talk about what matters to you.",
   keywords:
@@ -59,8 +59,7 @@ export const metadata: Metadata = {
     apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
   },
   openGraph: {
-    title:
-      "GE2025: Everything You Need to Know About Singapore's Next Election",
+    title: 'GE2025: Singapore General Election 2025 Guide',
     description:
       "Your go-to guide for Singapore's General Election 2025! Get the latest updates on who's running, what they're promising, and all the election buzz.",
     url: 'https://ge2025.vercel.app',
@@ -78,8 +77,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title:
-      "GE2025: Everything You Need to Know About Singapore's Next Election",
+    title: 'GE2025: Singapore General Election 2025 Guide',
     description:
       "Your go-to guide for Singapore's General Election 2025! Get the latest updates on who's running, what they're promising, and all the election buzz.",
     images: ['/og-image.png'],
