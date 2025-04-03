@@ -34,6 +34,11 @@
         "partyId": "PAP",
         "isIncumbent": true,
         "profiles": ["PAP.DESMOND_LEE", "PAP.ANG_WEI_NENG", "PAP.FOO_MEE_HAR"]
+      },
+      {
+        "partyId": "PSP",
+        "isConfirmed": false,
+        "profiles": ["PSP.HAZEL_POA"]
       }
     ]
   },
@@ -456,7 +461,12 @@
       {
         "partyId": "PAP",
         "isConfirmed": false,
-        "profiles": []
+        "profiles": [
+          "PAP.LAM_PIN_MIN",
+          "PAP.ELMIE_NEKMAT",
+          "PAP.THEODORA_LAI",
+          "PAP.BERNADETTE_GIAM"
+        ]
       }
     ]
   },
@@ -589,7 +599,9 @@
           "PAP.ONG_YE_KUNG",
           "PAP.VIKRAM_NAIR",
           "PAP.LIM_WEE_KIAK",
-          "PAP.MARIAM_JAFAAR"
+          "PAP.MARIAM_JAFAAR",
+          "PAP.NG_SHI_XUAN",
+          "PAP.GABRIEL_LAM"
         ]
       },
       {

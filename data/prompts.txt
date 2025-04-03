@@ -1,0 +1,8 @@
+please add this article to the end of @news.json, with a concise 1 line summary. update @electoral-divisions.json and @profiles.json too if relevant
+
+article url: 
+article date: 
+article contents:
+
+--- ARTICLE STARTS ---
+--- ARTICLE ENDS ---

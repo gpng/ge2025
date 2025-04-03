@@ -1,5 +1,45 @@
 [
   {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-ong-ye-kung-introduces-2-sme-bosses-new-faces-sembawang-grc-5032266",
+    "title": "GE2025: Ong Ye Kung introduces 2 SME bosses as new faces in Sembawang GRC",
+    "isOfficial": false,
+    "partyIds": ["PAP", "SDP", "NSP"],
+    "electoralDivisionIds": ["SB", "SE"],
+    "profileIds": ["PAP.ONG_YE_KUNG", "PAP.NG_SHI_XUAN", "PAP.GABRIEL_LAM"],
+    "date": "2025-03-29",
+    "summary": "Health Minister Ong Ye Kung introduces two new potential PAP candidates, Ng Shi Xuan and Gabriel Lam, both SME business leaders, for Sembawang GRC in the upcoming election."
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-always-challenge-win-back-grc-says-pap-sengkang-teams-lam-pin-min-5033181",
+    "title": "GE2025: 'Always a challenge' to win back a GRC, says PAP Sengkang team's Lam Pin Min",
+    "isOfficial": false,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["SK"],
+    "profileIds": [
+      "PAP.LAM_PIN_MIN",
+      "PAP.ELMIE_NEKMAT",
+      "PAP.THEODORA_LAI",
+      "PAP.BERNADETTE_GIAM"
+    ],
+    "date": "2025-03-30",
+    "summary": "PAP Sengkang team led by Lam Pin Min with new faces Elmie Nekmat, Theodora Lai Xi Yi and Bernadette Giam conduct walkabout as they hope to win back the GRC from WP."
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-progress-singapore-party-hazel-poa-west-coast-grc-leong-mun-wai-tan-cheng-bock-5034451",
+    "title": "GE2025: PSP's Hazel Poa open to contesting single-seat ward to 'walk my talk'",
+    "isOfficial": false,
+    "partyIds": ["PSP", "PAP"],
+    "electoralDivisionIds": ["WJ"],
+    "profileIds": [
+      "PSP.HAZEL_POA",
+      "PSP.LEONG_MUN_WAI",
+      "PSP.TAN_CHENG_BOCK",
+      "PAP.ANG_WEI_NENG"
+    ],
+    "date": "2025-03-31",
+    "summary": "PSP's Hazel Poa says she's willing to contest in an SMC rather than staying in West Coast-Jurong West GRC, to prove she doesn't need to ride on others' coattails."
+  },
+  {
     "url": "https://www.facebook.com/share/r/12LvwwVEiQk/",
     "title": "RDU Facebook Announcement",
     "isOfficial": true,
