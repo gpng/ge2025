@@ -699,6 +699,46 @@
     "HE_TING_RU": {
       "name": "He Ting Ru",
       "image": "he_ting_ru.jpg"
+    },
+    "ABDUL_MUHAIMIN_ABDUL_MALIK": {
+      "name": "Abdul Muhaimin Abdul Malik",
+      "image": "abdul_muhaimin_abdul_malik.jpg"
+    },
+    "ONG_LUE_PING": {
+      "name": "Ong Lue Ping"
+    },
+    "MICHAEL_THNG": {
+      "name": "Michael Thng"
+    },
+    "JIMMY_TAN": {
+      "name": "Jimmy Tan"
+    },
+    "JASPER_KUAN": {
+      "name": "Jasper Kuan"
+    },
+    "ANDRE_LOW": {
+      "name": "Andre Low"
+    },
+    "KENNETH_TIONG": {
+      "name": "Kenneth Tiong"
+    },
+    "JACKSON_AU": {
+      "name": "Jackson Au"
+    },
+    "HARPREET_SINGH": {
+      "name": "Harpreet Singh"
+    },
+    "ANG_BOON_YAW": {
+      "name": "Ang Boon Yaw"
+    },
+    "DANIEL_LEE": {
+      "name": "Daniel Lee"
+    },
+    "TAN_KONG_SOON": {
+      "name": "Tan Kong Soon"
+    },
+    "AFIFAH_KHALID": {
+      "name": "Afifah Khalid"
     }
   },
   "PPP": {

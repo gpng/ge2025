@@ -175,5 +175,37 @@
     ],
     "date": "2025-03-30",
     "summary": "SDP confirms it will contest in Marsiling-Yew Tee GRC where PM Lawrence Wong is the anchor MP."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-wps-likely-replacement-for-raeesah-khan-outlines-plans-for-improvements-in-sengkang",
+    "title": "GE2025: WP's likely replacement for Raeesah Khan outlines plans for improvements in Sengkang",
+    "isOfficial": false,
+    "partyIds": ["WP"],
+    "electoralDivisionIds": ["SK"],
+    "profileIds": ["WP.ABDUL_MUHAIMIN_ABDUL_MALIK"],
+    "date": "2025-04-03",
+    "summary": "Abdul Muhaimin Abdul Malik, likely to replace Raeesah Khan in WP's Sengkang team, outlines plans to address lift issues in Compassvale using his experience as a senior property manager at AHTC."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ex-imh-director-harvard-graduate-look-set-to-be-part-of-wps-slate-in-ge2025",
+    "title": "Ex-IMH director, Harvard graduate look set to be part of WP's slate in GE2025",
+    "isOfficial": false,
+    "partyIds": ["WP"],
+    "electoralDivisionIds": ["PG", "TM", "AJ", "EC", "MH", "TC", "HG", "SK"],
+    "profileIds": [
+      "WP.ONG_LUE_PING",
+      "WP.MICHAEL_THNG",
+      "WP.JIMMY_TAN",
+      "WP.JASPER_KUAN",
+      "WP.ANDRE_LOW",
+      "WP.KENNETH_TIONG",
+      "WP.JACKSON_AU",
+      "WP.HARPREET_SINGH",
+      "WP.ANG_BOON_YAW",
+      "WP.DANIEL_LEE",
+      "WP.AFIFAH_KHALID"
+    ],
+    "date": "2025-04-03",
+    "summary": "Workers' Party prepares to field its largest pool of first-time candidates with at least 17 new faces, including former IMH director Dr Ong Lue Ping and Harvard graduate Michael Thng."
   }
 ]

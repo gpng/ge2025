@@ -185,6 +185,11 @@
           "PAP.JANIL_PUTHUCHEARY",
           "PAP.YEO_WAN_LING"
         ]
+      },
+      {
+        "partyId": "WP",
+        "isConfirmed": false,
+        "profiles": ["WP.YEE_JENN_JONG", "WP.ONG_LUE_PING", "WP.DANIEL_LEE"]
       }
     ]
   },
@@ -229,7 +234,8 @@
           "WP.PRITAM_SINGH",
           "WP.SYLVIA_LIM",
           "WP.MUHAMMAD_FAISAL",
-          "WP.GERALD_GIAM"
+          "WP.GERALD_GIAM",
+          "WP.KENNETH_TIONG"
         ]
       },
       {
@@ -456,7 +462,12 @@
       {
         "partyId": "WP",
         "isIncumbent": true,
-        "profiles": ["WP.HE_TING_RU", "WP.JAMUS_LIM", "WP.LOUIS_CHUA"]
+        "profiles": [
+          "WP.HE_TING_RU",
+          "WP.JAMUS_LIM",
+          "WP.LOUIS_CHUA",
+          "WP.ABDUL_MUHAIMIN_ABDUL_MALIK"
+        ]
       },
       {
         "partyId": "PAP",
@@ -565,6 +576,11 @@
         "partyId": "PPP",
         "isConfirmed": false,
         "profiles": []
+      },
+      {
+        "partyId": "WP",
+        "isConfirmed": false,
+        "profiles": []
       }
     ]
   },
@@ -632,6 +648,11 @@
           "PAP.TAN_KIAT_HOW",
           "PAP.EDWIN_TONG"
         ]
+      },
+      {
+        "partyId": "WP",
+        "isConfirmed": false,
+        "profiles": ["WP.KENNETH_FOO", "WP.ABDUL_SHARIFF", "WP.ANG_BOON_YAW"]
       }
     ]
   },
@@ -655,6 +676,16 @@
         "partyId": "NSP",
         "isConfirmed": false,
         "profiles": []
+      },
+      {
+        "partyId": "WP",
+        "isConfirmed": false,
+        "profiles": [
+          "WP.NATHANIEL_KOH",
+          "WP.MUHAMMAD_FADLI",
+          "WP.JACKSON_AU",
+          "WP.HARPREET_SINGH"
+        ]
       }
     ]
   },
@@ -689,6 +720,17 @@
         "partyId": "PPP",
         "isConfirmed": false,
         "profiles": []
+      },
+      {
+        "partyId": "WP",
+        "isConfirmed": false,
+        "profiles": [
+          "WP.MICHAEL_THNG",
+          "WP.JIMMY_TAN",
+          "WP.JASPER_KUAN",
+          "WP.ANDRE_LOW",
+          "WP.AFIFAH_KHALID"
+        ]
       }
     ]
   },

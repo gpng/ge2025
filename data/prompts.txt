@@ -1,8 +1,9 @@
-please add this article to the end of @news.json, with a concise 1 line summary. update @electoral-divisions.json and @profiles.json too if relevant
+please add this article to the end of data/news.json, with a concise 1 line summary. update data/electoral-divisions.json and data/profiles.json if relevant.
+only include profiles in the news object if they are relevant to the upcoming election.
+do not include profiles in the news object if they are just a passing mention, or mention due to historical elections or events.
 
 article url: 
 article date: 
 article contents:
-
 --- ARTICLE STARTS ---
 --- ARTICLE ENDS ---
