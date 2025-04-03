@@ -480,6 +480,11 @@
         "partyId": "NSP",
         "isConfirmed": false,
         "profiles": []
+      },
+      {
+        "partyId": "SDP",
+        "isConfirmed": true,
+        "profiles": []
       }
     ]
   },

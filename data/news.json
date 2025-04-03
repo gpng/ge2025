@@ -121,5 +121,19 @@
     ],
     "date": "2025-03-26",
     "summary": "Leong Mun Wai has been re-elected as PSP secretary-general, taking over from Hazel Poa who becomes vice-chair. A'bas Bin Kasmani appointed as second vice-chairman and S. Nallakaruppan as treasurer."
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-singapore-democratic-party-sdp-contest-marsiling-yew-tee-5033021",
+    "title": "GE2025: Singapore Democratic Party to contest in Marsiling-Yew Tee GRC",
+    "isOfficial": true,
+    "partyIds": ["SDP"],
+    "electoralDivisionIds": ["MY", "SE", "BP", "SB"],
+    "profileIds": [
+      "SDP.CHEE_SOON_JUAN",
+      "SDP.PAUL_TAMBYAH",
+      "SDP.SURAYAH_AKBAR"
+    ],
+    "date": "2025-03-30",
+    "summary": "SDP confirms it will contest in Marsiling-Yew Tee GRC where PM Lawrence Wong is the anchor MP."
   }
 ]
