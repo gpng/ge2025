@@ -3,11 +3,9 @@ import { Button } from '@/app/_components/ui/button';
 import { useData } from '@/app/map/_components/contexts/data-context';
 import { useFilters } from '@/app/map/_components/contexts/filter-context';
 import GEMap from '@/app/map/_components/map';
-import QnaWidget from '@/app/map/_components/qna-widget/qna-widget';
 import MapSidebar from '@/app/map/_components/sidebar/map-sidebar';
 import MobileSheet from '@/app/map/_components/sidebar/mobile-sheet';
 import Tooltip from '@/app/map/_components/tooltip';
-import { FEAT_MANIFESTOS_CHAT } from '@/lib/env';
 import type { ElectoralDivision } from '@/models/electoral-division';
 import { center } from '@turf/turf';
 import { Filter } from 'lucide-react';
@@ -120,7 +118,6 @@ const Content = () => {
           </GEMap>
         </div>
       </div>
-      {FEAT_MANIFESTOS_CHAT === 'true' && <QnaWidget />}
     </div>
   );
 };

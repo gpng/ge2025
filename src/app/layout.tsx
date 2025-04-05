@@ -1,8 +1,9 @@
+import { QnaWidgetProvider } from '@/app/_components/contexts/qna-widget-context';
 import SiteHeader from '@/app/_components/header';
 import { ThemeProvider } from '@/app/_components/theme-provider';
 import '@/app/globals.css';
 import QnaWidget from '@/app/map/_components/qna-widget/qna-widget';
-import { GOOGLE_TAG_MANAGER_ID } from '@/lib/env';
+import { FEAT_MANIFESTOS_CHAT, GOOGLE_TAG_MANAGER_ID } from '@/lib/env';
 import { GoogleTagManager } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -34,11 +35,13 @@ const MainLayout = ({ children }: Props) => {
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex min-h-screen flex-col">
-            <SiteHeader />
-            <main className="flex-1">{children}</main>
-            <QnaWidget />
-          </div>
+          <QnaWidgetProvider>
+            <div className="flex min-h-screen flex-col">
+              <SiteHeader />
+              <main className="flex-1">{children}</main>
+              {FEAT_MANIFESTOS_CHAT === 'true' && <QnaWidget />}
+            </div>
+          </QnaWidgetProvider>
         </ThemeProvider>
       </body>
     </html>

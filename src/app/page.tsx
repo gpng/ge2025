@@ -1,5 +1,5 @@
 import {
-  Calendar,
+  BookOpenText,
   ChevronRight,
   FileText,
   Info,
@@ -311,7 +311,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      {/* <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
@@ -433,7 +433,7 @@ const HomePage = () => {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section className="w-full py-12 md:py-16 bg-primary/5">
         <div className="container px-4 md:px-6">
@@ -461,6 +461,198 @@ const HomePage = () => {
           </div>
         </div>
       </section> */}
+
+      {/* Section for Key Features/Links */}
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
+            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
+              <Sparkles className="h-4 w-4" />
+              <span>Quick Links</span>
+            </div>
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                Everything You Need
+              </h2>
+              <p className="text-muted-foreground text-lg max-w-[800px] mx-auto">
+                From electoral maps to party manifestos, we've got all the
+                election info in bite-sized chunks.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {/* Electoral Map Card */}
+            <Card className="group hover:shadow-md transition-all border-2 border-primary/10 overflow-hidden">
+              <CardHeader className="pb-2 bg-primary/5">
+                <CardTitle className="text-xl flex items-center gap-2">
+                  <MapIcon className="h-5 w-5 text-primary" />
+                  Electoral Map
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <p className="text-muted-foreground">
+                  Explore Singapore's electoral boundaries and see which parties
+                  are contesting where
+                </p>
+              </CardContent>
+              <CardFooter className="pt-2 pb-4">
+                <Button
+                  variant="ghost"
+                  className="w-full justify-between group-hover:text-primary"
+                  asChild
+                >
+                  <Link href="/map">
+                    View the Map
+                    <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </CardFooter>
+            </Card>
+
+            {/* Manifestos Card */}
+            <Card className="group hover:shadow-md transition-all border-2 border-primary/10 overflow-hidden">
+              <CardHeader className="pb-2 bg-primary/5">
+                <CardTitle className="text-xl flex items-center gap-2">
+                  <BookOpenText className="h-5 w-5 text-primary" />
+                  Manifestos
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <p className="text-muted-foreground">
+                  Read party manifestos and ask our AI assistant any questions
+                  about party policies
+                </p>
+              </CardContent>
+              <CardFooter className="pt-2 pb-4">
+                <Button
+                  variant="ghost"
+                  className="w-full justify-between group-hover:text-primary"
+                  asChild
+                >
+                  <Link href="/manifestos">
+                    Explore Manifestos
+                    <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </CardFooter>
+            </Card>
+
+            {/* Voting 101 Card */}
+            <Card className="group hover:shadow-md transition-all border-2 border-primary/10 overflow-hidden">
+              <CardHeader className="pb-2 bg-primary/5">
+                <CardTitle className="text-xl flex items-center gap-2">
+                  <Info className="h-5 w-5 text-primary" />
+                  Voting 101
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <p className="text-muted-foreground">
+                  From election basics to rules & regulations, learn everything
+                  about Singapore's electoral process
+                </p>
+              </CardContent>
+              <CardFooter className="pt-2 pb-4">
+                <Button
+                  variant="ghost"
+                  className="w-full justify-between group-hover:text-primary"
+                  asChild
+                >
+                  <Link href="/resources">
+                    Explore Resources
+                    <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </CardFooter>
+            </Card>
+
+            {/* News Card */}
+            <Card className="group hover:shadow-md transition-all border-2 border-primary/10 overflow-hidden">
+              <CardHeader className="pb-2 bg-primary/5">
+                <CardTitle className="text-xl flex items-center gap-2">
+                  <FileText className="h-5 w-5 text-primary" />
+                  Latest News
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <p className="text-muted-foreground">
+                  Stay updated with the latest election news, announcements, and
+                  developments
+                </p>
+              </CardContent>
+              <CardFooter className="pt-2 pb-4">
+                <Button
+                  variant="ghost"
+                  className="w-full justify-between group-hover:text-primary"
+                  asChild
+                >
+                  <Link href="/news">
+                    Read News
+                    <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </CardFooter>
+            </Card>
+
+            {/* Commented out sections remain the same */}
+            {/* COMMENTED OUT: Parties Card 
+            <Card className="flex flex-col opacity-50 pointer-events-none">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Users className="h-5 w-5 text-primary" />
+                  Parties
+                </CardTitle>
+                <CardDescription>
+                  Discover the participating parties. (Coming Soon)
+                </CardDescription>
+              </CardHeader>
+              <CardFooter className="mt-auto">
+                <Button variant="outline" className="w-full" disabled>
+                  Explore Parties
+                </Button>
+              </CardFooter>
+            </Card>
+            */}
+
+            {/* COMMENTED OUT: Candidates Card 
+            <Card className="flex flex-col opacity-50 pointer-events-none">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Users className="h-5 w-5 text-primary" />
+                   Candidates
+                 </CardTitle>
+                 <CardDescription>
+                   Meet the candidates running. (Coming Soon)
+                 </CardDescription>
+               </CardHeader>
+               <CardFooter className="mt-auto">
+                 <Button variant="outline" className="w-full" disabled>
+                   View Candidates
+                 </Button>
+               </CardFooter>
+             </Card>
+            */}
+
+            {/* COMMENTED OUT: Key Dates Card 
+            <Card className="flex flex-col opacity-50 pointer-events-none">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Calendar className="h-5 w-5 text-primary" />
+                  Key Dates
+                </CardTitle>
+                <CardDescription>
+                  Important election timeline events. (Coming Soon)
+                </CardDescription>
+              </CardHeader>
+              <CardFooter className="mt-auto">
+                <Button variant="outline" className="w-full" disabled>
+                  See Timeline
+                </Button>
+              </CardFooter>
+            </Card>
+            */}
+          </div>
+        </div>
+      </section>
     </>
   );
 };

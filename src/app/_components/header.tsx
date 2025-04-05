@@ -32,10 +32,8 @@ const SiteHeader = () => {
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '/map', label: 'Electoral Map' },
-    { href: '/parties', label: 'Parties' },
-    { href: '/candidates', label: 'Candidates' },
+    { href: '/manifestos', label: 'Manifestos' },
     { href: '/resources', label: 'Voting 101' },
-    { href: '/timeline', label: 'Key Dates' },
     { href: '/news', label: 'News' },
   ];
 
