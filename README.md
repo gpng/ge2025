@@ -36,19 +36,12 @@ All data are in TypeScript files to ensure typing and shape.
 
 ## Pre-requisites
 
-1. [Docker Compose](https://docs.docker.com/compose/)
 1. [pnpm](https://pnpm.io/)
-
-## Run databse
-
-```sh
-docker-compose up -d
-```
 
 ## Run dev server
 
 ```sh
-pnpm run dev
+vercel dev
 ```
 
 # Component Library
@@ -62,7 +55,7 @@ All components can be found in in the [shadcn/ui components documentation](https
 Components will be installed using the shadcn/ui cli, which will look like
 
 ```sh
-pnpm dlx shadcn-ui@latest add accordion
+pnpm dlx shadcn@latest add accordion
 ```
 
-The component will be created in the `src/app/(main)/components/ui` folder.
+The component will be created in the `src/app//_components/ui` folder.
