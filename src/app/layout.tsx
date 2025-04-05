@@ -1,6 +1,7 @@
 import SiteHeader from '@/app/_components/header';
 import { ThemeProvider } from '@/app/_components/theme-provider';
 import '@/app/globals.css';
+import QnaWidget from '@/app/map/_components/qna-widget/qna-widget';
 import { GOOGLE_TAG_MANAGER_ID } from '@/lib/env';
 import { GoogleTagManager } from '@next/third-parties/google';
 import type { Metadata } from 'next';
@@ -36,6 +37,7 @@ const MainLayout = ({ children }: Props) => {
           <div className="flex min-h-screen flex-col">
             <SiteHeader />
             <main className="flex-1">{children}</main>
+            <QnaWidget />
           </div>
         </ThemeProvider>
       </body>

@@ -19,6 +19,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@ai-sdk/react": "^1.2.6",
     "@langchain/community": "^0.3.34",
     "@next/third-parties": "^15.2.4",
     "@radix-ui/react-dialog": "^1.1.6",
@@ -78,10 +79,19 @@
     "typescript": "^5.8.2"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["@biomejs/biome", "esbuild", "sharp"]
+    "onlyBuiltDependencies": [
+      "@biomejs/biome",
+      "esbuild",
+      "sharp"
+    ]
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["pnpm lint:fix"],
-    "data/*.json": ["pnpm validate-data", "pnpm lint:fix"]
+    "*.{js,jsx,ts,tsx}": [
+      "pnpm lint:fix"
+    ],
+    "data/*.json": [
+      "pnpm validate-data",
+      "pnpm lint:fix"
+    ]
   }
 }

@@ -1,3 +1,5 @@
+'use client';
+
 import { Button } from '@/app/_components/ui/button';
 import {
   Card,
@@ -9,12 +11,12 @@ import {
 import { Textarea } from '@/app/_components/ui/textarea';
 import ChatBubble from '@/app/map/_components/qna-widget/chat-bubble';
 import { cn } from '@/lib/utils';
+import { type Message, useAssistant } from '@ai-sdk/react';
 import {
   ChatBubbleIcon,
   Cross1Icon,
   ThickArrowRightIcon,
 } from '@radix-ui/react-icons';
-import { type Message, useAssistant } from 'ai/react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import styles from './qna-widget.module.css';
