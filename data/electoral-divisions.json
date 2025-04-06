@@ -265,6 +265,16 @@
         "partyId": "PPP",
         "isConfirmed": false,
         "profiles": []
+      },
+      {
+        "partyId": "SUP",
+        "isConfirmed": false,
+        "profiles": [
+          "SUP.ANDY_ZHU",
+          "SUP.DARREN_SOH",
+          "SUP.NORAINI_YUNUS",
+          "SUP.RIDHUAN_CHANDRAN"
+        ]
       }
     ]
   },

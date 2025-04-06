@@ -70,7 +70,13 @@
     "id": "PAR",
     "name": "People's Alliance for Reform",
     "logo": "PAR.png",
-    "color": "#000000"
+    "color": "#7D0222"
+  },
+  "SUP": {
+    "id": "SUP",
+    "name": "Singapore United Party",
+    "logo": "SUP.png",
+    "color": "#a57f4e"
   },
   "INDIE": {
     "id": "INDIE",

@@ -207,5 +207,20 @@
     ],
     "date": "2025-04-03",
     "summary": "Workers' Party prepares to field its largest pool of first-time candidates with at least 17 new faces, including former IMH director Dr Ong Lue Ping and Harvard graduate Michael Thng."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-singapore-united-party-to-make-election-debut-at-upcoming-contest-in-ang-mo-kio",
+    "title": "GE2025: Singapore United Party to make election debut at upcoming contest in Ang Mo Kio",
+    "isOfficial": false,
+    "partyIds": ["SUP"],
+    "electoralDivisionIds": ["AM"],
+    "profileIds": [
+      "SUP.ANDY_ZHU",
+      "SUP.DARREN_SOH",
+      "SUP.NORAINI_YUNUS",
+      "SUP.RIDHUAN_CHANDRAN"
+    ],
+    "date": "2025-04-06",
+    "summary": "SUP announces its debut contest in Ang Mo Kio GRC for GE2025, potentially facing PAP and PPP."
   }
 ]
