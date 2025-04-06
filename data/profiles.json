@@ -974,16 +974,20 @@
   },
   "SUP": {
     "ANDY_ZHU": {
-      "name": "Andy Zhu"
+      "name": "Andy Zhu",
+      "image": "andy_zhu.jpg"
     },
     "DARREN_SOH": {
-      "name": "Darren Soh"
+      "name": "Darren Soh",
+      "image": "darren_soh.jpg"
     },
     "NORAINI_YUNUS": {
-      "name": "Noraini Yunus"
+      "name": "Noraini Yunus",
+      "image": "noraini_yunus.jpg"
     },
     "RIDHUAN_CHANDRAN": {
-      "name": "Ridhuan Chandran"
+      "name": "Ridhuan Chandran",
+      "image": "ridhuan_chandran.jpg"
     }
   }
 }

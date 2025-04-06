@@ -148,7 +148,7 @@
   {
     "url": "https://www.straitstimes.com/singapore/politics/progress-singapore-party-re-elects-leong-mun-wai-as-party-chief",
     "title": "PSP re-elects Leong Mun Wai as party chief",
-    "isOfficial": false,
+    "isOfficial": true,
     "partyIds": ["PSP"],
     "electoralDivisionIds": [],
     "profileIds": [
@@ -211,7 +211,7 @@
   {
     "url": "https://www.straitstimes.com/singapore/politics/ge2025-singapore-united-party-to-make-election-debut-at-upcoming-contest-in-ang-mo-kio",
     "title": "GE2025: Singapore United Party to make election debut at upcoming contest in Ang Mo Kio",
-    "isOfficial": false,
+    "isOfficial": true,
     "partyIds": ["SUP"],
     "electoralDivisionIds": ["AM"],
     "profileIds": [
@@ -222,5 +222,15 @@
     ],
     "date": "2025-04-06",
     "summary": "SUP announces its debut contest in Ang Mo Kio GRC for GE2025, potentially facing PAP and PPP."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-psp-launches-manifesto-focusing-on-bread-and-butter-issues-calls-for-return-to-7-gst",
+    "title": "GE2025: PSP to contest West Coast-Jurong West and Chua Chu Kang, says it will field fewer candidates",
+    "isOfficial": true,
+    "partyIds": ["PSP"],
+    "electoralDivisionIds": ["WJ", "CK"],
+    "profileIds": ["PSP.LEONG_MUN_WAI", "PSP.HAZEL_POA", "PSP.TAN_CHENG_BOCK"],
+    "date": "2025-04-06",
+    "summary": "PSP launches its manifesto focusing on cost of living and jobs, confirms contest in West Coast-Jurong West and Chua Chu Kang GRCs, and announces plan to field fewer candidates."
   }
 ]

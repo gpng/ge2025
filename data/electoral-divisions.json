@@ -306,6 +306,11 @@
           "PAP.ZHULKARNAIN_ABDUL_RAHIM",
           "PAP.CHUA_WEI_SHAN"
         ]
+      },
+      {
+        "partyId": "PSP",
+        "isConfirmed": false,
+        "profiles": []
       }
     ]
   },
