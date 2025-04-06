@@ -111,8 +111,13 @@ const QnaWidget = () => {
                   message={{
                     id: '0',
                     role: 'assistant',
-                    content:
-                      "Hello! You can ask me about party manifestos. Currently, I only have information on the People's Power Party (PPP) manifesto. Manifestos for other parties will be added as they become available.",
+                    content: `Hello! You can ask me about party manifestos.
+
+Currently, I only have manifestos for the following parties:
+ - **People's Power Party (PPP)**
+ - **Progress Singapore Party (PSP)**
+ 
+ Other parties' manifestos will be added as they become available.`,
                   }}
                 />
               </div>
