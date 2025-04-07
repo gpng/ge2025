@@ -12,8 +12,7 @@
           "PAP.AMY_KHOR",
           "PAP.GRACE_FU",
           "PAP.RAHAYU_MAHZAM",
-          "PAP.TAN_WU_MENG",
-          "PAP.SHAWN_HUANG"
+          "PAP.TAN_WU_MENG"
         ],
         "isIncumbent": true
       },
@@ -33,7 +32,14 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
-        "profiles": ["PAP.DESMOND_LEE", "PAP.ANG_WEI_NENG", "PAP.FOO_MEE_HAR"]
+        "profiles": [
+          "PAP.DESMOND_LEE",
+          "PAP.ANG_WEI_NENG",
+          "PAP.FOO_MEE_HAR",
+          "PAP.NATASHA_CHOY",
+          "PAP.SHAWN_HUANG",
+          "PAP.HAMID_RAZAK"
+        ]
       },
       {
         "partyId": "PSP",
@@ -643,7 +649,13 @@
       {
         "partyId": "SDP",
         "isConfirmed": false,
-        "profiles": []
+        "profiles": [
+          "SDP.JAMES_GOMEZ",
+          "SDP.BRYAN_LIM",
+          "SDP.SURAYAH_AKBAR",
+          "SDP.ALFRED_TAN",
+          "SDP.DAMANHURI_ABAS"
+        ]
       }
     ]
   },

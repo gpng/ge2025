@@ -232,5 +232,29 @@
     "profileIds": ["PSP.LEONG_MUN_WAI", "PSP.HAZEL_POA", "PSP.TAN_CHENG_BOCK"],
     "date": "2025-04-06",
     "summary": "PSP launches its manifesto focusing on cost of living and jobs, confirms contest in West Coast-Jurong West and Chua Chu Kang GRCs, and announces plan to field fewer candidates."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-trade-unionist-natasha-choy-joins-desmond-lees-team-in-west-coast",
+    "title": "Trade unionist Natasha Choy joins Desmond Lee’s team in West Coast",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["WJ"],
+    "profileIds": ["PAP.NATASHA_CHOY", "PAP.SHAWN_HUANG", "PAP.HAMID_RAZAK"],
+    "date": "2025-04-02",
+    "summary": "PAP newcomer Natasha Choy has joined National Development Minister Desmond Lee's team in West Coast GRC."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-singapore-democratic-party-unveils-5-member-slate-for-sembawang-grc",
+    "title": "GE2025: Singapore Democratic Party unveils 5-member slate for Sembawang GRC",
+    "isOfficial": true,
+    "partyIds": ["SDP"],
+    "electoralDivisionIds": ["SB"],
+    "profileIds": [
+      "SDP.JAMES_GOMEZ",
+      "SDP.BRYAN_LIM",
+      "SDP.SURAYAH_AKBAR",
+      "SDP.ALFRED_TAN",
+      "SDP.DAMANHURI_ABAS"
+    ]
   }
 ]
