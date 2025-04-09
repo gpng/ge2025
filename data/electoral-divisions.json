@@ -680,6 +680,11 @@
         "partyId": "WP",
         "isConfirmed": false,
         "profiles": ["WP.KENNETH_FOO", "WP.ABDUL_SHARIFF", "WP.ANG_BOON_YAW"]
+      },
+      {
+        "partyId": "MVP",
+        "isConfirmed": false,
+        "profiles": ["MVP.CHIA_YUN_KAI"]
       }
     ]
   },

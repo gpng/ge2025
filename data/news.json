@@ -255,6 +255,18 @@
       "SDP.SURAYAH_AKBAR",
       "SDP.ALFRED_TAN",
       "SDP.DAMANHURI_ABAS"
-    ]
+    ],
+    "date": "2025-04-06",
+    "summary": "Singapore Democratic Party (SDP) has introduced its slate for the five-member Sembawang GRC"
+  },
+  {
+    "url": "https://www.asiaone.com/singapore/ge2025-why-32-year-old-setting-political-party-contest-east-coast-grc",
+    "title": "GE2025: Why this 32-year-old is setting up a political party to contest East Coast GRC",
+    "isOfficial": true,
+    "partyIds": ["MVP"],
+    "electoralDivisionIds": [],
+    "profileIds": ["MVP.CHIA_YUN_KAI"],
+    "date": "2025-04-09",
+    "summary": "Restaurant owner Chia Yun Kai said that he decided to set up Most Valuable Party (MVP) to context in East Coast GRC"
   }
 ]
