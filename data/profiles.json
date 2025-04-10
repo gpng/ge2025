@@ -822,6 +822,18 @@
     "ALEC_TOK": {
       "name": "Alec Tok Kim Yam",
       "image": "alec_tok.jpg"
+    },
+    "FAZLI_TALIP": {
+      "name": "Fazli Talip",
+      "image": "fazli_talip.jpg"
+    },
+    "SHARAD_KUMAR": {
+      "name": "Sharad Kumar",
+      "image": "sharad_kumar.jpg"
+    },
+    "PATRICK_TAN": {
+      "name": "Patrick Tan",
+      "image": "patrick_tan.jpg"
     }
   },
   "SPP": {

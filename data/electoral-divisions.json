@@ -335,6 +335,11 @@
           "PAP.CHRISTOPHER_DE_SOUZA",
           "PAP.EDWARD_CHIA"
         ]
+      },
+      {
+        "partyId": "RDU",
+        "isConfirmed": false,
+        "profiles": ["RDU.FAZLI_TALIP", "RDU.SHARAD_KUMAR", "RDU.PATRICK_TAN"]
       }
     ]
   },

@@ -268,5 +268,15 @@
     "profileIds": ["MVP.CHIA_YUN_KAI"],
     "date": "2025-04-09",
     "summary": "Restaurant owner Chia Yun Kai said that he decided to set up Most Valuable Party (MVP) to context in East Coast GRC"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/red-dot-united-to-contest-holland-bukit-timah-grc-introduces-three-potential-candidates",
+    "title": "Red Dot United to contest Holland-Bukit Timah GRC, introduces three potential candidates",
+    "isOfficial": true,
+    "partyIds": ["RDU"],
+    "electoralDivisionIds": ["HT"],
+    "profileIds": ["RDU.FAZLI_TALIP", "RDU.SHARAD_KUMAR", "RDU.PATRICK_TAN"],
+    "date": "2025-04-10",
+    "summary": "Red Dot United (RDU) introduces Fazli Talip, Sharad Kumar, and Patrick Tan as potential candidates for Holland-Bukit Timah GRC."
   }
 ]
