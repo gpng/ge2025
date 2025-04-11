@@ -824,16 +824,13 @@
       "image": "alec_tok.jpg"
     },
     "FAZLI_TALIP": {
-      "name": "Fazli Talip",
-      "image": "fazli_talip.jpg"
+      "name": "Fazli Talip"
     },
     "SHARAD_KUMAR": {
-      "name": "Sharad Kumar",
-      "image": "sharad_kumar.jpg"
+      "name": "Sharad Kumar"
     },
     "PATRICK_TAN": {
-      "name": "Patrick Tan",
-      "image": "patrick_tan.jpg"
+      "name": "Patrick Tan"
     }
   },
   "SPP": {
