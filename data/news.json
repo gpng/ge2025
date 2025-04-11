@@ -278,5 +278,15 @@
     "profileIds": ["RDU.FAZLI_TALIP", "RDU.SHARAD_KUMAR", "RDU.PATRICK_TAN"],
     "date": "2025-04-10",
     "summary": "Red Dot United (RDU) introduces Fazli Talip, Sharad Kumar, and Patrick Tan as potential candidates for Holland-Bukit Timah GRC."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/faishal-ibrahim-to-move-from-nee-soon-to-marine-parade-braddell-heights-grc-for-ge2025",
+    "title": "Faishal Ibrahim to move from Nee Soon to Marine Parade-Braddell Heights GRC for GE2025",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["MH"],
+    "profileIds": ["PAP.MUHAMMAD_FAISHAL_IBRAHIM"],
+    "date": "2025-04-11",
+    "summary": "Minister of State for Home Affairs and National Development Muhammad Faishal Ibrahim will join the PAP team in Marine Parade-Braddell Heights GRC to contest the upcoming general election."
   }
 ]
