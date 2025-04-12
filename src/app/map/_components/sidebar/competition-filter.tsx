@@ -16,7 +16,7 @@ const CompetitionFilter = () => {
     );
 
     return [
-      { id: ALL_COMPETITION, name: 'Show all constituencies' },
+      { id: ALL_COMPETITION, name: 'Show all contests' },
       ...Array.from(uniqueCandidateCounts)
         .sort((a, b) => a - b)
         .map((count) => ({
