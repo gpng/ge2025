@@ -1,6 +1,6 @@
 'use client';
 
-import { Menu, Moon, Sun, Vote } from 'lucide-react';
+import { Menu, Moon, Sun } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
@@ -19,6 +19,7 @@ import {
   SheetTitle,
 } from '@/app/_components/ui/sheet';
 import { useTheme } from 'next-themes';
+import Image from 'next/image';
 
 const SiteHeader = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,9 +43,7 @@ const SiteHeader = () => {
       <div className="container flex h-14 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
-            <div className="bg-primary/10 p-2 rounded-full">
-              <Vote className="h-5 w-5 text-primary" />
-            </div>
+            <Image src="/logo.png" alt="GE2025" width={36} height={36} />
             <span className="text-lg font-bold hidden sm:inline">GE2025</span>
           </Link>
         </div>
