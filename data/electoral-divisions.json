@@ -104,6 +104,11 @@
         "partyId": "PAR",
         "isConfirmed": false,
         "profiles": []
+      },
+      {
+        "partyId": "INDIE",
+        "isConfirmed": false,
+        "profiles": ["INDIE.ISHAQ_RAJOO"]
       }
     ]
   },

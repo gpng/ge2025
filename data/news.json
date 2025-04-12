@@ -308,5 +308,15 @@
     "profileIds": [],
     "date": "2025-04-12",
     "summary": "PSP confirms it will contest Marymount, Kebun Baru, and Pioneer SMCs again in GE2025 but has not yet announced its candidates."
+  },
+  {
+    "url": "https://www.facebook.com/100089129233177/videos/1826449394797726",
+    "title": "Is'haq Rajoo Jay to contest Queenstown SMC as independent candidate",
+    "isOfficial": true,
+    "partyIds": ["INDIE"],
+    "electoralDivisionIds": ["QT"],
+    "profileIds": ["INDIE.ISHAQ_RAJOO"],
+    "date": "2025-04-09",
+    "summary": "Is'haq Rajoo Jay announced on Facebook Live that he will contest Queenstown SMC as an independent candidate in GE2025."
   }
 ]
