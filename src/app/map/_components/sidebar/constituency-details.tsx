@@ -7,7 +7,7 @@ interface Props {
 
 const ConstituencyDetails = ({ electoralDivision }: Props) => {
   return (
-    <div className="space-y-4 pt-4 border-t">
+    <div className="space-y-4 pt-4 border-t h-full">
       <div>
         <h3 className="font-semibold text-lg">{electoralDivision?.name}</h3>
         <p className="text-sm text-muted-foreground">

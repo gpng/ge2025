@@ -117,7 +117,10 @@ Currently, I only have manifestos for the following parties:
  - **People's Power Party (PPP)**
  - **Progress Singapore Party (PSP)**
  
- Other parties' manifestos will be added as they become available.`,
+ Other parties' manifestos will be added as they become available.
+ 
+ ***Please*** *don't abuse this chat, this site is a hobby project and I'm paying for the LLM credits out of my own pocket.*
+ `,
                   }}
                 />
               </div>
