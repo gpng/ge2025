@@ -962,18 +962,6 @@
       "name": "Kenneth Jeyaretnam",
       "image": "kenneth_jeyaretnam.jpg"
     },
-    "ANDY_ZHU": {
-      "name": "Andy Zhu",
-      "image": "andy_zhu.jpg"
-    },
-    "NORAINI_YUNUS": {
-      "name": "Noraini Yunus",
-      "image": "noraini_yunus.jpg"
-    },
-    "DARREN_SOH": {
-      "name": "Darren Soh",
-      "image": "darren_soh.jpg"
-    },
     "GURDEV_SINGH": {
       "name": "Gurdev Singh",
       "image": "gurdev_singh.jpg"
@@ -992,13 +980,16 @@
   },
   "SUP": {
     "ANDY_ZHU": {
-      "name": "Andy Zhu"
+      "name": "Andy Zhu",
+      "image": "andy_zhu.jpg"
     },
     "DARREN_SOH": {
-      "name": "Darren Soh"
+      "name": "Darren Soh",
+      "image": "darren_soh.jpg"
     },
     "NORAINI_YUNUS": {
-      "name": "Noraini Yunus"
+      "name": "Noraini Yunus",
+      "image": "noraini_yunus.jpg"
     },
     "RIDHUAN_CHANDRAN": {
       "name": "Ridhuan Chandran"
