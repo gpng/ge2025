@@ -12,7 +12,7 @@ const MapSidebar = ({
   selectedElectoralDivision,
 }: MapSidebarProps) => {
   return (
-    <div className="w-[350px] border-r bg-background hidden md:block p-4 h-full">
+    <div className="w-[350px] border-r bg-background hidden md:flex p-4 h-full flex-col">
       <MapFilters onElectoralDivisionSelected={onElectoralDivisionSelected} />
       {selectedElectoralDivision && (
         <ConstituencyDetails electoralDivision={selectedElectoralDivision} />

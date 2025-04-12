@@ -24,14 +24,11 @@ const MobileSheet = ({
   onElectoralDivisionSelected,
   selectedElectoralDivision,
 }: MobileSheetProps) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
 
   useEffect(() => {
     const checkMobile = () => {
-      const mdBreakpoint = getComputedStyle(document.documentElement)
-        .getPropertyValue('--screen-md')
-        .trim();
-      setIsMobile(window.matchMedia(`(max-width: ${mdBreakpoint})`).matches);
+      setIsMobile(window.matchMedia('(max-width: 48rem)').matches);
     };
 
     checkMobile();
