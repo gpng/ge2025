@@ -43,7 +43,7 @@ const SiteHeader = () => {
       <div className="container flex h-14 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo.png" alt="GE2025" width={36} height={36} />
+            <Image src="/logo.png" alt="GE2025" width={48} height={48} />
             <span className="text-lg font-bold hidden sm:inline">GE2025</span>
           </Link>
         </div>

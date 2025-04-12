@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-image.png',
+        url: '/images/social.png',
         width: 1200,
         height: 630,
         alt: 'GE2025 - Singapore General Election 2025 Guide',
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     title: 'GE2025: Singapore General Election 2025 Guide',
     description:
       "Your go-to guide for Singapore's General Election 2025! Get the latest updates on who's running, what they're promising, and all the election buzz.",
-    images: ['/og-image.png'],
+    images: ['/images/social.png'],
   },
   robots: {
     index: true,
