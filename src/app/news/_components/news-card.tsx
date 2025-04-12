@@ -32,7 +32,7 @@ const NewsCard = ({ item, compact = false }: Props) => {
           </span>
         </div>
 
-        <span className="font-medium hover:text-primary hover:underline truncate">
+        <span className="font-medium hover:text-primary hover:underline truncate min-w-0">
           {item.title}
         </span>
         <Typography variant="mutedText" className="mt-2 line-clamp-2">

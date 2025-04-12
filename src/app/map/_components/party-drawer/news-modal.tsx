@@ -67,7 +67,7 @@ const NewsModal = ({ partyId, electoralDivisionId }: Props) => {
               {party?.name} • {electoralDivision?.name}
             </Typography>
           </DialogHeader>
-          <div className="space-y-4">
+          <div className="space-y-4 max-h-[60vh] overflow-y-auto pr-4">
             {filteredNews.map((item) => (
               <NewsCard key={item.url} item={item} compact />
             ))}
