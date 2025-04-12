@@ -318,5 +318,20 @@
     "profileIds": ["INDIE.ISHAQ_RAJOO"],
     "date": "2025-04-09",
     "summary": "Is'haq Rajoo Jay announced on Facebook Live that he will contest Queenstown SMC as an independent candidate in GE2025."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-pm-lawrence-wong-to-lead-pap-team-in-marsiling-yew-tee-grc-for-ge2025",
+    "title": "PM Lawrence Wong to lead PAP team in Marsiling-Yew Tee GRC for GE2025",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["MY"],
+    "profileIds": [
+      "PAP.ALEX_YAM",
+      "PAP.HANY_SOH",
+      "PAP.ZAQY_MOHAMAD",
+      "PAP.LAWRENCE_WONG"
+    ],
+    "date": "2025-04-12",
+    "summary": "Prime Minister Lawrence Wong will once again lead the People’s Action Party team in Marsiling-Yew Tee GRC in the coming election"
   }
 ]
