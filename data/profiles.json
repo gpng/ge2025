@@ -493,6 +493,9 @@
     },
     "HAMID_RAZAK": {
       "name": "Hamid Razak"
+    },
+    "HAZLINA_ABDUL_HALIM": {
+      "name": "Hazlina Abdul Halim"
     }
   },
   "PSP": {
@@ -989,20 +992,16 @@
   },
   "SUP": {
     "ANDY_ZHU": {
-      "name": "Andy Zhu",
-      "image": "andy_zhu.jpg"
+      "name": "Andy Zhu"
     },
     "DARREN_SOH": {
-      "name": "Darren Soh",
-      "image": "darren_soh.jpg"
+      "name": "Darren Soh"
     },
     "NORAINI_YUNUS": {
-      "name": "Noraini Yunus",
-      "image": "noraini_yunus.jpg"
+      "name": "Noraini Yunus"
     },
     "RIDHUAN_CHANDRAN": {
-      "name": "Ridhuan Chandran",
-      "image": "ridhuan_chandran.jpg"
+      "name": "Ridhuan Chandran"
     }
   },
   "MVP": {

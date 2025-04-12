@@ -288,5 +288,15 @@
     "profileIds": ["PAP.MUHAMMAD_FAISHAL_IBRAHIM"],
     "date": "2025-04-11",
     "summary": "Minister of State for Home Affairs and National Development Muhammad Faishal Ibrahim will join the PAP team in Marine Parade-Braddell Heights GRC to contest the upcoming general election."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/maliki-osman-set-to-be-replaced-by-new-face-hazlina-abdul-halim-in-east-coast-grc",
+    "title": "GE2025: Maliki Osman set to be replaced by new face Hazlina Abdul Halim in East Coast GRC",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["EC"],
+    "profileIds": ["PAP.MOHAMAD_MALIKI", "PAP.HAZLINA_ABDUL_HALIM"],
+    "date": "2025-04-12",
+    "summary": "Second Minister for Education and Foreign Affairs Maliki Osman will not be part of the PAP slate for East Coast GRC"
   }
 ]
