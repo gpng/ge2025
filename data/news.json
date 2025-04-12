@@ -298,5 +298,15 @@
     "profileIds": ["PAP.MOHAMAD_MALIKI", "PAP.HAZLINA_ABDUL_HALIM"],
     "date": "2025-04-12",
     "summary": "Second Minister for Education and Foreign Affairs Maliki Osman will not be part of the PAP slate for East Coast GRC"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-psp-confirms-it-will-contest-marymount-smc-again",
+    "title": "GE2025: PSP confirms it will contest Marymount, Kebun Baru, Pioneer SMCs again",
+    "isOfficial": true,
+    "partyIds": ["PSP"],
+    "electoralDivisionIds": ["MR", "KR", "PI"],
+    "profileIds": [],
+    "date": "2025-04-12",
+    "summary": "PSP confirms it will contest Marymount, Kebun Baru, and Pioneer SMCs again in GE2025 but has not yet announced its candidates."
   }
 ]

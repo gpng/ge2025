@@ -63,6 +63,11 @@
         "partyId": "PAR",
         "isConfirmed": false,
         "profiles": []
+      },
+      {
+        "partyId": "PSP",
+        "isConfirmed": false,
+        "profiles": []
       }
     ]
   },
@@ -399,6 +404,11 @@
         "partyId": "PAP",
         "isIncumbent": true,
         "profiles": ["PAP.PATRICK_TAY"]
+      },
+      {
+        "partyId": "PSP",
+        "isConfirmed": false,
+        "profiles": []
       }
     ]
   },
@@ -415,6 +425,11 @@
       },
       {
         "partyId": "PAR",
+        "isConfirmed": false,
+        "profiles": []
+      },
+      {
+        "partyId": "PSP",
         "isConfirmed": false,
         "profiles": []
       }
