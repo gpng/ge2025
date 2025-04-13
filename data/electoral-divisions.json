@@ -477,7 +477,7 @@
       {
         "partyId": "PAP",
         "isConfirmed": false,
-        "profiles": []
+        "profiles": ["PAP.MARSHALL_LIM"]
       }
     ]
   },
