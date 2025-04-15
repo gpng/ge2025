@@ -7,12 +7,13 @@
     "candidates": [
       {
         "partyId": "PAP",
+        "isConfirmed": true,
         "profiles": [
-          "PAP.MURALI_PILLAI",
-          "PAP.AMY_KHOR",
           "PAP.GRACE_FU",
           "PAP.RAHAYU_MAHZAM",
-          "PAP.TAN_WU_MENG"
+          "PAP.MURALI_PILLAI",
+          "PAP.DAVID_HOE",
+          "PAP.LEE_HONG_CHUANG"
         ],
         "isIncumbent": true
       },
@@ -256,8 +257,14 @@
       },
       {
         "partyId": "PAP",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": [
+          "PAP.CHAN_HUI_YUH",
+          "PAP.JAGATHISHWARAN_RAJOO",
+          "PAP.DANIEL_LIU",
+          "PAP.ADRIAN_ANG",
+          "PAP.FAISAL_ABDUL_AZIZ"
+        ]
       }
     ]
   },
@@ -303,6 +310,7 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": ["PAP.LOW_YEN_LING"]
       }
     ]
@@ -316,11 +324,12 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": [
           "PAP.GAN_KIM_YONG",
-          "PAP.DON_WEE",
           "PAP.ZHULKARNAIN_ABDUL_RAHIM",
-          "PAP.CHUA_WEI_SHAN"
+          "PAP.JEFFREY_SIOW",
+          "PAP.CHOO_PEI_LING"
         ]
       },
       {
@@ -362,6 +371,7 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": ["PAP.XIE_YAO_QUAN"]
       },
       {
@@ -476,7 +486,7 @@
       },
       {
         "partyId": "PAP",
-        "isConfirmed": false,
+        "isConfirmed": true,
         "profiles": ["PAP.MARSHALL_LIM"]
       }
     ]
@@ -517,7 +527,7 @@
       },
       {
         "partyId": "PAP",
-        "isConfirmed": false,
+        "isConfirmed": true,
         "profiles": [
           "PAP.LAM_PIN_MIN",
           "PAP.ELMIE_NEKMAT",
@@ -536,11 +546,12 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": [
-          "PAP.ALEX_YAM",
-          "PAP.HANY_SOH",
+          "PAP.LAWRENCE_WONG",
           "PAP.ZAQY_MOHAMAD",
-          "PAP.LAWRENCE_WONG"
+          "PAP.ALEX_YAM",
+          "PAP.HANY_SOH"
         ]
       },
       {
@@ -591,7 +602,7 @@
       },
       {
         "partyId": "NSP",
-        "isConfirmed": false,
+        "isConfirmed": true,
         "profiles": []
       },
       {

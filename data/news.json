@@ -235,7 +235,7 @@
   },
   {
     "url": "https://www.straitstimes.com/singapore/politics/ge2025-trade-unionist-natasha-choy-joins-desmond-lees-team-in-west-coast",
-    "title": "Trade unionist Natasha Choy joins Desmond Lee’s team in West Coast",
+    "title": "Trade unionist Natasha Choy joins Desmond Lee's team in West Coast",
     "isOfficial": true,
     "partyIds": ["PAP"],
     "electoralDivisionIds": ["WJ"],
@@ -311,7 +311,7 @@
   },
   {
     "url": "https://www.facebook.com/100089129233177/videos/1826449394797726",
-    "title": "Is'haq Rajoo Jay to contest Queenstown SMC as independent candidate",
+    "title": "Is'haq Rajoo Jay Facebook Live",
     "isOfficial": true,
     "partyIds": ["INDIE"],
     "electoralDivisionIds": ["QT"],
@@ -335,7 +335,7 @@
     "summary": "Prime Minister Lawrence Wong will once again lead the People's Action Party team in Marsiling-Yew Tee GRC in the coming election"
   },
   {
-    "url": "https://www.channelnewsasia.com/singapore/ge2025-criminal-lawyer-marshall-lim-hougang-pap-5062081?cid=telegram_cna_social_28112017_cna",
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-criminal-lawyer-marshall-lim-hougang-pap-5062081",
     "title": "GE2025: Criminal lawyer Marshall Lim to represent PAP in WP stronghold Hougang SMC",
     "isOfficial": true,
     "partyIds": ["PAP"],
@@ -343,5 +343,86 @@
     "profileIds": ["PAP.MARSHALL_LIM"],
     "date": "2025-04-13",
     "summary": "Criminal lawyer Marshall Lim, 38, will be representing the People's Action Party (PAP) in Workers' Party-held (WP) Hougang SMC"
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-sengkang-lam-pin-min-pap-slate-5061671",
+    "title": "GE2025: PAP unveils Sengkang GRC slate led by Lam Pin Min",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["SK"],
+    "profileIds": [
+      "PAP.LAM_PIN_MIN",
+      "PAP.ELMIE_NEKMAT",
+      "PAP.THEODORA_LAI",
+      "PAP.BERNADETTE_GIAM"
+    ],
+    "date": "2025-04-13",
+    "summary": "PAP formally announced its slate of four candidates who will be contesting in the Workers' Party-held Sengkang GRC "
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-pap-chua-chu-kang-grc-candidates-gan-kim-yong-jeffrey-siow-choo-pei-ling-amy-khor-5062881",
+    "title": "GE2025: PAP unveils Chua Chu Kang GRC team, including new faces Jeffrey Siow and Choo Pei Lin",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["CK"],
+    "profileIds": [
+      "PAP.GAN_KIM_YONG",
+      "PAP.ZHULKARNAIN_ABDUL_RAHIM",
+      "PAP.JEFFREY_SIOW",
+      "PAP.CHOO_PEI_LING"
+    ],
+    "date": "2025-04-14",
+    "summary": "PAP introduced its slate of candidates for Chua Chu Kang GRC"
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-pap-jurong-east-bukit-batok-grc-grace-fu-lee-hong-chuang-5063126",
+    "title": "GE2025: Grace Fu to lead PAP's Jurong East-Bukit Batok GRC team; Hougang's Lee Hong Chuang joins line-up",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["JE"],
+    "profileIds": [
+      "PAP.GAN_KIM_YONG",
+      "PAP.ZHULKARNAIN_ABDUL_RAHIM",
+      "PAP.JEFFREY_SIOW",
+      "PAP.CHOO_PEI_LING"
+    ],
+    "date": "2025-04-14",
+    "summary": "Minister for Sustainability and the Environment Grace Fu will lead the PAP team contesting the new Jurong East-Bukit Batok GRC"
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-pap-aljunied-grc-wp-pritam-singh-new-faces-5062226",
+    "title": "GE2025: PAP to field 4 newcomers in 5-member Aljunied GRC",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["AJ"],
+    "profileIds": [
+      "PAP.CHAN_HUI_YUH",
+      "PAP.JAGATHISHWARAN_RAJOO",
+      "PAP.DANIEL_LIU",
+      "PAP.ADRIAN_ANG",
+      "PAP.FAISAL_ABDUL_AZIZ"
+    ],
+    "date": "2025-04-13",
+    "summary": "Minister for Sustainability and the Environment Grace Fu will lead the PAP team contesting the new Jurong East-Bukit Batok GRC"
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-pap-jurong-central-smc-xie-yao-quan-5063131",
+    "title": "GE2025: PAP to field Xie Yao Quan in new Jurong Central SMC",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["JU"],
+    "profileIds": ["PAP.XIE_YAO_QUAN"],
+    "date": "2025-04-14",
+    "summary": "Minister for Sustainability and the Environment Grace Fu will lead the PAP team contesting the new Jurong East-Bukit Batok GRC"
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-bukit-gombak-smc-pap-candidate-low-yen-ling-5062891",
+    "title": "GE2025: Low Yen Ling to represent PAP in newly formed Bukit Gombak SMC",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["BG"],
+    "profileIds": ["PAP.LOW_YEN_LING"],
+    "date": "2025-04-14",
+    "summary": "PAP introduced current Chua Chu Kang GRC MP Low Yen Ling as its candidate for the newly formed Bukit Gombak SMC."
   }
 ]
