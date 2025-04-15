@@ -14,10 +14,15 @@ interface Props {
 const Tooltip = ({ electoralDivision, longitude, latitude }: Props) => {
   const { parties } = useData();
 
+  let actualLatitude = latitude;
+  if (electoralDivision.id === 'SB') {
+    actualLatitude += 0.01;
+  }
+
   return (
     <Marker
       longitude={longitude}
-      latitude={latitude}
+      latitude={actualLatitude}
       anchor="center"
       style={{ zIndex: 10 }}
     >

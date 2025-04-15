@@ -171,8 +171,12 @@ const GEMap = ({
         const boundaryCenter = center(boundary);
         if (!boundaryCenter.geometry.coordinates.length) return null;
 
-        const [longitude, latitude] = boundaryCenter.geometry.coordinates;
+        let [longitude, latitude] = boundaryCenter.geometry.coordinates;
         const offset = getOffset(zoom);
+
+        if (ed.id === 'SB') {
+          latitude += 0.01;
+        }
 
         return ed.candidates.map((candidate, index) => {
           const party = parties[candidate.partyId];
