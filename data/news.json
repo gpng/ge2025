@@ -466,5 +466,15 @@
     ],
     "date": "2025-04-15",
     "summary": "The PAP team that will contest Holland-Bukit Timah GRC in the upcoming polls will remain unchanged"
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-sda-singapore-democratic-alliance-pasir-ris-changi-punggol-grc-desmond-lim-5062681",
+    "title": "GE2025: SDA will focus resources on Pasir Ris-Changi GRC, to announce decision on Punggol GRC next week",
+    "isOfficial": false,
+    "partyIds": ["SDA"],
+    "electoralDivisionIds": ["PC"],
+    "profileIds": [],
+    "date": "2025-04-15",
+    "summary": "SDA will be focusing its resources on Pasir Ris-Changi GRC but stopped short of confirming whether it will be contesting Punggol GRC"
   }
 ]

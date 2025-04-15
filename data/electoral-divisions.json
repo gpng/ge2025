@@ -820,6 +820,11 @@
           "PAP.SHARAEL_TAHA",
           "PAP.JESSICA_TAN"
         ]
+      },
+      {
+        "partyId": "SDA",
+        "isConfirmed": false,
+        "profiles": []
       }
     ]
   }
