@@ -52,6 +52,12 @@ Usual process for updating news
 ## Run dev server
 
 ```sh
+pnpm run dev
+```
+
+or if you have access to vercel
+
+```sh
 vercel dev
 ```
 
