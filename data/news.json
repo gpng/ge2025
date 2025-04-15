@@ -424,5 +424,47 @@
     "profileIds": ["PAP.LOW_YEN_LING"],
     "date": "2025-04-14",
     "summary": "PAP introduced current Chua Chu Kang GRC MP Low Yen Ling as its candidate for the newly formed Bukit Gombak SMC."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-national-development-minister-desmond-lee-will-anchor-pap-team-in-west-coast-jurong-west-grc",
+    "title": "GE2025: National Development Minister Desmond Lee will anchor PAP team in West Coast-Jurong West GRC",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["WJ"],
+    "profileIds": [
+      "PAP.DESMOND_LEE",
+      "PAP.ANG_WEI_NENG",
+      "PAP.SHAWN_HUANG",
+      "PAP.HAMID_RAZAK",
+      "PAP.CASSANDRA_LEE"
+    ],
+    "date": "2025-04-15",
+    "summary": "Minister for National Development Desmond Lee will anchor the PAP team in the newly formed West Coast-Jurong West GRC."
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-pioneer-smc-pap-multi-cornered-fight-psp-5064391",
+    "title": "GE2025: Labour unionist Patrick Tay to defend his Pioneer seat for the PAP",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["PI"],
+    "profileIds": ["PAP.PATRICK_TAY"],
+    "date": "2025-04-15",
+    "summary": "Labour unionist Patrick Tay will once again represent the PAP in the Pioneer single-seat ward"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-pap-to-field-unchanged-line-up-in-holland-bukit-timah-liang-eng-hwa-to-defend-bukit-panjang",
+    "title": "GE2025: PAP to field unchanged line-up in Holland-Bukit Timah; Liang Eng Hwa to defend Bukit Panjang",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["HT", "BP"],
+    "profileIds": [
+      "PAP.VIVIAN_BALAKRISHNAN",
+      "PAP.SIM_ANN",
+      "PAP.CHRISTOPHER_DE_SOUZA",
+      "PAP.EDWARD_CHIA",
+      "PAP.LIANG_ENG_HWA"
+    ],
+    "date": "2025-04-15",
+    "summary": "The PAP team that will contest Holland-Bukit Timah GRC in the upcoming polls will remain unchanged"
   }
 ]

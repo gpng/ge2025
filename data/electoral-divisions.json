@@ -33,13 +33,13 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": [
           "PAP.DESMOND_LEE",
           "PAP.ANG_WEI_NENG",
-          "PAP.FOO_MEE_HAR",
-          "PAP.NATASHA_CHOY",
           "PAP.SHAWN_HUANG",
-          "PAP.HAMID_RAZAK"
+          "PAP.HAMID_RAZAK",
+          "PAP.CASSANDRA_LEE"
         ]
       },
       {
@@ -348,6 +348,7 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": [
           "PAP.VIVIAN_BALAKRISHNAN",
           "PAP.SIM_ANN",
@@ -418,6 +419,7 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": ["PAP.PATRICK_TAY"]
       },
       {
@@ -500,6 +502,7 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": ["PAP.LIANG_ENG_HWA"]
       },
       {
