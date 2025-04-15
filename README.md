@@ -17,20 +17,31 @@ To create a PR and update the data, follow the guide below.
 ## Updating Data
 
 Refer to the [setup guide](#setup) below to configure your dev environment.
-All data are in TypeScript files to ensure typing and shape.
+
+All data are in JSON files. A pre-commit script [validateData.ts](src/scripts/validate-data.ts) validates the json files using zod schemas.
+
+The website fetches the data from the main branch in the GitHub repo, and refreshes the data every 10 minutes, see [fetch-data.ts](src/app/actions/fetch-data.ts). So any updates to the data pushed to main can be seen in production after 10 minutes at most.
 
 ### Individual Candidates
 
-1. Add or modify candidate details in [src/data/profiles.ts](src/data/profiles.ts)
+1. Add or modify candidate details in [data/profiles.json](data/profiles.json)
 1. Profile images should be added to [public/images/profiles](public/images/profiles/).
 
 ### Parties
 
-1. Add or modify party details in [src/data/parties.ts](src/data/parties.ts)
+1. Add or modify party details in [data/parties.json](data/parties.json)
 
 ### Electoral Divisions
 
-1. Add or modify electoral division details in [src/data/electoral-divisions.ts](src/data/electoral-division.ts)
+1. Add or modify electoral division details in [data/electoral-divisions.json](data/electoral-divisions.json)
+
+### News
+
+Usual process for updating news
+
+1. Add news article in [data/news.json](data/news.json)
+1. If profile doesn't exist, add to [data/profiles.json](data/profiles.json)
+2. Update changes to the relevant electoral divisions in [data/electoral-divisions.json](data/electoral-divisions.json)
 
 # Setup
 
@@ -58,4 +69,4 @@ Components will be installed using the shadcn/ui cli, which will look like
 pnpm dlx shadcn@latest add accordion
 ```
 
-The component will be created in the `src/app//_components/ui` folder.
+The component will be created in the `src/app/_components/ui` folder.
