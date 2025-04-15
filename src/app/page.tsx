@@ -1,5 +1,6 @@
 import {
   BookOpenText,
+  Calendar,
   ChevronRight,
   FileText,
   Info,
@@ -37,8 +38,7 @@ const HomePage = () => {
                 Ready, Set, <span className="text-primary">Vote!</span>
               </h1>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                Your friendly guide to Singapore's General Election 2025. No
-                jargon, just the info you need!
+                Your friendly guide to Singapore's General Election 2025
               </p>
             </div>
             {/* <div className="flex items-center justify-center space-x-2 bg-background rounded-full px-4 py-2 shadow-sm">
@@ -59,104 +59,101 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* <section
-        className="w-full py-12 md:py-24 lg:py-32"
-        id="find-polling-station"
-      >
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
-            <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
-                <MapPin className="h-4 w-4" />
-                <span>Find Your Spot</span>
-              </div>
+      {/* Election Timeline Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-background relative overflow-hidden">
+        <div className="absolute -bottom-32 -right-32 w-80 h-80 bg-secondary/10 rounded-full blur-3xl" />
+        <div className="container px-4 md:px-6 relative">
+          <div className="flex flex-col items-center space-y-4 text-center mb-12">
+            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
+              <Calendar className="h-4 w-4" />
+              <span>Important Dates</span>
+            </div>
+            <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-                Where's Your Polling Station?
+                GE2025 Election Timeline
               </h2>
-              <p className="text-muted-foreground text-lg">
-                Pop in your NRIC and we'll tell you exactly where to go on
-                voting day. No more getting lost!
-              </p>
-              <div className="flex flex-col sm:flex-row gap-2 pt-2">
-                <div className="flex-1">
-                  <Input
-                    type="text"
-                    placeholder="Your NRIC (e.g., S1234567A)"
-                    className="rounded-full h-12 px-4"
-                  />
-                </div>
-                <Button type="submit" className="rounded-full h-12">
-                  Find My Station
-                </Button>
-              </div>
-              <p className="text-sm text-muted-foreground flex items-center gap-2">
-                <Info className="h-4 w-4" />
-                Don't worry, we don't store your NRIC. Privacy first!
+              <p className="text-muted-foreground text-lg max-w-[800px] mx-auto">
+                Mark your calendar with these key election dates. From
+                Nomination Day to Polling Day, here's what to expect.
               </p>
             </div>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-5">
+            {/* April 15 */}
             <Card className="overflow-hidden border-2 border-primary/20">
               <CardHeader className="bg-primary/5 pb-2">
-                <CardTitle className="flex items-center gap-2">
-                  <Coffee className="h-5 w-5 text-primary" />
-                  The Essentials
-                </CardTitle>
-                <CardDescription>
-                  Quick facts to know before you go
-                </CardDescription>
+                <CardTitle className="text-lg font-bold">April 15</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4 pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="rounded-full bg-primary/10 p-3">
-                    <Calendar className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-lg">Polling Hours</h3>
-                    <p className="text-muted-foreground">
-                      8:00 AM to 8:00 PM on July 10, 2025
-                    </p>
-                    <p className="text-sm text-primary">
-                      Pro tip: Mid-morning usually has shorter queues!
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="rounded-full bg-primary/10 p-3">
-                    <FileText className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-lg">What to Bring</h3>
-                    <p className="text-muted-foreground">
-                      Just your NRIC or passport. That's it!
-                    </p>
-                    <p className="text-sm text-primary">
-                      Leave your phone in your pocket at the booth.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="rounded-full bg-primary/10 p-3">
-                    <Info className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-lg">Overseas?</h3>
-                    <p className="text-muted-foreground">
-                      Register by June 10, 2025 to vote from abroad
-                    </p>
-                    <p className="text-sm text-primary">
-                      Available in 10 cities worldwide!
-                    </p>
-                  </div>
-                </div>
+              <CardContent className="pt-4">
+                <h3 className="font-medium text-lg mb-2">
+                  Parliament Dissolved
+                </h3>
+                <p className="text-muted-foreground">
+                  Parliament is dissolved and the Writ of Election is issued
+                </p>
               </CardContent>
-              <CardFooter className="bg-primary/5 flex justify-center">
-                <Button variant="link" className="text-primary">
-                  More voting tips →
-                </Button>
-              </CardFooter>
+            </Card>
+
+            {/* April 23 */}
+            <Card className="overflow-hidden border-2 border-primary/20">
+              <CardHeader className="bg-primary/5 pb-2">
+                <CardTitle className="text-lg font-bold">April 23</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-4">
+                <h3 className="font-medium text-lg mb-2">Nomination Day</h3>
+                <p className="text-muted-foreground">
+                  Prospective candidates file nomination papers. Day 1 of
+                  campaign period
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* April 23 - May 1 */}
+            <Card className="overflow-hidden border-2 border-primary/20">
+              <CardHeader className="bg-primary/5 pb-2">
+                <CardTitle className="text-lg font-bold">
+                  April 23 - May 1
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-4">
+                <h3 className="font-medium text-lg mb-2">Campaign Period</h3>
+                <p className="text-muted-foreground">
+                  9 days of campaigning with rallies and walkabouts
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* May 2 */}
+            <Card className="overflow-hidden border-2 border-primary/20">
+              <CardHeader className="bg-primary/5 pb-2">
+                <CardTitle className="text-lg font-bold">May 2</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-4">
+                <h3 className="font-medium text-lg mb-2">Cooling-Off Day</h3>
+                <p className="text-muted-foreground">
+                  No campaigning allowed. A day for voters to reflect before
+                  casting their votes
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* May 3 */}
+            <Card className="overflow-hidden border-2 border-primary/20 bg-primary/10">
+              <CardHeader className="bg-primary/20 pb-2">
+                <CardTitle className="text-lg font-bold">May 3</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-4">
+                <h3 className="font-medium text-lg mb-2">Polling Day</h3>
+                <p className="text-muted-foreground">
+                  Polls will be open from 8am to 8pm for voters to cast their
+                  ballots
+                </p>
+              </CardContent>
             </Card>
           </div>
         </div>
-      </section> */}
+      </section>
 
       <section
         className="w-full py-12 md:py-24 lg:py-32"
