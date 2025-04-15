@@ -20,7 +20,11 @@
       {
         "partyId": "RDU",
         "isConfirmed": false,
-        "profiles": []
+        "profiles": [
+          "RDU.HARISH_MOHANADAS",
+          "RDU.BEN_PUAH",
+          "RDU.LIYANA_DHAMIRA"
+        ]
       }
     ]
   },
@@ -85,8 +89,8 @@
       },
       {
         "partyId": "PAR",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": ["PAR.MICHAEL_FANG"]
       }
     ]
   },
@@ -234,7 +238,7 @@
       {
         "partyId": "RDU",
         "isConfirmed": false,
-        "profiles": []
+        "profiles": ["RDU.KALA_MANICKAM"]
       }
     ]
   },
@@ -377,8 +381,8 @@
       },
       {
         "partyId": "RDU",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": ["RDU.EMILY_WOO"]
       }
     ]
   },
@@ -658,6 +662,11 @@
         "partyId": "PAR",
         "isConfirmed": false,
         "profiles": []
+      },
+      {
+        "partyId": "INDIE",
+        "isConfirmed": true,
+        "profiles": ["INDIE.JEREMY_TAN"]
       }
     ]
   },

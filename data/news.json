@@ -476,5 +476,49 @@
     "profileIds": [],
     "date": "2025-04-15",
     "summary": "SDA will be focusing its resources on Pasir Ris-Changi GRC but stopped short of confirming whether it will be contesting Punggol GRC"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-peoples-alliance-for-reform-set-to-contest-in-yio-chu-kang",
+    "title": "GE2025: People's Alliance for Reform set to contest in Yio Chu Kang SMC",
+    "isOfficial": true,
+    "partyIds": ["PAR"],
+    "electoralDivisionIds": ["YK"],
+    "profileIds": ["PAR.MICHAEL_FANG"],
+    "date": "2025-04-12",
+    "summary": "PAR will contest the single seat of Yio Chu Kang in the upcoming general election, with lecturer Michael Fang, 48, set to represent the party."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/opposition-red-dot-united-goes-on-walkabout-in-jalan-kayu-introduces-party-member",
+    "title": "Opposition Red Dot United goes on walkabout in Jalan Kayu, introduces party member",
+    "isOfficial": true,
+    "partyIds": ["RDU"],
+    "electoralDivisionIds": ["JK"],
+    "profileIds": ["RDU.KALA_MANICKAM"],
+    "date": "2025-03-22",
+    "summary": "RDU party went on its maiden walkabout in Jalan Kayu SMC and introduced a party member who will lead the team in the newly carved out ward."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-piano-teacher-introduced-as-red-dot-uniteds-lead-in-jurong-central-smc",
+    "title": "GE2025: Piano teacher introduced as Red Dot United’s lead in Jurong Central SMC",
+    "isOfficial": true,
+    "partyIds": ["RDU"],
+    "electoralDivisionIds": ["JU"],
+    "profileIds": ["RDU.EMILY_WOO"],
+    "date": "2025-03-23",
+    "summary": "Red Dot United (RDU) on March 23 introduced a possible opposition candidate for the new Jurong Central SMC."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/red-dot-united-introduces-three-potential-candidates-for-jurong-east-bukit-batok-grc",
+    "title": "Red Dot United introduces three potential candidates for Jurong East-Bukit Batok GRC",
+    "isOfficial": true,
+    "partyIds": ["RDU"],
+    "electoralDivisionIds": ["JE"],
+    "profileIds": [
+      "RDU.HARISH_MOHANADAS",
+      "RDU.BEN_PUAH",
+      "RDU.LIYANA_DHAMIRA"
+    ],
+    "date": "2025-04-05",
+    "summary": "Red Dot United (RDU) on April 5 introduced three potential candidates for the newly created Jurong East-Bukit Batok GRC."
   }
 ]

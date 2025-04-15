@@ -607,10 +607,6 @@
       "name": "Abdul Rahman",
       "image": "abdul_rahman.jpg"
     },
-    "KALA_MANICKAM": {
-      "name": "Kala Manickam",
-      "image": "kala_manickam.jpg"
-    },
     "JEFFREY_KHOO": {
       "name": "Jeffrey Khoo Poh Tiong",
       "image": "jeffrey_khoo.jpg"
@@ -857,6 +853,19 @@
     },
     "PATRICK_TAN": {
       "name": "Patrick Tan"
+    },
+    "KALA_MANICKAM": {
+      "name": "Kala Manickam",
+      "image": "kala_manickam.jpg"
+    },
+    "EMILY_WOO": {
+      "name": "Emily Woo"
+    },
+    "BEN_PUAH": {
+      "name": "Ben Puah"
+    },
+    "HARISH_MOHANADAS": {
+      "name": "Harish Mohanadas"
     }
   },
   "SPP": {
@@ -946,10 +955,13 @@
       "image": "kelvin_ong.jpg"
     }
   },
-  "PV": {
+  "PAR": {
     "LIM_TEAN": {
       "name": "Lim Tean",
       "image": "lim_tean.jpg"
+    },
+    "MICHAEL_FANG": {
+      "name": "Michael Fang Amin"
     },
     "JIREH_LIM": {
       "name": "Jireh Lim"
@@ -971,9 +983,6 @@
     },
     "NOR_AZLAN_SULAIMAN": {
       "name": "Nor Azlan Sulaiman"
-    },
-    "MICHAEL_FANG": {
-      "name": "Michael Fang Amin"
     },
     "SIVAKUMARAN_CHELLAPPA": {
       "name": "Sivakumaran Chellappa",
@@ -1026,6 +1035,10 @@
   "INDIE": {
     "ISHAQ_RAJOO": {
       "name": "Is'haq Rajoo Jay"
+    },
+    "JEREMY_TAN": {
+      "name": "Jeremy Tan",
+      "image": "jeremy_tan.jpg"
     }
   }
 }

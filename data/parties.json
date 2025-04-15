@@ -30,12 +30,6 @@
     "logo": "NSP.svg",
     "color": "#BD632F"
   },
-  "PV": {
-    "id": "PV",
-    "name": "People's Voice",
-    "logo": "PV.png",
-    "color": "#91268e"
-  },
   "SDP": {
     "id": "SDP",
     "name": "Singapore Democratic Party",
