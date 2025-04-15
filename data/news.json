@@ -264,7 +264,7 @@
     "title": "GE2025: Why this 32-year-old is setting up a political party to contest East Coast GRC",
     "isOfficial": true,
     "partyIds": ["MVP"],
-    "electoralDivisionIds": [],
+    "electoralDivisionIds": ["EC"],
     "profileIds": ["MVP.CHIA_YUN_KAI"],
     "date": "2025-04-09",
     "summary": "Restaurant owner Chia Yun Kai said that he decided to set up Most Valuable Party (MVP) to context in East Coast GRC"
