@@ -520,5 +520,36 @@
     ],
     "date": "2025-04-05",
     "summary": "Red Dot United (RDU) on April 5 introduced three potential candidates for the newly created Jurong East-Bukit Batok GRC."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-josephine-teo-continues-to-helm-paps-jalan-besar-grc-slate",
+    "title": "GE2025: Josephine Teo continues to helm PAP's Jalan Besar GRC slate",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["JB"],
+    "profileIds": [
+      "PAP.JOSEPHINE_TEO",
+      "PAP.DENISE_PHUA",
+      "PAP.WAN_RIZAL",
+      "PAP.SHAWN_LOH"
+    ],
+    "date": "2025-04-16",
+    "summary": "Minister for Digital Development and Information Josephine Teo will continue to helm the PAP team in Jalan Besar GRC."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-ex-army-chief-david-neo-academic-charlene-chen-confirmed-among-paps-tampines-grc-slate",
+    "title": "GE2025: Ex-army chief David Neo, academic Charlene Chen confirmed among PAP's Tampines GRC slate",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["TM"],
+    "profileIds": [
+      "PAP.MASAGOS_ZULKIFLI",
+      "PAP.BAEY_YAM_KENG",
+      "PAP.KOH_POH_KOON",
+      "PAP.DAVID_NEO",
+      "PAP.CHARLENE_CHEN"
+    ],
+    "date": "2025-04-16",
+    "summary": "Former Chief of Army David Neo and assistant professor Charlene Chen will contest Tampines GRC"
   }
 ]

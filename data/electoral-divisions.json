@@ -395,11 +395,12 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": [
+          "PAP.JOSEPHINE_TEO",
           "PAP.DENISE_PHUA",
           "PAP.WAN_RIZAL",
-          "PAP.JOSEPHINE_TEO",
-          "PAP.HENG_CHEE_HOW"
+          "PAP.SHAWN_LOH"
         ]
       },
       {
@@ -778,11 +779,13 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": [
           "PAP.MASAGOS_ZULKIFLI",
           "PAP.BAEY_YAM_KENG",
           "PAP.KOH_POH_KOON",
-          "PAP.DAVID_HOE"
+          "PAP.DAVID_NEO",
+          "PAP.CHARLENE_CHEN"
         ]
       },
       {
