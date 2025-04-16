@@ -20,7 +20,7 @@ Refer to the [setup guide](#setup) below to configure your dev environment.
 
 All data are in JSON files. A pre-commit script [validateData.ts](src/scripts/validate-data.ts) validates the json files using zod schemas.
 
-The website fetches the data from the main branch in the GitHub repo, and refreshes the data every 10 minutes, see [fetch-data.ts](src/app/actions/fetch-data.ts). So any updates to the data pushed to main can be seen in production after 10 minutes at most.
+The website fetches the data from the main branch in the GitHub repo, and refreshes the data every 30 minutes, see [fetch-data.ts](src/app/actions/fetch-data.ts). So any updates to the data pushed to main can be seen in production after 30 minutes at most.
 
 ### Individual Candidates
 
