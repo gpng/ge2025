@@ -76,3 +76,9 @@ pnpm dlx shadcn@latest add accordion
 ```
 
 The component will be created in the `src/app/_components/ui` folder.
+
+
+# License
+
+© 2025 @gpng and contributors – released under the
+[GNU Affero General Public License v3.0](LICENSE).
