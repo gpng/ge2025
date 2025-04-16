@@ -19,11 +19,13 @@
       },
       {
         "partyId": "RDU",
-        "isConfirmed": false,
+        "isConfirmed": true,
         "profiles": [
-          "RDU.HARISH_MOHANADAS",
+          "RDU.KHAN_OSMAN_SULAIMAN",
+          "RDU.LIYANA_DHAMIRA",
           "RDU.BEN_PUAH",
-          "RDU.LIYANA_DHAMIRA"
+          "RDU.HARISH_MOHANADAS",
+          "RDU.MARCUS_NEO"
         ]
       }
     ]

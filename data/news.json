@@ -575,5 +575,22 @@
     ],
     "date": "2025-04-14",
     "summary": "RDU introduced three potential candidates for Nee Soon GRC in the upcoming election."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/red-dot-united-unveils-line-up-for-jurong-east-bukit-batok-grc-and-jurong-central-smc",
+    "title": "Red Dot United unveils line-up for Jurong East-Bukit Batok GRC and Jurong Central SMC",
+    "isOfficial": true,
+    "partyIds": ["RDU"],
+    "electoralDivisionIds": ["JE", "JU"],
+    "profileIds": [
+      "RDU.KHAN_OSMAN_SULAIMAN",
+      "RDU.LIYANA_DHAMIRA",
+      "RDU.BEN_PUAH",
+      "RDU.HARISH_MOHANADAS",
+      "RDU.MARCUS_NEO",
+      "RDU.EMILY_WOO"
+    ],
+    "date": "2025-04-16",
+    "summary": "RDU unveiled its slate for the newly formed Jurong East-Bukit Batok GRC, which includes two candidates with political experience."
   }
 ]

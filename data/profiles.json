@@ -884,6 +884,13 @@
     },
     "SHARON_LIN": {
       "name": "Sharon Lin"
+    },
+    "KHAN_OSMAN_SULAIMAN": {
+      "name": "Khan Osman Sulaiman",
+      "image": "osman_sulaiman.jpg"
+    },
+    "MARCUS_NEO": {
+      "name": "Marcus Neo"
     }
   },
   "SPP": {
@@ -894,10 +901,6 @@
     "STEVE_CHIA": {
       "name": "Steve Chia",
       "image": "steve_chia.jpg"
-    },
-    "KHAN_OSMAN_SULAIMAN": {
-      "name": "Khan Osman Sulaiman",
-      "image": "osman_sulaiman.jpg"
     },
     "MELVYN_CHIU": {
       "name": "Melvyn Chiu",
