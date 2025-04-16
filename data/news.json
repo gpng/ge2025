@@ -561,5 +561,19 @@
     "profileIds": ["PAP.ALEX_YEO"],
     "date": "2025-04-16",
     "summary": "Lawyer Alex Yeo will stand in Potong Pasir under the PAP banner at the upcoming polls"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/rdu-introduces-potential-candidates-for-nee-soon-grc",
+    "title": "GE2025: RDU introduces potential candidates for Nee Soon GRC",
+    "isOfficial": true,
+    "partyIds": ["RDU"],
+    "electoralDivisionIds": ["NS"],
+    "profileIds": [
+      "RDU.SYED_ALWI_AHMAD",
+      "RDU.PANG_HENG_CHUAN",
+      "RDU.SHARON_LIN"
+    ],
+    "date": "2025-04-14",
+    "summary": "RDU introduced three potential candidates for Nee Soon GRC in the upcoming election."
   }
 ]
