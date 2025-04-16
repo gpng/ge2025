@@ -1,6 +1,5 @@
 'use client';
 import Combobox from '@/app/_components/ui/combobox';
-import CandidateFilter from '@/app/news/_components/candidate-filter';
 import type { ElectoralDivision } from '@/models/electoral-division';
 import type { Parties } from '@/models/party';
 import type { PartyProfile } from '@/models/profile';
@@ -49,6 +48,28 @@ const NewsFilters = ({
     ];
   }, [constituencies]);
 
+  const candidateOptions = useMemo(() => {
+    const allProfiles: { id: string; name: string }[] = [];
+
+    // First, collect all profiles by party
+    for (const [partyId, partyProfiles] of Object.entries(profiles)) {
+      const party = parties[partyId];
+      for (const [profileId, profile] of Object.entries(partyProfiles)) {
+        allProfiles.push({
+          id: `${partyId}.${profileId}`,
+          name: `${profile.name} (${party.id})`,
+        });
+      }
+    }
+
+    // Sort profiles by name
+    const sortedProfiles = allProfiles.sort((a, b) =>
+      a.name.localeCompare(b.name),
+    );
+    // insert "All Candidates" at the beginning
+    return [{ id: 'all', name: 'All Candidates' }, ...sortedProfiles];
+  }, [parties, profiles]);
+
   return (
     <div className="flex flex-col md:flex-row gap-4">
       <div className="w-full md:w-[300px]">
@@ -56,7 +77,10 @@ const NewsFilters = ({
           options={partyOptions}
           value={currentFilters.party}
           onValueChange={(value) =>
-            onFilterChange({ ...currentFilters, party: value })
+            onFilterChange({
+              ...currentFilters,
+              party: value,
+            })
           }
           placeholder="Filter by party"
         />
@@ -67,20 +91,27 @@ const NewsFilters = ({
           options={constituencyOptions}
           value={currentFilters.constituency}
           onValueChange={(value) =>
-            onFilterChange({ ...currentFilters, constituency: value })
+            onFilterChange({
+              ...currentFilters,
+              constituency: value,
+            })
           }
           placeholder="Filter by constituency"
         />
       </div>
 
       <div className="w-full md:w-[300px]">
-        <CandidateFilter
-          parties={parties}
-          profiles={profiles}
+        <Combobox
+          options={candidateOptions}
           value={currentFilters.profile}
           onValueChange={(value) =>
-            onFilterChange({ ...currentFilters, profile: value })
+            // if same profile is selected, set to all
+            onFilterChange({
+              ...currentFilters,
+              profile: value,
+            })
           }
+          placeholder="Filter by candidate"
         />
       </div>
     </div>
