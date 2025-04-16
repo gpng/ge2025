@@ -696,7 +696,7 @@
       },
       {
         "partyId": "SDP",
-        "isConfirmed": false,
+        "isConfirmed": true,
         "profiles": [
           "SDP.JAMES_GOMEZ",
           "SDP.BRYAN_LIM",
