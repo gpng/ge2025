@@ -178,7 +178,8 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
-        "profiles": ["PAP.SITOH_YIH_PIN"]
+        "isConfirmed": true,
+        "profiles": ["PAP.ALEX_YEO"]
       },
       {
         "partyId": "PAR",

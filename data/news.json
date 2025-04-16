@@ -551,5 +551,15 @@
     ],
     "date": "2025-04-16",
     "summary": "Former Chief of Army David Neo and assistant professor Charlene Chen will contest Tampines GRC"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-pap-to-field-ex-aljunied-branch-chair-alex-yeo-in-potong-pasir-sitoh-yih-pin-stepping-down",
+    "title": "GE2025: PAP to field ex-Aljunied branch chair Alex Yeo in Potong Pasir, Sitoh Yih Pin stepping down",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["PS"],
+    "profileIds": ["PAP.ALEX_YEO"],
+    "date": "2025-04-16",
+    "summary": "Lawyer Alex Yeo will stand in Potong Pasir under the PAP banner at the upcoming polls"
   }
 ]
