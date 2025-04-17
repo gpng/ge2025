@@ -67,12 +67,12 @@
         "profiles": ["PAP.HENRY_KWEK"]
       },
       {
-        "partyId": "PAR",
-        "isConfirmed": false,
-        "profiles": []
+        "partyId": "PSP",
+        "isConfirmed": true,
+        "profiles": ["PSP.TONY_TAN"]
       },
       {
-        "partyId": "PSP",
+        "partyId": "PAR",
         "isConfirmed": false,
         "profiles": []
       }
@@ -439,12 +439,12 @@
         "profiles": ["PAP.GAN_SIOW_HUANG"]
       },
       {
-        "partyId": "PAR",
-        "isConfirmed": false,
-        "profiles": []
+        "partyId": "PSP",
+        "isConfirmed": true,
+        "profiles": ["PSP.JEFFREY_KHOO"]
       },
       {
-        "partyId": "PSP",
+        "partyId": "PAR",
         "isConfirmed": false,
         "profiles": []
       }

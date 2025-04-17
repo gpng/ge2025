@@ -592,5 +592,25 @@
     ],
     "date": "2025-04-16",
     "summary": "RDU unveiled its slate for the newly formed Jurong East-Bukit Batok GRC, which includes two candidates with political experience."
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/psp-tony-tan-hazel-poa-ge2025-kebun-baru-5071066",
+    "title": "GE2025: PSP to field Hazel Poa's husband Tony Tan in Kebun Baru SMC",
+    "isOfficial": true,
+    "partyIds": ["PSP"],
+    "electoralDivisionIds": ["KR"],
+    "profileIds": ["PSP.TONY_TAN"],
+    "date": "2025-04-17",
+    "summary": "PSP said it will field Mr Tony Tan in Kebun Baru SMC for the upcoming General Election."
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-psp-jeffrey-khoo-marymount-smc-5071041",
+    "title": "GE2025: PSP to field former West Coast candidate Jeffrey Khoo in Marymount SMC",
+    "isOfficial": true,
+    "partyIds": ["PSP"],
+    "electoralDivisionIds": ["MR"],
+    "profileIds": ["PSP.JEFFREY_KHOO"],
+    "date": "2025-04-17",
+    "summary": "PSP's Jeffrey Khoo will be its candidate standing in Marymount SMC at the upcoming General Election."
   }
 ]
