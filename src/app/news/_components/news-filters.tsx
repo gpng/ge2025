@@ -54,6 +54,8 @@ const NewsFilters = ({
     // First, collect all profiles by party
     for (const [partyId, partyProfiles] of Object.entries(profiles)) {
       const party = parties[partyId];
+      if (!party) continue;
+
       for (const [profileId, profile] of Object.entries(partyProfiles)) {
         allProfiles.push({
           id: `${partyId}.${profileId}`,
