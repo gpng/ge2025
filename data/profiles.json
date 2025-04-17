@@ -942,9 +942,6 @@
     "CHOONG_HON_HENG": {
       "name": "Choong Hon Heng "
     },
-    "VINCENT_NG": {
-      "name": "Vincent Ng Kian Guan"
-    },
     "IVAN_YEO": {
       "name": "Ivan Yeo Tiong Boon"
     },
@@ -1059,6 +1056,12 @@
     },
     "RIDHUAN_CHANDRAN": {
       "name": "Ridhuan Chandran"
+    },
+    "VINCENT_NG": {
+      "name": "Vincent Ng Kian Guan"
+    },
+    "NIGEL_NG": {
+      "name": "Vincent Ng Kian Guan"
     }
   },
   "MVP": {

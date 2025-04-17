@@ -637,5 +637,21 @@
     "profileIds": ["INDIE.DARRYL_LO"],
     "date": "2025-04-17",
     "summary": "Darryl Lo announces intent to be nominated as Independent candidate for Radin Mas SMC"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-opposition-singapore-united-party-unveils-team-to-contest-ang-mo-kio-grc",
+    "title": "GE2025: Opposition Singapore United Party unveils team to contest Ang Mo Kio GRC",
+    "isOfficial": true,
+    "partyIds": ["SUP"],
+    "electoralDivisionIds": ["AM"],
+    "profileIds": [
+      "SUP.ANDY_ZHU",
+      "SUP.NORAINI_YUNUS",
+      "SUP.RIDHUAN_CHANDRAN",
+      "SUP.VINCENT_NG",
+      "SUP.NIGEL_NG"
+    ],
+    "date": "2025-04-17",
+    "summary": "SUP unveiled the slate of candidates for Ang Mo Kio GRC that will face off against Senior Minister Lee Hsien Loong's team at the polls."
   }
 ]
