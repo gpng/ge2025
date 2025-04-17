@@ -741,8 +741,9 @@
       "name": "He Ting Ru",
       "image": "he_ting_ru.jpg"
     },
-    "ABDUL_MUHAIMIN_ABDUL_MALIK": {
-      "name": "Abdul Muhaimin Abdul Malik"
+    "ABDUL_MUHAIMIN": {
+      "name": "Abdul Muhaimin",
+      "image": "abdul_muhaimin.jpg"
     },
     "ONG_LUE_PING": {
       "name": "Ong Lue Ping"
@@ -760,7 +761,8 @@
       "name": "Andre Low"
     },
     "KENNETH_TIONG": {
-      "name": "Kenneth Tiong"
+      "name": "Kenneth Tiong",
+      "image": "kenneth_tiong.jpg"
     },
     "JACKSON_AU": {
       "name": "Jackson Au"
@@ -779,6 +781,14 @@
     },
     "AFIFAH_KHALID": {
       "name": "Afifah Khalid"
+    },
+    "ALIA_MATTAR": {
+      "name": "Alia Mattar",
+      "image": "alia_mattar.jpg"
+    },
+    "EILEEN_CHONG": {
+      "name": "Eileen Chong",
+      "image": "eileen_chong.jpg"
     }
   },
   "PPP": {
