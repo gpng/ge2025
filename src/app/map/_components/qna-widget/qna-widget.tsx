@@ -114,6 +114,7 @@ const QnaWidget = () => {
                     content: `Hello! You can ask me about party manifestos.
 
 Currently, I only have manifestos for the following parties:
+ - **Workers Party (WP)**
  - **People's Power Party (PPP)**
  - **Progress Singapore Party (PSP)**
  - **People's Alliance for Reform (PAR)**
