@@ -653,5 +653,20 @@
     ],
     "date": "2025-04-17",
     "summary": "SUP unveiled the slate of candidates for Ang Mo Kio GRC that will face off against Senior Minister Lee Hsien Loong's team at the polls."
+  },
+  {
+    "url": "https://mothership.sg/2025/04/wp-confirms-sengkang-grc-team",
+    "title": "WP confirms Sengkang GRC team with new face Abdul Muhaimin Abdul Malik",
+    "isOfficial": true,
+    "partyIds": ["WP"],
+    "electoralDivisionIds": ["SK"],
+    "profileIds": [
+      "WP.HE_TING_RU",
+      "WP.JAMUS_LIM",
+      "WP.LOUIS_CHUA",
+      "WP.ABDUL_MUHAIMIN"
+    ],
+    "date": "2025-04-17",
+    "summary": "WP has confirmed its candidates for Sengkang GRC for the 2025 General Election."
   }
 ]

@@ -525,6 +525,7 @@
       {
         "partyId": "WP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": [
           "WP.HE_TING_RU",
           "WP.JAMUS_LIM",
