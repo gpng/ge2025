@@ -627,5 +627,15 @@
     ],
     "date": "2025-04-17",
     "summary": "WP introduced four fresh faces who will be fielded in the upcoming general election"
+  },
+  {
+    "url": "https://www.instagram.com/p/DIf_hgtTwih/",
+    "title": "Darryl Lo Instagram Post",
+    "isOfficial": true,
+    "partyIds": ["INDIE"],
+    "electoralDivisionIds": ["RM"],
+    "profileIds": ["INDIE.DARRYL_LO"],
+    "date": "2025-04-17",
+    "summary": "Darryl Lo announces intent to be nominated as Independent candidate for Radin Mas SMC"
   }
 ]

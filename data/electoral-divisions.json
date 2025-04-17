@@ -158,6 +158,11 @@
         "partyId": "PAR",
         "isConfirmed": false,
         "profiles": []
+      },
+      {
+        "partyId": "INDIE",
+        "isConfirmed": true,
+        "profiles": ["INDIE.DARRYL_LO"]
       }
     ]
   },
