@@ -65,7 +65,8 @@
     "id": "PAR",
     "name": "People's Alliance for Reform",
     "logo": "PAR.png",
-    "color": "#7D0222"
+    "color": "#7D0222",
+    "manifesto": "https://peoplesallianceforreform.com/manifesto/"
   },
   "SUP": {
     "id": "SUP",
