@@ -287,13 +287,8 @@
         ]
       },
       {
-        "partyId": "PPP",
-        "isConfirmed": false,
-        "profiles": []
-      },
-      {
         "partyId": "SUP",
-        "isConfirmed": false,
+        "isConfirmed": true,
         "profiles": [
           "SUP.ANDY_ZHU",
           "SUP.NORAINI_YUNUS",
@@ -301,6 +296,11 @@
           "SUP.VINCENT_NG",
           "SUP.NIGEL_NG"
         ]
+      },
+      {
+        "partyId": "PPP",
+        "isConfirmed": false,
+        "profiles": []
       }
     ]
   },
