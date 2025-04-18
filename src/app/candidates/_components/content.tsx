@@ -1,6 +1,4 @@
 'use client';
-
-import { Badge } from '@/app/_components/ui/badge';
 import { Button } from '@/app/_components/ui/button';
 import Combobox from '@/app/_components/ui/combobox';
 import {
@@ -13,8 +11,10 @@ import {
 } from '@/app/_components/ui/table';
 import { useData } from '@/app/map/_components/contexts/data-context';
 import type { Tables } from '@/models/database';
-import { ExternalLink, FileText, Mic, User } from 'lucide-react';
+import { ExternalLink, Mic } from 'lucide-react';
 import { useMemo, useState } from 'react';
+import ContentTypeWithIcon from './content-type-with-icon';
+import ProfileTags from './profile-tags';
 
 interface Props {
   content: Tables<'content'>[];
@@ -85,51 +85,6 @@ const CandidateContent = ({ content }: Props) => {
     return profiles[partyId][candidateId].name;
   };
 
-  // Component for displaying profile tags using Shadcn Badge
-  const ProfileTags = ({ profileIds }: { profileIds: string[] }) => {
-    if (!profileIds || profileIds.length === 0) return null;
-
-    return (
-      <div className="flex flex-wrap gap-1">
-        {profileIds.map((profileId) => (
-          <Badge
-            key={profileId}
-            variant="secondary"
-            className="bg-primary/10 text-primary hover:bg-primary/15 hover:text-primary border-transparent"
-          >
-            {getCandidateName(profileId) || profileId}
-          </Badge>
-        ))}
-      </div>
-    );
-  };
-
-  // Function to render the content type with its icon
-  const ContentTypeWithIcon = ({ type }: { type: string }) => {
-    const icon = (() => {
-      switch (type) {
-        case 'Podcast':
-          return <Mic className="h-4 w-4" />;
-        case 'Interview':
-          return <User className="h-4 w-4" />;
-        case 'Speech':
-          return <FileText className="h-4 w-4" />;
-        default:
-          return <FileText className="h-4 w-4" />;
-      }
-    })();
-
-    return (
-      <Badge
-        variant="outline"
-        className="font-normal flex items-center gap-1.5 py-1 bg-primary/5"
-      >
-        {icon}
-        <span>{type}</span>
-      </Badge>
-    );
-  };
-
   return (
     <div className="container py-6">
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
@@ -196,7 +151,10 @@ const CandidateContent = ({ content }: Props) => {
                       {item.title}
                     </TableCell>
                     <TableCell>
-                      <ProfileTags profileIds={item.profile_ids || []} />
+                      <ProfileTags
+                        profileIds={item.profile_ids || []}
+                        getCandidateName={getCandidateName}
+                      />
                     </TableCell>
                     <TableCell>
                       <div className="text-muted-foreground flex items-center gap-1">
@@ -224,7 +182,10 @@ const CandidateContent = ({ content }: Props) => {
                 <div className="flex flex-col gap-2 p-4 text-left">
                   <ContentTypeWithIcon type={item.type} />
                   <div className="font-medium">{item.title}</div>
-                  <ProfileTags profileIds={item.profile_ids || []} />
+                  <ProfileTags
+                    profileIds={item.profile_ids || []}
+                    getCandidateName={getCandidateName}
+                  />
                   <div className="text-muted-foreground text-xs flex items-center gap-1 mt-1">
                     By {item.author}
                     <ExternalLink className="h-3 w-3" />
