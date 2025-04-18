@@ -720,5 +720,20 @@
     ],
     "date": "2025-04-18",
     "summary": "WP unveiled another four new candidates it plans to field in the general election, without disclosing where they will be fielded."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/red-dot-united-reveals-full-slate-for-holland-bukit-timah-including-25-year-old-newcomer",
+    "title": "GE2025: Red Dot United unveils Holland-Bukit Timah slate, including 25-year-old newcomer",
+    "isOfficial": true,
+    "partyIds": ["RDU"],
+    "electoralDivisionIds": ["HT"],
+    "profileIds": [
+      "RDU.FAZLI_TALIP",
+      "RDU.SHARAD_KUMAR",
+      "RDU.PATRICK_TAN",
+      "RDU.NIZAR_SUBAIR"
+    ],
+    "date": "2025-04-18",
+    "summary": "Opposition party RDU has unveiled its full slate for Holland-Bukit Timah GRC, which includes one of the youngest candidates in the coming polls."
   }
 ]
