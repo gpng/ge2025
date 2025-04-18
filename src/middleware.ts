@@ -18,7 +18,6 @@ export function middleware(request: NextRequest) {
     const base64Credentials = auth.split(' ')[1];
     const credentials = Buffer.from(base64Credentials, 'base64').toString();
     const [user, pass] = credentials.split(':');
-    console.log('credentials: ', credentials);
     if (user !== ADMIN_USER || pass !== ADMIN_PASS) {
       return new NextResponse('Invalid credentials', {
         status: 401,

@@ -195,7 +195,7 @@ const CandidateContent = ({ content }: Props) => {
               >
                 <div className="flex flex-col gap-2 p-4 text-left">
                   <ContentTypeWithIcon type={item.type} />
-                  <div className="font-medium">{item.title}</div>
+                  <div className="font-medium text-wrap">{item.title}</div>
                   <ProfileTags
                     profileIds={item.profile_ids || []}
                     getCandidateName={getCandidateName}
