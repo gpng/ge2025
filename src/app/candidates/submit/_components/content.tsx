@@ -6,17 +6,9 @@ import {
   MultiSelect,
   type Option as MultiSelectOption,
 } from '@/app/_components/ui/multiselect';
+import { submitContent } from '@/app/candidates/submit/actions/submit';
 import { useData } from '@/app/map/_components/contexts/data-context';
 import { useState } from 'react';
-
-function mockSubmit({
-  candidates,
-  url,
-}: { candidates: string[]; url: string }) {
-  return new Promise((resolve) =>
-    setTimeout(() => resolve({ success: true }), 1000),
-  );
-}
 
 const CandidateSubmitContent = () => {
   const { profiles, parties } = useData();
@@ -24,6 +16,7 @@ const CandidateSubmitContent = () => {
   const [url, setUrl] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   // Build candidate options for MultiSelect
   const candidateOptions: MultiSelectOption[] = [];
@@ -43,11 +36,28 @@ const CandidateSubmitContent = () => {
     e.preventDefault();
     setSubmitting(true);
     setSuccess(false);
-    await mockSubmit({ candidates: selectedCandidates, url });
+    setError(null);
+    const error = await submitContent(selectedCandidates, url);
     setSubmitting(false);
-    setSuccess(true);
-    setSelectedCandidates([]);
-    setUrl('');
+    if (error) {
+      setError(error);
+      setSuccess(false);
+    } else {
+      setSuccess(true);
+      setError(null);
+      setSelectedCandidates([]);
+      setUrl('');
+    }
+  };
+
+  // Clear error on input change
+  const handleUrlChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setUrl(e.target.value);
+    if (error) setError(null);
+  };
+  const handleCandidatesChange = (candidates: string[]) => {
+    setSelectedCandidates(candidates);
+    if (error) setError(null);
   };
 
   return (
@@ -93,7 +103,7 @@ const CandidateSubmitContent = () => {
           <MultiSelect
             options={candidateOptions}
             selected={selectedCandidates}
-            onChange={setSelectedCandidates}
+            onChange={handleCandidatesChange}
             placeholder="Select candidates..."
             className=""
           />
@@ -106,7 +116,7 @@ const CandidateSubmitContent = () => {
             id="content-url"
             type="url"
             value={url}
-            onChange={(e) => setUrl(e.target.value)}
+            onChange={handleUrlChange}
             placeholder="https://example.com/content"
             required
           />
@@ -121,6 +131,11 @@ const CandidateSubmitContent = () => {
         {success && (
           <div className="text-green-600 text-center font-medium mt-2">
             Content submitted successfully!
+          </div>
+        )}
+        {error && (
+          <div className="text-red-600 text-center font-medium mt-2">
+            {error}
           </div>
         )}
       </form>
