@@ -11,15 +11,16 @@ const CandidateFilteredPage = async ({
   const data = await fetchData();
   const { party } = resolvedParams;
 
+  const partyId = party?.toUpperCase();
   // Validate party
-  if (!party || !data.parties[party.toUpperCase()]) {
+  if (!partyId || !data.parties[partyId]) {
     redirect('/candidates');
   }
-  const content = await fetchContentByPartyId(party.toUpperCase());
+  const content = await fetchContentByPartyId(partyId);
 
   return (
     <Providers initialData={data}>
-      <CandidateContent content={content} selectedParty={party} />
+      <CandidateContent content={content} selectedParty={partyId} />
     </Providers>
   );
 };
