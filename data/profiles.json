@@ -1024,6 +1024,10 @@
     "SIVAKUMARAN_CHELLAPPA": {
       "name": "Sivakumaran Chellappa",
       "image": "sivakumaran_chellappa.jpg"
+    },
+    "MAHABOOB_BATCHA": {
+      "name": "Mahaboob Batcha",
+      "image": "mahaboob_batcha.jpg"
     }
   },
   "RP": {
@@ -1034,10 +1038,6 @@
     "GURDEV_SINGH": {
       "name": "Gurdev Singh",
       "image": "gurdev_singh.jpg"
-    },
-    "MAHABOOB_BATCHA": {
-      "name": "Mahaboob Batcha",
-      "image": "mahaboob_batcha.jpg"
     },
     "CHARLES_YEO": {
       "name": "Charles Yeo",

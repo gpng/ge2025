@@ -684,5 +684,26 @@
     ],
     "date": "2025-04-18",
     "summary": "Transport Minister Chee Hong Tat will lead the PAP team in Bishan-Toa Payoh GRC that will also field two fresh faces at the coming polls."
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-peoples-alliance-reform-par-candidates-queenstown-smc-jalan-besar-grc-5072281",
+    "title": "GE2025: People's Alliance for Reform will field 14 candidates in 7 constituencies, introduces new face in Queenstown SMC",
+    "isOfficial": true,
+    "partyIds": ["PAR"],
+    "electoralDivisionIds": [
+      "PS",
+      "MB",
+      "QT",
+      "YK",
+      "RM",
+      "JB",
+      "TP",
+      "JK",
+      "KR",
+      "MR"
+    ],
+    "profileIds": ["PAR.MAHABOOB_BATCHA", "PAR.VIGNESWARI_RAMACHANDRAN"],
+    "date": "2025-04-18",
+    "summary": "PAR will field 14 candidates in seven constituencies in the upcoming General Election"
   }
 ]

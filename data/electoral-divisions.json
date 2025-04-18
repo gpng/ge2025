@@ -70,11 +70,6 @@
         "partyId": "PSP",
         "isConfirmed": true,
         "profiles": ["PSP.TONY_TAN"]
-      },
-      {
-        "partyId": "PAR",
-        "isConfirmed": false,
-        "profiles": []
       }
     ]
   },
@@ -109,8 +104,8 @@
       },
       {
         "partyId": "PAR",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": ["PAR.MAHABOOB_BATCHA"]
       },
       {
         "partyId": "INDIE",
@@ -222,11 +217,6 @@
         "partyId": "PAP",
         "isIncumbent": true,
         "profiles": ["PAP.NG_LING_LING"]
-      },
-      {
-        "partyId": "PAR",
-        "isConfirmed": false,
-        "profiles": []
       },
       {
         "partyId": "PPP",
@@ -410,7 +400,7 @@
       {
         "partyId": "PAR",
         "isConfirmed": false,
-        "profiles": []
+        "profiles": ["PAR.VIGNESWARI_RAMACHANDRAN"]
       }
     ]
   },
@@ -449,11 +439,6 @@
         "partyId": "PSP",
         "isConfirmed": true,
         "profiles": ["PSP.JEFFREY_KHOO"]
-      },
-      {
-        "partyId": "PAR",
-        "isConfirmed": false,
-        "profiles": []
       }
     ]
   },
