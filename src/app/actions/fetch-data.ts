@@ -63,29 +63,37 @@ const fetchDataWithCache = unstable_cache(
   { revalidate: CACHE_TTL },
 );
 
-const fetchContentWithCache = unstable_cache(
-  async () => {
-    const { data, error } = await supabase
-      .from('content')
-      .select()
-      .eq('is_approved', true)
-      .order('created_at', { ascending: false });
+function fetchContentWithCache(candidateId?: string) {
+  return unstable_cache(
+    async () => {
+      let query = supabase
+        .from('content')
+        .select()
+        .eq('is_approved', true)
+        .order('created_at', { ascending: false });
 
-    if (error) {
-      console.error('Failed to fetch content:', error);
-      return [];
-    }
+      if (candidateId) {
+        query = query.contains('profile_ids', [candidateId]);
+      }
 
-    return data;
-  },
-  ['content'],
-  { revalidate: CACHE_TTL },
-);
+      const { data, error } = await query;
+
+      if (error) {
+        console.error('Failed to fetch content:', error);
+        return [];
+      }
+
+      return data;
+    },
+    ['content', candidateId || 'all'],
+    { revalidate: CACHE_TTL },
+  )();
+}
 
 export async function fetchData() {
   return fetchDataWithCache();
 }
 
-export async function fetchContent() {
-  return fetchContentWithCache();
+export async function fetchContent(candidateId?: string) {
+  return fetchContentWithCache(candidateId);
 }

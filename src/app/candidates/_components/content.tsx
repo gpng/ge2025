@@ -12,39 +12,38 @@ import {
 import ContentTypeWithIcon from '@/app/candidates/_components/content-type-with-icon';
 import ProfileTags from '@/app/candidates/_components/profile-tags';
 import { useData } from '@/app/map/_components/contexts/data-context';
+import { ContentType } from '@/models/content';
 import type { Tables } from '@/models/database';
 import { ExternalLink, Mic } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 import { useMemo, useState } from 'react';
 
 interface Props {
   content: Tables<'content'>[];
+  selectedCandidate?: string;
 }
 
-const CandidateContent = ({ content }: Props) => {
+const CandidateContent = ({ content, selectedCandidate = 'all' }: Props) => {
   const { profiles, parties } = useData();
-  const [filters, setFilters] = useState({
-    type: 'all',
-    candidate: 'all',
-  });
+  const router = useRouter();
+  const [type, setType] = useState('all');
 
   const filteredContent = useMemo(() => {
     return content.filter((item) => {
-      if (filters.type !== 'all' && item.type !== filters.type) return false;
-      if (filters.candidate !== 'all' && item.author !== filters.candidate)
-        return false;
+      if (type !== 'all' && item.type !== type) return false;
       return true;
     });
-  }, [filters, content]);
+  }, [type, content]);
 
   const typeOptions = useMemo(
     () => [
       { id: 'all', name: 'All Types' },
-      ...Array.from(new Set(content.map((item) => item.type))).map((type) => ({
+      ...Object.values(ContentType).map((type) => ({
         id: type,
-        name: type,
+        name: type.charAt(0).toUpperCase() + type.slice(1),
       })),
     ],
-    [content],
+    [],
   );
 
   const candidateOptions = useMemo(() => {
@@ -117,20 +116,28 @@ const CandidateContent = ({ content }: Props) => {
         <div className="w-full md:w-[250px]">
           <Combobox
             options={typeOptions}
-            value={filters.type}
-            onValueChange={(value) =>
-              setFilters((f) => ({ ...f, type: value }))
-            }
+            value={type}
+            onValueChange={setType}
             placeholder="Filter by type"
           />
         </div>
         <div className="w-full md:w-[250px]">
           <Combobox
             options={candidateOptions}
-            value={filters.candidate}
-            onValueChange={(value) =>
-              setFilters((f) => ({ ...f, candidate: value }))
-            }
+            value={selectedCandidate}
+            onValueChange={(value) => {
+              if (value === 'all') {
+                router.push('/candidates');
+              } else {
+                // value is like WP.HARPREET_SINGH
+                const [party, candidate] = value.split('.');
+                if (party && candidate) {
+                  router.push(
+                    `/candidates/${party.toLowerCase()}/${candidate.toLowerCase()}`,
+                  );
+                }
+              }
+            }}
             placeholder="Filter by candidate"
           />
         </div>
