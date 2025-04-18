@@ -11,10 +11,16 @@ function toProfileId(party?: string, candidate?: string) {
 
 const CandidateFilteredPage = async ({
   params,
-}: { params: Promise<{ party?: string; candidate?: string }> }) => {
+  searchParams,
+}: {
+  params: Promise<{ party?: string; candidate?: string }>;
+  searchParams: Promise<{ page?: string }>;
+}) => {
   const resolvedParams = await params;
+  const resolvedSearchParams = await searchParams;
   const data = await fetchData();
   const { party, candidate } = resolvedParams;
+  const page = Number(resolvedSearchParams?.page) || 1;
   const profileId = toProfileId(party, candidate);
   // Validate profileId
   if (!profileId) {
@@ -25,10 +31,14 @@ const CandidateFilteredPage = async ({
   if (!profiles[partyId] || !profiles[partyId][candidateId]) {
     redirect('/candidates');
   }
-  const content = await fetchContent(profileId);
+  const content = await fetchContent(profileId, page);
   return (
     <Providers initialData={data}>
-      <CandidateContent content={content} selectedCandidate={profileId} />
+      <CandidateContent
+        content={content}
+        selectedCandidate={profileId}
+        page={page}
+      />
     </Providers>
   );
 };

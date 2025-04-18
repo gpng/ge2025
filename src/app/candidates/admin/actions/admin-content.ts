@@ -1,21 +1,19 @@
 'use server';
-
 import { ADMIN_CONTENT_PAGE_SIZE } from '@/lib/constants';
 import { createClient } from '@/lib/supabase/server';
 import { cleanUrl } from '@/lib/url';
+import { pageRange } from '@/lib/utils';
 
 const supabase = createClient();
 
 export const fetchAdminContent = async (page: number) => {
+  const range = pageRange(page, ADMIN_CONTENT_PAGE_SIZE);
   const { data, error } = await supabase
     .from('content')
     .select('*')
     .order('id', { ascending: false })
     // The from and to values are 0-based and inclusive: range(1, 3) will include the second, third and fourth rows of the query.
-    .range(
-      (page - 1) * ADMIN_CONTENT_PAGE_SIZE,
-      page * ADMIN_CONTENT_PAGE_SIZE - 1,
-    );
+    .range(range.from, range.to);
   return { data, error };
 };
 

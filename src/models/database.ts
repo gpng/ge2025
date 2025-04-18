@@ -79,7 +79,9 @@ export type Database = {
     };
     Functions: {
       content_by_party_id: {
-        Args: { party: string };
+        Args:
+          | { party: string }
+          | { party: string; page: number; page_size: number };
         Returns: {
           author: string;
           created_at: string;

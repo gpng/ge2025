@@ -12,25 +12,29 @@ import {
 import ContentTypeWithIcon from '@/app/candidates/_components/content-type-with-icon';
 import ProfileTags from '@/app/candidates/_components/profile-tags';
 import { useData } from '@/app/map/_components/contexts/data-context';
+import { CANDIDATE_CONTENT_PAGE_SIZE } from '@/lib/constants';
 import { ContentType } from '@/models/content';
 import type { Tables } from '@/models/database';
 import { ExternalLink, Mic } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useMemo, useState } from 'react';
 
 interface Props {
   content: Tables<'content'>[];
   selectedCandidate?: string;
   selectedParty?: string;
+  page?: number;
 }
 
 const CandidateContent = ({
   content,
   selectedCandidate = 'all',
   selectedParty = 'all',
+  page = 1,
 }: Props) => {
   const { profiles, parties } = useData();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [type, setType] = useState('all');
 
   const filteredContent = useMemo(() => {
@@ -90,6 +94,16 @@ const CandidateContent = ({
     }
 
     return profiles[partyId][candidateId].name;
+  };
+
+  // Pagination logic
+  const hasNext = content.length === CANDIDATE_CONTENT_PAGE_SIZE;
+  const hasPrev = page > 1;
+
+  const goToPage = (newPage: number) => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set('page', String(newPage));
+    router.push(`?${params.toString()}`);
   };
 
   return (
@@ -236,6 +250,27 @@ const CandidateContent = ({
                 </div>
               </Button>
             ))}
+          </div>
+
+          {/* Pagination */}
+          <div className="flex justify-center mt-6">
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={() => goToPage(page - 1)}
+              disabled={!hasPrev}
+            >
+              Previous
+            </Button>
+            <span className="px-4 py-2 text-xs">Page {page}</span>
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={() => goToPage(page + 1)}
+              disabled={!hasNext}
+            >
+              Next
+            </Button>
           </div>
         </>
       ) : (

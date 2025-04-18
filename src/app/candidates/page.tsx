@@ -3,12 +3,17 @@ import CandidateContent from '@/app/candidates/_components/content';
 import Providers from '@/app/news/_components/providers';
 import type { Metadata } from 'next';
 
-const CandidatesPage = async () => {
+const CandidatesPage = async ({
+  searchParams,
+}: { searchParams: Promise<{ page?: string }> }) => {
+  const sParams = await searchParams;
+  const page = Number(sParams?.page) || 1;
+
   const data = await fetchData();
-  const content = await fetchContent();
+  const content = await fetchContent(undefined, page);
   return (
     <Providers initialData={data}>
-      <CandidateContent content={content} />
+      <CandidateContent content={content} page={page} />
     </Providers>
   );
 };

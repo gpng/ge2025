@@ -1,7 +1,9 @@
 'use server';
 
 import type { DataContextType } from '@/app/map/_components/contexts/data-context';
+import { CANDIDATE_CONTENT_PAGE_SIZE } from '@/lib/constants';
 import { createClient } from '@/lib/supabase/server';
+import { pageRange } from '@/lib/utils';
 import { electoralDivisionsSchema } from '@/models/electoral-division';
 import { newsSchema } from '@/models/news';
 import { partiesSchema } from '@/models/party';
@@ -63,14 +65,16 @@ const fetchDataWithCache = unstable_cache(
   { revalidate: CACHE_TTL },
 );
 
-function fetchContentWithCache(candidateId?: string) {
+function fetchContentWithCache(candidateId?: string, page = 1) {
   return unstable_cache(
     async () => {
+      const range = pageRange(page, CANDIDATE_CONTENT_PAGE_SIZE);
       let query = supabase
         .from('content')
         .select()
         .eq('is_approved', true)
-        .order('created_at', { ascending: false });
+        .order('created_at', { ascending: false })
+        .range(range.from, range.to);
 
       if (candidateId) {
         query = query.contains('profile_ids', [candidateId]);
@@ -90,11 +94,13 @@ function fetchContentWithCache(candidateId?: string) {
   )();
 }
 
-function fetchContentByPartyIdWithCache(partyId: string) {
+function fetchContentByPartyIdWithCache(partyId: string, page = 1) {
   return unstable_cache(
     async () => {
       const { data, error } = await supabase.rpc('content_by_party_id', {
         party: partyId,
+        page: page,
+        page_size: CANDIDATE_CONTENT_PAGE_SIZE,
       });
 
       if (error) {
@@ -113,10 +119,10 @@ export async function fetchData() {
   return fetchDataWithCache();
 }
 
-export async function fetchContent(candidateId?: string) {
-  return fetchContentWithCache(candidateId);
+export async function fetchContent(candidateId?: string, page = 1) {
+  return fetchContentWithCache(candidateId, page);
 }
 
-export async function fetchContentByPartyId(partyId: string) {
-  return fetchContentByPartyIdWithCache(partyId);
+export async function fetchContentByPartyId(partyId: string, page = 1) {
+  return fetchContentByPartyIdWithCache(partyId, page);
 }

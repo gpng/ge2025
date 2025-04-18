@@ -6,21 +6,27 @@ import { redirect } from 'next/navigation';
 
 const CandidateFilteredPage = async ({
   params,
-}: { params: Promise<{ party?: string }> }) => {
+  searchParams,
+}: {
+  params: Promise<{ party?: string }>;
+  searchParams: Promise<{ page?: string }>;
+}) => {
   const resolvedParams = await params;
+  const resolvedSearchParams = await searchParams;
   const data = await fetchData();
   const { party } = resolvedParams;
+  const page = Number(resolvedSearchParams?.page) || 1;
 
   const partyId = party?.toUpperCase();
   // Validate party
   if (!partyId || !data.parties[partyId]) {
     redirect('/candidates');
   }
-  const content = await fetchContentByPartyId(partyId);
+  const content = await fetchContentByPartyId(partyId, page);
 
   return (
     <Providers initialData={data}>
-      <CandidateContent content={content} selectedParty={partyId} />
+      <CandidateContent content={content} selectedParty={partyId} page={page} />
     </Providers>
   );
 };
