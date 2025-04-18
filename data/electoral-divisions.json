@@ -442,6 +442,7 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": ["PAP.GAN_SIOW_HUANG"]
       },
       {
@@ -465,11 +466,12 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": [
-          "PAP.CHONG_KEE_HIONG",
           "PAP.CHEE_HONG_TAT",
-          "PAP.NG_ENG_HEN",
-          "PAP.SAKTIANDI_SUPAAT"
+          "PAP.SAKTIANDI_SUPAAT",
+          "PAP.ELYSA_CHEN",
+          "PAP.CAI_YINZHOU"
         ]
       },
       {

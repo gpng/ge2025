@@ -668,5 +668,21 @@
     ],
     "date": "2025-04-17",
     "summary": "WP has confirmed its candidates for Sengkang GRC for the 2025 General Election."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-paps-chee-hong-tat-to-helm-bishan-toa-payoh-gan-siow-huang-to-defend-marymount-seat",
+    "title": "GE2025: PAP's Chee Hong Tat to helm Bishan-Toa Payoh, Gan Siow Huang to defend Marymount seat",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["BS", "MR"],
+    "profileIds": [
+      "PAP.GAN_SIOW_HUANG",
+      "PAP.CHEE_HONG_TAT",
+      "PAP.SAKTIANDI_SUPAAT",
+      "PAP.ELYSA_CHEN",
+      "PAP.CAI_YINZHOU"
+    ],
+    "date": "2025-04-18",
+    "summary": "Transport Minister Chee Hong Tat will lead the PAP team in Bishan-Toa Payoh GRC that will also field two fresh faces at the coming polls."
   }
 ]
