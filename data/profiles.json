@@ -752,19 +752,22 @@
       "image": "abdul_muhaimin.jpg"
     },
     "ONG_LUE_PING": {
-      "name": "Ong Lue Ping"
+      "name": "Ong Lue Ping",
+      "image": "ong_lue_ping.jpg"
     },
     "MICHAEL_THNG": {
       "name": "Michael Thng"
     },
     "JIMMY_TAN": {
-      "name": "Jimmy Tan"
+      "name": "Jimmy Tan",
+      "image": "jimmy_tan.jpg"
     },
     "JASPER_KUAN": {
       "name": "Jasper Kuan"
     },
     "ANDRE_LOW": {
-      "name": "Andre Low"
+      "name": "Andre Low",
+      "image": "andre_low.jpg"
     },
     "KENNETH_TIONG": {
       "name": "Kenneth Tiong",
@@ -796,6 +799,10 @@
     "EILEEN_CHONG": {
       "name": "Eileen Chong",
       "image": "eileen_chong.jpg"
+    },
+    "ALEXIS_DANG": {
+      "name": "Dang Pei Yuan (Alexis)",
+      "image": "alexis_dang.jpg"
     }
   },
   "PPP": {

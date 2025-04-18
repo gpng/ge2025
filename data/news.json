@@ -705,5 +705,20 @@
     "profileIds": ["PAR.MAHABOOB_BATCHA", "PAR.VIGNESWARI_RAMACHANDRAN"],
     "date": "2025-04-18",
     "summary": "PAR will field 14 candidates in seven constituencies in the upcoming General Election"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-wp-introduces-another-4-new-faces-including-imh-psychologist-ong-lue-ping",
+    "title": "GE2025: WP introduces another 4 new faces, including IMH psychologist Ong Lue Ping",
+    "isOfficial": true,
+    "partyIds": ["WP"],
+    "electoralDivisionIds": [],
+    "profileIds": [
+      "WP.ONG_LUE_PING",
+      "WP.ANDRE_LOW",
+      "WP.ALEXIS_DANG",
+      "WP.JIMMY_TAN"
+    ],
+    "date": "2025-04-18",
+    "summary": "WP unveiled another four new candidates it plans to field in the general election, without disclosing where they will be fielded."
   }
 ]
