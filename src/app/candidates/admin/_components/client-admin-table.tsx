@@ -17,6 +17,13 @@ import {
 } from '@/app/_components/ui/multiselect';
 import { Pagination } from '@/app/_components/ui/pagination';
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/app/_components/ui/select';
+import {
   Table,
   TableBody,
   TableCell,
@@ -27,6 +34,7 @@ import {
 import { saveContent } from '@/app/candidates/admin/actions/admin-content';
 import { useData } from '@/app/map/_components/contexts/data-context';
 import { ADMIN_CONTENT_PAGE_SIZE } from '@/lib/constants';
+import { ContentType } from '@/models/content';
 import type { Tables } from '@/models/database';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { type ChangeEvent, type FormEvent, useState } from 'react';
@@ -259,15 +267,22 @@ function ClientAdminTable({ initialData }: { initialData: ContentItem[] }) {
             <label className="block mb-1 font-medium" htmlFor="admin-type">
               Type
             </label>
-            <Input
-              id="admin-type"
-              placeholder="Type (e.g. Podcast, Interview)"
+            <Select
               value={form.type}
-              onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                setForm((f) => ({ ...f, type: e.target.value }))
-              }
+              onValueChange={(value) => setForm((f) => ({ ...f, type: value }))}
               required
-            />
+            >
+              <SelectTrigger id="admin-type" className="w-full">
+                <SelectValue placeholder="Select type..." />
+              </SelectTrigger>
+              <SelectContent>
+                {Object.values(ContentType).map((type) => (
+                  <SelectItem key={type} value={type}>
+                    {type.charAt(0).toUpperCase() + type.slice(1)}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
             <label className="block mb-1 font-medium" htmlFor="admin-url">
               URL
             </label>

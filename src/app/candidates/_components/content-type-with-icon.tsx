@@ -1,14 +1,17 @@
 import { Badge } from '@/app/_components/ui/badge';
-import { FileText, Mic, User } from 'lucide-react';
+import { ContentType } from '@/models/content';
+import { FileText, Mic, Speech, User } from 'lucide-react';
 
 const ContentTypeWithIcon = ({ type }: { type: string }) => {
   const icon = (() => {
     switch (type) {
-      case 'Podcast':
+      case ContentType.Podcast:
         return <Mic className="h-4 w-4" />;
-      case 'Interview':
+      case ContentType.Interview:
         return <User className="h-4 w-4" />;
-      case 'Speech':
+      case ContentType.Speech:
+        return <Speech className="h-4 w-4" />;
+      case ContentType.Blog:
         return <FileText className="h-4 w-4" />;
       default:
         return <FileText className="h-4 w-4" />;
@@ -18,7 +21,7 @@ const ContentTypeWithIcon = ({ type }: { type: string }) => {
   return (
     <Badge
       variant="outline"
-      className="font-normal flex items-center gap-1.5 py-1 bg-primary/5"
+      className="font-normal flex items-center gap-1.5 py-1 bg-primary/5 capitalize"
     >
       {icon}
       <span>{type}</span>
