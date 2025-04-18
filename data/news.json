@@ -397,7 +397,7 @@
     "electoralDivisionIds": ["AJ"],
     "profileIds": [
       "PAP.CHAN_HUI_YUH",
-      "PAP.JAGATHISHWARAN_RAJOO",
+      "PAP.JAGATHISHWARAN_RAJO",
       "PAP.DANIEL_LIU",
       "PAP.ADRIAN_ANG",
       "PAP.FAISAL_ABDUL_AZIZ"
@@ -735,5 +735,20 @@
     ],
     "date": "2025-04-18",
     "summary": "Opposition party RDU has unveiled its full slate for Holland-Bukit Timah GRC, which includes one of the youngest candidates in the coming polls."
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-sdp-candidates-marsiling-yew-tee-grc-5046566",
+    "title": "GE2025: Singapore Democratic Party unveils slate to contest in Marsiling-Yew Tee GRC",
+    "isOfficial": true,
+    "partyIds": ["SDP"],
+    "electoralDivisionIds": ["MY"],
+    "profileIds": [
+      "SDP.JUFRI_SALIM",
+      "SDP.ARIFFIN_SHA",
+      "SDP.ALEC_TOK",
+      "SDP.GIGENE_WONG"
+    ],
+    "date": "2025-04-18",
+    "summary": "SDP unveiled its candidates to contest in Marsiling-Yew Tee Group Representation Constituency."
   }
 ]

@@ -252,7 +252,7 @@
         "isConfirmed": true,
         "profiles": [
           "PAP.CHAN_HUI_YUH",
-          "PAP.JAGATHISHWARAN_RAJOO",
+          "PAP.JAGATHISHWARAN_RAJO",
           "PAP.DANIEL_LIU",
           "PAP.ADRIAN_ANG",
           "PAP.FAISAL_ABDUL_AZIZ"
@@ -555,13 +555,18 @@
         ]
       },
       {
-        "partyId": "NSP",
-        "isConfirmed": false,
-        "profiles": []
-      },
-      {
         "partyId": "SDP",
         "isConfirmed": true,
+        "profiles": [
+          "SDP.JUFRI_SALIM",
+          "SDP.ARIFFIN_SHA",
+          "SDP.ALEC_TOK",
+          "SDP.GIGENE_WONG"
+        ]
+      },
+      {
+        "partyId": "NSP",
+        "isConfirmed": false,
         "profiles": []
       }
     ]

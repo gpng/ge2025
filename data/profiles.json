@@ -506,8 +506,8 @@
     "CHOO_PEI_LING": {
       "name": "Choo Pei Ling"
     },
-    "JAGATHISHWARAN_RAJOO": {
-      "name": "Jagathishwaran Rajoo"
+    "JAGATHISHWARAN_RAJO": {
+      "name": "Jagathishwaran Rajo"
     },
     "DANIEL_LIU": {
       "name": "Daniel Liu"
@@ -535,6 +535,12 @@
     },
     "CAI_YINZHOU": {
       "name": "Cai Yinzhou"
+    },
+    "DINESH_VASU_DASH": {
+      "name": "Dinesh Vasu Dash"
+    },
+    "GOH_PEI_MING": {
+      "name": "Goh Pei Ming"
     }
   },
   "PSP": {
@@ -581,10 +587,6 @@
     "SRI_NALLAKARUPPAN": {
       "name": "Sri Nallakaruppan",
       "image": "sri_nallakaruppan.jpg"
-    },
-    "GIGENE_WONG": {
-      "name": "Gigene Wong",
-      "image": "gigene_wong.jpg"
     },
     "TAN_MENG_WAH": {
       "name": "Tan Meng Wah",
@@ -858,6 +860,20 @@
     },
     "SURAYAH_AKBAR": {
       "name": "Surayah Akbar"
+    },
+    "JUFRI_SALIM": {
+      "name": "Jufri Salim"
+    },
+    "ARIFFIN_SHA": {
+      "name": "Ariffin Sha"
+    },
+    "ALEC_TOK": {
+      "name": "Alec Tok Kim Yam",
+      "image": "alec_tok.jpg"
+    },
+    "GIGENE_WONG": {
+      "name": "Gigene Wong",
+      "image": "gigene_wong.jpg"
     }
   },
   "RDU": {
@@ -876,10 +892,6 @@
     "NICHOLAS_TANG": {
       "name": "Nicholas Tang",
       "image": "nicholas_tang.jpg"
-    },
-    "ALEC_TOK": {
-      "name": "Alec Tok Kim Yam",
-      "image": "alec_tok.jpg"
     },
     "FAZLI_TALIP": {
       "name": "Fazli Talip"
