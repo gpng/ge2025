@@ -53,6 +53,32 @@ const CandidateSubmitContent = () => {
   return (
     <div className="container max-w-lg py-12">
       <h1 className="text-2xl font-bold mb-6">Submit Content for Candidates</h1>
+      <div className="mb-8 p-4 rounded-md border border-primary/20 bg-primary/5 text-sm text-muted-foreground">
+        <strong className="block mb-1 text-primary">What to submit?</strong>
+        <ul className="list-disc pl-5 space-y-1 mb-2">
+          <li>
+            Please submit content where the candidate{' '}
+            <b>
+              actually talks about their stances, views, or anything voters
+              would want to know
+            </b>{' '}
+            about them. Avoid general news like "Candidate was spotted at this
+            constituency" and similar.
+          </li>
+          <li>
+            This can include <b>interviews, podcasts, videos, blogposts</b>, and
+            similar formats.
+          </li>
+        </ul>
+        <span>
+          <b>Submissions are very welcome!</b> The goal is to have a good source
+          of information for every candidate. As this project is managed
+          singlehandedly, I can't possibly collect all the content myself, so I
+          rely on crowdsourcing and your help. There will be a manual
+          verification process, so please don't spam. Thank you for helping
+          voters stay informed!
+        </span>
+      </div>
       <form
         onSubmit={handleSubmit}
         className="space-y-6 bg-card p-6 rounded-lg border"

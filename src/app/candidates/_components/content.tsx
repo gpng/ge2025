@@ -99,6 +99,20 @@ const CandidateContent = ({ content }: Props) => {
           </p>
         </div>
       </div>
+      <div className="mb-6">
+        <div className="mb-4 p-3 rounded-md border border-primary/20 bg-primary/5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <span className="text-sm text-muted-foreground">
+            <b>Help us crowdsource!</b> This page relies on community
+            submissions. If you know of interviews, podcasts, or other content
+            missing for any candidate, please submit it.
+          </span>
+          <a href="/candidates/submit">
+            <Button variant="secondary" className="mt-2 sm:mt-0">
+              Submit Content
+            </Button>
+          </a>
+        </div>
+      </div>
       <div className="mb-6 flex flex-col md:flex-row gap-3">
         <div className="w-full md:w-[250px]">
           <Combobox
