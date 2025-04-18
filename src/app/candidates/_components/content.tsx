@@ -9,12 +9,12 @@ import {
   TableHeader,
   TableRow,
 } from '@/app/_components/ui/table';
+import ContentTypeWithIcon from '@/app/candidates/_components/content-type-with-icon';
+import ProfileTags from '@/app/candidates/_components/profile-tags';
 import { useData } from '@/app/map/_components/contexts/data-context';
 import type { Tables } from '@/models/database';
 import { ExternalLink, Mic } from 'lucide-react';
 import { useMemo, useState } from 'react';
-import ContentTypeWithIcon from './content-type-with-icon';
-import ProfileTags from './profile-tags';
 
 interface Props {
   content: Tables<'content'>[];
