@@ -7,6 +7,8 @@ import {
   CardTitle,
 } from '@/app/_components/ui/card';
 import Combobox from '@/app/_components/ui/combobox';
+import { useData } from '@/app/map/_components/contexts/data-context';
+import type { Tables } from '@/models/database';
 import { FileText, Mic, User } from 'lucide-react';
 import { useMemo, useState } from 'react';
 
@@ -56,27 +58,49 @@ const typeOptions = [
   })),
 ];
 
-const candidateOptions = [
-  { id: 'all', name: 'All Candidates' },
-  ...Array.from(new Set(mockContent.map((item) => item.author))).map(
-    (author) => ({ id: author, name: author }),
-  ),
-];
+interface Props {
+  content: Tables<'content'>[];
+}
 
-const CandidateContent = () => {
+const CandidateContent = ({ content }: Props) => {
+  const { profiles, parties } = useData();
   const [filters, setFilters] = useState({
     type: 'all',
     candidate: 'all',
   });
 
   const filteredContent = useMemo(() => {
-    return mockContent.filter((item) => {
+    return content.filter((item) => {
       if (filters.type !== 'all' && item.type !== filters.type) return false;
       if (filters.candidate !== 'all' && item.author !== filters.candidate)
         return false;
       return true;
     });
-  }, [filters]);
+  }, [filters, content]);
+
+  const candidateOptions = useMemo(() => {
+    const allProfiles: { id: string; name: string }[] = [];
+
+    // First, collect all profiles by party
+    for (const [partyId, partyProfiles] of Object.entries(profiles)) {
+      const party = parties[partyId];
+      if (!party) continue;
+
+      for (const [profileId, profile] of Object.entries(partyProfiles)) {
+        allProfiles.push({
+          id: `${partyId}.${profileId}`,
+          name: `${profile.name} (${party.id})`,
+        });
+      }
+    }
+
+    // Sort profiles by name
+    const sortedProfiles = allProfiles.sort((a, b) =>
+      a.name.localeCompare(b.name),
+    );
+    // insert "All Candidates" at the beginning
+    return [{ id: 'all', name: 'All Candidates' }, ...sortedProfiles];
+  }, [parties, profiles]);
 
   return (
     <div className="container py-8">

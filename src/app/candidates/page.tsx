@@ -9,7 +9,7 @@ export default async function CandidatesPage() {
 
   return (
     <Providers initialData={data}>
-      <CandidateContent />
+      <CandidateContent content={content} />
     </Providers>
   );
 }
