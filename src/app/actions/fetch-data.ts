@@ -89,7 +89,7 @@ function fetchContentWithCache(candidateId?: string, page = 1) {
 
       return data;
     },
-    ['content', candidateId || 'all'],
+    ['content', candidateId || 'all', page.toString()],
     { revalidate: CACHE_TTL },
   )();
 }
@@ -110,7 +110,7 @@ function fetchContentByPartyIdWithCache(partyId: string, page = 1) {
 
       return data;
     },
-    ['content', partyId],
+    ['content', partyId, page.toString()],
     { revalidate: CACHE_TTL },
   )();
 }
