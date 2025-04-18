@@ -54,7 +54,10 @@ function truncate(str: string, n = 40) {
   return str.length > n ? `${str.slice(0, n)}…` : str;
 }
 
-function ClientAdminTable({ initialData }: { initialData: ContentItem[] }) {
+function ClientAdminTable({
+  initialData,
+  page,
+}: { initialData: ContentItem[]; page: number }) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { profiles, parties } = useData();
@@ -79,7 +82,6 @@ function ClientAdminTable({ initialData }: { initialData: ContentItem[] }) {
   const [error, setError] = useState<string | null>(null);
 
   // Pagination logic
-  const page = Number(searchParams.get('page') || 1);
   const hasNext = initialData.length === ADMIN_CONTENT_PAGE_SIZE;
   const hasPrev = page > 1;
 

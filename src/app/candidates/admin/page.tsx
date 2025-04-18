@@ -24,7 +24,7 @@ const CandidatesAdminPage = async ({
   const initialData = await fetchData();
   return (
     <DataProvider initialData={initialData}>
-      <ClientAdminTable initialData={data || []} />
+      <ClientAdminTable initialData={data || []} page={page} />
     </DataProvider>
   );
 };
