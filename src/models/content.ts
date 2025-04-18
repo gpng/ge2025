@@ -3,4 +3,5 @@ export enum ContentType {
   Blog = 'blog',
   Interview = 'interview',
   Speech = 'speech',
+  Article = 'article',
 }

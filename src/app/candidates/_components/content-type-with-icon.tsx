@@ -1,6 +1,6 @@
 import { Badge } from '@/app/_components/ui/badge';
 import { ContentType } from '@/models/content';
-import { FileText, Mic, Speech, User } from 'lucide-react';
+import { FileText, Mic, Newspaper, Speech, User } from 'lucide-react';
 
 const ContentTypeWithIcon = ({ type }: { type: string }) => {
   const icon = (() => {
@@ -13,6 +13,8 @@ const ContentTypeWithIcon = ({ type }: { type: string }) => {
         return <Speech className="h-4 w-4" />;
       case ContentType.Blog:
         return <FileText className="h-4 w-4" />;
+      case ContentType.Article:
+        return <Newspaper className="h-4 w-4" />;
       default:
         return <FileText className="h-4 w-4" />;
     }

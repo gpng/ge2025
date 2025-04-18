@@ -2,6 +2,7 @@
 
 import { ADMIN_CONTENT_PAGE_SIZE } from '@/lib/constants';
 import { createClient } from '@/lib/supabase/server';
+import { cleanUrl } from '@/lib/url';
 
 const supabase = createClient();
 
@@ -55,10 +56,28 @@ export const addContent = async (args: {
   author: string;
   profileIds: string[];
 }) => {
+  const cleanedUrl = cleanUrl(args.url);
+
+  // check if this url is already in the database
+  const { data: existingContent, error: existingContentError } = await supabase
+    .from('content')
+    .select('id')
+    .eq('url', cleanedUrl)
+    .maybeSingle();
+
+  if (existingContentError) {
+    console.error('Error checking if content exists: ', existingContentError);
+    return 'Error checking if content exists';
+  }
+
+  if (existingContent) {
+    return 'URL already exists';
+  }
+
   const { error } = await supabase.from('content').insert({
     title: args.title,
     type: args.type,
-    url: args.url,
+    url: cleanedUrl,
     author: args.author,
     profile_ids: args.profileIds,
     is_approved: true,
