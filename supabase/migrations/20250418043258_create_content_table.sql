@@ -1,6 +1,6 @@
 create table if not exists content (
   id bigint primary key generated always as identity,
-  profile_id text not null,
+  profile_ids text[] not null,
   url text not null,
   title text not null,
   type text not null,

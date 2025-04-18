@@ -19,7 +19,7 @@
     "prepare": "husky install",
     "db:generate": "supabase gen types typescript --local > src/models/database.ts",
     "db:migrate:up": "supabase migration up && pnpm db:generate",
-    "db:reset": "supabase db reset"
+    "db:reset": "supabase db reset && pnpm db:generate"
   },
   "dependencies": {
     "@ai-sdk/react": "^1.2.6",
