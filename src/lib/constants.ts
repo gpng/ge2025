@@ -1,1 +1,1 @@
-export const ADMIN_CONTENT_PAGE_SIZE = 2;
+export const ADMIN_CONTENT_PAGE_SIZE = 20;

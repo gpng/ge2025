@@ -76,6 +76,7 @@ function ClientAdminTable({ initialData }: { initialData: ContentItem[] }) {
     isApproved: false,
   });
   const [saving, setSaving] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   // Pagination logic
   const page = Number(searchParams.get('page') || 1);
@@ -120,6 +121,7 @@ function ClientAdminTable({ initialData }: { initialData: ContentItem[] }) {
       profileIds: Array.isArray(item.profile_ids) ? item.profile_ids : [],
       isApproved: !!item.is_approved,
     });
+    setError(null);
     setDialogOpen(true);
   };
 
@@ -133,14 +135,23 @@ function ClientAdminTable({ initialData }: { initialData: ContentItem[] }) {
       profileIds: [],
       isApproved: false,
     });
+    setError(null);
     setDialogOpen(true);
+  };
+
+  const handleDialogOpenChange = (open: boolean) => {
+    setDialogOpen(open);
+    if (!open) {
+      setError(null);
+    }
   };
 
   const handleDialogSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSaving(true);
+    let err: string | undefined;
     if (editing) {
-      await saveContent({
+      err = await saveContent({
         id: editing.id,
         isApproved: form.isApproved,
         isRejected: false,
@@ -151,7 +162,7 @@ function ClientAdminTable({ initialData }: { initialData: ContentItem[] }) {
         profileIds: form.profileIds,
       });
     } else {
-      await addContent({
+      err = await addContent({
         title: form.title,
         type: form.type,
         url: form.url,
@@ -160,6 +171,10 @@ function ClientAdminTable({ initialData }: { initialData: ContentItem[] }) {
       });
     }
     setSaving(false);
+    if (err) {
+      setError(err);
+      return;
+    }
     setDialogOpen(false);
     setEditing(null);
     router.refresh();
@@ -276,13 +291,18 @@ function ClientAdminTable({ initialData }: { initialData: ContentItem[] }) {
           Next
         </Button>
       </Pagination>
-      <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
+      <Dialog open={dialogOpen} onOpenChange={handleDialogOpenChange}>
         <DialogContent>
           <DialogHeader>
             <DialogTitle>
               {editing ? 'Edit Content' : 'Add Content'}
             </DialogTitle>
           </DialogHeader>
+          {error && (
+            <div className="mb-2 p-2 rounded bg-red-100 text-red-700 text-sm">
+              {error}
+            </div>
+          )}
           <form onSubmit={handleDialogSubmit} className="space-y-4">
             <label className="block mb-1 font-medium" htmlFor="admin-title">
               Title

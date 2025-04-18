@@ -42,7 +42,7 @@ export const saveContent = async (args: {
     .eq('id', args.id);
   if (error) {
     console.error('Error approving content: ', error);
-    return error?.message;
+    return error?.message || 'Error approving content';
   }
   return;
 };
@@ -66,7 +66,7 @@ export const addContent = async (args: {
   });
   if (error) {
     console.error('Error adding content: ', error);
-    return error?.message;
+    return error?.message || 'Error adding content';
   }
   return;
 };
