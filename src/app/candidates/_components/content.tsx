@@ -21,9 +21,14 @@ import { useMemo, useState } from 'react';
 interface Props {
   content: Tables<'content'>[];
   selectedCandidate?: string;
+  selectedParty?: string;
 }
 
-const CandidateContent = ({ content, selectedCandidate = 'all' }: Props) => {
+const CandidateContent = ({
+  content,
+  selectedCandidate = 'all',
+  selectedParty = 'all',
+}: Props) => {
   const { profiles, parties } = useData();
   const router = useRouter();
   const [type, setType] = useState('all');
@@ -46,14 +51,20 @@ const CandidateContent = ({ content, selectedCandidate = 'all' }: Props) => {
     [],
   );
 
+  const partyOptions = useMemo(() => {
+    const options = Object.values(parties).map((party) => ({
+      id: party.id,
+      name: `${party.name} (${party.id})`,
+    }));
+    options.sort((a, b) => a.name.localeCompare(b.name));
+    return [{ id: 'all', name: 'All Parties' }, ...options];
+  }, [parties]);
+
   const candidateOptions = useMemo(() => {
     const allProfiles: { id: string; name: string }[] = [];
-
-    // First, collect all profiles by party
     for (const [partyId, partyProfiles] of Object.entries(profiles)) {
       const party = parties[partyId];
       if (!party) continue;
-
       for (const [profileId, profile] of Object.entries(partyProfiles)) {
         allProfiles.push({
           id: `${partyId}.${profileId}`,
@@ -61,12 +72,9 @@ const CandidateContent = ({ content, selectedCandidate = 'all' }: Props) => {
         });
       }
     }
-
-    // Sort profiles by name
     const sortedProfiles = allProfiles.sort((a, b) =>
       a.name.localeCompare(b.name),
     );
-    // insert "All Candidates" at the beginning
     return [{ id: 'all', name: 'All Candidates' }, ...sortedProfiles];
   }, [parties, profiles]);
 
@@ -119,6 +127,20 @@ const CandidateContent = ({ content, selectedCandidate = 'all' }: Props) => {
             value={type}
             onValueChange={setType}
             placeholder="Filter by type"
+          />
+        </div>
+        <div className="w-full md:w-[250px]">
+          <Combobox
+            options={partyOptions}
+            value={selectedParty}
+            onValueChange={(value) => {
+              if (value === 'all') {
+                router.push('/candidates');
+              } else {
+                router.push(`/candidates/${value.toLowerCase()}`);
+              }
+            }}
+            placeholder="Filter by party"
           />
         </div>
         <div className="w-full md:w-[250px]">

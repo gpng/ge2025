@@ -78,7 +78,21 @@ export type Database = {
       [_ in never]: never;
     };
     Functions: {
-      [_ in never]: never;
+      content_by_party_id: {
+        Args: { party: string };
+        Returns: {
+          author: string;
+          created_at: string;
+          id: number;
+          is_approved: boolean;
+          is_rejected: boolean;
+          profile_ids: string[];
+          title: string;
+          type: string;
+          updated_at: string | null;
+          url: string;
+        }[];
+      };
     };
     Enums: {
       [_ in never]: never;

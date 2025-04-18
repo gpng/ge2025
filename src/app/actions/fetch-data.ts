@@ -90,10 +90,33 @@ function fetchContentWithCache(candidateId?: string) {
   )();
 }
 
+function fetchContentByPartyIdWithCache(partyId: string) {
+  return unstable_cache(
+    async () => {
+      const { data, error } = await supabase.rpc('content_by_party_id', {
+        party: partyId,
+      });
+
+      if (error) {
+        console.error('Failed to fetch content:', error);
+        return [];
+      }
+
+      return data;
+    },
+    ['content', partyId],
+    { revalidate: CACHE_TTL },
+  )();
+}
+
 export async function fetchData() {
   return fetchDataWithCache();
 }
 
 export async function fetchContent(candidateId?: string) {
   return fetchContentWithCache(candidateId);
+}
+
+export async function fetchContentByPartyId(partyId: string) {
+  return fetchContentByPartyIdWithCache(partyId);
 }
