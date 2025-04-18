@@ -31,7 +31,10 @@ import {
   TableHeader,
   TableRow,
 } from '@/app/_components/ui/table';
-import { saveContent } from '@/app/candidates/admin/actions/admin-content';
+import {
+  addContent,
+  saveContent,
+} from '@/app/candidates/admin/actions/admin-content';
 import { useData } from '@/app/map/_components/contexts/data-context';
 import { ADMIN_CONTENT_PAGE_SIZE } from '@/lib/constants';
 import { ContentType } from '@/models/content';
@@ -56,7 +59,7 @@ function ClientAdminTable({ initialData }: { initialData: ContentItem[] }) {
   const searchParams = useSearchParams();
   const { profiles, parties } = useData();
   const [dialogOpen, setDialogOpen] = useState(false);
-  const [editing, setEditing] = useState<ContentItem | null>(null); // content item being edited
+  const [editing, setEditing] = useState<ContentItem | null>(null); // content item being edited, null means add mode
   const [form, setForm] = useState<{
     title: string;
     type: string;
@@ -120,20 +123,42 @@ function ClientAdminTable({ initialData }: { initialData: ContentItem[] }) {
     setDialogOpen(true);
   };
 
+  const handleAddClick = () => {
+    setEditing(null);
+    setForm({
+      title: '',
+      type: '',
+      url: '',
+      author: '',
+      profileIds: [],
+      isApproved: false,
+    });
+    setDialogOpen(true);
+  };
+
   const handleDialogSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!editing) return;
     setSaving(true);
-    await saveContent({
-      id: editing.id,
-      isApproved: form.isApproved,
-      isRejected: false,
-      title: form.title,
-      type: form.type,
-      url: form.url,
-      author: form.author,
-      profileIds: form.profileIds,
-    });
+    if (editing) {
+      await saveContent({
+        id: editing.id,
+        isApproved: form.isApproved,
+        isRejected: false,
+        title: form.title,
+        type: form.type,
+        url: form.url,
+        author: form.author,
+        profileIds: form.profileIds,
+      });
+    } else {
+      await addContent({
+        title: form.title,
+        type: form.type,
+        url: form.url,
+        author: form.author,
+        profileIds: form.profileIds,
+      });
+    }
     setSaving(false);
     setDialogOpen(false);
     setEditing(null);
@@ -148,9 +173,14 @@ function ClientAdminTable({ initialData }: { initialData: ContentItem[] }) {
 
   return (
     <div className="container py-8">
-      <h1 className="text-2xl font-bold mb-6">
-        Admin: Candidate Content Submissions
-      </h1>
+      <div className="flex items-center justify-between mb-6">
+        <h1 className="text-2xl font-bold">
+          Admin: Candidate Content Submissions
+        </h1>
+        <Button variant="default" onClick={handleAddClick}>
+          Add
+        </Button>
+      </div>
       <div className="overflow-x-auto">
         <Table className="min-w-[1100px] text-xs">
           <TableHeader>
@@ -249,7 +279,9 @@ function ClientAdminTable({ initialData }: { initialData: ContentItem[] }) {
       <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Edit Content</DialogTitle>
+            <DialogTitle>
+              {editing ? 'Edit Content' : 'Add Content'}
+            </DialogTitle>
           </DialogHeader>
           <form onSubmit={handleDialogSubmit} className="space-y-4">
             <label className="block mb-1 font-medium" htmlFor="admin-title">

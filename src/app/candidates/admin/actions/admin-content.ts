@@ -46,3 +46,27 @@ export const saveContent = async (args: {
   }
   return;
 };
+
+export const addContent = async (args: {
+  title: string;
+  type: string;
+  url: string;
+  author: string;
+  profileIds: string[];
+}) => {
+  const { error } = await supabase.from('content').insert({
+    title: args.title,
+    type: args.type,
+    url: args.url,
+    author: args.author,
+    profile_ids: args.profileIds,
+    is_approved: true,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  });
+  if (error) {
+    console.error('Error adding content: ', error);
+    return error?.message;
+  }
+  return;
+};
