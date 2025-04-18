@@ -76,20 +76,10 @@
     "typescript": "^5.8.2"
   },
   "pnpm": {
-    "onlyBuiltDependencies": [
-      "@biomejs/biome",
-      "esbuild",
-      "sharp",
-      "supabase"
-    ]
+    "onlyBuiltDependencies": ["@biomejs/biome", "esbuild", "sharp", "supabase"]
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "pnpm lint:fix"
-    ],
-    "data/*.json": [
-      "pnpm validate-data",
-      "pnpm lint:fix"
-    ]
+    "*.{js,jsx,ts,tsx}": ["pnpm lint:fix"],
+    "data/*.json": ["pnpm validate-data", "pnpm lint:fix"]
   }
 }
