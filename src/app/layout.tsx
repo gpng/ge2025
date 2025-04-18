@@ -51,7 +51,7 @@ const MainLayout = ({ children }: Props) => {
 export const metadata: Metadata = {
   title: 'GE2025: Singapore General Election 2025 Guide',
   description:
-    "Your go-to guide for Singapore's General Election 2025! Get the latest updates on who's running, what they're promising, and all the election buzz. No complicated jargon, just straight talk about what matters to you.",
+    "Your go-to guide for Singapore's General Election 2025! Get the latest updates on who's running, what they're promising, and all the election buzz.",
   keywords:
     'GE2025, Singapore election 2025, Singapore politics, election candidates, election manifestos, Singapore constituencies, voting guide, election updates',
   icons: {
