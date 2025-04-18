@@ -352,7 +352,12 @@
       {
         "partyId": "RDU",
         "isConfirmed": true,
-        "profiles": ["RDU.FAZLI_TALIP", "RDU.SHARAD_KUMAR", "RDU.PATRICK_TAN"]
+        "profiles": [
+          "RDU.FAZLI_TALIP",
+          "RDU.SHARAD_KUMAR",
+          "RDU.PATRICK_TAN",
+          "RDU.NIZAR_SUBAIR"
+        ]
       }
     ]
   },
