@@ -16,7 +16,10 @@
     "check:knip": "knip",
     "parse-manifestos": "tsx ./src/scripts/parse-manifestos.ts",
     "validate-data": "tsx ./src/scripts/validate-data.ts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "db:generate": "supabase gen types typescript --local > src/models/database.ts",
+    "db:migrate:up": "supabase migration up && pnpm db:generate",
+    "db:reset": "supabase db reset"
   },
   "dependencies": {
     "@ai-sdk/react": "^1.2.6",
@@ -29,6 +32,8 @@
     "@radix-ui/react-select": "^2.1.6",
     "@radix-ui/react-slot": "^1.1.2",
     "@radix-ui/react-tabs": "^1.1.3",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.49.4",
     "@turf/turf": "^7.2.0",
     "ai": "^4.2.5",
     "class-variance-authority": "^0.7.1",
@@ -63,13 +68,14 @@
     "husky": "^8.0.0",
     "knip": "^5.46.2",
     "lint-staged": "^15.5.0",
+    "supabase": "^2.20.12",
     "tailwind-scrollbar": "^4.0.1",
     "tailwindcss": "^3.4.3",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["@biomejs/biome", "esbuild", "sharp"]
+    "onlyBuiltDependencies": ["@biomejs/biome", "esbuild", "sharp", "supabase"]
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": ["pnpm lint:fix"],
