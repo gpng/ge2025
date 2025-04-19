@@ -64,6 +64,7 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": ["PAP.HENRY_KWEK"]
       },
       {
@@ -82,6 +83,7 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": ["PAP.YIP_HON_WENG"]
       },
       {
@@ -216,7 +218,8 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
-        "profiles": ["PAP.NG_LING_LING"]
+        "isConfirmed": true,
+        "profiles": ["PAP.NG_CHEE_MENG"]
       },
       {
         "partyId": "PPP",
@@ -269,11 +272,13 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": [
           "PAP.LEE_HSIEN_LOONG",
-          "PAP.GAN_THIAM_PO",
           "PAP.DARRYL_DAVID",
-          "PAP.NADIA_AHMAD"
+          "PAP.NADIA_AHMAD",
+          "PAP.VICTOR_LYE",
+          "PAP.JASMIN_LAU"
         ]
       },
       {
@@ -305,6 +310,11 @@
         "isIncumbent": true,
         "isConfirmed": true,
         "profiles": ["PAP.LOW_YEN_LING"]
+      },
+      {
+        "partyId": "PSP",
+        "isConfirmed": true,
+        "profiles": ["PSP.HARISH_PILLAY"]
       }
     ]
   },
@@ -327,8 +337,13 @@
       },
       {
         "partyId": "PSP",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": [
+          "PSP.LAWRENCE_PEK",
+          "PSP.WENDY_LOW",
+          "PSP.ABAS_BIN_KASMANI",
+          "PSP.SRI_NALLAKARUPPAN"
+        ]
       }
     ]
   },
