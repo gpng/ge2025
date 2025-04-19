@@ -124,6 +124,8 @@ Currently, I only have manifestos for the following parties:
  Other parties' manifestos will be added as they become available.
  
  ***Please*** *don't abuse this chat, this site is a hobby project and I'm paying for the LLM credits out of my own pocket.*
+
+*LLMs can be inaccurate, so please verify any information I give you with the original manifesto documents.*
  `,
                   }}
                 />
