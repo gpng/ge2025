@@ -26,6 +26,27 @@ const ConstituencyDetails = ({ electoralDivision }: Props) => {
               electoralDivisionId={electoralDivision.id}
             />
           ))}
+          {/* Call to action for candidate content */}
+          <div className="mt-6 p-4 rounded-md border border-primary/20 bg-primary/5 text-sm text-muted-foreground text-center">
+            <span>
+              Want to discover interviews, podcasts, and more about each
+              candidate?{' '}
+              <a
+                href="/candidates"
+                className="underline text-primary hover:text-primary/80"
+              >
+                Browse candidate content here
+              </a>{' '}
+              or{' '}
+              <a
+                href="/candidates/submit"
+                className="underline text-primary hover:text-primary/80"
+              >
+                submit content you find
+              </a>{' '}
+              to help inform voters.
+            </span>
+          </div>
         </div>
       </div>
     </div>
