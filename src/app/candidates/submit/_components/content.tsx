@@ -6,7 +6,7 @@ import {
   MultiSelect,
   type Option as MultiSelectOption,
 } from '@/app/_components/ui/multiselect';
-import { submitContent } from '@/app/candidates/submit/actions/submit';
+import { submitContent } from '@/app/candidates/submit/actions/candidate-submit-actions';
 import { useData } from '@/app/map/_components/contexts/data-context';
 import { useState } from 'react';
 

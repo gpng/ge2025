@@ -73,7 +73,8 @@ function fetchContentWithCache(candidateId?: string, page = 1) {
         .from('content')
         .select()
         .eq('is_approved', true)
-        .order('created_at', { ascending: false })
+        .order('published_date', { ascending: false })
+        .order('id', { ascending: false })
         .range(range.from, range.to);
 
       if (candidateId) {

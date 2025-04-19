@@ -34,11 +34,12 @@ import {
 import {
   addContent,
   saveContent,
-} from '@/app/candidates/admin/actions/admin-content';
+} from '@/app/candidates/admin/actions/candidate-admin-actions';
 import { useData } from '@/app/map/_components/contexts/data-context';
 import { ADMIN_CONTENT_PAGE_SIZE } from '@/lib/constants';
 import { ContentType } from '@/models/content';
 import type { Tables } from '@/models/database';
+import { format } from 'date-fns';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { type ChangeEvent, type FormEvent, useState } from 'react';
 
@@ -54,10 +55,12 @@ function truncate(str: string, n = 40) {
   return str.length > n ? `${str.slice(0, n)}…` : str;
 }
 
-function ClientAdminTable({
-  initialData,
-  page,
-}: { initialData: ContentItem[]; page: number }) {
+interface Props {
+  content: ContentItem[];
+  page: number;
+}
+
+const CandidateAdminContent = ({ content, page }: Props) => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { profiles, parties } = useData();
@@ -70,6 +73,7 @@ function ClientAdminTable({
     author: string;
     profileIds: string[];
     isApproved: boolean;
+    published_date: string;
   }>({
     title: '',
     type: '',
@@ -77,12 +81,13 @@ function ClientAdminTable({
     author: '',
     profileIds: [],
     isApproved: false,
+    published_date: '',
   });
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   // Pagination logic
-  const hasNext = initialData.length === ADMIN_CONTENT_PAGE_SIZE;
+  const hasNext = content.length === ADMIN_CONTENT_PAGE_SIZE;
   const hasPrev = page > 1;
 
   // Build candidate options for MultiSelect
@@ -109,6 +114,7 @@ function ClientAdminTable({
       url: item.url,
       author: item.author,
       profileIds: item.profile_ids || [],
+      published_date: item.published_date,
     });
     router.refresh();
   };
@@ -122,6 +128,7 @@ function ClientAdminTable({
       author: item.author || '',
       profileIds: Array.isArray(item.profile_ids) ? item.profile_ids : [],
       isApproved: !!item.is_approved,
+      published_date: item.published_date,
     });
     setError(null);
     setDialogOpen(true);
@@ -136,6 +143,7 @@ function ClientAdminTable({
       author: '',
       profileIds: [],
       isApproved: false,
+      published_date: format(new Date(), 'yyyy-MM-dd'),
     });
     setError(null);
     setDialogOpen(true);
@@ -162,6 +170,7 @@ function ClientAdminTable({
         url: form.url,
         author: form.author,
         profileIds: form.profileIds,
+        published_date: form.published_date,
       });
     } else {
       err = await addContent({
@@ -170,6 +179,7 @@ function ClientAdminTable({
         url: form.url,
         author: form.author,
         profileIds: form.profileIds,
+        published_date: form.published_date,
       });
     }
     setSaving(false);
@@ -208,6 +218,7 @@ function ClientAdminTable({
               <TableHead>URL</TableHead>
               <TableHead>Author</TableHead>
               <TableHead>Profile IDs</TableHead>
+              <TableHead>Published Date</TableHead>
               <TableHead>Approved</TableHead>
               <TableHead>Rejected</TableHead>
               <TableHead>Created</TableHead>
@@ -216,7 +227,7 @@ function ClientAdminTable({
             </TableRow>
           </TableHeader>
           <TableBody>
-            {initialData.map((item) => (
+            {content.map((item) => (
               <TableRow key={item.id}>
                 <TableCell>{item.id}</TableCell>
                 <TableCell title={item.title}>
@@ -247,6 +258,7 @@ function ClientAdminTable({
                         .join(', ')
                     : ''}
                 </TableCell>
+                <TableCell>{item.published_date}</TableCell>
                 <TableCell>{item.is_approved ? '✔️' : ''}</TableCell>
                 <TableCell>{item.is_rejected ? '❌' : ''}</TableCell>
                 <TableCell>{formatDate(item.created_at)}</TableCell>
@@ -337,6 +349,29 @@ function ClientAdminTable({
                 ))}
               </SelectContent>
             </Select>
+            {/* Date field */}
+            <label
+              className="block mb-1 font-medium"
+              htmlFor="admin-published-date"
+            >
+              Published Date
+            </label>
+            <Input
+              id="admin-published-date"
+              type="date"
+              value={
+                form.published_date
+                  ? format(form.published_date, 'yyyy-MM-dd')
+                  : ''
+              }
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                setForm((f) => ({
+                  ...f,
+                  published_date: e.target.value,
+                }))
+              }
+              required
+            />
             <label className="block mb-1 font-medium" htmlFor="admin-url">
               URL
             </label>
@@ -408,6 +443,6 @@ function ClientAdminTable({
       </Dialog>
     </div>
   );
-}
+};
 
-export default ClientAdminTable;
+export default CandidateAdminContent;

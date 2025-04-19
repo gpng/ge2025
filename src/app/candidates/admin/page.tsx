@@ -1,6 +1,6 @@
 import { fetchData } from '@/app/actions/fetch-data';
-import ClientAdminTable from '@/app/candidates/admin/_components/client-admin-table';
-import { fetchAdminContent } from '@/app/candidates/admin/actions/admin-content';
+import CandidateAdminContent from '@/app/candidates/admin/_components/candidate-admin-content';
+import { fetchAdminContent } from '@/app/candidates/admin/actions/candidate-admin-actions';
 import { DataProvider } from '@/app/map/_components/contexts/data-context';
 
 const CandidatesAdminPage = async ({
@@ -24,7 +24,7 @@ const CandidatesAdminPage = async ({
   const initialData = await fetchData();
   return (
     <DataProvider initialData={initialData}>
-      <ClientAdminTable initialData={data || []} page={page} />
+      <CandidateAdminContent content={data || []} page={page} />
     </DataProvider>
   );
 };

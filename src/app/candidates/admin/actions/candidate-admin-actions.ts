@@ -26,6 +26,7 @@ export const saveContent = async (args: {
   url: string;
   author: string;
   profileIds: string[];
+  published_date: string;
 }) => {
   const { error } = await supabase
     .from('content')
@@ -38,6 +39,7 @@ export const saveContent = async (args: {
       url: args.url,
       author: args.author,
       updated_at: new Date().toISOString(),
+      published_date: args.published_date,
     })
     .eq('id', args.id);
   if (error) {
@@ -53,6 +55,7 @@ export const addContent = async (args: {
   url: string;
   author: string;
   profileIds: string[];
+  published_date: string; // yyyy-MM-dd
 }) => {
   const cleanedUrl = cleanUrl(args.url);
 
@@ -81,6 +84,7 @@ export const addContent = async (args: {
     is_approved: true,
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
+    published_date: args.published_date,
   });
   if (error) {
     console.error('Error adding content: ', error);

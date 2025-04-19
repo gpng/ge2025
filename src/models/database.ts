@@ -42,6 +42,7 @@ export type Database = {
           is_approved: boolean;
           is_rejected: boolean;
           profile_ids: string[];
+          published_date: string;
           title: string;
           type: string;
           updated_at: string | null;
@@ -54,6 +55,7 @@ export type Database = {
           is_approved?: boolean;
           is_rejected?: boolean;
           profile_ids: string[];
+          published_date?: string;
           title: string;
           type: string;
           updated_at?: string | null;
@@ -66,6 +68,7 @@ export type Database = {
           is_approved?: boolean;
           is_rejected?: boolean;
           profile_ids?: string[];
+          published_date?: string;
           title?: string;
           type?: string;
           updated_at?: string | null;
@@ -89,6 +92,7 @@ export type Database = {
           is_approved: boolean;
           is_rejected: boolean;
           profile_ids: string[];
+          published_date: string;
           title: string;
           type: string;
           updated_at: string | null;

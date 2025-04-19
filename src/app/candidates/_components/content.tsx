@@ -15,6 +15,7 @@ import { useData } from '@/app/map/_components/contexts/data-context';
 import { CANDIDATE_CONTENT_PAGE_SIZE } from '@/lib/constants';
 import { ContentType } from '@/models/content';
 import type { Tables } from '@/models/database';
+import { format } from 'date-fns';
 import { ExternalLink, Mic } from 'lucide-react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useMemo, useState } from 'react';
@@ -189,7 +190,8 @@ const CandidateContent = ({
                   <TableHead className="w-[120px]">Type</TableHead>
                   <TableHead>Title</TableHead>
                   <TableHead>Candidates</TableHead>
-                  <TableHead className="w-[200px]">Author</TableHead>
+                  <TableHead>Author</TableHead>
+                  <TableHead className="w-[200px]">Published Date</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -218,6 +220,10 @@ const CandidateContent = ({
                         {item.author}
                         <ExternalLink className="h-3 w-3 ml-1 flex-shrink-0" />
                       </div>
+                    </TableCell>
+                    {/* 02 Jan '25 */}
+                    <TableCell>
+                      {format(item.published_date, "dd MMM ''yy")}
                     </TableCell>
                   </TableRow>
                 ))}
