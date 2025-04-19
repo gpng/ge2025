@@ -36,6 +36,7 @@ const SiteHeader = () => {
     { href: '/manifestos', label: 'Manifestos' },
     { href: '/resources', label: 'Voting 101' },
     { href: '/news', label: 'News' },
+    { href: '/candidates', label: 'Candidates' },
   ];
 
   return (

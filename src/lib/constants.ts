@@ -1,0 +1,2 @@
+export const ADMIN_CONTENT_PAGE_SIZE = 20;
+export const CANDIDATE_CONTENT_PAGE_SIZE = 10;
