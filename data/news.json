@@ -750,5 +750,48 @@
     ],
     "date": "2025-04-13",
     "summary": "SDP unveiled its candidates to contest in Marsiling-Yew Tee Group Representation Constituency."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-former-spore-manufacturing-federation-sec-gen-among-psps-chua-chu-kang-grc-slate",
+    "title": "GE2025: Former S'pore Manufacturing Federation sec-gen among PSP's Chua Chu Kang GRC slate",
+    "isOfficial": true,
+    "partyIds": ["PSP"],
+    "electoralDivisionIds": ["CK", "BG"],
+    "profileIds": [
+      "PSP.LAWRENCE_PEK",
+      "PSP.WENDY_LOW",
+      "PSP.ABAS_BIN_KASMANI",
+      "PSP.SRI_NALLAKARUPPAN",
+      "PSP.HARISH_PILLAY"
+    ],
+    "date": "2025-04-19",
+    "summary": "PSP unveiled its line-up of candidates for Chua Chu Kang GRC, which includes the former secretary-general for the Singapore Manufacturing Federation, Mr Lawrence Pek"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-sm-lee-to-helm-amk-grc-team-slate-gets-refresh-with-two-new-candidates",
+    "title": "GE2025: SM Lee to helm AMK GRC team, slate gets refresh with two new candidates",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["AM", "JK"],
+    "profileIds": [
+      "PAP.LEE_HSIEN_LOONG",
+      "PAP.DARRYL_DAVID",
+      "PAP.NADIA_AHMAD",
+      "PAP.VICTOR_LYE",
+      "PAP.JASMIN_LAU",
+      "PAP.NG_CHEE_MENG"
+    ],
+    "date": "2025-04-19",
+    "summary": "Former senior civil servant Jasmin Lau and Mr Victor Lye, who contested Aljunied GRC in the past, will join the Ang Mo Kio GRC team helmed by Senior Minister Lee Hsien Loong."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/labour-chief-ng-chee-meng-to-contest-jalan-kayu-pap-incumbents-to-defend-kebun-baru-yck-seats",
+    "title": "GE2025: Labour chief Ng Chee Meng to contest Jalan Kayu, PAP incumbents to defend Kebun Baru, YCK seats",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["JK", "KR", "YK"],
+    "profileIds": ["PAP.NG_CHEE_MENG", "PAP.HENRY_KWEK", "PAP.YIP_HON_WENG"],
+    "date": "2025-04-19",
+    "summary": "Labour chief Ng Chee Meng will contest the new Jalan Kayu single seat under the PAP banner. with incumbents to defend Kebun Baru and Yio Chu Kang SMCs."
   }
 ]
