@@ -2,7 +2,6 @@
 
 import { createClient } from '@/lib/supabase/server';
 import { cleanUrl } from '@/lib/url';
-
 const supabase = createClient();
 
 export const submitContent = async (profileIds: string[], url: string) => {
@@ -30,7 +29,7 @@ export const submitContent = async (profileIds: string[], url: string) => {
   const { error } = await supabase.from('content').insert({
     profile_ids: profileIds,
     url: cleanedUrl,
-    author: 'unknown',
+    author: getAuthorfromUrl(cleanedUrl),
     title: 'unknown',
     type: 'unknown',
   });
@@ -41,4 +40,21 @@ export const submitContent = async (profileIds: string[], url: string) => {
   }
 
   return;
+};
+
+const authorByUrl: Record<string, string> = {
+  'straitstimes.com': 'The Straits Times',
+  'channelnewsasia.com': 'Channel News Asia',
+  'mothership.sg': 'Mothership',
+};
+
+const getAuthorfromUrl = (url: string) => {
+  const urlObj = new URL(url);
+  const hostname = urlObj.hostname.replace('www.', '');
+
+  if (hostname in authorByUrl) {
+    return authorByUrl[hostname];
+  }
+
+  return 'unknown';
 };
