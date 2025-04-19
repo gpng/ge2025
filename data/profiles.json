@@ -771,7 +771,8 @@
       "image": "jimmy_tan.jpg"
     },
     "JASPER_KUAN": {
-      "name": "Jasper Kuan"
+      "name": "Jasper Kuan",
+      "image": "jasper_kuan.jpg"
     },
     "ANDRE_LOW": {
       "name": "Andre Low",
@@ -811,6 +812,10 @@
     "ALEXIS_DANG": {
       "name": "Dang Pei Yuan (Alexis)",
       "image": "alexis_dang.jpg"
+    },
+    "SUFYAN_MIKHAIL_PUTRA": {
+      "name": "Sufyan Mikhail Putra Mohd Kamil",
+      "image": "sufyan_mikhail_putra.jpg"
     }
   },
   "PPP": {
