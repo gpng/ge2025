@@ -55,7 +55,8 @@
     "id": "SPP",
     "name": "Singapore People's Party",
     "logo": "SPP.png",
-    "color": "#2e3a90"
+    "color": "#2e3a90",
+    "manifesto": "https://singaporepeoplesparty.org/manifesto2025/"
   },
   "PAR": {
     "id": "PAR",

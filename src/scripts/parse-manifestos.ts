@@ -43,11 +43,11 @@ const main = async () => {
   const partiesToParse = [
     // { id: 'PAP', pdf: 'pap-manifesto-2025.pdf', txt: 'pap-manifesto-2025.txt' },
     // { id: 'WP', pdf: 'wp-manifesto-2025.pdf', txt: 'wp-manifesto-2025.txt' },
-    { id: 'PSP', pdf: 'psp-manifesto-2025.pdf', txt: 'psp-manifesto-2025.txt' },
+    // { id: 'PSP', pdf: 'psp-manifesto-2025.pdf', txt: 'psp-manifesto-2025.txt' },
     // { id: 'RP', pdf: 'rp-manifesto-2025.pdf', txt: 'rp-manifesto-2025.txt' },
     // { id: 'NSP', pdf: 'nsp-manifesto-2025.pdf', txt: 'nsp-manifesto-2025.txt' },
     // { id: 'RDU', pdf: 'rdu-manifesto-2025.pdf', txt: 'rdu-manifesto-2025.txt' },
-    // { id: 'SPP', pdf: 'spp-manifesto-2025.pdf', txt: 'spp-manifesto-2025.txt' },
+    { id: 'SPP', pdf: 'spp-manifesto-2025.pdf', txt: 'spp-manifesto-2025.txt' },
     // { id: 'PPP', pdf: 'ppp-manifesto-2025.pdf', txt: 'ppp-manifesto-2025.txt' },
   ];
 
