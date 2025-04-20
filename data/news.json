@@ -855,5 +855,21 @@
     "profileIds": [],
     "date": "2025-04-20",
     "summary": "The opposition NSP announced that it will contest in Sembawang GRC and Tampines GRC at the upcoming polls."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-stage-set-for-three-cornered-fights-in-sembawang-and-tampines-as-nsp-says-it-will-contest",
+    "title": "GE2025: Red Dot United sec-gen Ravi Philemon to lead opposition team in Nee Soon GRC",
+    "isOfficial": true,
+    "partyIds": ["RDU"],
+    "electoralDivisionIds": ["NS"],
+    "profileIds": [
+      "RDU.RAVI_PHILEMON",
+      "RDU.DAVID_FOO",
+      "RDU.SYED_ALWI_AHMAD",
+      "RDU.PANG_HENG_CHUAN",
+      "RDU.SHARON_LIN"
+    ],
+    "date": "2025-04-20",
+    "summary": "Red Dot United (RDU) secretary-general Ravi Philemon will lead his party’s slate to contest Nee Soon GRC, alongside party chairman David Foo."
   }
 ]

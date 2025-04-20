@@ -49,7 +49,8 @@
     "id": "RDU",
     "name": "Red Dot United",
     "logo": "RDU.jpg",
-    "color": "#d30e0d"
+    "color": "#d30e0d",
+    "manifesto": "https://reddotunited.sg/f/a-compass-for-a-fairer-future-why-sg-needs-a-new-social-compact"
   },
   "SPP": {
     "id": "SPP",

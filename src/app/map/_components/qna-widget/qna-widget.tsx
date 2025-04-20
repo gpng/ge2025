@@ -120,6 +120,7 @@ Currently, I only have manifestos for the following parties:
  - **Progress Singapore Party (PSP)**
  - **People's Alliance for Reform (PAR)**
  - **Singapore People's Party (SPP)**
+ - **Red Dot United (RDU)**
  
  Other parties' manifestos will be added as they become available.
  

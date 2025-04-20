@@ -600,8 +600,10 @@
       },
       {
         "partyId": "RDU",
-        "isConfirmed": false,
+        "isConfirmed": true,
         "profiles": [
+          "RDU.RAVI_PHILEMON",
+          "RDU.DAVID_FOO",
           "RDU.SYED_ALWI_AHMAD",
           "RDU.PANG_HENG_CHUAN",
           "RDU.SHARON_LIN"
