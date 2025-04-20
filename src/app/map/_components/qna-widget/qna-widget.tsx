@@ -55,7 +55,7 @@ const QnaWidget = () => {
       <Button
         variant="outline"
         size="icon"
-        className="fixed bottom-12 right-4 z-40 rounded-full h-16 w-16"
+        className="fixed bottom-12 right-4 z-40 rounded-full h-16 w-16 border-2 border-gray-300"
         onClick={() => setIsOpen(true)}
       >
         <ChatBubbleIcon className="h-8 w-8" />
