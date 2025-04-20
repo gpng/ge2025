@@ -30,7 +30,8 @@
     "id": "SDP",
     "name": "Singapore Democratic Party",
     "logo": "SDP.svg",
-    "color": "#fe0000"
+    "color": "#fe0000",
+    "manifesto": "https://www.yoursdp.org/ge2025-campaign"
   },
   "SDA": {
     "id": "SDA",

@@ -121,6 +121,7 @@ Currently, I only have manifestos for the following parties:
  - **People's Alliance for Reform (PAR)**
  - **Singapore People's Party (SPP)**
  - **Red Dot United (RDU)**
+ - **Singapore Democratic Party (SDP)**
  
  Other parties' manifestos will be added as they become available.
  
