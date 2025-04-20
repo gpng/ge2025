@@ -793,5 +793,57 @@
     "profileIds": ["PAP.NG_CHEE_MENG", "PAP.HENRY_KWEK", "PAP.YIP_HON_WENG"],
     "date": "2025-04-19",
     "summary": "Labour chief Ng Chee Meng will contest the new Jalan Kayu single seat under the PAP banner. with incumbents to defend Kebun Baru and Yio Chu Kang SMCs."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-psp-to-field-a-team-in-west-coast-jurong-west-grc-setting-up-rematch-with-pap",
+    "title": "GE2025: PSP to field A-team in West Coast-Jurong West GRC, setting up rematch with PAP",
+    "isOfficial": true,
+    "partyIds": ["PSP"],
+    "electoralDivisionIds": ["WJ"],
+    "profileIds": [
+      "PSP.TAN_CHENG_BOCK",
+      "PSP.LEONG_MUN_WAI",
+      "PSP.HAZEL_POA",
+      "PSP.SUMARLEKI_AMJAH",
+      "PSP.SANI_ISMAIL"
+    ],
+    "date": "2025-04-20",
+    "summary": "The opposition PSP will field its three top leaders in the newly formed West Coast-Jurong West GRC for the upcoming general election."
+  },
+  {
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-psp-pioneer-stephanie-tan-new-face-5075716",
+    "title": "GE2025: PSP to field new face Stephanie Tan in Pioneer SMC",
+    "isOfficial": true,
+    "partyIds": ["PSP"],
+    "electoralDivisionIds": ["PI"],
+    "profileIds": ["PSP.STEPHANIE_TAN"],
+    "date": "2025-04-20",
+    "summary": "PSP said it will field new face Stephanie Tan in Pioneer SMC for the upcoming General Election"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-tan-see-leng-to-helm-paps-marine-parade-braddell-heights-team-which-includes-new-face",
+    "title": "GE2025: Tan See Leng to helm PAP's Marine Parade-Braddell Heights team, which includes new face",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["MH"],
+    "profileIds": [
+      "PAP.TAN_SEE_LENG",
+      "PAP.SEAH_KIAN_PENG",
+      "PAP.MUHAMMAD_FAISHAL_IBRAHIM",
+      "PAP.TIN_PEI_LING",
+      "PAP.DIANA_PANG"
+    ],
+    "date": "2025-04-20",
+    "summary": "The PAP team contesting the new Marine Parade-Braddell Heights GRC at the upcoming election will be led by Manpower Minister Tan See Leng and include new face Diana Pang"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-paps-gho-sze-kee-to-contest-mountbatten-4-term-mp-lim-biow-chuan-to-retire",
+    "title": "GE2025: PAP's Gho Sze Kee to contest Mountbatten; 4-term MP Lim Biow Chuan to retire",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["MB"],
+    "profileIds": ["PAP.GOH_SZE_KEE", "PAP.LIM_BIOW_CHUAN"],
+    "date": "2025-04-20",
+    "summary": "Maritime lawyer Gho Sze Kee, a PAP new face, will be fielded by the party to contest the Mountbatten single seat at the general election, taking over from four-term MP Lim Biow Chuan"
   }
 ]

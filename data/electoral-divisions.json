@@ -50,8 +50,14 @@
       },
       {
         "partyId": "PSP",
-        "isConfirmed": false,
-        "profiles": ["PSP.HAZEL_POA"]
+        "isConfirmed": true,
+        "profiles": [
+          "PSP.TAN_CHENG_BOCK",
+          "PSP.LEONG_MUN_WAI",
+          "PSP.HAZEL_POA",
+          "PSP.SUMARLEKI_AMJAH",
+          "PSP.SANI_ISMAIL"
+        ]
       }
     ]
   },
@@ -438,8 +444,8 @@
       },
       {
         "partyId": "PSP",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": ["PSP.STEPHANIE_TAN"]
       }
     ]
   },
@@ -673,7 +679,8 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
-        "profiles": ["PAP.LIM_BIOW_CHUAN"]
+        "isConfirmed": true,
+        "profiles": ["PAP.GOH_SZE_KEE"]
       },
       {
         "partyId": "PAR",
@@ -761,12 +768,13 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": [
           "PAP.TAN_SEE_LENG",
           "PAP.SEAH_KIAN_PENG",
-          "PAP.MOHD_FAHMI_ALIMAN",
+          "PAP.MUHAMMAD_FAISHAL_IBRAHIM",
           "PAP.TIN_PEI_LING",
-          "PAP.MUHAMMAD_FAISHAL_IBRAHIM"
+          "PAP.DIANA_PANG"
         ]
       },
       {
