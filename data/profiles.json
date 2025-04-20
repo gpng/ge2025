@@ -779,7 +779,8 @@
       "image": "ong_lue_ping.jpg"
     },
     "MICHAEL_THNG": {
-      "name": "Michael Thng"
+      "name": "Michael Thng",
+      "image": "michael_thng.jpg"
     },
     "JIMMY_TAN": {
       "name": "Jimmy Tan",
@@ -798,7 +799,8 @@
       "image": "kenneth_tiong.jpg"
     },
     "JACKSON_AU": {
-      "name": "Jackson Au"
+      "name": "Jackson Au",
+      "image": "jackson_au.jpg"
     },
     "HARPREET_SINGH": {
       "name": "Harpreet Singh",
@@ -831,6 +833,10 @@
     "SUFYAN_MIKHAIL_PUTRA": {
       "name": "Sufyan Mikhail Putra Mohd Kamil",
       "image": "sufyan_mikhail_putra.jpg"
+    },
+    "PARIS_V": {
+      "name": "Paris V Parameswari",
+      "image": "paris_v.jpg"
     }
   },
   "PPP": {
