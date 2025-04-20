@@ -845,5 +845,15 @@
     "profileIds": ["PAP.GOH_SZE_KEE", "PAP.LIM_BIOW_CHUAN"],
     "date": "2025-04-20",
     "summary": "Maritime lawyer Gho Sze Kee, a PAP new face, will be fielded by the party to contest the Mountbatten single seat at the general election, taking over from four-term MP Lim Biow Chuan"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-stage-set-for-three-cornered-fights-in-sembawang-and-tampines-as-nsp-says-it-will-contest",
+    "title": "GE2025: Stage set for three-cornered fights in Sembawang and Tampines as NSP says it will contest both GRCs",
+    "isOfficial": true,
+    "partyIds": ["NSP"],
+    "electoralDivisionIds": ["MB", "TC"],
+    "profileIds": [],
+    "date": "2025-04-20",
+    "summary": "The opposition NSP announced that it will contest in Sembawang GRC and Tampines GRC at the upcoming polls."
   }
 ]
