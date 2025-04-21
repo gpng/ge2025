@@ -887,5 +887,21 @@
     ],
     "date": "2025-04-21",
     "summary": "Law and Home Affairs Minister K. Shanmugam will helm a refreshed PAP team consisting of four political newcomers to contest Nee Soon GRC in the upcoming general election."
+  },
+  {
+    "url": "GE2025: Ong Ye Kung unveils Sembawang GRC slate including new faces Ng Shi Xuan and Gabriel Lam",
+    "title": "GE2025: Shanmugam to lead fresh PAP team to contest Nee Soon GRC",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["SB"],
+    "profileIds": [
+      "PAP.ONG_YE_KUNG",
+      "PAP.VIKRAM_NAIR",
+      "PAP.MARIAM_JAFAAR",
+      "PAP.NG_SHI_XUAN",
+      "PAP.GABRIEL_LAM"
+    ],
+    "date": "2025-04-21",
+    "summary": "Health Minister Ong Ye Kung, who is anchor minister for Sembawang GRC, uploaded a video on his social media page unveiling the PAP slate of candidates set to contest there at the upcoming general election."
   }
 ]

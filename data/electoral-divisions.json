@@ -687,10 +687,10 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": [
           "PAP.ONG_YE_KUNG",
           "PAP.VIKRAM_NAIR",
-          "PAP.LIM_WEE_KIAK",
           "PAP.MARIAM_JAFAAR",
           "PAP.NG_SHI_XUAN",
           "PAP.GABRIEL_LAM"
