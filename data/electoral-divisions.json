@@ -591,11 +591,13 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": [
           "PAP.K_SHANMUGAM",
-          "PAP.DERRICK_GOH",
-          "PAP.CARRIE_TAN",
-          "PAP.LOUIS_NG"
+          "PAP.SYED_HARUN_ALHABSYI",
+          "PAP.LEE_HUI_YING",
+          "PAP.GOH_HANYAN",
+          "PAP.JACKSON_LAM"
         ]
       },
       {

@@ -871,5 +871,21 @@
     ],
     "date": "2025-04-20",
     "summary": "Red Dot United (RDU) secretary-general Ravi Philemon will lead his party’s slate to contest Nee Soon GRC, alongside party chairman David Foo."
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/ge2025-shanmugam-to-lead-fresh-team-to-contest-nee-soon-grc",
+    "title": "GE2025: Shanmugam to lead fresh PAP team to contest Nee Soon GRC",
+    "isOfficial": true,
+    "partyIds": ["PAP"],
+    "electoralDivisionIds": ["NS"],
+    "profileIds": [
+      "PAP.K_SHANMUGAM",
+      "PAP.SYED_HARUN_ALHABSYI",
+      "PAP.LEE_HUI_YING",
+      "PAP.GOH_HANYAN",
+      "PAP.JACKSON_LAM"
+    ],
+    "date": "2025-04-21",
+    "summary": "Law and Home Affairs Minister K. Shanmugam will helm a refreshed PAP team consisting of four political newcomers to contest Nee Soon GRC in the upcoming general election."
   }
 ]
