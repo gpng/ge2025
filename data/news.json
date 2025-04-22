@@ -889,8 +889,8 @@
     "summary": "Law and Home Affairs Minister K. Shanmugam will helm a refreshed PAP team consisting of four political newcomers to contest Nee Soon GRC in the upcoming general election."
   },
   {
-    "url": "GE2025: Ong Ye Kung unveils Sembawang GRC slate including new faces Ng Shi Xuan and Gabriel Lam",
-    "title": "GE2025: Shanmugam to lead fresh PAP team to contest Nee Soon GRC",
+    "url": "https://www.channelnewsasia.com/singapore/ge2025-sembawang-grc-ong-ye-kung-candidates-new-faces-gabriel-lam-ng-shi-xuan-5077811",
+    "title": "GE2025: Ong Ye Kung unveils Sembawang GRC slate including new faces Ng Shi Xuan and Gabriel Lam",
     "isOfficial": true,
     "partyIds": ["PAP"],
     "electoralDivisionIds": ["SB"],
@@ -903,5 +903,15 @@
     ],
     "date": "2025-04-21",
     "summary": "Health Minister Ong Ye Kung, who is anchor minister for Sembawang GRC, uploaded a video on his social media page unveiling the PAP slate of candidates set to contest there at the upcoming general election."
+  },
+  {
+    "url": "https://www.facebook.com/reddotunitedsg/posts/pfbid0E1eMwRijFfD5BLFhRbSxmwU7bvwbvmj7QtBvc9vjEqNE1eFpN9ERD8oKmK8bF5Pzl",
+    "title": "RDU Facebook Announcement",
+    "isOfficial": true,
+    "partyIds": ["RDU"],
+    "electoralDivisionIds": ["JK"],
+    "profileIds": [],
+    "date": "2025-04-22",
+    "summary": "RDU Steps aside in Jalan Kayu SMC for GE2025"
   }
 ]
