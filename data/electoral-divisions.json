@@ -228,7 +228,7 @@
         "profiles": ["PAP.NG_CHEE_MENG"]
       },
       {
-        "partyId": "PPP",
+        "partyId": "WP",
         "isConfirmed": false,
         "profiles": []
       }
@@ -295,8 +295,14 @@
       },
       {
         "partyId": "PPP",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": [
+          "PPP.WILLIAM_LIM",
+          "PPP.MARTINN_HO",
+          "PPP.THADDEUS_THOMAS",
+          "PPP.HENG_ZHENG_DAO",
+          "PPP.SAMUEL_LEE"
+        ]
       }
     ]
   },
@@ -638,11 +644,6 @@
         "profiles": ["PAP.DESMOND_CHOO"]
       },
       {
-        "partyId": "PPP",
-        "isConfirmed": false,
-        "profiles": []
-      },
-      {
         "partyId": "WP",
         "isConfirmed": false,
         "profiles": []
@@ -804,8 +805,14 @@
       },
       {
         "partyId": "PPP",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": [
+          "PPP.GOH_MENG_SENG",
+          "PPP.VERE_NATHAN",
+          "PPP.PETER_SOH",
+          "PPP.ARBAAH_HAROUN",
+          "PPP.DERRICK_SIM"
+        ]
       },
       {
         "partyId": "WP",

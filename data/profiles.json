@@ -855,6 +855,33 @@
     "GOH_MENG_SENG": {
       "name": "Goh Meng Seng",
       "image": "goh_meng_seng.jpg"
+    },
+    "VERE_NATHAN": {
+      "name": "Vere Nathan"
+    },
+    "PETER_SOH": {
+      "name": "Peter Soh"
+    },
+    "ARBAAH_HAROUN": {
+      "name": "Arbaah Haroun"
+    },
+    "DERRICK_SIM": {
+      "name": "Derrick Sim"
+    },
+    "MARTINN_HO": {
+      "name": "Martinn Ho"
+    },
+    "THADDEUS_THOMAS": {
+      "name": "Thaddeus Thomas"
+    },
+    "HENG_ZHENG_DAO": {
+      "name": "Heng Zheng Dao"
+    },
+    "SAMUEL_LEE": {
+      "name": "Samuel Lee"
+    },
+    "WILLIAM_LIM": {
+      "name": "William Lim"
     }
   },
   "SDP": {

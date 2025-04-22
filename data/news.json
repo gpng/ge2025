@@ -913,5 +913,26 @@
     "profileIds": [],
     "date": "2025-04-22",
     "summary": "RDU Steps aside in Jalan Kayu SMC for GE2025"
+  },
+  {
+    "url": "https://www.straitstimes.com/singapore/politics/multi-cornered-fights-expected-in-tampines-ang-mo-kio-as-peoples-power-party-stakes-claim",
+    "title": "GE2025: Multi-cornered fights expected in Tampines, Ang Mo Kio as People’s Power Party stakes claim",
+    "isOfficial": true,
+    "partyIds": ["PPP"],
+    "electoralDivisionIds": ["AM", "TM"],
+    "profileIds": [
+      "PPP.GOH_MENG_SENG",
+      "PPP.VERE_NATHAN",
+      "PPP.PETER_SOH",
+      "PPP.ARBAAH_HAROUN",
+      "PPP.DERRICK_SIM",
+      "PPP.WILLIAM_LIM",
+      "PPP.MARTINN_HO",
+      "PPP.THADDEUS_THOMAS",
+      "PPP.HENG_ZHENG_DAO",
+      "PPP.SAMUEL_LEE"
+    ],
+    "date": "2025-04-22",
+    "summary": "The stage is set for multi-cornered fights in Ang Mo Kio and Tampines GRC in the upcoming elections after the People's Power Party (PPP) announced that it will contest both constituencies."
   }
 ]
