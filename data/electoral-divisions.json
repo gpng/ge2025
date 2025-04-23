@@ -798,13 +798,24 @@
         ]
       },
       {
+        "partyId": "WP",
+        "isConfirmed": true,
+        "profiles": [
+          "WP.MUHAMMAD_FAISAL",
+          "WP.MICHAEL_THNG",
+          "WP.JIMMY_TAN",
+          "WP.EILEEN_CHONG",
+          "WP.ONG_LUE_PING"
+        ]
+      },
+      {
         "partyId": "NSP",
         "isConfirmed": true,
         "profiles": [
           "NSP.RENO_FONG",
           "NSP.MOHAMAD_RIDZWAN",
-          "NSP.LIM_RUI_XIAN",
-          "NSP.NUR_FARAHIYAH_MAHFOOT",
+          "NSP.ZEE_PHAY",
+          "NSP.EUGENE_YEO",
           "NSP.THAMILSELVAN_KARUPPAYA"
         ]
       },
@@ -817,17 +828,6 @@
           "PPP.PETER_SOH",
           "PPP.ARBAAH_HAROUN",
           "PPP.DERRICK_SIM"
-        ]
-      },
-      {
-        "partyId": "WP",
-        "isConfirmed": true,
-        "profiles": [
-          "WP.MUHAMMAD_FAISAL",
-          "WP.MICHAEL_THNG",
-          "WP.JIMMY_TAN",
-          "WP.EILEEN_CHONG",
-          "WP.ONG_LUE_PING"
         ]
       }
     ]
