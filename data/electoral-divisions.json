@@ -695,7 +695,13 @@
       {
         "partyId": "NSP",
         "isConfirmed": true,
-        "profiles": []
+        "profiles": [
+          "NSP.SPENCER_NG",
+          "NSP.VERINA_ONG",
+          "NSP.CHIA_RAIYIAN",
+          "NSP.LEE_WEI",
+          "NSP.YADZETH_HAIRIS"
+        ]
       },
       {
         "partyId": "SDP",
