@@ -57,5 +57,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.json') }}-
 
+      - name: Set supabase env vars
+        run: |
+          echo "SUPABASE_URL=supabase" >> "$GITHUB_ENV"
+          echo "SUPABASE_SERVICE_ROLE_KEY=supabase" >> "$GITHUB_ENV"
+
       - name: Build
         run: pnpm run build
