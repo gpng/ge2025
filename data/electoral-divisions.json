@@ -236,8 +236,8 @@
       },
       {
         "partyId": "WP",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": ["WP.ANDRE_LOW"]
       }
     ]
   },
@@ -739,17 +739,23 @@
         "partyId": "PAP",
         "isIncumbent": true,
         "profiles": [
-          "PAP.HENG_SWEE_KEAT",
-          "PAP.CHERYL_CHAN",
-          "PAP.TAN_KIAT_HOW",
           "PAP.EDWIN_TONG",
+          "PAP.JESSICA_TAN",
+          "PAP.TAN_KIAT_HOW",
+          "PAP.DINESH_VASU_DASH",
           "PAP.HAZLINA_ABDUL_HALIM"
         ]
       },
       {
         "partyId": "WP",
-        "isConfirmed": false,
-        "profiles": ["WP.KENNETH_FOO", "WP.ABDUL_SHARIFF", "WP.ANG_BOON_YAW"]
+        "isConfirmed": true,
+        "profiles": [
+          "WP.NATHANIEL_KOH",
+          "WP.YEE_JENN_JONG",
+          "WP.PARIS_V",
+          "WP.JASPER_KUAN",
+          "WP.SUFYAN_MIKHAIL_PUTRA"
+        ]
       },
       {
         "partyId": "MVP",
