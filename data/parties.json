@@ -73,12 +73,6 @@
     "logo": "SUP.png",
     "color": "#a57f4e"
   },
-  "MVP": {
-    "id": "MVP",
-    "name": "Most Valuable Party",
-    "logo": "MVP.jpeg",
-    "color": "#1B7263"
-  },
   "INDIE": {
     "id": "INDIE",
     "name": "Independent",

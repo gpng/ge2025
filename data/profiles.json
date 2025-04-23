@@ -1108,6 +1108,9 @@
     "KELVIN_ONG": {
       "name": "Kelvin Ong",
       "image": "kelvin_ong.jpg"
+    },
+    "CHIA_YUN_KAI": {
+      "name": "Chia Yun Kai"
     }
   },
   "PAR": {
@@ -1207,11 +1210,6 @@
     },
     "NIGEL_NG": {
       "name": "Nigel Ng"
-    }
-  },
-  "MVP": {
-    "CHIA_YUN_KAI": {
-      "name": "Chia Yun Kai"
     }
   },
   "INDIE": {

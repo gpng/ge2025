@@ -185,13 +185,13 @@
       },
       {
         "partyId": "PAR",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": ["PAR.LIM_TEAN"]
       },
       {
         "partyId": "SPP",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": ["SPP.WILLIAMSON_LEE"]
       }
     ]
   },
@@ -757,11 +757,6 @@
           "WP.JASPER_KUAN",
           "WP.SUFYAN_MIKHAIL_PUTRA"
         ]
-      },
-      {
-        "partyId": "MVP",
-        "isConfirmed": false,
-        "profiles": ["MVP.CHIA_YUN_KAI"]
       }
     ]
   },
@@ -855,8 +850,13 @@
       },
       {
         "partyId": "SDA",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": [
+          "SDA.DESMOND_LIM",
+          "SDA.ABU_MOHAMED",
+          "SDA.HARMINDER_PAL_SINGH",
+          "SDA.CHIA_YUN_KAI"
+        ]
       }
     ]
   }
