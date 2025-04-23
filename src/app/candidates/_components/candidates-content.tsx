@@ -15,7 +15,7 @@ import { useData } from '@/app/map/_components/contexts/data-context';
 import { CANDIDATE_CONTENT_PAGE_SIZE } from '@/lib/constants';
 import type { Tables } from '@/models/database';
 import { format } from 'date-fns';
-import { ExternalLink, LoaderCircle, Mic } from 'lucide-react';
+import { Check, ExternalLink, Link, LoaderCircle, Mic } from 'lucide-react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useMemo, useState } from 'react';
 
@@ -39,6 +39,7 @@ const CandidatesContent = ({
   const searchParams = useSearchParams();
   const [type, setType] = useState('all');
   const [isLoading, setIsLoading] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   const filteredContent = useMemo(() => {
     return content.filter((item) => {
@@ -123,6 +124,23 @@ const CandidatesContent = ({
     router.push(`?${params.toString()}`);
   };
 
+  // Function to get permalink for current filters
+  const getPermalink = () => {
+    if (typeof window === 'undefined') return '';
+
+    // return the curernt url without the query params
+    return window.location.href.split('?')[0];
+  };
+
+  // Function to copy permalink to clipboard
+  const copyPermalink = () => {
+    const permalink = getPermalink();
+    navigator.clipboard.writeText(permalink).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
+
   return (
     <div className="container py-6">
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
@@ -151,7 +169,7 @@ const CandidatesContent = ({
           </a>
         </div>
       </div>
-      <div className="mb-6 flex flex-col md:flex-row gap-3">
+      <div className="mb-6 flex flex-col md:flex-row gap-3 items-center">
         {/* <div className="w-full md:w-[250px]">
           <Combobox
             options={typeOptions}
@@ -210,6 +228,27 @@ const CandidatesContent = ({
             placeholder="Filter by candidate"
           />
         </div>
+        {(selectedCandidate !== 'all' ||
+          selectedConstituency !== 'all' ||
+          selectedParty !== 'all') && (
+          <Button
+            variant="outline"
+            className="w-full md:w-auto mt-1 md:mt-0 gap-2"
+            onClick={copyPermalink}
+          >
+            {copied ? (
+              <>
+                <Check className="h-4 w-4" />
+                Copied!
+              </>
+            ) : (
+              <>
+                <Link className="h-4 w-4" />
+                Copy Permalink
+              </>
+            )}
+          </Button>
+        )}
       </div>
 
       {filteredContent.length > 0 ? (
