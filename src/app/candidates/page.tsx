@@ -1,5 +1,5 @@
 import { fetchContent, fetchData } from '@/app/actions/fetch-data';
-import CandidateContent from '@/app/candidates/_components/content';
+import CandidatesContent from '@/app/candidates/_components/candidates-content';
 import Providers from '@/app/news/_components/providers';
 import type { Metadata } from 'next';
 
@@ -13,7 +13,7 @@ const CandidatesPage = async ({
   const content = await fetchContent(undefined, page);
   return (
     <Providers initialData={data}>
-      <CandidateContent content={content} page={page} />
+      <CandidatesContent content={content} page={page} />
     </Providers>
   );
 };

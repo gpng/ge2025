@@ -13,10 +13,9 @@ import ContentTypeWithIcon from '@/app/candidates/_components/content-type-with-
 import ProfileTags from '@/app/candidates/_components/profile-tags';
 import { useData } from '@/app/map/_components/contexts/data-context';
 import { CANDIDATE_CONTENT_PAGE_SIZE } from '@/lib/constants';
-import { ContentType } from '@/models/content';
 import type { Tables } from '@/models/database';
 import { format } from 'date-fns';
-import { ExternalLink, Mic } from 'lucide-react';
+import { ExternalLink, LoaderCircle, Mic } from 'lucide-react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useMemo, useState } from 'react';
 
@@ -27,7 +26,7 @@ interface Props {
   page?: number;
 }
 
-const CandidateContent = ({
+const CandidatesContent = ({
   content,
   selectedCandidate = 'all',
   selectedParty = 'all',
@@ -37,6 +36,7 @@ const CandidateContent = ({
   const router = useRouter();
   const searchParams = useSearchParams();
   const [type, setType] = useState('all');
+  const [isLoading, setIsLoading] = useState(false);
 
   const filteredContent = useMemo(() => {
     return content.filter((item) => {
@@ -45,16 +45,16 @@ const CandidateContent = ({
     });
   }, [type, content]);
 
-  const typeOptions = useMemo(
-    () => [
-      { id: 'all', name: 'All Types' },
-      ...Object.values(ContentType).map((type) => ({
-        id: type,
-        name: type.charAt(0).toUpperCase() + type.slice(1),
-      })),
-    ],
-    [],
-  );
+  // const typeOptions = useMemo(
+  //   () => [
+  //     { id: 'all', name: 'All Types' },
+  //     ...Object.values(ContentType).map((type) => ({
+  //       id: type,
+  //       name: type.charAt(0).toUpperCase() + type.slice(1),
+  //     })),
+  //   ],
+  //   [],
+  // );
 
   const partyOptions = useMemo(() => {
     const options = Object.values(parties).map((party) => ({
@@ -97,6 +97,11 @@ const CandidateContent = ({
     return profiles[partyId][candidateId].name;
   };
 
+  const handleNavigate = (path: string) => {
+    setIsLoading(true);
+    router.push(path);
+  };
+
   // Pagination logic
   const hasNext = content.length === CANDIDATE_CONTENT_PAGE_SIZE;
   const hasPrev = page > 1;
@@ -136,23 +141,23 @@ const CandidateContent = ({
         </div>
       </div>
       <div className="mb-6 flex flex-col md:flex-row gap-3">
-        <div className="w-full md:w-[250px]">
+        {/* <div className="w-full md:w-[250px]">
           <Combobox
             options={typeOptions}
             value={type}
             onValueChange={setType}
             placeholder="Filter by type"
           />
-        </div>
+        </div> */}
         <div className="w-full md:w-[250px]">
           <Combobox
             options={partyOptions}
             value={selectedParty}
             onValueChange={(value) => {
               if (value === 'all') {
-                router.push('/candidates');
+                handleNavigate('/candidates');
               } else {
-                router.push(`/candidates/${value.toLowerCase()}`);
+                handleNavigate(`/candidates/${value.toLowerCase()}`);
               }
             }}
             placeholder="Filter by party"
@@ -164,12 +169,12 @@ const CandidateContent = ({
             value={selectedCandidate}
             onValueChange={(value) => {
               if (value === 'all') {
-                router.push('/candidates');
+                handleNavigate('/candidates');
               } else {
                 // value is like WP.HARPREET_SINGH
                 const [party, candidate] = value.split('.');
                 if (party && candidate) {
-                  router.push(
+                  handleNavigate(
                     `/candidates/${party.toLowerCase()}/${candidate.toLowerCase()}`,
                   );
                 }
@@ -195,38 +200,46 @@ const CandidateContent = ({
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {filteredContent.map((item) => (
-                  <TableRow
-                    key={item.id}
-                    className="cursor-pointer"
-                    onClick={() =>
-                      window.open(item.url, '_blank', 'noopener,noreferrer')
-                    }
-                  >
-                    <TableCell>
-                      <ContentTypeWithIcon type={item.type} />
-                    </TableCell>
-                    <TableCell className="font-medium max-w-[300px] truncate">
-                      {item.title}
-                    </TableCell>
-                    <TableCell>
-                      <ProfileTags
-                        profileIds={item.profile_ids || []}
-                        getCandidateName={getCandidateName}
-                      />
-                    </TableCell>
-                    <TableCell>
-                      <div className="text-muted-foreground flex items-center gap-1">
-                        {item.author}
-                        <ExternalLink className="h-3 w-3 ml-1 flex-shrink-0" />
-                      </div>
-                    </TableCell>
-                    {/* 02 Jan '25 */}
-                    <TableCell>
-                      {format(item.published_date, "dd MMM ''yy")}
+                {isLoading && (
+                  <TableRow>
+                    <TableCell colSpan={5} className="flex">
+                      <LoaderCircle className="animate-spin" /> Loading...
                     </TableCell>
                   </TableRow>
-                ))}
+                )}
+                {!isLoading &&
+                  filteredContent.map((item) => (
+                    <TableRow
+                      key={item.id}
+                      className="cursor-pointer"
+                      onClick={() =>
+                        window.open(item.url, '_blank', 'noopener,noreferrer')
+                      }
+                    >
+                      <TableCell>
+                        <ContentTypeWithIcon type={item.type} />
+                      </TableCell>
+                      <TableCell className="font-medium max-w-[300px] truncate">
+                        {item.title}
+                      </TableCell>
+                      <TableCell>
+                        <ProfileTags
+                          profileIds={item.profile_ids || []}
+                          getCandidateName={getCandidateName}
+                        />
+                      </TableCell>
+                      <TableCell>
+                        <div className="text-muted-foreground flex items-center gap-1">
+                          {item.author}
+                          <ExternalLink className="h-3 w-3 ml-1 flex-shrink-0" />
+                        </div>
+                      </TableCell>
+                      {/* 02 Jan '25 */}
+                      <TableCell>
+                        {format(item.published_date, "dd MMM ''yy")}
+                      </TableCell>
+                    </TableRow>
+                  ))}
               </TableBody>
             </Table>
           </div>
@@ -293,4 +306,4 @@ const CandidateContent = ({
   );
 };
 
-export default CandidateContent;
+export default CandidatesContent;

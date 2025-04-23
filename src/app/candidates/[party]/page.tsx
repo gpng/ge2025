@@ -1,5 +1,5 @@
 import { fetchContentByPartyId, fetchData } from '@/app/actions/fetch-data';
-import CandidateContent from '@/app/candidates/_components/content';
+import CandidatesContent from '@/app/candidates/_components/candidates-content';
 import Providers from '@/app/news/_components/providers';
 import type { Metadata } from 'next';
 import { redirect } from 'next/navigation';
@@ -26,7 +26,11 @@ const CandidateFilteredPage = async ({
 
   return (
     <Providers initialData={data}>
-      <CandidateContent content={content} selectedParty={partyId} page={page} />
+      <CandidatesContent
+        content={content}
+        selectedParty={partyId}
+        page={page}
+      />
     </Providers>
   );
 };
