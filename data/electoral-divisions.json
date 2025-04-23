@@ -379,7 +379,7 @@
         "profiles": [
           "RDU.FAZLI_TALIP",
           "RDU.SHARAD_KUMAR",
-          "RDU.PATRICK_TAN",
+          "RDU.EMILY_WOO",
           "RDU.NIZAR_SUBAIR"
         ]
       }
@@ -400,7 +400,7 @@
       {
         "partyId": "RDU",
         "isConfirmed": true,
-        "profiles": ["RDU.EMILY_WOO"]
+        "profiles": []
       }
     ]
   },
@@ -450,7 +450,7 @@
   {
     "id": "MR",
     "featureId": 18,
-    "name": "MARYMOUNT SMC",
+    "name": "  SMC",
     "electors": 23219,
     "candidates": [
       {
