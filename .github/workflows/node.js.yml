@@ -59,7 +59,7 @@ jobs:
 
       - name: Set supabase env vars
         run: |
-          echo "SUPABASE_URL=supabase" >> "$GITHUB_ENV"
+          echo "SUPABASE_URL=https://supabase.com" >> "$GITHUB_ENV"
           echo "SUPABASE_SERVICE_ROLE_KEY=supabase" >> "$GITHUB_ENV"
 
       - name: Build
