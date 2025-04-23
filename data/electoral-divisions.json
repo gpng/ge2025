@@ -204,6 +204,7 @@
         "partyId": "PAP",
         "isIncumbent": true,
         "profiles": [
+          "PAP.GAN_KIM_YONG",
           "PAP.SUN_XUELING",
           "PAP.JANIL_PUTHUCHEARY",
           "PAP.YEO_WAN_LING"
@@ -211,8 +212,13 @@
       },
       {
         "partyId": "WP",
-        "isConfirmed": false,
-        "profiles": ["WP.YEE_JENN_JONG", "WP.ONG_LUE_PING", "WP.DANIEL_LEE"]
+        "isConfirmed": true,
+        "profiles": [
+          "WP.HARPREET_SINGH",
+          "WP.JACKSON_AU",
+          "WP.ALIA_MATTAR",
+          "WP.ALEXIS_DANG"
+        ]
       }
     ]
   },
