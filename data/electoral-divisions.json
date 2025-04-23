@@ -338,7 +338,7 @@
         "isIncumbent": true,
         "isConfirmed": true,
         "profiles": [
-          "PAP.GAN_KIM_YONG",
+          "PAP.TAN_SEE_LENG",
           "PAP.ZHULKARNAIN_ABDUL_RAHIM",
           "PAP.JEFFREY_SIOW",
           "PAP.CHOO_PEI_LING"
@@ -763,7 +763,6 @@
         "isIncumbent": true,
         "isConfirmed": true,
         "profiles": [
-          "PAP.TAN_SEE_LENG",
           "PAP.SEAH_KIAN_PENG",
           "PAP.MUHAMMAD_FAISHAL_IBRAHIM",
           "PAP.TIN_PEI_LING",
@@ -829,13 +828,13 @@
       },
       {
         "partyId": "WP",
-        "isConfirmed": false,
+        "isConfirmed": true,
         "profiles": [
+          "WP.MUHAMMAD_FAISAL",
           "WP.MICHAEL_THNG",
           "WP.JIMMY_TAN",
-          "WP.JASPER_KUAN",
-          "WP.ANDRE_LOW",
-          "WP.AFIFAH_KHALID"
+          "WP.EILEEN_CHONG",
+          "WP.ONG_LUE_PING"
         ]
       }
     ]
