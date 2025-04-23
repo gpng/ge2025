@@ -2,6 +2,7 @@
 
 import { Button } from '@/app/_components/ui/button';
 import { Checkbox } from '@/app/_components/ui/checkbox';
+import Combobox from '@/app/_components/ui/combobox';
 import {
   Dialog,
   DialogClose,
@@ -41,7 +42,7 @@ import { ContentType } from '@/models/content';
 import type { Tables } from '@/models/database';
 import { format } from 'date-fns';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { type ChangeEvent, type FormEvent, useState } from 'react';
+import { type ChangeEvent, type FormEvent, useMemo, useState } from 'react';
 
 type ContentItem = Tables<'content'>;
 
@@ -63,7 +64,7 @@ interface Props {
 const CandidateAdminContent = ({ content, page }: Props) => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const { profiles, parties } = useData();
+  const { profiles, parties, electoralDivisions } = useData();
   const [dialogOpen, setDialogOpen] = useState(false);
   const [editing, setEditing] = useState<ContentItem | null>(null); // content item being edited, null means add mode
   const [form, setForm] = useState<{
@@ -91,18 +92,41 @@ const CandidateAdminContent = ({ content, page }: Props) => {
   const hasPrev = page > 1;
 
   // Build candidate options for MultiSelect
-  const candidateOptions: MultiSelectOption[] = [];
-  for (const [partyId, partyProfiles] of Object.entries(profiles)) {
-    const party = parties[partyId];
-    if (!party) continue;
-    for (const [profileId, profile] of Object.entries(partyProfiles)) {
-      candidateOptions.push({
-        value: `${partyId}.${profileId}`,
-        label: `${profile.name} (${party.id})`,
-      });
+  const candidateOptions = useMemo(() => {
+    const candidateOptions: MultiSelectOption[] = [];
+    for (const [partyId, partyProfiles] of Object.entries(profiles)) {
+      const party = parties[partyId];
+      if (!party) continue;
+      for (const [profileId, profile] of Object.entries(partyProfiles)) {
+        candidateOptions.push({
+          value: `${partyId}.${profileId}`,
+          label: `${profile.name} (${party.id})`,
+        });
+      }
     }
-  }
-  candidateOptions.sort((a, b) => a.label.localeCompare(b.label));
+    candidateOptions.sort((a, b) => a.label.localeCompare(b.label));
+    return candidateOptions;
+  }, [profiles, parties]);
+
+  // Sort constituencies alphabetically
+  const constituencyOptions = useMemo(() => {
+    return electoralDivisions
+      .map((ed) => ({ id: ed.id, name: ed.name }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+  }, [electoralDivisions]);
+
+  const handleConstituencyChange = (value: string) => {
+    const constituency = electoralDivisions.find((ed) => ed.id === value);
+    if (!constituency) return;
+    const candidates = constituency.candidates;
+    const profileIds: string[] = [];
+    for (const candidate of candidates) {
+      for (const profileId of candidate.profiles) {
+        profileIds.push(profileId);
+      }
+    }
+    setForm((f) => ({ ...f, profileIds }));
+  };
 
   const handleReject = async (item: ContentItem) => {
     await saveContent({
@@ -408,6 +432,12 @@ const CandidateAdminContent = ({ content, page }: Props) => {
               onChange={(profileIds) => setForm((f) => ({ ...f, profileIds }))}
               placeholder="Select candidates..."
               className=""
+            />
+            <Combobox
+              options={constituencyOptions}
+              value=""
+              onValueChange={handleConstituencyChange}
+              placeholder="Use this to pre-populate candidates"
             />
             <div className="flex items-center gap-2">
               <Checkbox
