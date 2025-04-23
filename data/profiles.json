@@ -562,6 +562,9 @@
     },
     "GOH_HANYAN": {
       "name": "Goh Hanyan"
+    },
+    "FOO_CEXIANG": {
+      "name": "Foo Cexiang"
     }
   },
   "PSP": {
@@ -1025,6 +1028,12 @@
     "WILLIAMSON_LEE": {
       "name": "Williiamson Lee",
       "image": "williiamson_lee.jpg"
+    },
+    "MUHAMMAD_NORHAKIM": {
+      "name": "Muhammad Norhakim"
+    },
+    "LIM_RUI_XIAN": {
+      "name": "Lim Rui Xian"
     }
   },
   "NSP": {

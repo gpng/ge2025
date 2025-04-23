@@ -131,12 +131,13 @@
       {
         "partyId": "PAP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": [
           "PAP.CHAN_CHUN_SING",
-          "PAP.INDRANEE_RAJAH",
           "PAP.JOAN_PEREIRA",
           "PAP.ALVIN_TAN",
-          "PAP.RACHEL_ONG"
+          "PAP.RACHEL_ONG",
+          "PAP.FOO_CEXIANG"
         ]
       },
       {
@@ -243,10 +244,11 @@
       {
         "partyId": "WP",
         "isIncumbent": true,
+        "isConfirmed": true,
         "profiles": [
           "WP.PRITAM_SINGH",
           "WP.SYLVIA_LIM",
-          "WP.MUHAMMAD_FAISAL",
+          "WP.MUHAMMAD_FADLI",
           "WP.GERALD_GIAM",
           "WP.KENNETH_TIONG"
         ]
@@ -483,8 +485,13 @@
       },
       {
         "partyId": "SPP",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": [
+          "SPP.STEVE_CHIA",
+          "SPP.MELVYN_CHIU",
+          "SPP.MUHAMMAD_NORHAKIM",
+          "SPP.LIM_RUI_XIAN"
+        ]
       }
     ]
   },
@@ -645,8 +652,8 @@
       },
       {
         "partyId": "WP",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": ["WP.KENNETH_FOO"]
       }
     ]
   },
