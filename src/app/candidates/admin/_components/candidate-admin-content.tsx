@@ -424,7 +424,7 @@ const CandidateAdminContent = ({ content, page }: Props) => {
                 Approved
               </label>
             </div>
-            <DialogFooter>
+            <DialogFooter className="sm:justify-start">
               <Button type="submit" disabled={saving}>
                 {saving ? 'Saving...' : 'Save'}
               </Button>
