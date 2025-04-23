@@ -5,39 +5,43 @@ import Providers from '@/app/news/_components/providers';
 import type { Metadata } from 'next';
 import { redirect } from 'next/navigation';
 
-function toProfileId(party?: string, candidate?: string) {
-  if (!party || !candidate) return undefined;
-  return `${party.toUpperCase()}.${candidate.toUpperCase()}`;
-}
-
-const CandidatesPartyCandidatePage = async ({
+const CandidatesConstituencyPage = async ({
   params,
   searchParams,
 }: {
-  params: Promise<{ party?: string; candidate?: string }>;
+  params: Promise<{ constituency?: string }>;
   searchParams: Promise<{ page?: string }>;
 }) => {
   const resolvedParams = await params;
   const resolvedSearchParams = await searchParams;
   const data = await fetchData();
-  const { party, candidate } = resolvedParams;
+  const { constituency } = resolvedParams;
   const page = Number(resolvedSearchParams?.page) || 1;
-  const profileId = toProfileId(party, candidate);
 
-  if (!profileId) {
+  if (!constituency) {
     redirect('/candidates');
   }
-  const profiles = data.profiles || {};
-  const [partyId, candidateId] = profileId.split('.');
-  if (!profiles[partyId] || !profiles[partyId][candidateId]) {
+
+  const constituencyId = constituency?.toUpperCase();
+
+  const ed = data.electoralDivisions.find((ed) => ed.id === constituencyId);
+  if (!ed) {
     redirect('/candidates');
   }
-  const content = await fetchContentByCandidates([profileId], page);
+
+  const candidateIds: string[] = [];
+  for (const candidate of ed.candidates) {
+    for (const profileId of candidate.profiles) {
+      candidateIds.push(profileId);
+    }
+  }
+
+  const content = await fetchContentByCandidates(candidateIds, page);
   return (
     <Providers initialData={data}>
       <CandidatesContent
         content={content}
-        selectedCandidate={profileId}
+        selectedConstituency={constituencyId}
         page={page}
       />
     </Providers>
@@ -47,39 +51,37 @@ const CandidatesPartyCandidatePage = async ({
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ party?: string; candidate?: string }>;
+  params: Promise<{ constituency?: string }>;
 }): Promise<Metadata> {
   const resolvedParams = await params;
   const data = await fetchData();
-  const { party, candidate } = resolvedParams;
-  const profileId = toProfileId(party, candidate);
-  // Validate profileId
-  if (!profileId) {
+  const { constituency } = resolvedParams;
+
+  const constituencyId = constituency?.toUpperCase();
+  if (!constituencyId) {
     return {
       title: 'GE2025: Candidate Content',
     };
   }
-  const profiles = data.profiles || {};
-  const [partyId, candidateId] = profileId.split('.');
-  const profile = profiles[partyId]?.[candidateId];
-  if (!profile) {
+  const ed = data.electoralDivisions.find((ed) => ed.id === constituencyId);
+  if (!ed) {
     return {
       title: 'GE2025: Candidate Content',
     };
   }
 
   return {
-    title: `GE2025: ${profile.name} Content`,
+    title: `GE2025: ${ed.name} Content`,
     description:
       'Explore podcasts, interviews, and more from your candidates for GE2025.',
     openGraph: {
-      title: `GE2025: ${profile.name} Content`,
+      title: `GE2025: ${ed.name} Content`,
       description:
         'Explore podcasts, interviews, and more from your candidates for GE2025.',
-      url: `https://ge2025.vercel.app/candidates/${party}/${candidate}`,
+      url: `https://ge2025.vercel.app/candidates/constituency/${constituencyId}`,
       siteName: 'GE2025',
     },
   };
 }
 
-export default CandidatesPartyCandidatePage;
+export default CandidatesConstituencyPage;

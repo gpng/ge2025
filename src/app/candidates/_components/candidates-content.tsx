@@ -23,6 +23,7 @@ interface Props {
   content: Tables<'content'>[];
   selectedCandidate?: string;
   selectedParty?: string;
+  selectedConstituency?: string;
   page?: number;
 }
 
@@ -30,9 +31,10 @@ const CandidatesContent = ({
   content,
   selectedCandidate = 'all',
   selectedParty = 'all',
+  selectedConstituency = 'all',
   page = 1,
 }: Props) => {
-  const { profiles, parties } = useData();
+  const { profiles, parties, electoralDivisions } = useData();
   const router = useRouter();
   const searchParams = useSearchParams();
   const [type, setType] = useState('all');
@@ -55,6 +57,15 @@ const CandidatesContent = ({
   //   ],
   //   [],
   // );
+
+  const constituencyOptions = useMemo(() => {
+    return [
+      { id: 'all', name: 'All Constituencies' },
+      ...electoralDivisions
+        .map((ed) => ({ id: ed.id, name: ed.name }))
+        .sort((a, b) => a.name.localeCompare(b.name)),
+    ];
+  }, [electoralDivisions]);
 
   const partyOptions = useMemo(() => {
     const options = Object.values(parties).map((party) => ({
@@ -151,6 +162,22 @@ const CandidatesContent = ({
         </div> */}
         <div className="w-full md:w-[250px]">
           <Combobox
+            options={constituencyOptions}
+            value={selectedConstituency}
+            onValueChange={(value) => {
+              if (value === 'all') {
+                handleNavigate('/candidates');
+              } else {
+                handleNavigate(
+                  `/candidates/constituency/${value.toLowerCase()}`,
+                );
+              }
+            }}
+            placeholder="Filter by constituency"
+          />
+        </div>
+        <div className="w-full md:w-[250px]">
+          <Combobox
             options={partyOptions}
             value={selectedParty}
             onValueChange={(value) => {
@@ -202,8 +229,8 @@ const CandidatesContent = ({
               <TableBody>
                 {isLoading && (
                   <TableRow>
-                    <TableCell colSpan={5} className="flex">
-                      <LoaderCircle className="animate-spin" /> Loading...
+                    <TableCell colSpan={5} className="flex items-center">
+                      <LoaderCircle className="animate-spin mr-2" /> Loading...
                     </TableCell>
                   </TableRow>
                 )}

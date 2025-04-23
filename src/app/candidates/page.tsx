@@ -1,5 +1,6 @@
-import { fetchContent, fetchData } from '@/app/actions/fetch-data';
+import { fetchData } from '@/app/actions/fetch-data';
 import CandidatesContent from '@/app/candidates/_components/candidates-content';
+import { fetchContentByCandidates } from '@/app/candidates/actions/candidates-actions';
 import Providers from '@/app/news/_components/providers';
 import type { Metadata } from 'next';
 
@@ -10,7 +11,7 @@ const CandidatesPage = async ({
   const page = Number(sParams?.page) || 1;
 
   const data = await fetchData();
-  const content = await fetchContent(undefined, page);
+  const content = await fetchContentByCandidates([], page);
   return (
     <Providers initialData={data}>
       <CandidatesContent content={content} page={page} />

@@ -1,10 +1,11 @@
-import { fetchContentByPartyId, fetchData } from '@/app/actions/fetch-data';
+import { fetchData } from '@/app/actions/fetch-data';
 import CandidatesContent from '@/app/candidates/_components/candidates-content';
+import { fetchContentByPartyId } from '@/app/candidates/actions/candidates-actions';
 import Providers from '@/app/news/_components/providers';
 import type { Metadata } from 'next';
 import { redirect } from 'next/navigation';
 
-const CandidateFilteredPage = async ({
+const CandidatesPartyPage = async ({
   params,
   searchParams,
 }: {
@@ -64,13 +65,13 @@ export async function generateMetadata({
     description:
       'Explore podcasts, interviews, and more from your candidates for GE2025.',
     openGraph: {
-      title: 'GE2025: Candidate Content',
+      title: `GE2025: ${partyName} (${partyData.id}) Content`,
       description:
         'Explore podcasts, interviews, and more from your candidates for GE2025.',
-      url: 'https://ge2025.vercel.app/candidates',
+      url: `https://ge2025.vercel.app/candidates/${party}}`,
       siteName: 'GE2025',
     },
   };
 }
 
-export default CandidateFilteredPage;
+export default CandidatesPartyPage;
