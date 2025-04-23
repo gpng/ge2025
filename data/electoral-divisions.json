@@ -407,7 +407,7 @@
       {
         "partyId": "RDU",
         "isConfirmed": true,
-        "profiles": []
+        "profiles": ["RDU.KALA_MANICKAM"]
       }
     ]
   },
@@ -462,7 +462,7 @@
   {
     "id": "MR",
     "featureId": 18,
-    "name": "  SMC",
+    "name": "MARYMOUNT SMC",
     "electors": 23219,
     "candidates": [
       {
@@ -842,10 +842,10 @@
         "partyId": "PAP",
         "isIncumbent": true,
         "profiles": [
-          "PAP.TEO_CHEE_HEAN",
+          "PAP.INDRANEE_RAJAH",
           "PAP.DESMOND_TAN",
           "PAP.SHARAEL_TAHA",
-          "PAP.JESSICA_TAN"
+          "PAP.VALERIE_LEE"
         ]
       },
       {
