@@ -137,8 +137,14 @@
       },
       {
         "partyId": "PAR",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": [
+          "PAR.PRABU_RAMACHANDRAN",
+          "PAR.HAN_HUI_HUI",
+          "PAR.NADARAJAN_SELVAMANI",
+          "PAR.RICKSON_GIAUW",
+          "PAR.SOH_LIAN_CHYE"
+        ]
       }
     ]
   },
@@ -424,8 +430,13 @@
       },
       {
         "partyId": "PAR",
-        "isConfirmed": false,
-        "profiles": ["PAR.VIGNESWARI_RAMACHANDRAN"]
+        "isConfirmed": true,
+        "profiles": [
+          "PAR.VIGNESWARI_RAMACHANDRAN",
+          "PAR.CHIU_SHIN_KONG",
+          "PAR.MOHAMAD_HAMIM_ALIYAS",
+          "PAR.SARINA_ABU_HASSAN"
+        ]
       }
     ]
   },
@@ -669,11 +680,6 @@
         "isIncumbent": true,
         "isConfirmed": true,
         "profiles": ["PAP.GHO_SZE_KEE"]
-      },
-      {
-        "partyId": "PAR",
-        "isConfirmed": false,
-        "profiles": []
       },
       {
         "partyId": "INDIE",
