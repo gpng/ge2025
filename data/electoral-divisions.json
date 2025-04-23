@@ -114,11 +114,6 @@
         "partyId": "PAR",
         "isConfirmed": true,
         "profiles": ["PAR.MAHABOOB_BATCHA"]
-      },
-      {
-        "partyId": "INDIE",
-        "isConfirmed": true,
-        "profiles": ["INDIE.ISHAQ_RAJOO"]
       }
     ]
   },
