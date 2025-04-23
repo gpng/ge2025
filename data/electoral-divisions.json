@@ -775,21 +775,6 @@
           "PAP.TIN_PEI_LING",
           "PAP.DIANA_PANG"
         ]
-      },
-      {
-        "partyId": "NSP",
-        "isConfirmed": false,
-        "profiles": []
-      },
-      {
-        "partyId": "WP",
-        "isConfirmed": false,
-        "profiles": [
-          "WP.NATHANIEL_KOH",
-          "WP.MUHAMMAD_FADLI",
-          "WP.JACKSON_AU",
-          "WP.HARPREET_SINGH"
-        ]
       }
     ]
   },
