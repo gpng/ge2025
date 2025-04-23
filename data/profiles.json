@@ -1137,6 +1137,9 @@
     "MAHABOOB_BATCHA": {
       "name": "Mahaboob Batcha",
       "image": "mahaboob_batcha.jpg"
+    },
+    "KUMAR_APPAVOO": {
+      "name": "Kumar Appavoo"
     }
   },
   "RP": {
@@ -1151,9 +1154,6 @@
     "CHARLES_YEO": {
       "name": "Charles Yeo",
       "image": "charles_yeo.jpg"
-    },
-    "KUMAR_APPAVOO": {
-      "name": "Kumar Appavoo"
     }
   },
   "SUP": {

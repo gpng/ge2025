@@ -159,8 +159,8 @@
       },
       {
         "partyId": "PAR",
-        "isConfirmed": false,
-        "profiles": []
+        "isConfirmed": true,
+        "profiles": ["PAR.KUMAR_APPAVOO"]
       },
       {
         "partyId": "INDIE",
