@@ -1,22 +1,15 @@
+import { Button } from '@/app/_components/ui/button';
 import { Typography } from '@/app/_components/ui/typography';
 import { useData } from '@/app/map/_components/contexts/data-context';
 import NewsModal from '@/app/map/_components/party-drawer/news-modal';
-import { cn } from '@/lib/utils';
 import type { Candidate } from '@/models/candidate';
 
 interface Props {
   candidate: Candidate;
-  showStatus: boolean;
-  electoralDivisionName: string;
   electoralDivisionId: string;
 }
 
-const ConstituencyCandidate = ({
-  candidate,
-  showStatus,
-  electoralDivisionName,
-  electoralDivisionId,
-}: Props) => {
+const ConstituencyCandidate = ({ candidate, electoralDivisionId }: Props) => {
   const { parties, profiles } = useData();
 
   const party = parties[candidate.partyId];
@@ -38,55 +31,44 @@ const ConstituencyCandidate = ({
             <Typography variant="h5" className="leading-tight">
               {party.name}
             </Typography>
-            {showStatus && (
-              <div className="flex items-center gap-2 mt-1">
-                <span
-                  className={cn('inline-block w-2 h-2 rounded-full', {
-                    'bg-green-500': candidate.isConfirmed,
-                    'bg-yellow-500': !candidate.isConfirmed,
-                  })}
-                />
-                <Typography
-                  variant="mutedText"
-                  className={cn('text-xs', {
-                    'text-green-700': candidate.isConfirmed,
-                    'text-yellow-700': !candidate.isConfirmed,
-                  })}
+            <div className="flex items-center gap-1 mt-1">
+              <NewsModal
+                partyId={candidate.partyId}
+                electoralDivisionId={electoralDivisionId}
+              />
+              {party.manifesto && (
+                <Button
+                  asChild
+                  variant="ghost"
+                  size="sm"
+                  className="text-blue-600 hover:text-blue-800 flex items-center gap-1"
                 >
-                  {candidate.isConfirmed ? 'Confirmed' : 'Unconfirmed'}
-                </Typography>
-                <NewsModal
-                  partyId={candidate.partyId}
-                  electoralDivisionId={electoralDivisionId}
-                />
-              </div>
-            )}
+                  <a
+                    href={party.manifesto}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>Manifesto document icon</title>
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      />
+                    </svg>
+                    Manifesto
+                  </a>
+                </Button>
+              )}
+            </div>
           </div>
         </div>
-        {party.manifesto && (
-          <a
-            href={party.manifesto}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1"
-          >
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <title>Manifesto document icon</title>
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              />
-            </svg>
-            Manifesto
-          </a>
-        )}
       </div>
 
       <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">

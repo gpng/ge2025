@@ -1,3 +1,4 @@
+import { Button } from '@/app/_components/ui/button';
 import {
   Dialog,
   DialogContent,
@@ -15,10 +16,11 @@ interface Props {
 }
 
 const NewsButton = ({ onClick }: { onClick: () => void }) => (
-  <button
-    type="button"
+  <Button
+    variant="ghost"
+    size="sm"
     onClick={onClick}
-    className="text-xs text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1"
+    className="text-blue-600 hover:text-blue-800 flex items-center gap-1"
   >
     <svg
       className="w-3 h-3"
@@ -35,7 +37,7 @@ const NewsButton = ({ onClick }: { onClick: () => void }) => (
       />
     </svg>
     News
-  </button>
+  </Button>
 );
 
 const NewsModal = ({ partyId, electoralDivisionId }: Props) => {

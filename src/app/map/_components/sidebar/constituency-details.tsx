@@ -21,8 +21,6 @@ const ConstituencyDetails = ({ electoralDivision }: Props) => {
             <ConstituencyCandidate
               key={candidate.partyId}
               candidate={candidate}
-              showStatus
-              electoralDivisionName={electoralDivision?.name}
               electoralDivisionId={electoralDivision.id}
             />
           ))}
