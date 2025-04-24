@@ -56,7 +56,8 @@ const fetchContentByCandidatesWithCache = async (
         .select()
         .eq('is_approved', true)
         .order('published_date', { ascending: false })
-        .order('id', { ascending: false });
+        .order('id', { ascending: false })
+        .range(range.from, range.to);
 
       if (sortedCandidateIds.length > 0) {
         query = query.overlaps('profile_ids', sortedCandidateIds);
