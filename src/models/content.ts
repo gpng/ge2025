@@ -5,4 +5,5 @@ export enum ContentType {
   Speech = 'speech',
   Article = 'article',
   Debate = 'debate',
+  Feature = 'feature',
 }
