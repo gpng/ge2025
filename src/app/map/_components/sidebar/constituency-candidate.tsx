@@ -3,6 +3,7 @@ import { Typography } from '@/app/_components/ui/typography';
 import { useData } from '@/app/map/_components/contexts/data-context';
 import NewsModal from '@/app/map/_components/party-drawer/news-modal';
 import type { Candidate } from '@/models/candidate';
+import Link from 'next/link';
 
 interface Props {
   candidate: Candidate;
@@ -76,9 +77,10 @@ const ConstituencyCandidate = ({ candidate, electoralDivisionId }: Props) => {
           const [profileParty, profileName] = profileId.split('.');
           const profile = profiles[profileParty]?.[profileName];
           return (
-            <div
+            <Link
+              href={`/candidates/${profileParty.toLowerCase()}/${profileName.toLowerCase()}`}
               key={profileId}
-              className="flex flex-col items-center text-center"
+              className="flex flex-col items-center text-center hover:bg-gray-100 rounded-t-3xl rounded-b-md"
             >
               <div
                 className="w-16 h-16 rounded-full border-2 overflow-hidden mb-2"
@@ -95,7 +97,7 @@ const ConstituencyCandidate = ({ candidate, electoralDivisionId }: Props) => {
               <Typography variant="lead" className="text-xs font-medium">
                 {profile?.name || profileName}
               </Typography>
-            </div>
+            </Link>
           );
         })}
       </div>
