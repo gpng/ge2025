@@ -6,6 +6,7 @@ interface Props {
 }
 
 const ConstituencyDetails = ({ electoralDivision }: Props) => {
+  console.log('electoralDivision: ', electoralDivision);
   return (
     <div className="space-y-4 pt-4 border-t h-full flex-1 min-h-1 flex flex-col">
       <div className="flex-0">

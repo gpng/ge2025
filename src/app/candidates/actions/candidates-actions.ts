@@ -44,6 +44,7 @@ const fetchContentByCandidatesWithCache = async (
 ) => {
   const sortedCandidateIds = candidateIds.sort();
   const keys = ['content', page.toString()];
+
   if (sortedCandidateIds.length > 0) {
     keys.push(...sortedCandidateIds);
   }
