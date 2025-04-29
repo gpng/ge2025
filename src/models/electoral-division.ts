@@ -20,6 +20,7 @@ const electoralDivisionSchema = z.object({
   electors: z.number(),
   candidates: z.array(candidateSchema),
   history: z.array(historySchema).default([]),
+  isCalled: z.boolean().default(false),
 });
 
 export const electoralDivisionsSchema = z.array(electoralDivisionSchema);

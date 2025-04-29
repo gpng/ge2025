@@ -8,17 +8,40 @@ import Link from 'next/link';
 interface Props {
   candidate: Candidate;
   electoralDivisionId: string;
+  index: number; // Position in the candidates array
+  isCalled: boolean; // Whether the election has been called
+  isWinner: boolean; // Whether this candidate won
+  isWalkover: boolean; // Whether this candidate won by walkover
+  sampleCount: number; // Sample count of votes
+  actualCount: number; // Actual count of votes
+  countPerc: number; // Percentage of votes
 }
 
-const ConstituencyCandidate = ({ candidate, electoralDivisionId }: Props) => {
+const ConstituencyCandidate = ({
+  candidate,
+  electoralDivisionId,
+  index,
+  isCalled,
+  isWinner,
+  isWalkover,
+  sampleCount,
+  actualCount,
+  countPerc,
+}: Props) => {
   const { parties, profiles } = useData();
-
   const party = parties[candidate.partyId];
 
   if (!party) return <Typography>Party not found</Typography>;
 
   return (
-    <div className="rounded-lg border p-4 mb-4 hover:shadow-md transition-shadow">
+    <div
+      className={`rounded-lg border p-4 mb-4 transition-shadow ${isCalled && isWinner ? 'border-2 border-primary bg-primary/5' : 'hover:shadow-md'}`}
+    >
+      {isCalled && isWinner && (
+        <div className="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-2">
+          ELECTED
+        </div>
+      )}
       <div className="flex items-start justify-between mb-3">
         <div className="flex items-center gap-2">
           <div className="h-8 w-8 flex-shrink-0 overflow-hidden">
@@ -71,6 +94,40 @@ const ConstituencyCandidate = ({ candidate, electoralDivisionId }: Props) => {
           </div>
         </div>
       </div>
+
+      {/* Election Results Section - Only show if election is called */}
+      {isCalled && (
+        <div className="mb-4 px-1">
+          <div className="flex justify-between text-sm mb-1">
+            <span className="text-muted-foreground">Result:</span>
+            {isWalkover ? (
+              <span className={`font-medium ${isWinner ? 'text-primary' : ''}`}>
+                Walkover
+              </span>
+            ) : (
+              <span className={`font-medium ${isWinner ? 'text-primary' : ''}`}>
+                {actualCount?.toLocaleString()} ({countPerc.toFixed(2)}%)
+              </span>
+            )}
+          </div>
+
+          {/* Only show progress bar and counts for contested elections */}
+          {!isWalkover && (
+            <>
+              <div className="w-full bg-muted/30 rounded-full h-2">
+                <div
+                  className={`${isWinner ? 'bg-primary' : 'bg-primary/50'} h-2 rounded-full`}
+                  style={{ width: `${countPerc}%` }}
+                />
+              </div>
+              <div className="flex justify-between text-xs mt-1 text-muted-foreground">
+                <span>Sample Count: {sampleCount.toLocaleString()}</span>
+                <span>Final Count: {actualCount.toLocaleString()}</span>
+              </div>
+            </>
+          )}
+        </div>
+      )}
 
       <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
         {candidate.profiles.map((profileId) => {

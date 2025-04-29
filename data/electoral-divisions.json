@@ -1682,6 +1682,7 @@
     "featureId": 30,
     "name": "MARINE PARADE-BRADDELL HEIGHTS GRC",
     "electors": 131493,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -1693,7 +1694,8 @@
           "PAP.TIN_PEI_LING",
           "PAP.DIANA_PANG",
           "PAP.GOH_PEI_MING"
-        ]
+        ],
+        "isWinner": true
       }
     ],
     "history": [
