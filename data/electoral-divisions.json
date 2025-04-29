@@ -1695,6 +1695,90 @@
           "PAP.GOH_PEI_MING"
         ]
       }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Marine Parade GRC",
+        "electors": 139622,
+        "results": [
+          { "name": "PAP", "votes": 74203 },
+          { "name": "WP", "votes": 55047 }
+        ]
+      },
+      {
+        "year": 2020,
+        "name": "Macpherson SMC",
+        "electors": 130568,
+        "results": [
+          { "name": "PAP", "votes": 19009 },
+          { "name": "PPP", "votes": 7489 }
+        ]
+      },
+      {
+        "year": 2020,
+        "name": "Mountbatten GRC",
+        "electors": 24246,
+        "results": [
+          { "name": "PAP", "votes": 16285 },
+          { "name": "PV", "votes": 5775 }
+        ]
+      },
+      {
+        "year": 2020,
+        "name": "Potong Pasir SMC",
+        "electors": 19731,
+        "results": [
+          { "name": "PAP", "votes": 11264 },
+          { "name": "SPP", "votes": 7302 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Macpherson SMC",
+        "electors": 28511,
+        "results": [
+          { "name": "PAP", "votes": 17251 },
+          { "name": "WP", "votes": 8833 },
+          { "name": "NSP", "votes": 215 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Mountbatten GRC",
+        "electors": 24143,
+        "results": [
+          { "name": "PAP", "votes": 15331 },
+          { "name": "SPP", "votes": 6004 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Potong Pasir SMC",
+        "electors": 17400,
+        "results": [
+          { "name": "PAP", "votes": 10602 },
+          { "name": "SPP", "votes": 5368 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Mountbatten GRC",
+        "electors": 23731,
+        "results": [
+          { "name": "PAP", "votes": 11985 },
+          { "name": "NSP", "votes": 8461 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Potong Pasir SMC",
+        "electors": 17327,
+        "results": [
+          { "name": "PAP", "votes": 7992 },
+          { "name": "SPP", "votes": 7878 }
+        ]
+      }
     ]
   },
   {
@@ -1803,6 +1887,63 @@
           "SDA.ABU_MOHAMED",
           "SDA.HARMINDER_PAL_SINGH",
           "SDA.CHIA_YUN_KAI"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Pasir Ris-Punggol GRC",
+        "electors": 166556,
+        "results": [
+          { "name": "PAP", "votes": 100932 },
+          { "name": "SDA", "votes": 37237 },
+          { "name": "PV", "votes": 19147 }
+        ]
+      },
+      {
+        "year": 2020,
+        "name": "East Coast GRC",
+        "electors": 121644,
+        "results": [
+          { "name": "PAP", "votes": 61144 },
+          { "name": "WP", "votes": 53375 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Pasir Ris-Punggol GRC",
+        "electors": 187396,
+        "results": [
+          { "name": "PAP", "votes": 125166 },
+          { "name": "SDA", "votes": 46550 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "East Coast GRC",
+        "electors": 99118,
+        "results": [
+          { "name": "PAP", "votes": 55093 },
+          { "name": "WP", "votes": 35622 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Pasir Ris-Punggol GRC",
+        "electors": 168977,
+        "results": [
+          { "name": "PAP", "votes": 100493 },
+          { "name": "SDA", "votes": 54601 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "East Coast GRC",
+        "electors": 120324,
+        "results": [
+          { "name": "PAP", "votes": 59992 },
+          { "name": "WP", "votes": 49429 }
         ]
       }
     ]
