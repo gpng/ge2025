@@ -35,18 +35,28 @@
         "name": "Jurong GRC",
         "electors": 131058,
         "results": [
-          { "name": "PAP", "votes": 91846, "votesPerc": 74.61 },
-          { "name": "RDU", "votes": 31260, "votesPerc": 25.39 }
+          { "name": "PAP", "votes": 91846 },
+          { "name": "RDU", "votes": 31260 }
+        ]
+      },
+      {
+        "year": 2020,
+        "name": "Bukit Batok GRC",
+        "electors": 29948,
+        "byElection": true,
+        "results": [
+          { "name": "PAP", "votes": 15500 },
+          { "name": "SDP", "votes": 12787 }
         ]
       },
       {
         "year": 2016,
         "name": "Bukit Batok GRC",
-        "electors": 29948,
+        "electors": 25727,
         "byElection": true,
         "results": [
-          { "name": "PAP", "votes": 15500, "votesPerc": 54.8 },
-          { "name": "SDP", "votes": 12787, "votesPerc": 45.2 }
+          { "name": "PAP", "votes": 14452 },
+          { "name": "SDP", "votes": 9150 }
         ]
       },
       {
@@ -54,17 +64,8 @@
         "name": "Jurong GRC",
         "electors": 130498,
         "results": [
-          { "name": "PAP", "votes": 14428, "votesPerc": 61.21 },
-          { "name": "SDP", "votes": 9142, "votesPerc": 38.79 }
-        ]
-      },
-      {
-        "year": 2015,
-        "name": "Jurong GRC",
-        "electors": 130498,
-        "results": [
-          { "name": "PAP", "votes": 95080, "votesPerc": 79.28 },
-          { "name": "SGF", "votes": 24848, "votesPerc": 20.72 }
+          { "name": "PAP", "votes": 95080 },
+          { "name": "SGF", "votes": 24848 }
         ]
       },
       {
@@ -72,9 +73,9 @@
         "name": "Bukit Batok GRC",
         "electors": 27077,
         "results": [
-          { "name": "PAP", "votes": 18204, "votesPerc": 72.99 },
-          { "name": "SDP", "votes": 6585, "votesPerc": 26.4 },
-          { "name": "INDIE", "votes": 150, "votesPerc": 0.6 }
+          { "name": "PAP", "votes": 18204 },
+          { "name": "SDP", "votes": 6585 },
+          { "name": "INDIE", "votes": 150 }
         ]
       },
       {
@@ -82,8 +83,8 @@
         "name": "Jurong GRC",
         "electors": 125276,
         "results": [
-          { "name": "PAP", "votes": 76595, "votesPerc": 66.96 },
-          { "name": "NSP", "votes": 37786, "votesPerc": 33.04 }
+          { "name": "PAP", "votes": 76595 },
+          { "name": "NSP", "votes": 37786 }
         ]
       }
     ]

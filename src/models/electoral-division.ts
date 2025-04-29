@@ -1,20 +1,9 @@
 import { candidateSchema } from '@/models/candidate';
 import { z } from 'zod';
 
-// {
-//   "year": 2020,
-//   "name": "Jurong GRC",
-//   "electors": 131058,
-//   "results": [
-//     { "name": "PAP", "votes": 91846, "votesPerc": 74.61 },
-//     { "name": "RDU", "votes": 31260, "votesPerc": 25.39 }
-//   ]
-// },
-
 const resultSchema = z.object({
   name: z.string(),
   votes: z.number(),
-  votesPerc: z.number(),
 });
 
 const historySchema = z.object({

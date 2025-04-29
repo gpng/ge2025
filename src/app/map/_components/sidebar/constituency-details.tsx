@@ -1,5 +1,7 @@
 import ConstituencyCandidate from '@/app/map/_components/sidebar/constituency-candidate';
+import { addResultsPerc } from '@/lib/results';
 import type { ElectoralDivision } from '@/models/electoral-division';
+import { useMemo } from 'react';
 
 interface Props {
   electoralDivision: ElectoralDivision;
@@ -113,6 +115,11 @@ const mockHistory: ElectionHistory[] = [
 ];
 
 const ConstituencyDetails = ({ electoralDivision }: Props) => {
+  const historyWithResults = useMemo(
+    () => addResultsPerc(electoralDivision),
+    [electoralDivision],
+  );
+
   return (
     <div className="space-y-4 pt-4 border-t h-full flex-1 min-h-1 flex flex-col">
       <div className="flex-0">
@@ -154,40 +161,42 @@ const ConstituencyDetails = ({ electoralDivision }: Props) => {
           </div>
 
           {/* Elections history section */}
-          <div className="mt-8">
-            <h4 className="font-medium mb-4">Past Election Results</h4>
-            <div className="space-y-6">
-              {mockHistory.map((election) => (
+          <div className="mt-6">
+            <h4 className="font-medium text-sm mb-3 text-muted-foreground">
+              Past Election Results
+            </h4>
+            <div className="space-y-3">
+              {historyWithResults.map((election) => (
                 <div
                   key={`${election.year}-${election.name}`}
-                  className="rounded-md border p-4 bg-card"
+                  className="pb-3 border-b border-muted last:border-0"
                 >
-                  <div className="flex justify-between items-start mb-3">
-                    <div>
-                      <h5 className="font-medium text-base">
-                        {election.year} - {election.name}
+                  <div className="mb-1">
+                    <div className="flex items-baseline justify-between">
+                      <h5 className="text-sm font-medium">
+                        {election.year} · {election.name}
                       </h5>
-                      <p className="text-sm text-muted-foreground">
-                        {election.electors.toLocaleString()} registered voters
-                      </p>
+                      <span className="text-xs text-muted-foreground">
+                        {election.electors.toLocaleString()} voters
+                      </span>
                     </div>
                   </div>
 
-                  <div className="space-y-2">
+                  <div className="space-y-1.5">
                     {election.results.map((result) => (
                       <div
                         key={`${election.year}-${election.name}-${result.name}`}
+                        className="text-xs"
                       >
-                        <div className="flex justify-between items-center mb-1">
-                          <span className="font-medium">{result.name}</span>
-                          <span className="text-sm">
-                            {result.votesPerc.toFixed(1)}% (
-                            {result.votes.toLocaleString()} votes)
+                        <div className="flex justify-between items-center">
+                          <span>{result.name}</span>
+                          <span className="text-muted-foreground">
+                            {result.votesPerc.toFixed(1)}%
                           </span>
                         </div>
-                        <div className="w-full bg-gray-100 rounded-full h-2.5">
+                        <div className="w-full bg-muted/30 rounded-full h-1 mt-0.5">
                           <div
-                            className="bg-primary h-2.5 rounded-full"
+                            className="bg-primary/60 h-1 rounded-full"
                             style={{ width: `${result.votesPerc}%` }}
                           />
                         </div>
