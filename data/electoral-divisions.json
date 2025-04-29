@@ -474,6 +474,35 @@
         "isConfirmed": true,
         "profiles": ["WP.ANDRE_LOW"]
       }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Ang Mo Kio GRC",
+        "electors": 185261,
+        "results": [
+          { "name": "PAP", "votes": 124597 },
+          { "name": "RP", "votes": 48677 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Ang Mo Kio GRC",
+        "electors": 187771,
+        "results": [
+          { "name": "PAP", "votes": 135317 },
+          { "name": "RP", "votes": 36758 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Ang Mo Kio GRC",
+        "electors": 179071,
+        "results": [
+          { "name": "PAP", "votes": 112677 },
+          { "name": "RP", "votes": 49851 }
+        ]
+      }
     ]
   },
   {
@@ -576,6 +605,35 @@
           "PPP.SAMUEL_LEE"
         ]
       }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Ang Mo Kio GRC",
+        "electors": 185261,
+        "results": [
+          { "name": "PAP", "votes": 124597 },
+          { "name": "RP", "votes": 48677 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Ang Mo Kio GRC",
+        "electors": 187771,
+        "results": [
+          { "name": "PAP", "votes": 135317 },
+          { "name": "RP", "votes": 36758 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Ang Mo Kio GRC",
+        "electors": 179071,
+        "results": [
+          { "name": "PAP", "votes": 112677 },
+          { "name": "RP", "votes": 49851 }
+        ]
+      }
     ]
   },
   {
@@ -594,6 +652,35 @@
         "partyId": "PSP",
         "isConfirmed": true,
         "profiles": ["PSP.HARISH_PILLAY"]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Chua Chu Kang GRC",
+        "electors": 106632,
+        "results": [
+          { "name": "PAP", "votes": 59554 },
+          { "name": "PSP", "votes": 42012 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Chua Chu Kang GRC",
+        "electors": 119931,
+        "results": [
+          { "name": "PAP", "votes": 84850 },
+          { "name": "PPP", "votes": 25475 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Chua Chu Kang GRC",
+        "electors": 158648,
+        "results": [
+          { "name": "PAP", "votes": 89710 },
+          { "name": "NSP", "votes": 56885 }
+        ]
       }
     ]
   },
@@ -622,6 +709,35 @@
           "PSP.WENDY_LOW",
           "PSP.ABAS_BIN_KASMANI",
           "PSP.SRI_NALLAKARUPPAN"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Chua Chu Kang GRC",
+        "electors": 106632,
+        "results": [
+          { "name": "PAP", "votes": 59554 },
+          { "name": "PSP", "votes": 42012 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Chua Chu Kang GRC",
+        "electors": 119931,
+        "results": [
+          { "name": "PAP", "votes": 84850 },
+          { "name": "PPP", "votes": 25475 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Chua Chu Kang GRC",
+        "electors": 158648,
+        "results": [
+          { "name": "PAP", "votes": 89710 },
+          { "name": "NSP", "votes": 56885 }
         ]
       }
     ]
@@ -653,6 +769,35 @@
           "RDU.NIZAR_SUBAIR"
         ]
       }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Holland-Bukit Timah GRC",
+        "electors": 114973,
+        "results": [
+          { "name": "PAP", "votes": 71218 },
+          { "name": "SDP", "votes": 36100 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Holland-Bukit Timah GRC",
+        "electors": 104491,
+        "results": [
+          { "name": "PAP", "votes": 62786 },
+          { "name": "SDP", "votes": 31494 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Holland-Bukit Timah GRC",
+        "electors": 91607,
+        "results": [
+          { "name": "PAP", "votes": 48773 },
+          { "name": "SDP", "votes": 32406 }
+        ]
+      }
     ]
   },
   {
@@ -671,6 +816,62 @@
         "partyId": "RDU",
         "isConfirmed": true,
         "profiles": ["RDU.KALA_MANICKAM"]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Jurong GRC",
+        "electors": 131058,
+        "results": [
+          { "name": "PAP", "votes": 91846 },
+          { "name": "RDU", "votes": 31260 }
+        ]
+      },
+      {
+        "year": 2020,
+        "name": "Yuhua SMC",
+        "electors": 21351,
+        "results": [
+          { "name": "PAP", "votes": 14131 },
+          { "name": "SDP", "votes": 5901 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Jurong GRC",
+        "electors": 130498,
+        "results": [
+          { "name": "PAP", "votes": 95080 },
+          { "name": "SGF", "votes": 24848 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Yuhua SMC",
+        "electors": 22617,
+        "results": [
+          { "name": "PAP", "votes": 15324 },
+          { "name": "SDP", "votes": 5512 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Jurong GRC",
+        "electors": 125276,
+        "results": [
+          { "name": "PAP", "votes": 76595 },
+          { "name": "NSP", "votes": 37786 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Yuhua SMC",
+        "electors": 23199,
+        "results": [
+          { "name": "PAP", "votes": 14093 },
+          { "name": "SDP", "votes": 6986 }
+        ]
       }
     ]
   },
@@ -701,6 +902,35 @@
           "PAR.SARINA_ABU_HASSAN"
         ]
       }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Jalan Besar GRC",
+        "electors": 107720,
+        "results": [
+          { "name": "PAP", "votes": 64631 },
+          { "name": "PV", "votes": 34261 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Jalan Besar GRC",
+        "electors": 102540,
+        "results": [
+          { "name": "PAP", "votes": 63644 },
+          { "name": "WP", "votes": 30302 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Moulmein-Kallang GRC",
+        "electors": 8759,
+        "results": [
+          { "name": "PAP", "votes": 44886 },
+          { "name": "WP", "votes": 31773 }
+        ]
+      }
     ]
   },
   {
@@ -720,6 +950,36 @@
         "isConfirmed": true,
         "profiles": ["PSP.STEPHANIE_TAN"]
       }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Pioneer SMC",
+        "electors": 24653,
+        "results": [
+          { "name": "PAP", "votes": 14593 },
+          { "name": "PSP", "votes": 8289 },
+          { "name": "Cheang Peng Wah", "votes": 655 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Pioneer SMC",
+        "electors": 25458,
+        "results": [
+          { "name": "PAP", "votes": 18017 },
+          { "name": "NSP", "votes": 5581 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Pioneer SMC",
+        "electors": 25745,
+        "results": [
+          { "name": "PAP", "votes": 14593 },
+          { "name": "NSP", "votes": 9437 }
+        ]
+      }
     ]
   },
   {
@@ -738,6 +998,35 @@
         "partyId": "PSP",
         "isConfirmed": true,
         "profiles": ["PSP.JEFFREY_KHOO"]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Marymount SMC",
+        "electors": 23431,
+        "results": [
+          { "name": "PAP", "votes": 12173 },
+          { "name": "PSP", "votes": 9943 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Bishan-Toa Payoh GRC",
+        "electors": 129975,
+        "results": [
+          { "name": "PAP", "votes": 86701 },
+          { "name": "SPP", "votes": 31108 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Bishan-Toa Payoh GRC",
+        "electors": 122492,
+        "results": [
+          { "name": "PAP", "votes": 62385 },
+          { "name": "SPP", "votes": 47205 }
+        ]
       }
     ]
   },
@@ -768,6 +1057,35 @@
           "SPP.LIM_RUI_XIAN"
         ]
       }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Bishan-Toa Payoh GRC",
+        "electors": 101220,
+        "results": [
+          { "name": "PAP", "votes": 62983 },
+          { "name": "SPP", "votes": 30696 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Bishan-Toa Payoh GRC",
+        "electors": 129975,
+        "results": [
+          { "name": "PAP", "votes": 86701 },
+          { "name": "SPP", "votes": 31108 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Bishan-Toa Payoh GRC",
+        "electors": 122492,
+        "results": [
+          { "name": "PAP", "votes": 62385 },
+          { "name": "SPP", "votes": 47205 }
+        ]
+      }
     ]
   },
   {
@@ -785,6 +1103,35 @@
         "partyId": "PAP",
         "isConfirmed": true,
         "profiles": ["PAP.MARSHALL_LIM"]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Hougang SMC",
+        "electors": 26432,
+        "results": [
+          { "name": "WP", "votes": 15451 },
+          { "name": "PAP", "votes": 9791 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Hougang SMC",
+        "electors": 24097,
+        "results": [
+          { "name": "WP", "votes": 13027 },
+          { "name": "PAP", "votes": 9565 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Hougang SMC",
+        "electors": 24560,
+        "results": [
+          { "name": "WP", "votes": 14850 },
+          { "name": "PAP", "votes": 8065 }
+        ]
       }
     ]
   },
@@ -804,6 +1151,35 @@
         "partyId": "SDP",
         "isConfirmed": true,
         "profiles": ["SDP.PAUL_TAMBYAH"]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Bukit Panjang SMC",
+        "electors": 35437,
+        "results": [
+          { "name": "PAP", "votes": 18085 },
+          { "name": "SDP", "votes": 15576 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Bukit Panjang SMC",
+        "electors": 34317,
+        "results": [
+          { "name": "PAP", "votes": 21954 },
+          { "name": "SDP", "votes": 10152 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Bukit Panjang SMC",
+        "electors": 33053,
+        "results": [
+          { "name": "PAP", "votes": 20375 },
+          { "name": "SDP", "votes": 10372 }
+        ]
       }
     ]
   },
@@ -834,6 +1210,72 @@
           "PAP.BERNADETTE_GIAM"
         ]
       }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Sengkang GRC",
+        "electors": 120100,
+        "results": [
+          { "name": "WP", "votes": 60217 },
+          { "name": "PAP", "votes": 55319 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Sengkang West SMC",
+        "electors": 30119,
+        "results": [
+          { "name": "PAP", "votes": 17586 },
+          { "name": "WP", "votes": 10721 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Punggol East SMC",
+        "electors": 34466,
+        "results": [
+          { "name": "PAP", "votes": 16977 },
+          { "name": "WP", "votes": 15818 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Pasir Ris-Punggol GRC",
+        "electors": 187396,
+        "results": [
+          { "name": "PAP", "votes": 125166 },
+          { "name": "SDA", "votes": 46550 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Sengkang West SMC",
+        "electors": 26882,
+        "results": [
+          { "name": "PAP", "votes": 14689 },
+          { "name": "WP", "votes": 10591 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Punggol East SMC",
+        "electors": 33281,
+        "results": [
+          { "name": "PAP", "votes": 16994 },
+          { "name": "WP", "votes": 12777 },
+          { "name": "SDA", "votes": 1387 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Pasir Ris-Punggol GRC",
+        "electors": 168977,
+        "results": [
+          { "name": "PAP", "votes": 100493 },
+          { "name": "SDA", "votes": 54601 }
+        ]
+      }
     ]
   },
   {
@@ -861,6 +1303,44 @@
           "SDP.ARIFFIN_SHA",
           "SDP.ALEC_TOK",
           "SDP.GIGENE_WONG"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Marsiling-Yew Tee GRC",
+        "electors": 117077,
+        "results": [
+          { "name": "PAP", "votes": 69813 },
+          { "name": "SDP", "votes": 40690 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Marsiling-Yew Tee GRC",
+        "electors": 107599,
+        "results": [
+          { "name": "PAP", "votes": 68546 },
+          { "name": "SDP", "votes": 31185 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Chua Chu Kang GRC",
+        "electors": 158648,
+        "results": [
+          { "name": "PAP", "votes": 89710 },
+          { "name": "NSP", "votes": 56885 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Sembawang GRC",
+        "electors": 142459,
+        "results": [
+          { "name": "PAP", "votes": 84252 },
+          { "name": "SDP", "votes": 47605 }
         ]
       }
     ]
@@ -894,6 +1374,35 @@
           "RDU.SHARON_LIN"
         ]
       }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Nee Soon GRC",
+        "electors": 146902,
+        "results": [
+          { "name": "PAP", "votes": 86308 },
+          { "name": "PSP", "votes": 53131 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Nee Soon GRC",
+        "electors": 132289,
+        "results": [
+          { "name": "PAP", "votes": 82287 },
+          { "name": "WP", "votes": 40841 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Nee Soon GRC",
+        "electors": 148290,
+        "results": [
+          { "name": "PAP", "votes": 80740 },
+          { "name": "WP", "votes": 57523 }
+        ]
+      }
     ]
   },
   {
@@ -911,6 +1420,35 @@
         "partyId": "SDP",
         "isConfirmed": true,
         "profiles": ["SDP.CHEE_SOON_JUAN"]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Sembawang GRC",
+        "electors": 147786,
+        "results": [
+          { "name": "PAP", "votes": 94176 },
+          { "name": "NSP", "votes": 45778 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Sembawang GRC",
+        "electors": 144672,
+        "results": [
+          { "name": "PAP", "votes": 96718 },
+          { "name": "NSP", "votes": 37087 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Sembawang GRC",
+        "electors": 142459,
+        "results": [
+          { "name": "PAP", "votes": 84252 },
+          { "name": "SDP", "votes": 47605 }
+        ]
       }
     ]
   },
@@ -930,6 +1468,35 @@
         "isConfirmed": true,
         "profiles": ["WP.KENNETH_FOO"]
       }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Tampines GRC",
+        "electors": 151589,
+        "results": [
+          { "name": "PAP", "votes": 94668 },
+          { "name": "NSP", "votes": 47875 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Tampines GRC",
+        "electors": 143518,
+        "results": [
+          { "name": "PAP", "votes": 95305 },
+          { "name": "NSP", "votes": 36943 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Tampines GRC",
+        "electors": 137532,
+        "results": [
+          { "name": "PAP", "votes": 72728 },
+          { "name": "NSP", "votes": 54381 }
+        ]
+      }
     ]
   },
   {
@@ -948,6 +1515,35 @@
         "partyId": "INDIE",
         "isConfirmed": true,
         "profiles": ["INDIE.JEREMY_TAN"]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Mountbatten GRC",
+        "electors": 24246,
+        "results": [
+          { "name": "PAP", "votes": 16285 },
+          { "name": "PV", "votes": 5775 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Mountbatten GRC",
+        "electors": 24143,
+        "results": [
+          { "name": "PAP", "votes": 15331 },
+          { "name": "SPP", "votes": 6004 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Mountbatten GRC",
+        "electors": 23731,
+        "results": [
+          { "name": "PAP", "votes": 11985 },
+          { "name": "NSP", "votes": 8461 }
+        ]
       }
     ]
   },
@@ -991,6 +1587,35 @@
           "SDP.DAMANHURI_ABAS"
         ]
       }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Sembawang GRC",
+        "electors": 147786,
+        "results": [
+          { "name": "PAP", "votes": 94176 },
+          { "name": "NSP", "votes": 45778 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Sembawang GRC",
+        "electors": 144672,
+        "results": [
+          { "name": "PAP", "votes": 96718 },
+          { "name": "NSP", "votes": 37087 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Sembawang GRC",
+        "electors": 142459,
+        "results": [
+          { "name": "PAP", "votes": 84252 },
+          { "name": "SDP", "votes": 47605 }
+        ]
+      }
     ]
   },
   {
@@ -1019,6 +1644,35 @@
           "WP.PARIS_V",
           "WP.JASPER_KUAN",
           "WP.SUFYAN_MIKHAIL_PUTRA"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "East Coast GRC",
+        "electors": 121644,
+        "results": [
+          { "name": "PAP", "votes": 61144 },
+          { "name": "WP", "votes": 53375 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "East Coast GRC",
+        "electors": 99118,
+        "results": [
+          { "name": "PAP", "votes": 55093 },
+          { "name": "WP", "votes": 35622 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "East Coast GRC",
+        "electors": 120324,
+        "results": [
+          { "name": "PAP", "votes": 59992 },
+          { "name": "WP", "votes": 49429 }
         ]
       }
     ]
@@ -1092,6 +1746,35 @@
           "PPP.PETER_SOH",
           "PPP.ARBAAH_HAROUN",
           "PPP.DERRICK_SIM"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Tampines GRC",
+        "electors": 151589,
+        "results": [
+          { "name": "PAP", "votes": 94668 },
+          { "name": "NSP", "votes": 47875 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Tampines GRC",
+        "electors": 143518,
+        "results": [
+          { "name": "PAP", "votes": 95305 },
+          { "name": "NSP", "votes": 36943 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Tampines GRC",
+        "electors": 137532,
+        "results": [
+          { "name": "PAP", "votes": 72728 },
+          { "name": "NSP", "votes": 54381 }
         ]
       }
     ]
