@@ -1,5 +1,7 @@
+import { Typography } from '@/app/_components/ui/typography';
 import ConstituencyCandidate from '@/app/map/_components/sidebar/constituency-candidate';
 import { addResultsPerc } from '@/lib/results';
+import { cn } from '@/lib/utils';
 import type { ElectoralDivision } from '@/models/electoral-division';
 import { useMemo } from 'react';
 
@@ -76,20 +78,32 @@ const ConstituencyDetails = ({ electoralDivision }: Props) => {
                   </div>
 
                   <div className="space-y-1.5">
-                    {election.results.map((result) => (
+                    {election.results.map((result, i) => (
                       <div
                         key={`${election.year}-${election.name}-${result.name}`}
                         className="text-xs"
                       >
                         <div className="flex justify-between items-center">
-                          <span>{result.name}</span>
-                          <span className="text-muted-foreground">
-                            {result.votesPerc.toFixed(1)}%
+                          <span className={i === 0 ? 'font-semibold' : ''}>
+                            {result.name}
                           </span>
+                          <Typography
+                            variant="inlineCode"
+                            className={cn(
+                              'text-xs bg-transparent py-0',
+                              i === 0
+                                ? 'font-semibold'
+                                : 'text-muted-foreground',
+                            )}
+                          >
+                            {result.votes < 0
+                              ? 'Walkover'
+                              : `${result.votesPerc.toFixed(2)}%`}
+                          </Typography>
                         </div>
                         <div className="w-full bg-muted/30 rounded-full h-1 mt-0.5">
                           <div
-                            className="bg-primary/60 h-1 rounded-full"
+                            className={`${i === 0 ? 'bg-primary' : 'bg-primary/60'} h-1 rounded-full`}
                             style={{ width: `${result.votesPerc}%` }}
                           />
                         </div>

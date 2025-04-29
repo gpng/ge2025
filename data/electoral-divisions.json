@@ -75,7 +75,7 @@
         "results": [
           { "name": "PAP", "votes": 18204 },
           { "name": "SDP", "votes": 6585 },
-          { "name": "INDIE", "votes": 150 }
+          { "name": "Samir Salim Neji", "votes": 150 }
         ]
       },
       {
@@ -118,6 +118,35 @@
           "PSP.SANI_ISMAIL"
         ]
       }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "West Coast GRC",
+        "electors": 146089,
+        "results": [
+          { "name": "PAP", "votes": 71658 },
+          { "name": "PSP", "votes": 66996 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "West Coast GRC",
+        "electors": 99300,
+        "results": [
+          { "name": "PAP", "votes": 71214 },
+          { "name": "RP", "votes": 19426 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "West Coast GRC",
+        "electors": 121045,
+        "results": [
+          { "name": "PAP", "votes": 72563 },
+          { "name": "RP", "votes": 36443 }
+        ]
+      }
     ]
   },
   {
@@ -137,6 +166,17 @@
         "isConfirmed": true,
         "profiles": ["PSP.TONY_TAN"]
       }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Kebun Baru SMC",
+        "electors": 22653,
+        "results": [
+          { "name": "PAP", "votes": 13309 },
+          { "name": "PSP", "votes": 7842 }
+        ]
+      }
     ]
   },
   {
@@ -155,6 +195,17 @@
         "partyId": "PAR",
         "isConfirmed": true,
         "profiles": ["PAR.MICHAEL_FANG"]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Yio Chu Kang SMC",
+        "electors": 25962,
+        "results": [
+          { "name": "PAP", "votes": 14775 },
+          { "name": "PSP", "votes": 9519 }
+        ]
       }
     ]
   },
@@ -205,6 +256,32 @@
           "PAR.SOH_LIAN_CHYE"
         ]
       }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Tanjong Pagar GRC",
+        "electors": 134494,
+        "results": [
+          { "name": "PAP", "votes": 78330 },
+          { "name": "PSP", "votes": 45807 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Tanjong Pagar GRC",
+        "electors": 130752,
+        "results": [
+          { "name": "PAP", "votes": 90635 },
+          { "name": "SGF", "votes": 25998 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Tanjong Pagar GRC",
+        "electors": 139771,
+        "results": [{ "name": "PAP", "votes": -1 }]
+      }
     ]
   },
   {
@@ -227,6 +304,36 @@
         "partyId": "INDIE",
         "isConfirmed": true,
         "profiles": ["INDIE.DARRYL_LO"]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Radin Mas SMC",
+        "electors": 24981,
+        "results": [
+          { "name": "PAP", "votes": 16864 },
+          { "name": "RP", "votes": 5922 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Radin Mas SMC",
+        "electors": 28906,
+        "results": [
+          { "name": "PAP", "votes": 20246 },
+          { "name": "RP", "votes": 3333 },
+          { "name": "Han Hui Hui", "votes": 2630 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Radin Mas SMC",
+        "electors": 31014,
+        "results": [
+          { "name": "PAP", "votes": 18609 },
+          { "name": "NSP", "votes": 9123 }
+        ]
       }
     ]
   },
@@ -251,6 +358,35 @@
         "partyId": "SPP",
         "isConfirmed": true,
         "profiles": ["SPP.WILLIAMSON_LEE"]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Potong Pasir SMC",
+        "electors": 19731,
+        "results": [
+          { "name": "PAP", "votes": 11264 },
+          { "name": "SPP", "votes": 7302 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Potong Pasir SMC",
+        "electors": 17400,
+        "results": [
+          { "name": "PAP", "votes": 10602 },
+          { "name": "SPP", "votes": 5368 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Potong Pasir SMC",
+        "electors": 17327,
+        "results": [
+          { "name": "PAP", "votes": 7992 },
+          { "name": "SPP", "votes": 7878 }
+        ]
       }
     ]
   },
@@ -278,6 +414,45 @@
           "WP.JACKSON_AU",
           "WP.ALIA_MATTAR",
           "WP.ALEXIS_DANG"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Pasir Ris-Punggol GRC",
+        "electors": 166556,
+        "results": [
+          { "name": "PAP", "votes": 100932 },
+          { "name": "SDA", "votes": 37237 },
+          { "name": "PV", "votes": 19147 }
+        ]
+      },
+      {
+        "year": 2020,
+        "name": "Punggol West SMC",
+        "electors": 26587,
+        "results": [
+          { "name": "PAP", "votes": 15655 },
+          { "name": "WP", "votes": 10017 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Pasir Ris-Punggol GRC",
+        "electors": 187396,
+        "results": [
+          { "name": "PAP", "votes": 125166 },
+          { "name": "SDA", "votes": 46550 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Pasir Ris-Punggol GRC",
+        "electors": 168977,
+        "results": [
+          { "name": "PAP", "votes": 100493 },
+          { "name": "SDA", "votes": 54601 }
         ]
       }
     ]
@@ -328,6 +503,35 @@
           "PAP.DANIEL_LIU",
           "PAP.ADRIAN_ANG",
           "PAP.FAISAL_ABDUL_AZIZ"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "year": 2020,
+        "name": "Aljunied GRC",
+        "electors": 150821,
+        "results": [
+          { "name": "WP", "votes": 85815 },
+          { "name": "PAP", "votes": 57330 }
+        ]
+      },
+      {
+        "year": 2015,
+        "name": "Aljunied GRC",
+        "electors": 148142,
+        "results": [
+          { "name": "WP", "votes": 70050 },
+          { "name": "PAP", "votes": 67424 }
+        ]
+      },
+      {
+        "year": 2011,
+        "name": "Aljunied GRC",
+        "electors": 143148,
+        "results": [
+          { "name": "WP", "votes": 72289 },
+          { "name": "PAP", "votes": 59829 }
         ]
       }
     ]
