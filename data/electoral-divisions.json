@@ -1163,6 +1163,7 @@
     "featureId": 19,
     "name": "BISHAN-TOA PAYOH GRC",
     "electors": 98505,
+    "electorsVoted": 87936,
     "isCalled": true,
     "candidates": [
       {
@@ -1176,7 +1177,9 @@
           "PAP.CAI_YINZHOU"
         ],
         "samplePerc": 75,
-        "isSampleWinner": true
+        "isWinner": true,
+        "actualCount": 66137,
+        "actualPerc": 75.21
       },
       {
         "partyId": "SPP",
@@ -1187,7 +1190,9 @@
           "SPP.MUHAMMAD_NORHAKIM",
           "SPP.LIM_RUI_XIAN"
         ],
-        "samplePerc": 25
+        "samplePerc": 25,
+        "actualCount": 21799,
+        "actualPerc": 24.79
       }
     ],
     "history": [
