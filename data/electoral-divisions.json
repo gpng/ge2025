@@ -4,6 +4,7 @@
     "featureId": 0,
     "name": "JURONG EAST-BUKIT BATOK GRC",
     "electors": 142510,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -15,7 +16,8 @@
           "PAP.DAVID_HOE",
           "PAP.LEE_HONG_CHUANG"
         ],
-        "isIncumbent": true
+        "isIncumbent": true,
+        "samplePerc": 76
       },
       {
         "partyId": "RDU",
@@ -26,7 +28,8 @@
           "RDU.BEN_PUAH",
           "RDU.HARISH_MOHANADAS",
           "RDU.MARCUS_NEO"
-        ]
+        ],
+        "samplePerc": 24
       }
     ],
     "history": [
@@ -184,17 +187,20 @@
     "featureId": 3,
     "name": "YIO CHU KANG SMC",
     "electors": 25368,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
         "isIncumbent": true,
         "isConfirmed": true,
-        "profiles": ["PAP.YIP_HON_WENG"]
+        "profiles": ["PAP.YIP_HON_WENG"],
+        "samplePerc": 76
       },
       {
         "partyId": "PAR",
         "isConfirmed": true,
-        "profiles": ["PAR.MICHAEL_FANG"]
+        "profiles": ["PAR.MICHAEL_FANG"],
+        "samplePerc": 24
       }
     ],
     "history": [
@@ -214,16 +220,19 @@
     "featureId": 4,
     "name": "QUEENSTOWN SMC",
     "electors": 28857,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
         "isIncumbent": true,
-        "profiles": ["PAP.ERIC_CHUA"]
+        "profiles": ["PAP.ERIC_CHUA"],
+        "samplePerc": 82
       },
       {
         "partyId": "PAR",
         "isConfirmed": true,
-        "profiles": ["PAR.MAHABOOB_BATCHA"]
+        "profiles": ["PAR.MAHABOOB_BATCHA"],
+        "samplePerc": 18
       }
     ]
   },
@@ -232,6 +241,7 @@
     "featureId": 5,
     "name": "TANJONG PAGAR GRC",
     "electors": 139688,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -243,7 +253,8 @@
           "PAP.ALVIN_TAN",
           "PAP.RACHEL_ONG",
           "PAP.FOO_CEXIANG"
-        ]
+        ],
+        "samplePerc": 81
       },
       {
         "partyId": "PAR",
@@ -254,7 +265,8 @@
           "PAR.NADARAJAN_SELVAMANI",
           "PAR.RICKSON_GIAUW",
           "PAR.SOH_LIAN_CHYE"
-        ]
+        ],
+        "samplePerc": 19
       }
     ],
     "history": [
@@ -289,21 +301,25 @@
     "featureId": 6,
     "name": "RADIN MAS SMC",
     "electors": 25497,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
         "isIncumbent": true,
-        "profiles": ["PAP.MELVIN_YONG"]
-      },
-      {
-        "partyId": "PAR",
-        "isConfirmed": true,
-        "profiles": ["PAR.KUMAR_APPAVOO"]
+        "profiles": ["PAP.MELVIN_YONG"],
+        "samplePerc": 69
       },
       {
         "partyId": "INDIE",
         "isConfirmed": true,
-        "profiles": ["INDIE.DARRYL_LO"]
+        "profiles": ["INDIE.DARRYL_LO"],
+        "samplePerc": 24
+      },
+      {
+        "partyId": "PAR",
+        "isConfirmed": true,
+        "profiles": ["PAR.KUMAR_APPAVOO"],
+        "samplePerc": 7
       }
     ],
     "history": [
@@ -342,22 +358,26 @@
     "featureId": 7,
     "name": "POTONG PASIR SMC",
     "electors": 30897,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
         "isIncumbent": true,
         "isConfirmed": true,
-        "profiles": ["PAP.ALEX_YEO"]
-      },
-      {
-        "partyId": "PAR",
-        "isConfirmed": true,
-        "profiles": ["PAR.LIM_TEAN"]
+        "profiles": ["PAP.ALEX_YEO"],
+        "samplePerc": 71
       },
       {
         "partyId": "SPP",
         "isConfirmed": true,
-        "profiles": ["SPP.WILLIAMSON_LEE"]
+        "profiles": ["SPP.WILLIAMSON_LEE"],
+        "samplePerc": 21
+      },
+      {
+        "partyId": "PAR",
+        "isConfirmed": true,
+        "profiles": ["PAR.LIM_TEAN"],
+        "samplePerc": 8
       }
     ],
     "history": [
@@ -395,6 +415,7 @@
     "featureId": 8,
     "name": "PUNGGOL GRC",
     "electors": 123557,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -404,7 +425,8 @@
           "PAP.SUN_XUELING",
           "PAP.JANIL_PUTHUCHEARY",
           "PAP.YEO_WAN_LING"
-        ]
+        ],
+        "samplePerc": 54
       },
       {
         "partyId": "WP",
@@ -414,7 +436,8 @@
           "WP.JACKSON_AU",
           "WP.ALIA_MATTAR",
           "WP.ALEXIS_DANG"
-        ]
+        ],
+        "samplePerc": 46
       }
     ],
     "history": [
@@ -510,6 +533,7 @@
     "featureId": 10,
     "name": "ALJUNIED GRC",
     "electors": 144032,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "WP",
@@ -521,7 +545,8 @@
           "WP.MUHAMMAD_FADLI",
           "WP.GERALD_GIAM",
           "WP.KENNETH_TIONG"
-        ]
+        ],
+        "samplePerc": 59
       },
       {
         "partyId": "PAP",
@@ -532,7 +557,8 @@
           "PAP.DANIEL_LIU",
           "PAP.ADRIAN_ANG",
           "PAP.FAISAL_ABDUL_AZIZ"
-        ]
+        ],
+        "samplePerc": 41
       }
     ],
     "history": [
@@ -570,6 +596,7 @@
     "featureId": 11,
     "name": "ANG MO KIO GRC",
     "electors": 161235,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -581,7 +608,8 @@
           "PAP.NADIA_AHMAD",
           "PAP.VICTOR_LYE",
           "PAP.JASMIN_LAU"
-        ]
+        ],
+        "samplePerc": 79
       },
       {
         "partyId": "SUP",
@@ -592,7 +620,8 @@
           "SUP.RIDHUAN_CHANDRAN",
           "SUP.VINCENT_NG",
           "SUP.NIGEL_NG"
-        ]
+        ],
+        "samplePerc": 11
       },
       {
         "partyId": "PPP",
@@ -603,7 +632,8 @@
           "PPP.THADDEUS_THOMAS",
           "PPP.HENG_ZHENG_DAO",
           "PPP.SAMUEL_LEE"
-        ]
+        ],
+        "samplePerc": 10
       }
     ],
     "history": [
@@ -641,17 +671,20 @@
     "featureId": 12,
     "name": "BUKIT GOMBAK SMC",
     "electors": 26364,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
         "isIncumbent": true,
         "isConfirmed": true,
-        "profiles": ["PAP.LOW_YEN_LING"]
+        "profiles": ["PAP.LOW_YEN_LING"],
+        "samplePerc": 75
       },
       {
         "partyId": "PSP",
         "isConfirmed": true,
-        "profiles": ["PSP.HARISH_PILLAY"]
+        "profiles": ["PSP.HARISH_PILLAY"],
+        "samplePerc": 25
       }
     ],
     "history": [
@@ -689,6 +722,7 @@
     "featureId": 13,
     "name": "CHUA CHU KANG GRC",
     "electors": 93368,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -699,7 +733,8 @@
           "PAP.ZHULKARNAIN_ABDUL_RAHIM",
           "PAP.JEFFREY_SIOW",
           "PAP.CHOO_PEI_LING"
-        ]
+        ],
+        "samplePerc": 63
       },
       {
         "partyId": "PSP",
@@ -709,7 +744,8 @@
           "PSP.WENDY_LOW",
           "PSP.ABAS_BIN_KASMANI",
           "PSP.SRI_NALLAKARUPPAN"
-        ]
+        ],
+        "samplePerc": 37
       }
     ],
     "history": [
@@ -747,6 +783,7 @@
     "featureId": 14,
     "name": "HOLLAND-BUKIT TIMAH GRC",
     "electors": 122891,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -757,7 +794,8 @@
           "PAP.SIM_ANN",
           "PAP.CHRISTOPHER_DE_SOUZA",
           "PAP.EDWARD_CHIA"
-        ]
+        ],
+        "samplePerc": 80
       },
       {
         "partyId": "RDU",
@@ -767,7 +805,8 @@
           "RDU.SHARAD_KUMAR",
           "RDU.EMILY_WOO",
           "RDU.NIZAR_SUBAIR"
-        ]
+        ],
+        "samplePerc": 20
       }
     ],
     "history": [
@@ -805,17 +844,20 @@
     "featureId": 15,
     "name": "JURONG CENTRAL SMC",
     "electors": 29620,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
         "isIncumbent": true,
         "isConfirmed": true,
-        "profiles": ["PAP.XIE_YAO_QUAN"]
+        "profiles": ["PAP.XIE_YAO_QUAN"],
+        "samplePerc": 81
       },
       {
         "partyId": "RDU",
         "isConfirmed": true,
-        "profiles": ["RDU.KALA_MANICKAM"]
+        "profiles": ["RDU.KALA_MANICKAM"],
+        "samplePerc": 19
       }
     ],
     "history": [
@@ -938,17 +980,20 @@
     "featureId": 17,
     "name": "PIONEER SMC",
     "electors": 25166,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
         "isIncumbent": true,
         "isConfirmed": true,
-        "profiles": ["PAP.PATRICK_TAY"]
+        "profiles": ["PAP.PATRICK_TAY"],
+        "samplePerc": 66
       },
       {
         "partyId": "PSP",
         "isConfirmed": true,
-        "profiles": ["PSP.STEPHANIE_TAN"]
+        "profiles": ["PSP.STEPHANIE_TAN"],
+        "samplePerc": 34
       }
     ],
     "history": [
@@ -987,17 +1032,20 @@
     "featureId": 18,
     "name": "MARYMOUNT SMC",
     "electors": 23219,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
         "isIncumbent": true,
         "isConfirmed": true,
-        "profiles": ["PAP.GAN_SIOW_HUANG"]
+        "profiles": ["PAP.GAN_SIOW_HUANG"],
+        "samplePerc": 71
       },
       {
         "partyId": "PSP",
         "isConfirmed": true,
-        "profiles": ["PSP.JEFFREY_KHOO"]
+        "profiles": ["PSP.JEFFREY_KHOO"],
+        "samplePerc": 29
       }
     ],
     "history": [
@@ -1035,6 +1083,7 @@
     "featureId": 19,
     "name": "BISHAN-TOA PAYOH GRC",
     "electors": 98505,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -1045,7 +1094,8 @@
           "PAP.SAKTIANDI_SUPAAT",
           "PAP.ELYSA_CHEN",
           "PAP.CAI_YINZHOU"
-        ]
+        ],
+        "samplePerc": 75
       },
       {
         "partyId": "SPP",
@@ -1055,7 +1105,8 @@
           "SPP.MELVYN_CHIU",
           "SPP.MUHAMMAD_NORHAKIM",
           "SPP.LIM_RUI_XIAN"
-        ]
+        ],
+        "samplePerc": 25
       }
     ],
     "history": [
@@ -1140,17 +1191,20 @@
     "featureId": 21,
     "name": "BUKIT PANJANG SMC",
     "electors": 33566,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
         "isIncumbent": true,
         "isConfirmed": true,
-        "profiles": ["PAP.LIANG_ENG_HWA"]
+        "profiles": ["PAP.LIANG_ENG_HWA"],
+        "samplePerc": 62
       },
       {
         "partyId": "SDP",
         "isConfirmed": true,
-        "profiles": ["SDP.PAUL_TAMBYAH"]
+        "profiles": ["SDP.PAUL_TAMBYAH"],
+        "samplePerc": 38
       }
     ],
     "history": [
@@ -1198,7 +1252,8 @@
           "WP.JAMUS_LIM",
           "WP.LOUIS_CHUA",
           "WP.ABDUL_MUHAIMIN"
-        ]
+        ],
+        "samplePerc": 56
       },
       {
         "partyId": "PAP",
@@ -1208,7 +1263,8 @@
           "PAP.ELMIE_NEKMAT",
           "PAP.THEODORA_LAI",
           "PAP.BERNADETTE_GIAM"
-        ]
+        ],
+        "samplePerc": 44
       }
     ],
     "history": [
@@ -1283,6 +1339,7 @@
     "featureId": 23,
     "name": "MARSILING-YEW TEE GRC",
     "electors": 119352,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -1293,7 +1350,8 @@
           "PAP.ZAQY_MOHAMAD",
           "PAP.ALEX_YAM",
           "PAP.HANY_SOH"
-        ]
+        ],
+        "samplePerc": 74
       },
       {
         "partyId": "SDP",
@@ -1303,7 +1361,8 @@
           "SDP.ARIFFIN_SHA",
           "SDP.ALEC_TOK",
           "SDP.GIGENE_WONG"
-        ]
+        ],
+        "samplePerc": 26
       }
     ],
     "history": [
@@ -1410,16 +1469,19 @@
     "featureId": 25,
     "name": "SEMBAWANG WEST SMC",
     "electors": 24153,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
         "isIncumbent": true,
-        "profiles": ["PAP.POH_LI_SAN"]
+        "profiles": ["PAP.POH_LI_SAN"],
+        "samplePerc": 53
       },
       {
         "partyId": "SDP",
         "isConfirmed": true,
-        "profiles": ["SDP.CHEE_SOON_JUAN"]
+        "profiles": ["SDP.CHEE_SOON_JUAN"],
+        "samplePerc": 47
       }
     ],
     "history": [
@@ -1457,16 +1519,19 @@
     "featureId": 26,
     "name": "TAMPINES CHANGKAT SMC",
     "electors": 23802,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
         "isIncumbent": true,
-        "profiles": ["PAP.DESMOND_CHOO"]
+        "profiles": ["PAP.DESMOND_CHOO"],
+        "samplePerc": 55
       },
       {
         "partyId": "WP",
         "isConfirmed": true,
-        "profiles": ["WP.KENNETH_FOO"]
+        "profiles": ["WP.KENNETH_FOO"],
+        "samplePerc": 45
       }
     ],
     "history": [
@@ -1504,17 +1569,20 @@
     "featureId": 27,
     "name": "MOUNTBATTEN SMC",
     "electors": 22754,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
         "isIncumbent": true,
         "isConfirmed": true,
-        "profiles": ["PAP.GHO_SZE_KEE"]
+        "profiles": ["PAP.GHO_SZE_KEE"],
+        "samplePerc": 62
       },
       {
         "partyId": "INDIE",
         "isConfirmed": true,
-        "profiles": ["INDIE.JEREMY_TAN"]
+        "profiles": ["INDIE.JEREMY_TAN"],
+        "samplePerc": 38
       }
     ],
     "history": [
@@ -1870,6 +1938,7 @@
     "featureId": 32,
     "name": "PASIR RIS-CHANGI GRC",
     "electors": 100639,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -1879,7 +1948,8 @@
           "PAP.DESMOND_TAN",
           "PAP.SHARAEL_TAHA",
           "PAP.VALERIE_LEE"
-        ]
+        ],
+        "samplePerc": 67
       },
       {
         "partyId": "SDA",
@@ -1889,7 +1959,8 @@
           "SDA.ABU_MOHAMED",
           "SDA.HARMINDER_PAL_SINGH",
           "SDA.CHIA_YUN_KAI"
-        ]
+        ],
+        "samplePerc": 33
       }
     ],
     "history": [
