@@ -3,14 +3,14 @@
     "id": "PAP",
     "name": "People's Action Party",
     "logo": "PAP.png",
-    "color": "#08579f",
+    "color": "#2C59AC",
     "manifesto": "https://www.pap.org.sg/manifesto/"
   },
   "WP": {
     "id": "WP",
     "name": "Workers' Party",
     "logo": "WP.png",
-    "color": "#da282e",
+    "color": "#EE0000",
     "manifesto": "https://www.wp.sg/manifesto"
   },
   "PSP": {
@@ -18,7 +18,7 @@
     "name": "Progress Singapore Party",
     "logo": "PSP.png",
     "manifesto": "https://psp.org.sg/manifesto2025/",
-    "color": "#A4243B"
+    "color": "#FF8889"
   },
   "NSP": {
     "id": "NSP",

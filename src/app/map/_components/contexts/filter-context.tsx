@@ -53,6 +53,10 @@ const setFeatureStates = (
     }
 
     const incumbent = edCandidates.find((c) => c.isIncumbent);
+    const winner = edCandidates.find((c) => c.isWinner);
+
+    const fillCandidate = winner || incumbent;
+
     const partyCandidate =
       filters.party !== ALL_PARTIES
         ? edCandidates.find((c) => c.partyId === filters.party)
@@ -65,7 +69,9 @@ const setFeatureStates = (
           id: ed.featureId,
         },
         {
-          fillColor: incumbent ? parties[incumbent.partyId].color : '#000000',
+          fillColor: fillCandidate
+            ? parties[fillCandidate.partyId].color
+            : '#000000',
           outlineColor: partyCandidate
             ? parties[partyCandidate.partyId].color
             : '#000000',
