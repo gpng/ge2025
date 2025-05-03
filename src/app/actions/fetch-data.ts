@@ -7,7 +7,7 @@ import { partiesSchema } from '@/models/party';
 import { partyProfileSchema } from '@/models/profile';
 import { unstable_cache } from 'next/cache';
 
-const CACHE_TTL = 1800; // 30 minutes
+const CACHE_TTL = 600; // 10 minutes
 const BASE_URL =
   'https://raw.githubusercontent.com/gpng/ge2025/refs/heads/main/data';
 
