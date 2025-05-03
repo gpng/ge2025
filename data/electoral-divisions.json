@@ -458,6 +458,7 @@
     "featureId": 8,
     "name": "PUNGGOL GRC",
     "electors": 123557,
+    "electorsVoted": 115252,
     "isCalled": true,
     "candidates": [
       {
@@ -470,7 +471,9 @@
           "PAP.YEO_WAN_LING"
         ],
         "samplePerc": 54,
-        "isSampleWinner": true
+        "isWinner": true,
+        "actualCount": 63589,
+        "actualPerc": 55.17
       },
       {
         "partyId": "WP",
@@ -481,7 +484,9 @@
           "WP.ALIA_MATTAR",
           "WP.ALEXIS_DANG"
         ],
-        "samplePerc": 46
+        "samplePerc": 46,
+        "actualCount": 51663,
+        "actualPerc": 44.83
       }
     ],
     "history": [
