@@ -1813,6 +1813,7 @@
     "featureId": 28,
     "name": "SEMBAWANG GRC",
     "electors": 133919,
+    "electorsVoted": 123900,
     "isCalled": true,
     "candidates": [
       {
@@ -1827,7 +1828,9 @@
           "PAP.GABRIEL_LAM"
         ],
         "samplePerc": 67,
-        "isSampleWinner": true
+        "isWinner": true,
+        "actualCount": 83946,
+        "actualPerc": 67.75
       },
       {
         "partyId": "SDP",
@@ -1839,7 +1842,9 @@
           "SDP.ALFRED_TAN",
           "SDP.DAMANHURI_ABAS"
         ],
-        "samplePerc": 31
+        "samplePerc": 31,
+        "actualCount": 37082,
+        "actualPerc": 29.93
       },
       {
         "partyId": "NSP",
@@ -1851,7 +1856,9 @@
           "NSP.LEE_WEI",
           "NSP.YADZETH_HAIRIS"
         ],
-        "samplePerc": 2
+        "samplePerc": 2,
+        "actualCount": 2872,
+        "actualPerc": 2.32
       }
     ],
     "history": [
