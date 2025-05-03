@@ -5,6 +5,7 @@ import { electoralDivisionsSchema } from '@/models/electoral-division';
 import { newsSchema } from '@/models/news';
 import { partiesSchema } from '@/models/party';
 import { partyProfileSchema } from '@/models/profile';
+import electoralDivisions from '@data/electoral-divisions.json';
 import { unstable_cache } from 'next/cache';
 
 const CACHE_TTL = 600; // 10 minutes
@@ -17,7 +18,7 @@ const fetchDataWithCache = unstable_cache(
       const [parties, news, ed, profiles, boundaries] = await Promise.all([
         fetch(`${BASE_URL}/parties.json`).then((r) => r.json()),
         fetch(`${BASE_URL}/news.json`).then((r) => r.json()),
-        fetch(`${BASE_URL}/electoral-divisions.json`).then((r) => r.json()),
+        electoralDivisions,
         fetch(`${BASE_URL}/profiles.json`).then((r) => r.json()),
         fetch(`${BASE_URL}/boundaries.json`).then((r) => r.json()),
       ]);

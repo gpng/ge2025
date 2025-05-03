@@ -17,7 +17,8 @@
           "PAP.LEE_HONG_CHUANG"
         ],
         "isIncumbent": true,
-        "samplePerc": 76
+        "samplePerc": 76,
+        "isSampleWinner": true
       },
       {
         "partyId": "RDU",
@@ -110,7 +111,8 @@
           "PAP.HAMID_RAZAK",
           "PAP.CASSANDRA_LEE"
         ],
-        "samplePerc": 61
+        "samplePerc": 61,
+        "isSampleWinner": true
       },
       {
         "partyId": "PSP",
@@ -167,7 +169,8 @@
         "isIncumbent": true,
         "isConfirmed": true,
         "profiles": ["PAP.HENRY_KWEK"],
-        "samplePerc": 66
+        "samplePerc": 66,
+        "isSampleWinner": true
       },
       {
         "partyId": "PSP",
@@ -200,7 +203,8 @@
         "isIncumbent": true,
         "isConfirmed": true,
         "profiles": ["PAP.YIP_HON_WENG"],
-        "samplePerc": 76
+        "samplePerc": 76,
+        "isSampleWinner": true
       },
       {
         "partyId": "PAR",
@@ -232,7 +236,8 @@
         "partyId": "PAP",
         "isIncumbent": true,
         "profiles": ["PAP.ERIC_CHUA"],
-        "samplePerc": 82
+        "samplePerc": 82,
+        "isSampleWinner": true
       },
       {
         "partyId": "PAR",
@@ -260,7 +265,8 @@
           "PAP.RACHEL_ONG",
           "PAP.FOO_CEXIANG"
         ],
-        "samplePerc": 81
+        "samplePerc": 81,
+        "isSampleWinner": true
       },
       {
         "partyId": "PAR",
@@ -313,7 +319,8 @@
         "partyId": "PAP",
         "isIncumbent": true,
         "profiles": ["PAP.MELVIN_YONG"],
-        "samplePerc": 69
+        "samplePerc": 69,
+        "isSampleWinner": true
       },
       {
         "partyId": "INDIE",
@@ -371,7 +378,8 @@
         "isIncumbent": true,
         "isConfirmed": true,
         "profiles": ["PAP.ALEX_YEO"],
-        "samplePerc": 71
+        "samplePerc": 71,
+        "isSampleWinner": true
       },
       {
         "partyId": "SPP",
@@ -432,7 +440,8 @@
           "PAP.JANIL_PUTHUCHEARY",
           "PAP.YEO_WAN_LING"
         ],
-        "samplePerc": 54
+        "samplePerc": 54,
+        "isSampleWinner": true
       },
       {
         "partyId": "WP",
@@ -498,7 +507,8 @@
         "isIncumbent": true,
         "isConfirmed": true,
         "profiles": ["PAP.NG_CHEE_MENG"],
-        "samplePerc": 52
+        "samplePerc": 52,
+        "isSampleWinner": true
       },
       {
         "partyId": "WP",
@@ -555,7 +565,8 @@
           "WP.GERALD_GIAM",
           "WP.KENNETH_TIONG"
         ],
-        "samplePerc": 59
+        "samplePerc": 59,
+        "isSampleWinner": true
       },
       {
         "partyId": "PAP",
@@ -618,7 +629,8 @@
           "PAP.VICTOR_LYE",
           "PAP.JASMIN_LAU"
         ],
-        "samplePerc": 79
+        "samplePerc": 79,
+        "isSampleWinner": true
       },
       {
         "partyId": "SUP",
@@ -687,7 +699,8 @@
         "isIncumbent": true,
         "isConfirmed": true,
         "profiles": ["PAP.LOW_YEN_LING"],
-        "samplePerc": 75
+        "samplePerc": 75,
+        "isSampleWinner": true
       },
       {
         "partyId": "PSP",
@@ -743,7 +756,8 @@
           "PAP.JEFFREY_SIOW",
           "PAP.CHOO_PEI_LING"
         ],
-        "samplePerc": 63
+        "samplePerc": 63,
+        "isSampleWinner": true
       },
       {
         "partyId": "PSP",
@@ -804,7 +818,8 @@
           "PAP.CHRISTOPHER_DE_SOUZA",
           "PAP.EDWARD_CHIA"
         ],
-        "samplePerc": 80
+        "samplePerc": 80,
+        "isSampleWinner": true
       },
       {
         "partyId": "RDU",
@@ -860,7 +875,8 @@
         "isIncumbent": true,
         "isConfirmed": true,
         "profiles": ["PAP.XIE_YAO_QUAN"],
-        "samplePerc": 81
+        "samplePerc": 81,
+        "isSampleWinner": true
       },
       {
         "partyId": "RDU",
@@ -931,6 +947,7 @@
     "featureId": 16,
     "name": "JALAN BESAR GRC",
     "electors": 106102,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -941,7 +958,9 @@
           "PAP.DENISE_PHUA",
           "PAP.WAN_RIZAL",
           "PAP.SHAWN_LOH"
-        ]
+        ],
+        "samplePerc": 75,
+        "isSampleWinner": true
       },
       {
         "partyId": "PAR",
@@ -951,7 +970,8 @@
           "PAR.CHIU_SHIN_KONG",
           "PAR.MOHAMAD_HAMIM_ALIYAS",
           "PAR.SARINA_ABU_HASSAN"
-        ]
+        ],
+        "samplePerc": 25
       }
     ],
     "history": [
@@ -996,7 +1016,8 @@
         "isIncumbent": true,
         "isConfirmed": true,
         "profiles": ["PAP.PATRICK_TAY"],
-        "samplePerc": 66
+        "samplePerc": 66,
+        "isSampleWinner": true
       },
       {
         "partyId": "PSP",
@@ -1048,7 +1069,8 @@
         "isIncumbent": true,
         "isConfirmed": true,
         "profiles": ["PAP.GAN_SIOW_HUANG"],
-        "samplePerc": 71
+        "samplePerc": 71,
+        "isSampleWinner": true
       },
       {
         "partyId": "PSP",
@@ -1104,7 +1126,8 @@
           "PAP.ELYSA_CHEN",
           "PAP.CAI_YINZHOU"
         ],
-        "samplePerc": 75
+        "samplePerc": 75,
+        "isSampleWinner": true
       },
       {
         "partyId": "SPP",
@@ -1153,16 +1176,20 @@
     "featureId": 20,
     "name": "HOUGANG SMC",
     "electors": 29433,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "WP",
         "isIncumbent": true,
-        "profiles": ["WP.DENNIS_TAN"]
+        "profiles": ["WP.DENNIS_TAN"],
+        "samplePerc": 63,
+        "isSampleWinner": true
       },
       {
         "partyId": "PAP",
         "isConfirmed": true,
-        "profiles": ["PAP.MARSHALL_LIM"]
+        "profiles": ["PAP.MARSHALL_LIM"],
+        "samplePerc": 37
       }
     ],
     "history": [
@@ -1207,7 +1234,8 @@
         "isIncumbent": true,
         "isConfirmed": true,
         "profiles": ["PAP.LIANG_ENG_HWA"],
-        "samplePerc": 62
+        "samplePerc": 62,
+        "isSampleWinner": true
       },
       {
         "partyId": "SDP",
@@ -1262,7 +1290,8 @@
           "WP.LOUIS_CHUA",
           "WP.ABDUL_MUHAIMIN"
         ],
-        "samplePerc": 56
+        "samplePerc": 56,
+        "isSampleWinner": true
       },
       {
         "partyId": "PAP",
@@ -1360,7 +1389,8 @@
           "PAP.ALEX_YAM",
           "PAP.HANY_SOH"
         ],
-        "samplePerc": 74
+        "samplePerc": 74,
+        "isSampleWinner": true
       },
       {
         "partyId": "SDP",
@@ -1431,7 +1461,8 @@
           "PAP.GOH_HANYAN",
           "PAP.JACKSON_LAM"
         ],
-        "samplePerc": 74
+        "samplePerc": 74,
+        "isSampleWinner": true
       },
       {
         "partyId": "RDU",
@@ -1487,7 +1518,8 @@
         "partyId": "PAP",
         "isIncumbent": true,
         "profiles": ["PAP.POH_LI_SAN"],
-        "samplePerc": 53
+        "samplePerc": 53,
+        "isSampleWinner": true
       },
       {
         "partyId": "SDP",
@@ -1537,7 +1569,8 @@
         "partyId": "PAP",
         "isIncumbent": true,
         "profiles": ["PAP.DESMOND_CHOO"],
-        "samplePerc": 55
+        "samplePerc": 55,
+        "isSampleWinner": true
       },
       {
         "partyId": "WP",
@@ -1588,7 +1621,8 @@
         "isIncumbent": true,
         "isConfirmed": true,
         "profiles": ["PAP.GHO_SZE_KEE"],
-        "samplePerc": 62
+        "samplePerc": 62,
+        "isSampleWinner": true
       },
       {
         "partyId": "INDIE",
@@ -1645,7 +1679,8 @@
           "PAP.NG_SHI_XUAN",
           "PAP.GABRIEL_LAM"
         ],
-        "samplePerc": 67
+        "samplePerc": 67,
+        "isSampleWinner": true
       },
       {
         "partyId": "SDP",
@@ -1965,7 +2000,8 @@
           "PAP.SHARAEL_TAHA",
           "PAP.VALERIE_LEE"
         ],
-        "samplePerc": 67
+        "samplePerc": 67,
+        "isSampleWinner": true
       },
       {
         "partyId": "SDA",
