@@ -20,7 +20,13 @@ const ConstituencyDetails = ({ electoralDivision }: Props) => {
       <div className="flex-0">
         <h3 className="font-semibold text-lg">{electoralDivision?.name}</h3>
         <p className="text-sm text-muted-foreground">
-          {electoralDivision?.electors.toLocaleString()} voters
+          {electoralDivision?.electorsVoted
+            ? `${electoralDivision?.electorsVoted.toLocaleString()} of ${electoralDivision?.electors.toLocaleString()} voted (${(
+                (electoralDivision?.electorsVoted * 100) /
+                  (electoralDivision?.electors ||
+                    electoralDivision?.electorsVoted)
+              ).toFixed(2)}%)`
+            : `${electoralDivision?.electors.toLocaleString()} voters`}
         </p>
       </div>
       <div className="flex-1 min-h-1 flex flex-col">
