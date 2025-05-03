@@ -4,6 +4,7 @@
     "featureId": 0,
     "name": "JURONG EAST-BUKIT BATOK GRC",
     "electors": 142510,
+    "electorsVoted": 129593,
     "isCalled": true,
     "candidates": [
       {
@@ -18,7 +19,9 @@
         ],
         "isIncumbent": true,
         "samplePerc": 76,
-        "isSampleWinner": true
+        "isWinner": true,
+        "actualCount": 99345,
+        "actualPerc": 76.66
       },
       {
         "partyId": "RDU",
@@ -30,7 +33,9 @@
           "RDU.HARISH_MOHANADAS",
           "RDU.MARCUS_NEO"
         ],
-        "samplePerc": 24
+        "samplePerc": 24,
+        "actualCount": 30248,
+        "actualPerc": 23.34
       }
     ],
     "history": [
