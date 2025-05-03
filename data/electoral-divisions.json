@@ -1743,6 +1743,7 @@
     "featureId": 29,
     "name": "EAST COAST GRC",
     "electors": 150691,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -1753,7 +1754,9 @@
           "PAP.TAN_KIAT_HOW",
           "PAP.DINESH_VASU_DASH",
           "PAP.HAZLINA_ABDUL_HALIM"
-        ]
+        ],
+        "samplePerc": 59,
+        "isSampleWinner": true
       },
       {
         "partyId": "WP",
@@ -1764,7 +1767,8 @@
           "WP.PARIS_V",
           "WP.JASPER_KUAN",
           "WP.SUFYAN_MIKHAIL_PUTRA"
-        ]
+        ],
+        "samplePerc": 41
       }
     ],
     "history": [
@@ -1908,6 +1912,7 @@
     "featureId": 31,
     "name": "TAMPINES GRC",
     "electors": 147904,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -1919,7 +1924,9 @@
           "PAP.KOH_POH_KOON",
           "PAP.DAVID_NEO",
           "PAP.CHARLENE_CHEN"
-        ]
+        ],
+        "samplePerc": 53,
+        "isSampleWinner": true
       },
       {
         "partyId": "WP",
@@ -1930,18 +1937,8 @@
           "WP.JIMMY_TAN",
           "WP.EILEEN_CHONG",
           "WP.ONG_LUE_PING"
-        ]
-      },
-      {
-        "partyId": "NSP",
-        "isConfirmed": true,
-        "profiles": [
-          "NSP.RENO_FONG",
-          "NSP.MOHAMAD_RIDZWAN",
-          "NSP.ZEE_PHAY",
-          "NSP.EUGENE_YEO",
-          "NSP.THAMILSELVAN_KARUPPAYA"
-        ]
+        ],
+        "samplePerc": 46
       },
       {
         "partyId": "PPP",
@@ -1952,7 +1949,20 @@
           "PPP.PETER_SOH",
           "PPP.ARBAAH_HAROUN",
           "PPP.DERRICK_SIM"
-        ]
+        ],
+        "samplePerc": 1
+      },
+      {
+        "partyId": "NSP",
+        "isConfirmed": true,
+        "profiles": [
+          "NSP.RENO_FONG",
+          "NSP.MOHAMAD_RIDZWAN",
+          "NSP.ZEE_PHAY",
+          "NSP.EUGENE_YEO",
+          "NSP.THAMILSELVAN_KARUPPAYA"
+        ],
+        "samplePerc": 0
       }
     ],
     "history": [
