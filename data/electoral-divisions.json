@@ -320,19 +320,25 @@
         "isIncumbent": true,
         "profiles": ["PAP.MELVIN_YONG"],
         "samplePerc": 69,
-        "isSampleWinner": true
+        "isWinner": true,
+        "actualCount": 15801,
+        "actualPerc": 69.17
       },
       {
         "partyId": "INDIE",
         "isConfirmed": true,
         "profiles": ["INDIE.DARRYL_LO"],
-        "samplePerc": 24
+        "samplePerc": 24,
+        "actualCount": 5362,
+        "actualPerc": 23.47
       },
       {
         "partyId": "PAR",
         "isConfirmed": true,
         "profiles": ["PAR.KUMAR_APPAVOO"],
-        "samplePerc": 7
+        "samplePerc": 7,
+        "actualCount": 1682,
+        "actualPerc": 7.36
       }
     ],
     "history": [
