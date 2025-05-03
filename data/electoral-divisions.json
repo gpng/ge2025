@@ -491,17 +491,20 @@
     "featureId": 9,
     "name": "JALAN KAYU SMC",
     "electors": 29565,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
         "isIncumbent": true,
         "isConfirmed": true,
-        "profiles": ["PAP.NG_CHEE_MENG"]
+        "profiles": ["PAP.NG_CHEE_MENG"],
+        "samplePerc": 52
       },
       {
         "partyId": "WP",
         "isConfirmed": true,
-        "profiles": ["WP.ANDRE_LOW"]
+        "profiles": ["WP.ANDRE_LOW"],
+        "samplePerc": 48
       }
     ],
     "history": [
@@ -1415,6 +1418,7 @@
     "featureId": 24,
     "name": "NEE SOON GRC",
     "electors": 151634,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -1426,7 +1430,8 @@
           "PAP.LEE_HUI_YING",
           "PAP.GOH_HANYAN",
           "PAP.JACKSON_LAM"
-        ]
+        ],
+        "samplePerc": 74
       },
       {
         "partyId": "RDU",
@@ -1437,7 +1442,8 @@
           "RDU.SYED_ALWI_AHMAD",
           "RDU.PANG_HENG_CHUAN",
           "RDU.SHARON_LIN"
-        ]
+        ],
+        "samplePerc": 26
       }
     ],
     "history": [
@@ -1626,6 +1632,7 @@
     "featureId": 28,
     "name": "SEMBAWANG GRC",
     "electors": 133919,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -1637,18 +1644,8 @@
           "PAP.MARIAM_JAFAAR",
           "PAP.NG_SHI_XUAN",
           "PAP.GABRIEL_LAM"
-        ]
-      },
-      {
-        "partyId": "NSP",
-        "isConfirmed": true,
-        "profiles": [
-          "NSP.SPENCER_NG",
-          "NSP.VERINA_ONG",
-          "NSP.CHIA_RAIYIAN",
-          "NSP.LEE_WEI",
-          "NSP.YADZETH_HAIRIS"
-        ]
+        ],
+        "samplePerc": 67
       },
       {
         "partyId": "SDP",
@@ -1659,7 +1656,20 @@
           "SDP.SURAYAH_AKBAR",
           "SDP.ALFRED_TAN",
           "SDP.DAMANHURI_ABAS"
-        ]
+        ],
+        "samplePerc": 31
+      },
+      {
+        "partyId": "NSP",
+        "isConfirmed": true,
+        "profiles": [
+          "NSP.SPENCER_NG",
+          "NSP.VERINA_ONG",
+          "NSP.CHIA_RAIYIAN",
+          "NSP.LEE_WEI",
+          "NSP.YADZETH_HAIRIS"
+        ],
+        "samplePerc": 2
       }
     ],
     "history": [
