@@ -1279,6 +1279,7 @@
     "featureId": 22,
     "name": "SENGKANG GRC",
     "electors": 126641,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "WP",
