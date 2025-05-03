@@ -103,6 +103,7 @@
     "featureId": 1,
     "name": "WEST COAST-JURONG WEST GRC",
     "electors": 158581,
+    "electorsVoted": 147210,
     "isCalled": true,
     "candidates": [
       {
@@ -117,7 +118,9 @@
           "PAP.CASSANDRA_LEE"
         ],
         "samplePerc": 61,
-        "isSampleWinner": true
+        "isWinner": true,
+        "actualCount": 88347,
+        "actualPerc": 60.01
       },
       {
         "partyId": "PSP",
@@ -129,7 +132,9 @@
           "PSP.SUMARLEKI_AMJAH",
           "PSP.SANI_ISMAIL"
         ],
-        "samplePerc": 39
+        "samplePerc": 39,
+        "actualCount": 58863,
+        "actualPerc": 39.99
       }
     ],
     "history": [
@@ -1565,6 +1570,7 @@
     "featureId": 24,
     "name": "NEE SOON GRC",
     "electors": 151634,
+    "electorsVoted": 139203,
     "isCalled": true,
     "candidates": [
       {
@@ -1579,7 +1585,9 @@
           "PAP.JACKSON_LAM"
         ],
         "samplePerc": 74,
-        "isSampleWinner": true
+        "isWinner": true,
+        "actualCount": 102744,
+        "actualPerc": 73.81
       },
       {
         "partyId": "RDU",
@@ -1591,7 +1599,9 @@
           "RDU.PANG_HENG_CHUAN",
           "RDU.SHARON_LIN"
         ],
-        "samplePerc": 26
+        "samplePerc": 26,
+        "actualCount": 36459,
+        "actualPerc": 26.19
       }
     ],
     "history": [
