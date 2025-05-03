@@ -162,6 +162,7 @@
     "featureId": 2,
     "name": "KEBUN BARU SMC",
     "electors": 22223,
+    "electorsVoted": 20031,
     "isCalled": true,
     "candidates": [
       {
@@ -170,13 +171,17 @@
         "isConfirmed": true,
         "profiles": ["PAP.HENRY_KWEK"],
         "samplePerc": 66,
-        "isSampleWinner": true
+        "isWinner": true,
+        "actualCount": 13721,
+        "actualPerc": 68.5
       },
       {
         "partyId": "PSP",
         "isConfirmed": true,
         "profiles": ["PSP.TONY_TAN"],
-        "samplePerc": 34
+        "samplePerc": 34,
+        "actualCount": 6310,
+        "actualPerc": 31.5
       }
     ],
     "history": [
@@ -1619,6 +1624,7 @@
     "featureId": 25,
     "name": "SEMBAWANG WEST SMC",
     "electors": 24153,
+    "electorsVoted": 22519,
     "isCalled": true,
     "candidates": [
       {
@@ -1626,13 +1632,17 @@
         "isIncumbent": true,
         "profiles": ["PAP.POH_LI_SAN"],
         "samplePerc": 53,
-        "isSampleWinner": true
+        "isWinner": true,
+        "actualCount": 11978,
+        "actualPerc": 53.19
       },
       {
         "partyId": "SDP",
         "isConfirmed": true,
         "profiles": ["SDP.CHEE_SOON_JUAN"],
-        "samplePerc": 47
+        "samplePerc": 47,
+        "actualCount": 10541,
+        "actualPerc": 46.81
       }
     ],
     "history": [
