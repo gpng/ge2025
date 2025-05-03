@@ -1395,6 +1395,7 @@
     "featureId": 22,
     "name": "SENGKANG GRC",
     "electors": 126641,
+    "electorsVoted": 117888,
     "isCalled": true,
     "candidates": [
       {
@@ -1408,7 +1409,9 @@
           "WP.ABDUL_MUHAIMIN"
         ],
         "samplePerc": 56,
-        "isSampleWinner": true
+        "isWinner": true,
+        "actualCount": 66383,
+        "actualPerc": 56.31
       },
       {
         "partyId": "PAP",
@@ -1419,7 +1422,9 @@
           "PAP.THEODORA_LAI",
           "PAP.BERNADETTE_GIAM"
         ],
-        "samplePerc": 44
+        "samplePerc": 44,
+        "actualCount": 51505,
+        "actualPerc": 43.69
       }
     ],
     "history": [
