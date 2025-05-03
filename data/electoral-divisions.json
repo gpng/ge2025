@@ -1896,6 +1896,7 @@
     "featureId": 29,
     "name": "EAST COAST GRC",
     "electors": 150691,
+    "electorsVoted": 135576,
     "isCalled": true,
     "candidates": [
       {
@@ -1909,7 +1910,9 @@
           "PAP.HAZLINA_ABDUL_HALIM"
         ],
         "samplePerc": 59,
-        "isSampleWinner": true
+        "isWinner": true,
+        "actualCount": 79664,
+        "actualPerc": 58.76
       },
       {
         "partyId": "WP",
@@ -1921,7 +1924,9 @@
           "WP.JASPER_KUAN",
           "WP.SUFYAN_MIKHAIL_PUTRA"
         ],
-        "samplePerc": 41
+        "samplePerc": 41,
+        "actualCount": 55912,
+        "actualPerc": 41.24
       }
     ],
     "history": [
