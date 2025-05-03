@@ -2070,6 +2070,7 @@
     "featureId": 31,
     "name": "TAMPINES GRC",
     "electors": 147904,
+    "electorsVoted": 137309,
     "isCalled": true,
     "candidates": [
       {
@@ -2084,7 +2085,9 @@
           "PAP.CHARLENE_CHEN"
         ],
         "samplePerc": 53,
-        "isSampleWinner": true
+        "isWinner": true,
+        "actualCount": 71423,
+        "actualPerc": 52.02
       },
       {
         "partyId": "WP",
@@ -2096,7 +2099,9 @@
           "WP.EILEEN_CHONG",
           "WP.ONG_LUE_PING"
         ],
-        "samplePerc": 46
+        "samplePerc": 46,
+        "actualCount": 65044,
+        "actualPerc": 47.37
       },
       {
         "partyId": "PPP",
@@ -2108,7 +2113,9 @@
           "PPP.ARBAAH_HAROUN",
           "PPP.DERRICK_SIM"
         ],
-        "samplePerc": 1
+        "samplePerc": 1,
+        "actualCount": 593,
+        "actualPerc": 0.43
       },
       {
         "partyId": "NSP",
@@ -2120,7 +2127,9 @@
           "NSP.EUGENE_YEO",
           "NSP.THAMILSELVAN_KARUPPAYA"
         ],
-        "samplePerc": 0
+        "samplePerc": 0,
+        "actualCount": 249,
+        "actualPerc": 0.18
       }
     ],
     "history": [
