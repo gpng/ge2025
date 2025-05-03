@@ -5,10 +5,11 @@ export const candidateSchema = z.object({
   profiles: z.array(z.string()),
   isConfirmed: z.boolean().default(false),
   isIncumbent: z.boolean().default(false),
+  isSampleWinner: z.boolean().default(false),
   isWinner: z.boolean().default(false),
-  sampleCount: z.number().default(0),
+  samplePerc: z.number().default(0),
+  actualPerc: z.number().optional(),
   actualCount: z.number().optional(),
-  countPerc: z.number().default(0),
 });
 
 const candidatesSchema = z.record(z.string(), z.array(candidateSchema));

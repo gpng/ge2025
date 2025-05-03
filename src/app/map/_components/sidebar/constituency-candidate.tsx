@@ -11,9 +11,9 @@ interface Props {
   isCalled: boolean; // Whether the election has been called
   isWinner: boolean; // Whether this candidate won
   isWalkover: boolean; // Whether this candidate won by walkover
-  sampleCount: number; // Sample count of votes
+  samplePerc: number; // Sample count of votes
   actualCount?: number; // Actual count of votes
-  countPerc: number; // Percentage of votes
+  actualPerc?: number; // Percentage of votes
 }
 
 const ConstituencyCandidate = ({
@@ -22,16 +22,14 @@ const ConstituencyCandidate = ({
   isCalled,
   isWinner,
   isWalkover,
-  sampleCount,
+  samplePerc,
   actualCount,
-  countPerc,
+  actualPerc,
 }: Props) => {
   const { parties, profiles } = useData();
   const party = parties[candidate.partyId];
 
   if (!party) return <Typography>Party not found</Typography>;
-
-  const barCount = actualCount || sampleCount;
 
   return (
     <div
@@ -99,44 +97,28 @@ const ConstituencyCandidate = ({
       {isCalled && (
         <div className="mb-4 px-1">
           <div className="flex justify-between text-sm mb-1">
-            <span className="text-muted-foreground">Result:</span>
+            <span className="text-muted-foreground">Votes:</span>
             {isWalkover ? (
               <span className={`font-medium ${isWinner ? 'text-primary' : ''}`}>
                 Walkover
               </span>
             ) : (
               <span className={`font-medium ${isWinner ? 'text-primary' : ''}`}>
-                {barCount?.toLocaleString()} ({countPerc.toFixed(2)}%)
+                {actualPerc && actualCount
+                  ? `${actualCount.toLocaleString()} (${actualPerc.toFixed(2)}%)`
+                  : `${samplePerc.toFixed(2)}% (Sample Count)`}
               </span>
             )}
           </div>
 
           {/* Only show progress bar and counts for contested elections */}
           {!isWalkover && (
-            <>
-              <div className="w-full bg-muted/30 rounded-full h-2">
-                <div
-                  className={`${isWinner ? 'bg-primary' : 'bg-primary/50'} h-2 rounded-full`}
-                  style={{ width: `${countPerc}%` }}
-                />
-              </div>
-              <div className="flex justify-between text-xs mt-1 text-muted-foreground">
-                <span>
-                  Sample Count:
-                  <br />
-                  <span className="text-black font-semibold">
-                    {sampleCount.toLocaleString()}
-                  </span>
-                </span>
-                <span>
-                  Final Count:
-                  <br />
-                  <span className="text-black font-semibold">
-                    {actualCount ? actualCount.toLocaleString() : 'Pending'}
-                  </span>
-                </span>
-              </div>
-            </>
+            <div className="w-full bg-muted/30 rounded-full h-2">
+              <div
+                className={`${isWinner ? 'bg-primary' : 'bg-primary/50'} h-2 rounded-full`}
+                style={{ width: `${actualPerc}%` }}
+              />
+            </div>
           )}
         </div>
       )}

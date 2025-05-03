@@ -53,7 +53,7 @@ const setFeatureStates = (
     }
 
     const incumbent = edCandidates.find((c) => c.isIncumbent);
-    const winner = edCandidates.find((c) => c.isWinner);
+    const winner = edCandidates.find((c) => c.isWinner || c.isSampleWinner);
 
     const fillCandidate = winner || incumbent;
 

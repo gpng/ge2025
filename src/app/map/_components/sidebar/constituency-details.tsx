@@ -38,9 +38,9 @@ const ConstituencyDetails = ({ electoralDivision }: Props) => {
                 isCalled={electoralDivision.isCalled}
                 isWinner={candidate.isWinner}
                 isWalkover={isWalkover}
-                sampleCount={candidate.sampleCount}
+                samplePerc={candidate.samplePerc}
                 actualCount={candidate.actualCount}
-                countPerc={candidate.countPerc}
+                actualPerc={candidate.actualPerc}
               />
             );
           })}
