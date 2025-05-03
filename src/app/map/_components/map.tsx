@@ -120,6 +120,8 @@ const GEMap = ({
               'case',
               ['boolean', ['feature-state', 'hovered'], true],
               0.8,
+              ['boolean', ['feature-state', 'called'], true],
+              0.9,
               0.3,
             ],
           }}

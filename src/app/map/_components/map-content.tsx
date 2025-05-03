@@ -12,7 +12,7 @@ import { Filter } from 'lucide-react';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useEffect, useState } from 'react';
 
-const Content = () => {
+const MapContent = () => {
   const { boundaries, electoralDivisions } = useData();
   const { filters } = useFilters();
 
@@ -122,4 +122,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default MapContent;

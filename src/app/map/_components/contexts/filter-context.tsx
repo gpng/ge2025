@@ -77,6 +77,7 @@ const setFeatureStates = (
             : '#000000',
           visible: isVisible,
           hovered: ed.featureId === hoveredId,
+          called: ed.isCalled,
         },
       );
     }
