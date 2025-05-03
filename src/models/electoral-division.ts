@@ -18,6 +18,7 @@ const electoralDivisionSchema = z.object({
   featureId: z.number(),
   name: z.string(),
   electors: z.number(),
+  electorsVoted: z.number().optional(),
   candidates: z.array(candidateSchema),
   history: z.array(historySchema).default([]),
   isCalled: z.boolean().default(false),

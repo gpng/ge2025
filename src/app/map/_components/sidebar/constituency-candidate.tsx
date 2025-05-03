@@ -8,19 +8,17 @@ import Link from 'next/link';
 interface Props {
   candidate: Candidate;
   electoralDivisionId: string;
-  index: number; // Position in the candidates array
   isCalled: boolean; // Whether the election has been called
   isWinner: boolean; // Whether this candidate won
   isWalkover: boolean; // Whether this candidate won by walkover
   sampleCount: number; // Sample count of votes
-  actualCount: number; // Actual count of votes
+  actualCount?: number; // Actual count of votes
   countPerc: number; // Percentage of votes
 }
 
 const ConstituencyCandidate = ({
   candidate,
   electoralDivisionId,
-  index,
   isCalled,
   isWinner,
   isWalkover,
@@ -32,6 +30,8 @@ const ConstituencyCandidate = ({
   const party = parties[candidate.partyId];
 
   if (!party) return <Typography>Party not found</Typography>;
+
+  const barCount = actualCount || sampleCount;
 
   return (
     <div
@@ -106,7 +106,7 @@ const ConstituencyCandidate = ({
               </span>
             ) : (
               <span className={`font-medium ${isWinner ? 'text-primary' : ''}`}>
-                {actualCount?.toLocaleString()} ({countPerc.toFixed(2)}%)
+                {barCount?.toLocaleString()} ({countPerc.toFixed(2)}%)
               </span>
             )}
           </div>
@@ -121,8 +121,20 @@ const ConstituencyCandidate = ({
                 />
               </div>
               <div className="flex justify-between text-xs mt-1 text-muted-foreground">
-                <span>Sample Count: {sampleCount.toLocaleString()}</span>
-                <span>Final Count: {actualCount.toLocaleString()}</span>
+                <span>
+                  Sample Count:
+                  <br />
+                  <span className="text-black font-semibold">
+                    {sampleCount.toLocaleString()}
+                  </span>
+                </span>
+                <span>
+                  Final Count:
+                  <br />
+                  <span className="text-black font-semibold">
+                    {actualCount ? actualCount.toLocaleString() : 'Pending'}
+                  </span>
+                </span>
               </div>
             </>
           )}

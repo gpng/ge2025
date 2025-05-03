@@ -7,7 +7,7 @@ export const candidateSchema = z.object({
   isIncumbent: z.boolean().default(false),
   isWinner: z.boolean().default(false),
   sampleCount: z.number().default(0),
-  actualCount: z.number().default(0),
+  actualCount: z.number().optional(),
   countPerc: z.number().default(0),
 });
 

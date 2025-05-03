@@ -35,7 +35,6 @@ const ConstituencyDetails = ({ electoralDivision }: Props) => {
                 key={candidate.partyId}
                 candidate={candidate}
                 electoralDivisionId={electoralDivision.id}
-                index={index}
                 isCalled={electoralDivision.isCalled}
                 isWinner={candidate.isWinner}
                 isWalkover={isWalkover}
