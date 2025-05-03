@@ -97,6 +97,7 @@
     "featureId": 1,
     "name": "WEST COAST-JURONG WEST GRC",
     "electors": 158581,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
@@ -108,7 +109,8 @@
           "PAP.SHAWN_HUANG",
           "PAP.HAMID_RAZAK",
           "PAP.CASSANDRA_LEE"
-        ]
+        ],
+        "samplePerc": 61
       },
       {
         "partyId": "PSP",
@@ -119,7 +121,8 @@
           "PSP.HAZEL_POA",
           "PSP.SUMARLEKI_AMJAH",
           "PSP.SANI_ISMAIL"
-        ]
+        ],
+        "samplePerc": 39
       }
     ],
     "history": [
@@ -157,17 +160,20 @@
     "featureId": 2,
     "name": "KEBUN BARU SMC",
     "electors": 22223,
+    "isCalled": true,
     "candidates": [
       {
         "partyId": "PAP",
         "isIncumbent": true,
         "isConfirmed": true,
-        "profiles": ["PAP.HENRY_KWEK"]
+        "profiles": ["PAP.HENRY_KWEK"],
+        "samplePerc": 66
       },
       {
         "partyId": "PSP",
         "isConfirmed": true,
-        "profiles": ["PSP.TONY_TAN"]
+        "profiles": ["PSP.TONY_TAN"],
+        "samplePerc": 34
       }
     ],
     "history": [
